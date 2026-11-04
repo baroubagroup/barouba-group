@@ -1,0 +1,418 @@
+.page {
+  background-color: var(--bg-base);
+  min-height: 100vh;
+  padding-top: var(--nav-height);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* === HERO SECTION === */
+.hero {
+  position: relative;
+  padding: clamp(4.5rem, 8vw, 7rem) 0 clamp(3rem, 5vw, 4.5rem);
+  text-align: center;
+  overflow: hidden;
+  background-color: var(--bg-surface);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.heroGlow {
+  position: absolute;
+  top: -30%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 700px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(245, 166, 35, 0.15) 0%, transparent 70%);
+  filter: blur(90px);
+  pointer-events: none;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.45rem 1.2rem;
+  border-radius: 9999px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-default);
+  color: var(--color-gold);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  margin-bottom: 1.2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+}
+
+.badgeDiamond {
+  color: var(--color-gold);
+  font-size: 0.7rem;
+}
+
+.pageTitle {
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 4.6vw, 4rem);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  color: var(--text-primary);
+  margin-bottom: 1.2rem;
+  text-wrap: balance;
+}
+
+.pageSubtitle {
+  font-size: clamp(1rem, 1.6vw, 1.2rem);
+  color: var(--text-secondary);
+  line-height: 1.7;
+  max-width: 720px;
+  margin: 0 auto;
+  text-wrap: balance;
+}
+
+/* === PEDAGOGICAL SECTION: EXPLAINING AI SIMPLY === */
+.aiExplainerSection {
+  padding: clamp(4.5rem, 7vw, 6.5rem) 0;
+  background: var(--bg-base);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.explainerCard {
+  background: var(--bg-card);
+  border: 1px solid var(--border-default);
+  border-radius: 26px;
+  padding: clamp(2rem, 4vw, 3.5rem);
+  box-shadow: var(--card-shadow);
+}
+
+.explainerHeader {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 3rem;
+}
+
+.explainerBadge {
+  font-size: 0.74rem;
+  font-weight: 800;
+  color: var(--color-gold);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.6rem;
+}
+
+.explainerTitle {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 2.8vw, 2.4rem);
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 0.8rem;
+}
+
+.explainerIntro {
+  font-size: 0.96rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+}
+
+.analogyGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+}
+
+@media (max-width: 900px) {
+  .analogyGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.analogyCard {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: 18px;
+  padding: 1.6rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.analogyNum {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: var(--color-gold);
+  background: var(--bg-card);
+  border: 1px solid var(--border-default);
+  padding: 3px 10px;
+  border-radius: 6px;
+  width: fit-content;
+  margin-bottom: 1rem;
+}
+
+.analogyHeading {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 0.6rem;
+}
+
+.analogyText {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* === FORMATIONS GRID SECTION === */
+.formationsSection {
+  padding: clamp(5rem, 8vw, 7.5rem) 0;
+  position: relative;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(1.6rem, 2.8vw, 2.2rem);
+}
+
+@media (max-width: 1050px) {
+  .grid {
+    grid-template-columns: 1fr;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+.formationCard {
+  background: var(--bg-card);
+  border: 1px solid var(--border-default);
+  border-radius: 24px;
+  padding: clamp(1.8rem, 3vw, 2.4rem);
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: var(--card-shadow);
+}
+
+.formationCard:hover {
+  border-color: var(--color-gold);
+  transform: translateY(-6px);
+  box-shadow: var(--card-shadow-hover);
+}
+
+.cardTopRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.2rem;
+}
+
+.levelBadge {
+  font-size: 0.72rem;
+  font-weight: 800;
+  padding: 3px 10px;
+  border-radius: 6px;
+  background: rgba(245, 166, 35, 0.12);
+  color: var(--color-gold);
+  border: 1px solid var(--border-default);
+}
+
+.durationWrap {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.fTitle {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+}
+
+.fTagline {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--color-gold);
+  margin-bottom: 1rem;
+}
+
+.fDesc {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 1.6rem;
+}
+
+.modulesList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  margin-bottom: 2rem;
+  flex-grow: 1;
+}
+
+.moduleRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  font-size: 0.84rem;
+  color: var(--text-primary);
+  line-height: 1.45;
+}
+
+.moduleDiamond {
+  color: var(--color-gold);
+  font-size: 0.65rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.cardPricingRow {
+  padding: 1rem 0;
+  border-top: 1px solid var(--border-subtle);
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pricingBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.priceLabel {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+}
+
+.priceValue {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--color-gold);
+}
+
+.cardActionsGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  margin-top: 0.5rem;
+}
+
+.viewCourseBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  width: 100%;
+  padding: 0.85rem 1.4rem;
+  border-radius: 12px;
+  background: var(--color-gold);
+  color: #120e06;
+  font-size: 0.88rem;
+  font-weight: 800;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 14px rgba(245, 166, 35, 0.25);
+}
+
+.viewCourseBtn:hover {
+  background: #ffb833;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(245, 166, 35, 0.35);
+}
+
+.cardAction {
+  padding-top: 1.2rem;
+  border-top: 1px solid var(--border-subtle);
+  margin-top: auto;
+}
+
+.whatsappEnrollBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  width: 100%;
+  padding: 0.85rem 1.4rem;
+  border-radius: 12px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  color: var(--text-primary);
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.whatsappEnrollBtn:hover {
+  background: var(--bg-card);
+  border-color: #25D366;
+  color: #25D366;
+  transform: translateY(-2px);
+}
+
+/* === TRUST & GUARANTEE SECTION === */
+.trustSection {
+  padding: clamp(4rem, 6vw, 6rem) 0;
+  background: var(--bg-surface);
+  border-top: 1px solid var(--border-subtle);
+}
+
+.trustGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+@media (max-width: 900px) {
+  .trustGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.trustCard {
+  background: var(--bg-card);
+  border: 1px solid var(--border-default);
+  border-radius: 20px;
+  padding: clamp(1.8rem, 3vw, 2.2rem);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: var(--card-shadow);
+}
+
+.trustIconWrap {
+  width: 58px;
+  height: 58px;
+  border-radius: 16px;
+  background: rgba(245, 166, 35, 0.12);
+  border: 1px solid var(--border-default);
+  color: var(--color-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.2rem;
+}
+
+.trustHeading {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 0.6rem;
+}
+
+.trustText {
+  font-size: 0.86rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}

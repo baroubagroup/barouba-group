@@ -1,0 +1,190 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "services": "Services",
+    "blog": "Blog",
+    "shop": "Boutique",
+    "formations": "Formations",
+    "solutions": "Solutions",
+    "portfolio": "Portfolio",
+    "about": "À Propos",
+    "contact": "Contact"
+  },
+  "hero": {
+    "badge": "L'Agence de Croissance Numérique",
+    "title": "Propulsez votre entreprise grâce à",
+    "typewriter_words": [
+      "une machine à vendre.",
+      "une croissance explosive.",
+      "un empire digital.",
+      "une réalité rentable."
+    ],
+    "subtitle": "De la conception de votre plateforme web à l'acquisition de clients via la publicité et l'IA, nous sommes votre partenaire digital 360°. Déléguez-nous votre croissance, concentrez-vous sur votre cœur de métier.",
+    "cta_primary": "Dominer mon marché",
+    "cta_secondary": "Découvrir la méthode",
+    "stats_clients": "Clients Satisfaits",
+    "stats_projects": "Projets Livrés",
+    "stats_years": "Années d'Expertise"
+  },
+  "services": {
+    "title": "Nos Services",
+    "subtitle": "Des solutions digitales complètes pour propulser votre business",
+    "automation": {
+      "name": "Automatisation & Agents IA",
+      "desc": "Intégrez des agents intelligents et automatisez vos processus métier pour gagner un temps précieux."
+    },
+    "ads": {
+      "name": "Publicité Digitale à 360°",
+      "desc": "Campagnes Facebook, TikTok & Google Ads ultra-ciblées et création de créatifs pour maximiser votre ROI."
+    },
+    "dev": {
+      "name": "Développement Sur Mesure",
+      "desc": "Sites web, applications (dont e-commerce) et solutions digitales taillées sur mesure pour vos besoins."
+    },
+    "marketing": {
+      "name": "Marketing Digital",
+      "desc": "Stratégies marketing complètes pour vous positionner en leader sur votre marché."
+    },
+    "funnels": {
+      "name": "Tunnels de Vente",
+      "desc": "Des entonnoirs de conversion optimisés qui transforment vos visiteurs en clients."
+    },
+    "formation": {
+      "name": "Formation & Accompagnement",
+      "desc": "Programmes fixes et formations sur-mesure pour maîtriser le digital et l'IA."
+    },
+    "ecommerce": {
+      "name": "E-commerce",
+      "desc": "Exploitation et développement de nos propres marques e-commerce à succès à l'international."
+    },
+    "discover": "Découvrir"
+  },
+  "about_section": {
+    "badge": "Notre Histoire",
+    "title": "Barouba Group,",
+    "titleSub": "votre partenaire digital de confiance",
+    "description": "Nous sommes une agence digitale full-service, dédiée à aider les entreprises et entrepreneurs à tirer pleinement parti du monde numérique. De l'intelligence artificielle au développement web en passant par la publicité en ligne, nous couvrons l'ensemble du spectre digital.",
+    "value1_title": "Excellence",
+    "value1_desc": "Nous livrons uniquement du travail d'excellence, sans compromis sur la qualité.",
+    "value2_title": "Innovation",
+    "value2_desc": "Toujours à la pointe des dernières technologies et tendances digitales.",
+    "value3_title": "Résultats",
+    "value3_desc": "Chaque action que nous menons est orientée vers des résultats mesurables.",
+    "cta": "En Savoir Plus"
+  },
+  "portfolio_section": {
+    "badge": "Nos Réalisations",
+    "title": "Des Projets Qui Parlent",
+    "titleSub": "d'Eux-Mêmes",
+    "subtitle": "Découvrez quelques-unes de nos réalisations récentes",
+    "see_more": "Voir Tout le Portfolio"
+  },
+  "tools_section": {
+    "badge": "Nos Solutions",
+    "title": "Outils & Applications",
+    "titleSub": "Sur Mesure",
+    "subtitle": "Découvrez les solutions logicielles puissantes que nous avons développées.",
+    "see_more": "Voir Toutes nos Solutions",
+    "view_tool": "Découvrir l'outil",
+    "tools": {
+      "billing": {
+        "title": "Système de Facturation IA",
+        "desc": "Application web complète de gestion de factures et devis avec relances automatisées."
+      },
+      "elearning": {
+        "title": "LMS Premium",
+        "desc": "Plateforme e-learning sur-mesure pour héberger et vendre des formations avec suivi de progression."
+      },
+      "chatbot": {
+        "title": "Support Client Automatisé",
+        "desc": "Agent conversationnel intelligent connecté à votre base de connaissances pour un support 24/7."
+      }
+    }
+  },
+  "blog_section": {
+    "badge": "Ressources & Insights",
+    "title": "Le Blog",
+    "titleSub": "Barouba",
+    "subtitle": "Expertise, stratégies et tendances du monde digital",
+    "read_more": "Lire l'Article",
+    "see_all": "Voir Tous les Articles"
+  },
+  "shop_section": {
+    "badge": "Nos Produits Digitaux",
+    "title": "La Boutique",
+    "titleSub": "Barouba",
+    "subtitle": "Templates, formations, abonnements et outils pour accélérer votre croissance",
+    "cta": "Voir la Boutique"
+  },
+  "cta_section": {
+    "title": "Prêt à Transformer",
+    "titleSub": "Votre Business ?",
+    "subtitle": "Discutons de votre projet et voyons comment Barouba Group peut vous aider à atteindre vos objectifs digitaux.",
+    "cta_whatsapp": "Discuter sur WhatsApp",
+    "cta_services": "Voir Nos Services"
+  },
+  "footer": {
+    "description": "Votre partenaire digital de confiance pour tout ce qui concerne l'intelligence artificielle, le développement web, le marketing digital et la publicité en ligne.",
+    "services_title": "Services",
+    "company_title": "Entreprise",
+    "resources_title": "Ressources",
+    "rights": "Tous droits réservés.",
+    "made_with": "Fait avec ❤️ par Barouba Group"
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "subtitle": "Discutons de votre projet",
+    "whatsapp_cta": "Contacter sur WhatsApp",
+    "email_label": "Email",
+    "phone_label": "Téléphone"
+  },
+  "shop": {
+    "title": "La Boutique",
+    "subtitle": "Nos produits digitaux pour accélérer votre croissance",
+    "whatsapp_order": "Commander via WhatsApp",
+    "whatsapp_message": "Bonjour Barouba Group, je suis intéressé par le produit : ",
+    "categories": {
+      "all": "Tous",
+      "template": "Templates",
+      "formation": "Formations",
+      "subscription": "Abonnements",
+      "tool": "Outils"
+    }
+  },
+  "blog": {
+    "title": "Le Blog",
+    "subtitle": "Expertise, stratégies et tendances du monde digital",
+    "categories": {
+      "all": "Tous",
+      "ai": "Intelligence Artificielle",
+      "marketing": "Marketing Digital",
+      "ads": "Publicité",
+      "dev": "Développement",
+      "business": "Business"
+    },
+    "read_time": "min de lecture",
+    "published": "Publié le"
+  },
+  "portfolio": {
+    "title": "Notre Portfolio",
+    "subtitle": "Découvrez nos réalisations et projets livrés",
+    "categories": {
+      "all": "Tous",
+      "website": "Sites Web",
+      "app": "Applications",
+      "funnel": "Tunnels de Vente",
+      "branding": "Branding"
+    }
+  },
+  "formations": {
+    "title": "Barouba Academy",
+    "subtitle": "Accélérez votre croissance avec nos formations expertes en IA, publicité et stratégies digitales."
+  },
+  "about": {
+    "title": "À Propos de Nous",
+    "subtitle": "L'histoire de Barouba Group",
+    "mission_title": "Notre Mission",
+    "vision_title": "Notre Vision",
+    "team_title": "Notre Équipe"
+  }
+}

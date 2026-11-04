@@ -1,0 +1,329 @@
+.section {
+  padding: clamp(6.5rem, 10vw, 9.5rem) 0;
+  background-color: #030305;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 clamp(1.2rem, 3.5vw, 3rem);
+}
+
+.card {
+  background: radial-gradient(ellipse at 50% 0%, #151124 0%, #090812 80%);
+  border: 1px solid rgba(245, 166, 35, 0.25);
+  border-radius: 28px;
+  padding: clamp(2.5rem, 5vw, 4.5rem) clamp(1.6rem, 4vw, 3.8rem);
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.8), 0 0 40px rgba(245, 166, 35, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+/* === HEADER === */
+.header {
+  text-align: center;
+  max-width: 840px;
+  margin: 0 auto clamp(2.8rem, 4.5vw, 4rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.4rem 1.1rem;
+  border-radius: 9999px;
+  background: rgba(245, 166, 35, 0.08);
+  border: 1px solid rgba(245, 166, 35, 0.3);
+  color: #FFD700;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+}
+
+.badgeIcon {
+  color: #F5A623;
+}
+
+.title {
+  font-size: clamp(2rem, 3.8vw, 3.2rem);
+  font-weight: 900;
+  color: #FFFFFF;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  margin: 0 0 1rem;
+  text-wrap: balance;
+}
+
+.subtitle {
+  font-size: clamp(0.98rem, 1.6vw, 1.12rem);
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 1.7;
+  margin: 0;
+  text-wrap: balance;
+}
+
+/* === CALCULATOR GRID === */
+.calculatorGrid {
+  display: grid;
+  grid-template-columns: 1.1fr 1.1fr;
+  gap: clamp(2rem, 4vw, 3.5rem);
+  align-items: stretch;
+}
+
+@media (max-width: 960px) {
+  .calculatorGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* === INPUT SIDE === */
+.inputSide {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  justify-content: center;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.inputLabel {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.tierSelector {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.tierBtn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.85rem 1.2rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.92rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: left;
+}
+
+.tierBtn:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(245, 166, 35, 0.25);
+  color: #FFFFFF;
+}
+
+.tierBtnActive {
+  background: rgba(245, 166, 35, 0.12) !important;
+  border-color: #F5A623 !important;
+  color: #FFD700 !important;
+  box-shadow: 0 4px 16px rgba(245, 166, 35, 0.15);
+}
+
+.trafficSelector {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.6rem;
+}
+
+@media (max-width: 600px) {
+  .trafficSelector {
+    grid-template-columns: 1fr;
+  }
+}
+
+.trafficBtn {
+  padding: 0.75rem 0.6rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.trafficBtn:hover {
+  background: rgba(255, 255, 255, 0.06);
+  color: #FFFFFF;
+}
+
+.trafficBtnActive {
+  background: rgba(245, 166, 35, 0.12) !important;
+  border-color: #F5A623 !important;
+  color: #FFD700 !important;
+}
+
+.diagnosticSummary {
+  padding: 1.2rem;
+  background: rgba(245, 166, 35, 0.04);
+  border: 1px solid rgba(245, 166, 35, 0.18);
+  border-radius: 14px;
+}
+
+.diagTitle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #FFD700;
+  margin-bottom: 0.4rem;
+}
+
+.sparkleIcon {
+  color: #F5A623;
+}
+
+.diagBody {
+  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+/* === RESULTS SIDE === */
+.resultsSide {
+  display: flex;
+}
+
+.resultsBox {
+  width: 100%;
+  background: rgba(10, 8, 18, 0.85);
+  border: 1px solid rgba(245, 166, 35, 0.2);
+  border-radius: 20px;
+  padding: clamp(1.8rem, 3.5vw, 2.5rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.resultHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.6rem;
+}
+
+.resTag {
+  font-family: monospace;
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: #F5A623;
+  letter-spacing: 0.06em;
+}
+
+.resLive {
+  font-size: 0.72rem;
+  color: #10B981;
+  font-weight: 600;
+}
+
+.kpiRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+  margin-bottom: 1.8rem;
+}
+
+@media (max-width: 600px) {
+  .kpiRow {
+    grid-template-columns: 1fr;
+  }
+}
+
+.kpiCard {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 14px;
+  padding: 1.2rem;
+}
+
+.kpiVal {
+  font-size: 1.7rem;
+  font-weight: 900;
+  color: #FFD700;
+  letter-spacing: -0.03em;
+  margin-bottom: 0.3rem;
+}
+
+.kpiDesc {
+  font-size: 0.76rem;
+  color: rgba(255, 255, 255, 0.55);
+  line-height: 1.45;
+}
+
+.resultsBenefitList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-bottom: 2.2rem;
+}
+
+.benefitItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.45;
+}
+
+.benefitCheck {
+  color: #10B981;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.actionWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.claimAuditBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 1.05rem 1.8rem;
+  background: linear-gradient(135deg, #F5A623 0%, #E67814 100%);
+  color: #030305 !important;
+  font-weight: 800;
+  font-size: 0.95rem;
+  border-radius: 12px;
+  text-decoration: none;
+  box-shadow: 0 10px 30px rgba(245, 166, 35, 0.35);
+  transition: all 0.3s ease;
+}
+
+.claimAuditBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 40px rgba(245, 166, 35, 0.55);
+}
+
+.actionNote {
+  font-size: 0.74rem;
+  color: rgba(255, 255, 255, 0.45);
+  text-align: center;
+}

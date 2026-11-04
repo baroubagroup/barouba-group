@@ -1,0 +1,49 @@
+.page {
+  position: relative; min-height: calc(100svh - var(--nav-height));
+  display: flex; align-items: center; justify-content: center;
+  overflow: hidden;
+}
+.bg { position: absolute; inset: 0; z-index: 0; pointer-events: none; }
+.glow1 {
+  position: absolute; top: 20%; left: 20%;
+  width: 60vw; height: 60vw; max-width: 600px; max-height: 600px;
+  background: radial-gradient(circle, hsla(217, 91%, 55%, 0.08) 0%, transparent 65%);
+  animation: float 8s ease-in-out infinite;
+}
+.glow2 {
+  position: absolute; bottom: 10%; right: 10%;
+  width: 50vw; height: 50vw; max-width: 500px; max-height: 500px;
+  background: radial-gradient(circle, hsla(270, 80%, 65%, 0.07) 0%, transparent 65%);
+  animation: float 10s ease-in-out infinite reverse;
+}
+.grid {
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(var(--border-subtle) 1px, transparent 1px),
+    linear-gradient(90deg, var(--border-subtle) 1px, transparent 1px);
+  background-size: 60px 60px;
+  mask-image: radial-gradient(ellipse at 50% 50%, black 30%, transparent 70%);
+  -webkit-mask-image: radial-gradient(ellipse at 50% 50%, black 30%, transparent 70%);
+}
+.content {
+  position: relative; z-index: 1;
+  display: flex; flex-direction: column; align-items: center;
+  text-align: center; gap: var(--space-5);
+}
+.code {
+  font-family: var(--font-display); font-size: clamp(6rem, 20vw, 12rem);
+  font-weight: 900; letter-spacing: -0.06em; line-height: 1;
+  background: var(--gradient-primary); -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; background-clip: text;
+  opacity: 0.6; animation: float 6s ease-in-out infinite;
+}
+.title { font-size: var(--text-4xl); font-weight: 800; }
+.desc {
+  font-size: var(--text-lg); color: rgba(255,255,255,0.45);
+  max-width: 45ch; line-height: 1.7;
+}
+.actions { display: flex; gap: var(--space-4); flex-wrap: wrap; justify-content: center; margin-top: var(--space-2); }
+@media (max-width: 480px) {
+  .actions { flex-direction: column; width: 100%; }
+  .actions .btn { justify-content: center; }
+}

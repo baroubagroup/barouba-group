@@ -1,0 +1,39 @@
+.marqueeWrapper {
+  width: 100%;
+  overflow: hidden;
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.marqueeTrack {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  animation: marqueeLeft var(--marquee-speed, 30s) linear infinite;
+}
+
+.marqueeTrack.reverse {
+  animation: marqueeRight var(--marquee-speed, 30s) linear infinite;
+}
+
+.marqueeTrack:hover {
+  animation-play-state: paused;
+}
+
+.marqueeContent {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding-right: 2rem;
+  flex-shrink: 0;
+}
+
+@keyframes marqueeLeft {
+  from { transform: translateX(0); }
+  to { transform: translateX(calc(-100% / 3)); }
+}
+
+@keyframes marqueeRight {
+  from { transform: translateX(calc(-100% / 3)); }
+  to { transform: translateX(0); }
+}

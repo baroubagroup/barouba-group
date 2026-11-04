@@ -1,0 +1,48 @@
+.page { display: flex; flex-direction: column; gap: 1.5rem; }
+.header { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
+.title { font-size: 1.5rem; font-weight: 800; color: #fff; margin: 0 0 0.25rem; }
+.subtitle { color: rgba(255,255,255,0.5); font-size: 0.9rem; margin: 0; }
+.addBtn { padding: 0.75rem 1.5rem; background: linear-gradient(135deg, #F5A623, #E67814); border: none; border-radius: 10px; color: #000; font-weight: 700; font-size: 0.88rem; cursor: pointer; }
+.addBtn:hover { opacity: 0.85; }
+
+.table { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05); border-radius: 16px; overflow: hidden; }
+.thead { display: grid; grid-template-columns: 1fr 140px 110px 120px 100px; padding: 0.75rem 1.5rem; background: rgba(255,255,255,0.02); border-bottom: 1px solid rgba(255,255,255,0.05); }
+.thTitle, .thMeta, .thActions { font-size: 0.75rem; font-weight: 600; color: rgba(255,255,255,0.4); text-transform: uppercase; letter-spacing: 0.05em; }
+
+.row { display: grid; grid-template-columns: 1fr 140px 110px 120px 100px; padding: 1rem 1.5rem; border-bottom: 1px solid rgba(255,255,255,0.03); align-items: center; transition: background 0.15s; }
+.row:last-child { border-bottom: none; }
+.row:hover { background: rgba(255,255,255,0.02); }
+
+.cellTitle { }
+.postTitle { font-size: 0.9rem; font-weight: 600; color: #fff; margin-bottom: 0.2rem; }
+.postExcerpt { font-size: 0.78rem; color: rgba(255,255,255,0.4); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 320px; }
+
+.cellMeta { font-size: 0.82rem; color: rgba(255,255,255,0.55); }
+.catBadge { background: rgba(245,166,35,0.08); color: #F5A623; padding: 0.2rem 0.6rem; border-radius: 6px; font-size: 0.75rem; font-weight: 600; }
+.statusBadge { padding: 0.25rem 0.65rem; border-radius: 50px; font-size: 0.72rem; font-weight: 600; }
+
+.cellActions { display: flex; gap: 0.4rem; }
+.iconBtn { width: 32px; height: 32px; border-radius: 8px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); font-size: 1rem; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.2s; }
+.iconBtn:hover { background: rgba(255,255,255,0.1); }
+
+/* Modal */
+.modalOverlay { position: fixed; inset: 0; background: rgba(0,0,0,0.7); display: flex; align-items: center; justify-content: center; z-index: 200; padding: 1rem; }
+.modal { width: 100%; max-width: 520px; background: #0f0f18; border: 1px solid rgba(245,166,35,0.2); border-radius: 20px; padding: 2rem; max-height: 90vh; overflow-y: auto; }
+.modalHeader { display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.5rem; }
+.modalTitle { font-size: 1.2rem; font-weight: 800; color: #fff; margin: 0; }
+.closeBtn { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; color: rgba(255,255,255,0.5); width: 32px; height: 32px; cursor: pointer; }
+.form { display: flex; flex-direction: column; gap: 1rem; }
+.field { display: flex; flex-direction: column; gap: 0.4rem; }
+.label { font-size: 0.82rem; font-weight: 600; color: rgba(255,255,255,0.6); }
+.input, .textarea { padding: 0.75rem 1rem; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; color: #fff; font-size: 0.9rem; outline: none; transition: border-color 0.2s; }
+.textarea { resize: vertical; font-family: inherit; }
+.input:focus, .textarea:focus { border-color: rgba(245,166,35,0.4); }
+.formActions { display: flex; gap: 0.75rem; margin-top: 0.5rem; }
+.cancelBtn { flex: 1; padding: 0.875rem; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; color: rgba(255,255,255,0.6); cursor: pointer; }
+.saveBtn { flex: 2; padding: 0.875rem; background: linear-gradient(135deg, #F5A623, #E67814); border: none; border-radius: 10px; color: #000; font-weight: 800; cursor: pointer; }
+
+@media (max-width: 768px) {
+  .thead { display: none; }
+  .row { grid-template-columns: 1fr; gap: 0.5rem; }
+  .postExcerpt { max-width: 100%; }
+}

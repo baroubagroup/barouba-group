@@ -1,0 +1,249 @@
+.section {
+  position: relative;
+  padding: 100px 0 120px;
+  background: transparent;
+}
+
+.contactCard {
+  position: relative;
+  border-radius: 28px;
+  padding: 60px 48px;
+  background: var(--card-bg);
+  border: 1px solid var(--border-gold-subtle);
+  box-shadow: var(--card-shadow), 0 20px 60px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+.contactCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 10%;
+  right: 10%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--gold-light), #F59E0B, transparent);
+  opacity: 0.8;
+}
+
+.header {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 50px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px;
+  border-radius: 9999px;
+  background: var(--gold-subtle);
+  border: 1px solid var(--border-gold-subtle);
+  color: var(--gold-light);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.badgeIcon {
+  color: var(--gold-light);
+}
+
+.title {
+  font-size: clamp(28px, 3.6vw, 42px);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+  line-height: 1.2;
+  margin-bottom: 18px;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Channels Grid */
+.channelsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+  margin-bottom: 48px;
+}
+
+.channelItem {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 36px 32px;
+  border-radius: 20px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.channelItem:hover {
+  transform: translateY(-4px);
+  border-color: var(--gold-subtle);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.12);
+}
+
+.channelTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.whatsappIconBox {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: rgba(37, 211, 102, 0.12);
+  border: 1px solid rgba(37, 211, 102, 0.3);
+  color: #25D366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.emailIconBox {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: var(--gold-subtle);
+  border: 1px solid var(--border-gold-subtle);
+  color: var(--gold-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.speedBadge {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  padding: 4px 10px;
+  border-radius: 6px;
+  background: var(--gold-subtle);
+  color: var(--gold-light);
+  border: 1px solid var(--border-gold-subtle);
+  text-transform: uppercase;
+}
+
+.channelHeading {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
+
+.channelDesc {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.bullets {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 30px;
+  flex-grow: 1;
+}
+
+.bulletRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: var(--text-primary);
+}
+
+.bulletIcon {
+  color: var(--gold-light);
+  flex-shrink: 0;
+}
+
+.whatsappAction,
+.emailAction {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 14px 24px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+.whatsappAction {
+  background: #25D366;
+  color: #062811;
+  box-shadow: 0 4px 18px rgba(37, 211, 102, 0.35);
+}
+
+.whatsappAction:hover {
+  background: #22BF5B;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 26px rgba(37, 211, 102, 0.45);
+}
+
+.emailAction {
+  background: linear-gradient(135deg, var(--gold-light), #C59A3F);
+  color: #0B0A10;
+  box-shadow: 0 4px 18px rgba(212, 175, 55, 0.25);
+}
+
+.emailAction:hover {
+  filter: brightness(1.1);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 26px rgba(212, 175, 55, 0.38);
+}
+
+/* Reassurance Row */
+.reassuranceRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-top: 32px;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.reassureItem {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.reassureIcon {
+  color: var(--gold-light);
+  flex-shrink: 0;
+}
+
+@media (max-width: 900px) {
+  .channelsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .contactCard {
+    padding: 40px 24px;
+  }
+
+  .reassuranceRow {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

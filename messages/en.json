@@ -1,0 +1,181 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "blog": "Blog",
+    "shop": "Shop",
+    "formations": "Training",
+    "solutions": "Solutions",
+    "portfolio": "Portfolio",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "badge": "Premium Digital Agency",
+    "title": "Transform Your Digital Vision into",
+    "titleHighlight": "Reality",
+    "subtitle": "Artificial Intelligence · Custom Development · Digital Marketing · Advertising · Sales Funnels",
+    "cta_primary": "Explore Our Services",
+    "cta_secondary": "View Our Work",
+    "stats_clients": "Happy Clients",
+    "stats_projects": "Projects Delivered",
+    "stats_years": "Years of Expertise"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Complete digital solutions to propel your business forward",
+    "automation": {
+      "name": "Automation & AI Agents",
+      "desc": "Integrate intelligent agents and automate your business processes to save precious time."
+    },
+    "ads": {
+      "name": "360° Digital Advertising",
+      "desc": "Ultra-targeted Facebook, TikTok & Google Ads campaigns and creatives to maximize your ROI."
+    },
+    "dev": {
+      "name": "Custom Development",
+      "desc": "Websites, applications and digital solutions tailored to your needs."
+    },
+    "marketing": {
+      "name": "Digital Marketing",
+      "desc": "Complete marketing strategies to position you as a leader in your market."
+    },
+    "funnels": {
+      "name": "Sales Funnels",
+      "desc": "Optimized conversion funnels that turn your visitors into paying customers."
+    },
+    "formation": {
+      "name": "Training & Coaching",
+      "desc": "Fixed programs and custom training to master digital marketing and AI."
+    },
+    "ecommerce": {
+      "name": "E-commerce",
+      "desc": "Creation and optimization of high-performance online stores to skyrocket your sales."
+    },
+    "discover": "Discover"
+  },
+  "about_section": {
+    "badge": "Our Story",
+    "title": "Barouba Group,",
+    "titleSub": "your trusted digital partner",
+    "description": "We are a full-service digital agency dedicated to helping businesses and entrepreneurs fully leverage the digital world. From artificial intelligence to web development and online advertising, we cover the entire digital spectrum.",
+    "value1_title": "Excellence",
+    "value1_desc": "We only deliver excellence, with no compromise on quality.",
+    "value2_title": "Innovation",
+    "value2_desc": "Always at the forefront of the latest technologies and digital trends.",
+    "value3_title": "Results",
+    "value3_desc": "Every action we take is driven toward measurable results.",
+    "cta": "Learn More"
+  },
+  "portfolio_section": {
+    "badge": "Our Work",
+    "title": "Projects That Speak",
+    "titleSub": "for Themselves",
+    "subtitle": "Discover some of our recent achievements",
+    "see_more": "View Full Portfolio"
+  },
+  "tools_section": {
+    "badge": "Our Solutions",
+    "title": "Custom Tools",
+    "titleSub": "& Applications",
+    "subtitle": "Discover the powerful software solutions we've developed.",
+    "see_more": "View All Solutions",
+    "view_tool": "Explore Tool",
+    "tools": {
+      "billing": {
+        "title": "AI Billing System",
+        "desc": "Complete web application for invoice and quote management with automated follow-ups."
+      },
+      "elearning": {
+        "title": "Premium LMS",
+        "desc": "Custom e-learning platform to host and sell courses with progress tracking."
+      },
+      "chatbot": {
+        "title": "Automated Customer Support",
+        "desc": "Intelligent conversational agent connected to your knowledge base for 24/7 support."
+      }
+    }
+  },
+  "blog_section": {
+    "badge": "Resources & Insights",
+    "title": "The Barouba",
+    "titleSub": "Blog",
+    "subtitle": "Expertise, strategies and trends from the digital world",
+    "read_more": "Read Article",
+    "see_all": "View All Articles"
+  },
+  "shop_section": {
+    "badge": "Our Digital Products",
+    "title": "The Barouba",
+    "titleSub": "Shop",
+    "subtitle": "Templates, courses, subscriptions and tools to accelerate your growth",
+    "cta": "Visit Shop"
+  },
+  "cta_section": {
+    "title": "Ready to Transform",
+    "titleSub": "Your Business?",
+    "subtitle": "Let's discuss your project and see how Barouba Group can help you achieve your digital goals.",
+    "cta_whatsapp": "Chat on WhatsApp",
+    "cta_services": "View Our Services"
+  },
+  "footer": {
+    "description": "Your trusted digital partner for everything related to artificial intelligence, web development, digital marketing and online advertising.",
+    "services_title": "Services",
+    "company_title": "Company",
+    "resources_title": "Resources",
+    "rights": "All rights reserved.",
+    "made_with": "Made with ❤️ by Barouba Group"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Let's discuss your project",
+    "whatsapp_cta": "Contact on WhatsApp",
+    "email_label": "Email",
+    "phone_label": "Phone"
+  },
+  "shop": {
+    "title": "The Shop",
+    "subtitle": "Our digital products to accelerate your growth",
+    "whatsapp_order": "Order via WhatsApp",
+    "whatsapp_message": "Hello Barouba Group, I am interested in the product: ",
+    "categories": {
+      "all": "All",
+      "template": "Templates",
+      "formation": "Courses",
+      "subscription": "Subscriptions",
+      "tool": "Tools"
+    }
+  },
+  "blog": {
+    "title": "The Blog",
+    "subtitle": "Expertise, strategies and trends from the digital world",
+    "categories": {
+      "all": "All",
+      "ai": "Artificial Intelligence",
+      "marketing": "Digital Marketing",
+      "ads": "Advertising",
+      "dev": "Development",
+      "business": "Business"
+    },
+    "read_time": "min read",
+    "published": "Published on"
+  },
+  "portfolio": {
+    "title": "Our Portfolio",
+    "subtitle": "Discover our achievements and delivered projects",
+    "categories": {
+      "all": "All",
+      "website": "Websites",
+      "app": "Applications",
+      "funnel": "Sales Funnels",
+      "branding": "Branding"
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "The story of Barouba Group",
+    "mission_title": "Our Mission",
+    "vision_title": "Our Vision",
+    "team_title": "Our Team"
+  }
+}

@@ -1,0 +1,869 @@
+.page {
+  background-color: var(--bg-base);
+  min-height: 100vh;
+  padding-top: var(--nav-height);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* === HEADER === */
+.header {
+  position: relative;
+  padding: clamp(4.5rem, 7vw, 6.5rem) 0 clamp(2.5rem, 5vw, 4rem);
+  background-color: var(--bg-surface);
+  border-bottom: 1px solid var(--border-subtle);
+  overflow: hidden;
+}
+
+.headerGlow {
+  position: absolute;
+  top: -20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 700px;
+  height: 450px;
+  background: radial-gradient(circle, rgba(245, 166, 35, 0.12) 0%, transparent 70%);
+  filter: blur(80px);
+  pointer-events: none;
+}
+
+.headerInner {
+  max-width: 900px;
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-gold);
+  font-size: 0.86rem;
+  font-weight: 700;
+  text-decoration: none;
+  margin-bottom: 1.5rem;
+  transition: transform 0.2s ease;
+}
+
+.backLink:hover {
+  transform: translateX(-4px);
+}
+
+.badgeRow {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.2rem;
+}
+
+.categoryBadge {
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: var(--color-gold);
+  background: rgba(245, 166, 35, 0.12);
+  border: 1px solid var(--border-default);
+  padding: 4px 11px;
+  border-radius: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.levelBadge {
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: var(--text-secondary);
+  background: var(--bg-card);
+  border: 1px solid var(--border-default);
+  padding: 4px 11px;
+  border-radius: 6px;
+}
+
+.durationPill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 4.4vw, 3.6rem);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  text-wrap: balance;
+}
+
+.tagline {
+  font-size: clamp(1.05rem, 1.8vw, 1.25rem);
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 1.8rem;
+  text-wrap: balance;
+}
+
+.metaRow {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+  flex-wrap: wrap;
+  padding-top: 1.2rem;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.ratingBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.88rem;
+}
+
+.starIcon {
+  color: #F5A623;
+}
+
+.ratingScore {
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.ratingNote {
+  color: var(--text-muted);
+  font-size: 0.82rem;
+}
+
+.formatItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.84rem;
+  color: var(--text-secondary);
+}
+
+/* === MAIN SECTION & GRID === */
+.mainSection {
+  padding: clamp(3.5rem, 6vw, 5.5rem) 0 7rem;
+}
+
+.layoutGrid {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: clamp(2.5rem, 4vw, 4rem);
+  align-items: flex-start;
+}
+
+@media (max-width: 1024px) {
+  .layoutGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.courseDetails {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(2.5rem, 4vw, 3.5rem);
+}
+
+.contentBlock {
+  background: var(--bg-card);
+  border: 1px solid var(--border-default);
+  border-radius: 24px;
+  padding: clamp(1.8rem, 3.5vw, 2.6rem);
+  box-shadow: var(--card-shadow);
+}
+
+.blockTitle {
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 2.4vw, 1.8rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+  margin-bottom: 0.8rem;
+}
+
+.blockSubtitle {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  margin-bottom: 1.8rem;
+  line-height: 1.6;
+}
+
+.leadText {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  line-height: 1.75;
+}
+
+/* === SPECIAL ANALOGIES SECTION (IA) === */
+.methodologyBlock {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  border-radius: 24px;
+  padding: clamp(2rem, 3.8vw, 3rem);
+  box-shadow: var(--card-shadow);
+  position: relative;
+  overflow: hidden;
+}
+
+.methodologyHeader {
+  margin-bottom: 2rem;
+}
+
+.methodologyBadge {
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: var(--color-gold);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.5rem;
+}
+
+.methodologyTitle {
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 2.4vw, 1.8rem);
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 0.6rem;
+}
+
+.methodologyIntro {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+}
+
+.analogyCardsList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.analogyItem {
+  display: flex;
+  gap: 1.2rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  padding: 1.4rem;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.analogyItem:hover {
+  border-color: var(--color-gold);
+  transform: translateY(-2px);
+}
+
+.analogyNumber {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--color-gold);
+  background: rgba(245, 166, 35, 0.1);
+  border: 1px solid var(--border-default);
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.analogyBody {
+  flex-grow: 1;
+}
+
+.analogyTitle {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 0.4rem;
+}
+
+.analogyDesc {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* === INTERACTIVE ACCORDION CURRICULUM === */
+.curriculumHeaderRow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.curriculumAccordion {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.accordionCard {
+  border: 1px solid var(--border-default);
+  background: var(--bg-surface);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: border-color 0.25s ease, background-color 0.25s ease;
+}
+
+.accordionCard.cardOpen {
+  border-color: var(--color-gold);
+  background: var(--bg-card);
+}
+
+.accordionHeaderBtn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem 1.4rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  gap: 1rem;
+}
+
+.moduleMetaCol {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.moduleIndex {
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: var(--color-gold);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.moduleCardTitle {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.chevronWrap {
+  color: var(--color-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: rgba(245, 166, 35, 0.08);
+  flex-shrink: 0;
+}
+
+.accordionBody {
+  border-top: 1px solid var(--border-subtle);
+  padding: 1.2rem 1.4rem 1.4rem;
+  background: var(--bg-card);
+}
+
+.lessonsList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.lessonRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 0.88rem;
+  color: var(--text-primary);
+  line-height: 1.5;
+}
+
+.lessonBullet {
+  color: var(--color-gold);
+  font-size: 0.65rem;
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+
+.lessonText {
+  color: var(--text-secondary);
+}
+
+/* === OUTCOMES GRID === */
+.outcomesGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.4rem;
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 650px) {
+  .outcomesGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.outcomeCard {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.2rem;
+  border-radius: 14px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+}
+
+.outcomeCheck {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  background: rgba(37, 211, 102, 0.15);
+  color: #25D366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.outcomeHeading {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 0.3rem;
+}
+
+.outcomeDesc {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+}
+
+/* === AUDIENCE LIST === */
+.audienceList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.audienceRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.audienceRow strong {
+  color: var(--text-primary);
+}
+
+.audienceDiamond {
+  color: var(--color-gold);
+  font-size: 0.7rem;
+  margin-top: 4px;
+  flex-shrink: 0;
+}
+
+/* === STICKY SIDEBAR CARD === */
+.sidebarCol {
+  position: relative;
+}
+
+.stickyCard {
+  position: sticky;
+  top: calc(var(--nav-height) + 2rem);
+  background: var(--bg-card);
+  border: 1px solid var(--border-default);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: var(--card-shadow);
+  transition: border-color 0.3s ease;
+}
+
+.stickyCard:hover {
+  border-color: var(--color-gold);
+}
+
+.cardHeader {
+  padding: 1.8rem 1.8rem 1.2rem;
+  border-bottom: 1px solid var(--border-subtle);
+  background: var(--bg-surface);
+}
+
+.sessionStatus {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: var(--color-gold);
+  margin-bottom: 1rem;
+}
+
+.pulseDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #25D366;
+  box-shadow: 0 0 10px #25D366;
+}
+
+.priceContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.priceLabel {
+  font-size: 0.74rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+}
+
+.priceValue {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 2.2vw, 2rem);
+  font-weight: 800;
+  color: var(--color-gold);
+}
+
+.cardBody {
+  padding: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.primaryEnrollBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  border-radius: 14px;
+  background: var(--color-gold);
+  color: #120e06;
+  font-size: 0.95rem;
+  font-weight: 800;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(245, 166, 35, 0.3);
+  transition: all 0.25s ease;
+}
+
+.primaryEnrollBtn:hover {
+  background: #ffb833;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(245, 166, 35, 0.4);
+}
+
+.secondaryWaBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  width: 100%;
+  padding: 0.85rem 1.4rem;
+  border-radius: 14px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  color: var(--text-primary);
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.secondaryWaBtn:hover {
+  border-color: #25D366;
+  color: #25D366;
+  background: var(--bg-card);
+  transform: translateY(-2px);
+}
+
+.inclusionsSection {
+  padding-top: 1.2rem;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.inclusionsTitle {
+  font-size: 0.82rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-primary);
+  margin-bottom: 0.9rem;
+}
+
+.inclusionsList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.inclusionItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  font-size: 0.84rem;
+  color: var(--text-secondary);
+  line-height: 1.45;
+}
+
+.inclusionIcon {
+  color: #25D366;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.instructorProfile {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.instructorAvatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: rgba(245, 166, 35, 0.12);
+  border: 1px solid var(--border-default);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.instructorName {
+  font-size: 0.86rem;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.instructorRole {
+  font-size: 0.74rem;
+  color: var(--text-muted);
+}
+
+/* === MOBILE STICKY BOTTOM BAR === */
+.mobileBottomBar {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--bg-card);
+  border-top: 1px solid var(--border-default);
+  padding: 0.85rem 1.2rem;
+  z-index: 80;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 1024px) {
+  .mobileBottomBar {
+    display: flex;
+  }
+}
+
+.mobilePriceCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobilePriceLabel {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+.mobilePriceValue {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--color-gold);
+}
+
+.mobileEnrollBtn {
+  background: var(--color-gold);
+  color: #120e06;
+  border: none;
+  padding: 0.75rem 1.4rem;
+  border-radius: 10px;
+  font-weight: 800;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+/* === ENROLLMENT MODAL === */
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(8px);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.2rem;
+}
+
+.modalCard {
+  background: var(--bg-card);
+  border: 1px solid var(--border-default);
+  border-radius: 24px;
+  width: 100%;
+  max-width: 520px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.modalHeader {
+  padding: 1.6rem 1.8rem 1.2rem;
+  border-bottom: 1px solid var(--border-subtle);
+  background: var(--bg-surface);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.modalPre {
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: var(--color-gold);
+  letter-spacing: 0.08em;
+  margin-bottom: 0.3rem;
+}
+
+.modalTitle {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.closeBtn {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s ease;
+}
+
+.closeBtn:hover {
+  color: var(--text-primary);
+}
+
+.modalForm {
+  padding: 1.6rem 1.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.formField {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.formLabel {
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.formInput {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border-radius: 12px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.formInput:focus {
+  outline: none;
+  border-color: var(--color-gold);
+  box-shadow: 0 0 0 3px rgba(245, 166, 35, 0.15);
+}
+
+.modalPriceSummary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.9rem 1.1rem;
+  border-radius: 10px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+}
+
+.modalPriceSummary strong {
+  color: var(--color-gold);
+  font-size: 1rem;
+  font-family: var(--font-display);
+}
+
+.modalSubmitBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  width: 100%;
+  padding: 0.95rem 1.4rem;
+  border-radius: 12px;
+  background: var(--color-gold);
+  color: #120e06;
+  font-size: 0.95rem;
+  font-weight: 800;
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 15px rgba(245, 166, 35, 0.25);
+}
+
+.modalSubmitBtn:hover {
+  background: #ffb833;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(245, 166, 35, 0.35);
+}
+
+.modalSecurityNote {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.76rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+  margin: 0;
+  justify-content: center;
+  text-align: center;
+}

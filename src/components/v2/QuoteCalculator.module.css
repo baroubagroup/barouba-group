@@ -1,0 +1,268 @@
+.wrapper {
+  background: var(--bg-card);
+  border: 1px solid var(--border-default);
+  border-radius: 24px;
+  padding: clamp(2rem, 4vw, 3.2rem);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 3.5rem;
+}
+
+.glow {
+  position: absolute;
+  top: -20%;
+  right: -10%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(245, 166, 35, 0.08) 0%, transparent 70%);
+  pointer-events: none;
+  filter: blur(60px);
+}
+
+.header {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto 2.5rem;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 1rem;
+  border-radius: 9999px;
+  background: rgba(245, 166, 35, 0.1);
+  color: var(--color-gold);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.8rem;
+}
+
+.title {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  font-weight: 800;
+  color: var(--text-primary);
+  margin: 0 0 0.8rem;
+  line-height: 1.25;
+}
+
+.desc {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.formGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 2.2rem;
+}
+
+.stepSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.stepTitleRow {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.stepNum {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--color-gold);
+  color: #000;
+  font-size: 0.75rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stepLabel {
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+/* Service Options Grid */
+.optionsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.9rem;
+}
+
+.optionCard {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  border-radius: 14px;
+  padding: 1rem 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.optionCard:hover {
+  border-color: var(--color-gold);
+  transform: translateY(-2px);
+}
+
+.optionSelected {
+  background: rgba(245, 166, 35, 0.1);
+  border-color: var(--color-gold);
+  box-shadow: 0 0 0 1px var(--color-gold);
+}
+
+.optionIcon {
+  font-size: 1.3rem;
+  flex-shrink: 0;
+}
+
+.optionText {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.35;
+}
+
+/* Radio Pills Grid */
+.pillsGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.pillBtn {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  color: var(--text-secondary);
+  padding: 0.65rem 1.2rem;
+  border-radius: 9999px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.pillBtn:hover {
+  border-color: var(--color-gold);
+  color: var(--text-primary);
+}
+
+.pillSelected {
+  background: var(--color-gold);
+  color: #000000;
+  border-color: var(--color-gold);
+  font-weight: 800;
+}
+
+/* Contact Inputs Grid */
+.inputsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem;
+}
+
+@media (max-width: 650px) {
+  .inputsGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.inputField {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.inputFieldFull {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.fieldLabel {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.textInput, .textArea {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  border-radius: 12px;
+  padding: 0.85rem 1.1rem;
+  font-size: 0.92rem;
+  color: var(--text-primary);
+  font-family: inherit;
+  transition: border-color 0.2s ease;
+}
+
+.textInput:focus, .textArea:focus {
+  outline: none;
+  border-color: var(--color-gold);
+  box-shadow: 0 0 0 3px rgba(245, 166, 35, 0.15);
+}
+
+.textArea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* Submit Actions */
+.submitRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-subtle);
+  flex-wrap: wrap;
+}
+
+.submitWaBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+  color: #FFFFFF;
+  padding: 1.1rem 2.2rem;
+  border-radius: 9999px;
+  font-weight: 800;
+  font-size: 1rem;
+  text-decoration: none;
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.3);
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.submitWaBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(37, 211, 102, 0.45);
+}
+
+.reassuranceText {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+}
+
+.lockIcon {
+  color: var(--color-gold);
+}

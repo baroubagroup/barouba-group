@@ -1,0 +1,1937 @@
+[
+  {
+    "name": "Cluster 1 : Fondations de l'IA au Burkina Faso, Décideurs & Stratégie d'Entreprise",
+    "range": [
+      1,
+      20
+    ],
+    "articles": [
+      {
+        "id": "001",
+        "slug": "intelligence-artificielle-entreprises-burkina-faso-guide-strategique-dg",
+        "title": "L'Intelligence Artificielle pour les Entreprises au Burkina Faso : Le Guide Stratégique des Dirigeants en 2026",
+        "kw": "intelligence artificielle entreprise burkina faso, ia dirigeants ouagadougou, transformation ia pme burkina"
+      },
+      {
+        "id": "002",
+        "slug": "calculer-retour-investissement-roi-intelligence-artificielle-pme-ouaga",
+        "title": "Comment Calculer le ROI Réel de l'Adoption de l'IA dans une PME à Ouagadougou (Gains en FCFA)",
+        "kw": "calculer roi ia burkina faso, rentabilité intelligence artificielle ouagadougou"
+      },
+      {
+        "id": "003",
+        "slug": "audit-maturite-ia-entreprise-burkina-faso-grille-evaluation",
+        "title": "L'Audit de Maturité IA en 7 Étapes : Évaluer la Préparation Technologique de son Entreprise à Ouaga",
+        "kw": "audit maturité ia burkina faso, diagnostic intelligence artificielle ouaga"
+      },
+      {
+        "id": "004",
+        "slug": "ia-cloud-vs-ia-locale-souverainete-donnees-entreprises-burkina",
+        "title": "IA Cloud vs IA sur Serveurs Locaux : Sécurité, Connexion Sahélienne et Souveraineté des Données au Faso",
+        "kw": "ia cloud vs local burkina, souveraineté données intelligence artificielle ouaga"
+      },
+      {
+        "id": "005",
+        "slug": "cout-mise-en-place-ia-entreprise-burkina-faso-tarifs-devis",
+        "title": "Combien Coûte la Mise en Place de l'IA dans une Entreprise Burkinabè ? Grille des Budgets et Devis",
+        "kw": "prix intégration ia burkina faso, coût projet intelligence artificielle ouaga"
+      },
+      {
+        "id": "006",
+        "slug": "demystifier-ia-pour-patrons-comprendre-sans-termes-techniques",
+        "title": "Démystifier l'IA pour les Patrons Burkinabè : Ce Que l'IA Peut Vraiment Faire sans Jargon Technique",
+        "kw": "comprendre ia dirigeants burkina, vulgarisation intelligence artificielle ouaga"
+      },
+      {
+        "id": "007",
+        "slug": "feuille-route-adoption-ia-pme-ouagadougou-etapes-cles",
+        "title": "La Feuille de Route d'Adoption de l'IA en PME à Ouaga : Du Premier Test au Déploiement Global",
+        "kw": "feuille de route ia entreprise burkina, étapes adoption ia ouagadougou"
+      },
+      {
+        "id": "008",
+        "slug": "shadow-ai-entreprises-burkina-encadrer-usage-sauvage-chatgpt",
+        "title": "Le Phénomène du « Shadow AI » au Burkina : Pourquoi et Comment Encadrer l'Usage de ChatGPT par vos Salariés",
+        "kw": "shadow ai entreprise burkina faso, encadrer chatgpt salariés ouaga"
+      },
+      {
+        "id": "009",
+        "slug": "charte-ethique-utilisation-ia-interne-modele-entreprise-bf",
+        "title": "Rédiger la Charte d'Utilisation Interne de l'IA de son Entreprise à Ouaga : Modèle Prêt à l'Emploi",
+        "kw": "charte éthique ia entreprise burkina, règlement usage ia travail ouaga"
+      },
+      {
+        "id": "010",
+        "slug": "conduite-changement-ia-lever-peurs-remplacement-salaries-bf",
+        "title": "Conduite du Changement et IA au Sahel : Vaincre la Peur du Remplacement chez les Collaborateurs",
+        "kw": "conduite du changement ia burkina, rassurer salariés intelligence artificielle ouaga"
+      },
+      {
+        "id": "011",
+        "slug": "top-10-erreurs-projets-ia-afrique-ouest-comment-eviter",
+        "title": "Les 10 Erreurs Fatales qui Font Échouer les Projets d'IA en Afrique de l'Ouest (Et Comment les Éviter)",
+        "kw": "erreurs projet ia afrique ouest, pièges intégration ia burkina faso"
+      },
+      {
+        "id": "012",
+        "slug": "choisir-entre-chatgpt-claude-gemini-version-entreprise-ouaga",
+        "title": "ChatGPT Entreprise vs Claude for Work vs Google Gemini : Quel Modèle d'IA Choisir pour vos Cadres à Ouaga ?",
+        "kw": "comparatif chatgpt claude gemini entreprise burkina, meilleur llm pro ouaga"
+      },
+      {
+        "id": "013",
+        "slug": "ia-opportunite-vs-menace-economie-burkinabe-analyse-prospective",
+        "title": "L'IA au Burkina Faso : Menace sur l'Emploi ou Accélérateur Historique de Compétitivité Économique ?",
+        "kw": "impact ia économie burkina faso, avenir emploi intelligence artificielle ouaga"
+      },
+      {
+        "id": "014",
+        "slug": "sensibiliser-comite-direction-ia-organiser-atelier-executif",
+        "title": "Comment Organiser un Atelier Exécutif d'Acculturation à l'IA pour son Conseil d'Administration à Ouaga",
+        "kw": "atelier ia comité direction ouaga, formation dirigeants intelligence artificielle burkina"
+      },
+      {
+        "id": "015",
+        "slug": "ia-faible-vs-ia-forte-vs-ia-generative-distinctions-essentielles",
+        "title": "IA Prédictive vs IA Générative vs Agents Autonomes : Comprendre les Familles d'IA Utiles aux PME Burkinabè",
+        "kw": "ia prédictive ia générative burkina, types intelligence artificielle ouagadougou"
+      },
+      {
+        "id": "016",
+        "slug": "mesurer-productivite-apres-deploiement-ia-kpi-tableaux-bord",
+        "title": "Mesurer les Gains de Productivité après l'Intégration de l'IA : KPI et Tableaux de Bord de Suivi à Ouaga",
+        "kw": "mesurer gains productivité ia burkina, indicateurs performance ia ouagadougou"
+      },
+      {
+        "id": "017",
+        "slug": "securiser-tresorerie-pme-ia-detection-gaspillages-financiers",
+        "title": "Sécuriser sa Trésorerie grâce à l'IA : Détection Automatique des Gaspillages et Fuites de Rentabilité à Ouaga",
+        "kw": "ia gestion trésorerie pme burkina, détection fuites financières ia ouaga"
+      },
+      {
+        "id": "018",
+        "slug": "bourses-subventions-projets-innovation-ia-burkina-faso",
+        "title": "Subventions et Bailleurs de Fonds Soutenant les Projets d'Innovation et d'IA au Burkina Faso",
+        "kw": "financement projet ia burkina faso, subventions innovation technologique ouaga"
+      },
+      {
+        "id": "019",
+        "slug": "ecosysteme-startup-ia-ouagadougou-hubs-talents-partenariats",
+        "title": "L'Écosystème des Startups et Chercheurs en IA à Ouagadougou : Opportunités de Partenariats B2B",
+        "kw": "startup ia ouagadougou, écosystème intelligence artificielle burkina"
+      },
+      {
+        "id": "020",
+        "slug": "cabinet-conseil-strategie-ia-entreprises-barouba-group-ouaga",
+        "title": "BAROUBA GROUP : Votre Cabinet de Conseil et Déploiement d'Intelligence Artificielle d'Élite au Burkina Faso",
+        "kw": "cabinet conseil ia barouba group, agence intégration intelligence artificielle ouaga"
+      }
+    ]
+  },
+  {
+    "name": "Cluster 2 : Prompt Engineering Professionnel & Maîtrise des LLMs (ChatGPT, Claude, Gemini)",
+    "range": [
+      21,
+      40
+    ],
+    "articles": [
+      {
+        "id": "021",
+        "slug": "guide-prompt-engineering-professionnel-entreprises-burkina",
+        "title": "Guide du Prompt Engineering Professionnel au Burkina Faso : Dominer l'Art de Commander aux LLMs",
+        "kw": "prompt engineering professionnel burkina, formation prompt chatgpt ouagadougou"
+      },
+      {
+        "id": "022",
+        "slug": "formules-prompts-avances-few-shot-chain-of-thought-ouaga",
+        "title": "Formules de Prompts Avancées (Few-Shot, Chain-of-Thought) : Obtenir des Réponses Précises à 100% à Ouaga",
+        "kw": "prompts avancés few shot chain of thought burkina, techniques prompt engineering ouaga"
+      },
+      {
+        "id": "023",
+        "slug": "rediger-comptes-rendus-reunion-courriers-officiels-chatgpt-bf",
+        "title": "Rédiger des Comptes-Rendus de Réunion et Courriers Administratifs en 3 Minutes avec ChatGPT à Ouaga",
+        "kw": "rédiger compte rendu réunion chatgpt burkina, lettres officielles ia ouagadougou"
+      },
+      {
+        "id": "024",
+        "slug": "creer-custom-gpts-specifiques-entreprise-guide-pas-a-pas-bf",
+        "title": "Comment Créer des Custom GPTs Privés Dédiés aux Procédures Internes de son Entreprise à Ouaga",
+        "kw": "créer custom gpts entreprise burkina, gpt personnalisé procédures internes ouaga"
+      },
+      {
+        "id": "025",
+        "slug": "claude-3-5-sonnet-entreprises-burkina-capacites-analyse-fichiers",
+        "title": "Claude 3.5 Sonnet pour Entreprises : Analyser des Fichiers Excel et Rapports PDF de 200 Pages en 30 Secondes",
+        "kw": "claude 3.5 sonnet entreprise burkina, analyse documents pdf lourds ia ouaga"
+      },
+      {
+        "id": "026",
+        "slug": "google-gemini-workspace-automatiser-docs-sheets-entreprises-ouaga",
+        "title": "Intégrer Google Gemini dans Google Workspace : Booster Docs, Sheets et Gmail en Entreprise à Ouaga",
+        "kw": "google gemini workspace burkina, ia google sheets docs entreprise ouaga"
+      },
+      {
+        "id": "027",
+        "slug": "eviter-hallucinations-ia-techniques-verification-sources-bf",
+        "title": "Comment Éliminer les Hallucinations de l'IA : Techniques de Fact-Checking et Sécurisation des Données à Ouaga",
+        "kw": "éviter hallucinations chatgpt burkina, vérifier fiabilité réponses ia ouaga"
+      },
+      {
+        "id": "028",
+        "slug": "prompt-engineering-pour-commerciaux-closing-negociation-ouaga",
+        "title": "Prompts pour Commerciaux B2B : Rédiger des Relances Irrésistibles et Argumentaires de Négociation à Ouaga",
+        "kw": "prompts commerciaux closing burkina, relances devis chatgpt ouagadougou"
+      },
+      {
+        "id": "029",
+        "slug": "analyse-concurrentielle-marche-burkinabe-avec-ia-generative",
+        "title": "Réaliser une Analyse Concurrentielle Éclair du Marché Burkinabè grâce à l'IA Générative et au Web Scraping",
+        "kw": "analyse concurrentielle ia burkina, étude de marché chatgpt ouagadougou"
+      },
+      {
+        "id": "030",
+        "slug": "synthese-veille-strategique-economique-sahel-avec-claude",
+        "title": "Automatiser sa Veille Économique et Réglementaire au Sahel avec l'IA : Résumer 20 Articles en 1 Note Exécutive",
+        "kw": "veille stratégique ia sahel, synthèse économique chatgpt burkina"
+      },
+      {
+        "id": "031",
+        "slug": "prompts-pour-gestionnaires-ressources-humaines-recrutement-bf",
+        "title": "La Boîte à Outils des Prompts RH au Burkina Faso : Fiches de Poste, Grilles d'Entretiens et Questionnaires",
+        "kw": "prompts rh recrutement burkina, rédiger fiche de poste chatgpt ouaga"
+      },
+      {
+        "id": "032",
+        "slug": "traduire-adapter-documents-langues-locales-moore-dioula-ia",
+        "title": "Traduire et Adapter ses Textes d'Entreprise en Mooré et Dioula avec l'IA : Opportunités et Limites Actuelles",
+        "kw": "traduction mooré dioula intelligence artificielle, ia langues locales burkina"
+      },
+      {
+        "id": "033",
+        "slug": "concevoir-presentations-slides-powerpoint-professionnelles-ia",
+        "title": "Créer des Présentations PowerPoint Professionnelles en 10 Minutes avec l'IA à Ouagadougou",
+        "kw": "créer powerpoint avec ia burkina, générateur présentation professionnelle ouaga"
+      },
+      {
+        "id": "034",
+        "slug": "nettoyage-structuration-donnees-brutes-excel-avec-chatgpt",
+        "title": "Nettoyer et Structurer des Tableaux Excel Complexes grâce aux Prompts Avancés à Ouagadougou",
+        "kw": "nettoyer fichier excel chatgpt burkina, formule excel complexe ia ouaga"
+      },
+      {
+        "id": "035",
+        "slug": "system-prompts-secrets-parametrage-ia-sur-mesure-entreprises",
+        "title": "Les System Prompts : Paramétrer l'Attitude, le Rôle et le Ton de votre IA pour vos Équipes à Ouaga",
+        "kw": "system prompt entreprise burkina, configurer personnalité ia ouagadougou"
+      },
+      {
+        "id": "036",
+        "slug": "securiser-confidentialite-prompts-desactiver-entrainement-modele",
+        "title": "Confidentialité des Prompts : Comment Empêcher OpenAI et Anthropic d'Utiliser vos Données d'Entreprise",
+        "kw": "confidentialité données chatgpt burkina, désactiver entraînement modèle données ouaga"
+      },
+      {
+        "id": "037",
+        "slug": "brainstorming-innovation-produits-ateliers-creatifs-ia-ouaga",
+        "title": "Animer des Sessions de Brainstorming et d'Innovation Produit avec l'IA Générative à Ouagadougou",
+        "kw": "brainstorming ia entreprise burkina, innovation créative chatgpt ouaga"
+      },
+      {
+        "id": "038",
+        "slug": "automatiser-redaction-emails-professionnels-templates-ia-bf",
+        "title": "Automatiser la Rédaction d'Emails Professionnels Impeccables : Les 15 Templates Indispensables au Burkina",
+        "kw": "modèles emails professionnels ia burkina, templates courriels chatgpt ouaga"
+      },
+      {
+        "id": "039",
+        "slug": "prompt-chaining-chainer-instructions-taches-complexes-ouaga",
+        "title": "Le Prompt Chaining : Comment Enchaîner Plusieurs Invites pour Résoudre des Tâches Métiers Complexes à Ouaga",
+        "kw": "prompt chaining tâches complexes burkina, logique invites séquentielles ia ouaga"
+      },
+      {
+        "id": "040",
+        "slug": "formation-certifiante-prompt-engineering-barouba-group-ouaga",
+        "title": "La Formation Professionnelle en Prompt Engineering et Maîtrise des LLMs de BAROUBA GROUP à Ouagadougou",
+        "kw": "formation prompt engineering barouba group academy, cours maîtriser chatgpt ouaga"
+      }
+    ]
+  },
+  {
+    "name": "Cluster 3 : L'IA au Service du Commerce, Vente & WhatsApp Business au Burkina",
+    "range": [
+      41,
+      60
+    ],
+    "articles": [
+      {
+        "id": "041",
+        "slug": "agents-ia-whatsapp-business-vente-automatique-burkina-faso",
+        "title": "Agents IA sur WhatsApp Business : Vendre, Conseiller et Encaisser 24h/24 au Burkina Faso",
+        "kw": "agent ia whatsapp business burkina, chatbot vente whatsapp ouagadougou"
+      },
+      {
+        "id": "042",
+        "slug": "qualification-automatique-prospects-whatsapp-filtrer-curieux-ouaga",
+        "title": "Filtrer les Curieux et Détecter les Vrais Acheteurs : La Qualification Automatique de Leads par IA à Ouaga",
+        "kw": "qualifier prospects whatsapp ia burkina, filtrer leads curieux ouagadougou"
+      },
+      {
+        "id": "043",
+        "slug": "integration-catalogue-produits-agent-ia-recommandation-ouaga",
+        "title": "Connecter son Catalogue Produits à un Agent IA : Recommandations Personnalisées et Vente Additionnelle à Ouaga",
+        "kw": "catalogue produit agent ia burkina, recommandation intelligente whatsapp ouaga"
+      },
+      {
+        "id": "044",
+        "slug": "traitement-objections-commerciales-prix-ia-whatsapp-burkina",
+        "title": "Traitement des Objections de Prix en FCFA : Comment l'Agent IA Négocie et Rassure le Client Burkinabè",
+        "kw": "négociation commerciale ia whatsapp burkina, traiter objection prix ouagadougou"
+      },
+      {
+        "id": "045",
+        "slug": "relance-intelligente-paniers-abandonnes-devis-whatsapp-bf",
+        "title": "Relance Intelligente des Devis Non Signés et Paniers Abandonnés sur WhatsApp par IA au Burkina Faso",
+        "kw": "relance automatique devis whatsapp burkina, récupérer paniers abandonnés ia ouaga"
+      },
+      {
+        "id": "046",
+        "slug": "liaison-agent-ia-orange-money-wave-verification-paiements-bf",
+        "title": "Lier l'Agent IA aux APIs Orange Money et Wave : Génération et Contrôle Instantané des Reçus de Vente à Ouaga",
+        "kw": "liaison chatbot orange money wave burkina, validation automatique paiement ia ouaga"
+      },
+      {
+        "id": "047",
+        "slug": "transfert-transparent-agent-ia-vers-vendeur-humain-protocole-bf",
+        "title": "Le Protocole de Transfert Humain : Quand et Comment l'IA Passe la Main à un Vendeur Physique à Ouaga",
+        "kw": "transfert agent ia vendeur humain burkina, protocole hybride chatbot ouagadougou"
+      },
+      {
+        "id": "048",
+        "slug": "analyse-sentiment-conversations-whatsapp-detection-clients-mecontents",
+        "title": "Analyse de Sentiment par IA : Détecter Immédiatement un Client Mécontent pour Éviter le Bad Buzz à Ouaga",
+        "kw": "analyse sentiment client whatsapp ia burkina, alerte client mécontent ouagadougou"
+      },
+      {
+        "id": "049",
+        "slug": "automatisation-prise-rendez-vous-commercial-calendly-whatsapp-bf",
+        "title": "Prise de Rendez-Vous Commercial Automatique sur WhatsApp par IA : Remplir l'Agenda des Commerciaux à Ouaga",
+        "kw": "prise de rendez vous whatsapp ia burkina, planifier rdv commercial automatique ouaga"
+      },
+      {
+        "id": "050",
+        "slug": "agent-ia-multilingue-francais-moore-dioula-pour-boutiques-ouaga",
+        "title": "Déployer un Agent IA Bilingue Français / Mooré / Dioula pour Répondre aux Acheteurs Locaux à Ouaga",
+        "kw": "agent ia mooré dioula burkina, chatbot langues nationales vente ouagadougou"
+      },
+      {
+        "id": "051",
+        "slug": "generation-automatique-devis-factures-proforma-whatsapp-bf",
+        "title": "Génération Instantanée de Factures Proforma et Devis PDF par IA Directement dans la Discussion WhatsApp",
+        "kw": "générer devis pdf automatique whatsapp burkina, proforma instantanée ia ouaga"
+      },
+      {
+        "id": "052",
+        "slug": "suivi-commande-geolocalisation-livreurs-par-ia-whatsapp-ouaga",
+        "title": "Suivi de Commande et Localisation des Livreurs en Temps Réel Assistés par IA sur WhatsApp à Ouagadougou",
+        "kw": "suivi commande whatsapp ia burkina, géolocalisation livreur ouagadougou"
+      },
+      {
+        "id": "053",
+        "slug": "enquetes-satisfaction-post-achat-avis-google-automatiques-ia-bf",
+        "title": "Collecter des Avis Google 5 Étoiles Automatiquement après un Achat grâce à l'IA Conversationnelle à Ouaga",
+        "kw": "collecte avis google automatique ia burkina, enquête satisfaction whatsapp ouaga"
+      },
+      {
+        "id": "054",
+        "slug": "gestion-commandes-groupes-whatsapp-tontines-achats-groupes-bf",
+        "title": "Gérer les Commandes d'Achats Groupés et Tontines Commerciales grâce à un Assistant IA au Burkina Faso",
+        "kw": "gestion tontines achats groupés ia burkina, chatbot commandes collectives ouaga"
+      },
+      {
+        "id": "055",
+        "slug": "cross-selling-up-selling-predictif-augmenter-panier-moyen-ouaga",
+        "title": "Cross-Selling Prédictif : Comment l'IA Propose le Bon Produit Complémentaire pour Augmenter le Panier Moyen",
+        "kw": "cross selling prédictif ia burkina, augmenter panier moyen whatsapp ouagadougou"
+      },
+      {
+        "id": "056",
+        "slug": "eviter-bannissement-meta-numero-whatsapp-ia-bonnes-pratiques",
+        "title": "Comment Éviter le Bannissement de son Numéro WhatsApp lors de l'Automatisation Commerciale au Burkina",
+        "kw": "éviter ban whatsapp api burkina, règles meta automatisation messagerie ouaga"
+      },
+      {
+        "id": "057",
+        "slug": "crm-conversationnel-synchroniser-echanges-whatsapp-notion-hubspot",
+        "title": "Le CRM Conversationnel : Enregistrer Tous les Échanges WhatsApp dans Notion ou Zoho sans Effort Manuel",
+        "kw": "crm conversationnel whatsapp burkina, synchroniser discussions crm ouagadougou"
+      },
+      {
+        "id": "058",
+        "slug": "scripts-vente-psycho-commerciale-pour-agents-ia-burkina",
+        "title": "Psychologie Commerciale Sahélienne : Rédiger les Scripts de Vente les Plus Persuasifs pour son IA à Ouaga",
+        "kw": "scripts vente persuasifs ia burkina, psychologie commerciale sahel ouaga"
+      },
+      {
+        "id": "059",
+        "slug": "calculer-chiffre-affaires-genere-par-agent-ia-whatsapp-roi-bf",
+        "title": "Mesurer le Chiffre d'Affaires Net Généré par votre Agent IA WhatsApp : Calcul du ROI Commercial en FCFA",
+        "kw": "calculer roi chatbot whatsapp burkina, rentabilité agent ia commercial ouaga"
+      },
+      {
+        "id": "060",
+        "slug": "deploiement-agent-ia-whatsapp-cle-en-main-barouba-group-ouaga",
+        "title": "Déploiement d'Agents IA Commerciaux sur WhatsApp Clé-en-Main avec BAROUBA GROUP à Ouagadougou",
+        "kw": "déploiement agent ia whatsapp barouba group, agence chatbot vente burkina faso"
+      }
+    ]
+  },
+  {
+    "name": "Cluster 4 : L'IA pour le Marketing, Création de Contenu & Publicité",
+    "range": [
+      61,
+      80
+    ],
+    "articles": [
+      {
+        "id": "061",
+        "slug": "intelligence-artificielle-marketing-digital-burkina-faso-revolution",
+        "title": "L'Intelligence Artificielle en Marketing Digital au Burkina Faso : Révolutionner sa Création de Contenu",
+        "kw": "ia marketing digital burkina faso, outils ia création contenu ouagadougou"
+      },
+      {
+        "id": "062",
+        "slug": "generer-visuels-publicitaires-realistes-midjourney-flux-ouaga",
+        "title": "Créer des Visuels Publicitaires Hyper-Réalistes avec Midjourney et Flux sans Studio Photo à Ouaga",
+        "kw": "midjourney publicité burkina faso, générer visuels ia sans studio ouagadougou"
+      },
+      {
+        "id": "063",
+        "slug": "redaction-scripts-video-tiktok-reels-viraux-chatgpt-ouaga",
+        "title": "Rédiger des Scripts Vidéo TikTok et Reels Viraux en 5 Minutes avec ChatGPT pour Entreprises à Ouaga",
+        "kw": "rédiger script tiktok ia burkina, script reels viral chatgpt ouagadougou"
+      },
+      {
+        "id": "064",
+        "slug": "voix-off-ia-ultra-realistes-francais-langues-locales-burkina",
+        "title": "Générer des Voix Off IA Ultra-Réalistes pour Spots Publicitaires et Vidéos d'Entreprise au Burkina Faso",
+        "kw": "voix off ia elevenlabs burkina, générateur voix artificielle pub ouagadougou"
+      },
+      {
+        "id": "065",
+        "slug": "creation-avatars-ia-porte-parole-virtuel-videos-entreprises-bf",
+        "title": "Créer un Avatar IA Porte-Parole Virtuel pour ses Vidéos Institutionnelles et Formations à Ouaga",
+        "kw": "avatar ia vidéo entreprise burkina, porte parole virtuel heygen ouaga"
+      },
+      {
+        "id": "066",
+        "slug": "copywriting-publicitaire-meta-ads-optimise-par-ia-burkina",
+        "title": "Générer 20 Variantes de Textes Publicitaires Meta Ads Performants en 1 Clic grâce à l'IA à Ouaga",
+        "kw": "textes publicitaires facebook ia burkina, copywriting meta ads chatgpt ouaga"
+      },
+      {
+        "id": "067",
+        "slug": "content-repurposing-ia-transformer-1-video-en-15-posts-reseaux-bf",
+        "title": "Content Repurposing par IA : Transformer une Longue Conférence en 15 Shorts, Citations et Posts LinkedIn",
+        "kw": "repurposing contenu ia burkina, recycler vidéo en posts réseaux ouagadougou"
+      },
+      {
+        "id": "068",
+        "slug": "generation-images-produits-e-commerce-fonds-ia-studioghot",
+        "title": "Sublimer ses Photos Produits E-commerce : Intégrer des Décors de Luxe Automatiquement par IA à Ouaga",
+        "kw": "détourage décor produit ia burkina, fond studio photo automatique e-commerce ouaga"
+      },
+      {
+        "id": "069",
+        "slug": "automatiser-veille-tendances-tiktok-facebook-ia-marketing-bf",
+        "title": "Détecter les Tendances Virales et Sujets Chauds au Burkina Faso avant les Concurrents grâce à l'IA",
+        "kw": "veille tendances virales ia burkina, analyse tendances réseaux sociaux ouaga"
+      },
+      {
+        "id": "070",
+        "slug": "creer-jingles-musiques-publicitaires-libres-droits-ia-suno-ouaga",
+        "title": "Créer des Jingles et Musiques Publicitaires Originaux avec l'IA (Suno, Udio) sans Payer de Droits à Ouaga",
+        "kw": "créer jingle musique ia suno burkina, musique publicitaire libre de droits ouaga"
+      },
+      {
+        "id": "071",
+        "slug": "personnalisation-emails-marketing-masse-ia-taux-ouverture-bf",
+        "title": "Personnalisation Hyper-Ciblée des Emails et Messages WhatsApp par IA : Doubler ses Taux d'Ouverture",
+        "kw": "email marketing personnalisé ia burkina, campagne whatsapp ciblée ia ouaga"
+      },
+      {
+        "id": "072",
+        "slug": "seo-marketing-ia-trouver-mots-cles-recherches-burkinabe",
+        "title": "Trouver des Niches de Mots-Clés Inexplorées au Burkina Faso grâce aux Analyseurs Sémantiques par IA",
+        "kw": "mots clés seo ia burkina faso, analyse sémantique opportunités ouagadougou"
+      },
+      {
+        "id": "073",
+        "slug": "generer-articles-blog-longs-autorite-ia-sans-penalite-google",
+        "title": "Rédiger des Articles de Blog d'Autorité de 2 500 Mots avec l'IA sans Subir de Pénalités Google à Ouaga",
+        "kw": "rédiger article blog long ia burkina, référencement naturel chatgpt sans pénalité"
+      },
+      {
+        "id": "074",
+        "slug": "optimisation-taux-conversion-cro-landing-pages-par-ia-ouaga",
+        "title": "Optimiser le Taux de Conversion de ses Pages Web par Audit Visuel et Textuel Assisté par IA à Ouaga",
+        "kw": "optimisation conversion landing page ia burkina, audit cro intelligence artificielle ouaga"
+      },
+      {
+        "id": "075",
+        "slug": "sous-titrage-automatique-traduction-videos-reseaux-ia-capcut-bf",
+        "title": "Sous-Titrage Automatique et Traduction Multilingue de Vidéos Réseaux Sociaux par IA en Quelques Secondes",
+        "kw": "sous titrage automatique vidéo ia burkina, traduction sous titres réseaux ouaga"
+      },
+      {
+        "id": "076",
+        "slug": "creation-logos-icones-vecteurs-ia-adobe-illustrator-firefly-bf",
+        "title": "Concevoir des Concepts de Logos et Icônes Vectorielles avec Adobe Firefly et l'IA Vectorielle à Ouaga",
+        "kw": "génération logo ia burkina faso, icônes vectorielles adobe firefly ouaga"
+      },
+      {
+        "id": "077",
+        "slug": "analyse-performances-creatives-ads-ia-quelles-images-vendent-bf",
+        "title": "Analyse Prédictive des Visuels Publicitaires : Savoir Quelles Images vont Convertir avant de Dépenser 1 FCFA",
+        "kw": "analyse prédictive créatives publicitaires burkina, tester visuels ads ia ouaga"
+      },
+      {
+        "id": "078",
+        "slug": "automatisation-publication-reseaux-sociaux-ia-make-buffer-bf",
+        "title": "Automatiser la Chaîne Complète Création - Validation - Publication sur Facebook et LinkedIn par IA à Ouaga",
+        "kw": "automatiser publication réseaux sociaux ia burkina, workflow n8n buffer facebook ouaga"
+      },
+      {
+        "id": "079",
+        "slug": "droits-auteur-propriete-intellectuelle-contenus-generes-ia-oapi",
+        "title": "Propriété Intellectuelle et Droits d'Auteur des Visuels et Textes Générés par IA : Le Cadre OAPI au Sahel",
+        "kw": "droits auteur images ia oapi burkina, propriété intellectuelle ia ouagadougou"
+      },
+      {
+        "id": "080",
+        "slug": "agence-marketing-ia-performance-digitale-barouba-group-ouaga",
+        "title": "Marketing Digital Augmenté par l'IA : Confiez votre Visibilité Commerciale à BAROUBA GROUP à Ouagadougou",
+        "kw": "agence marketing ia barouba group, création contenu intelligence artificielle ouaga"
+      }
+    ]
+  },
+  {
+    "name": "Cluster 5 : L'IA pour les Ressources Humaines & le Recrutement au Sahel",
+    "range": [
+      81,
+      100
+    ],
+    "articles": [
+      {
+        "id": "081",
+        "slug": "intelligence-artificielle-ressources-humaines-burkina-faso-guide",
+        "title": "L'Intelligence Artificielle en Ressources Humaines au Burkina Faso : Moderniser le Recrutement et la Gestion",
+        "kw": "ia ressources humaines burkina faso, intelligence artificielle rh ouagadougou"
+      },
+      {
+        "id": "082",
+        "slug": "tri-automatique-cv-recrutement-sans-biais-entreprises-ouaga",
+        "title": "Trier 500 CV en 10 Minutes sans Biais : Comment l'IA Révolutionne la Présélection des Candidats à Ouaga",
+        "kw": "tri automatique cv ia burkina, présélection recrutement intelligence artificielle ouaga"
+      },
+      {
+        "id": "083",
+        "slug": "redaction-automatique-fiches-poste-grilles-entretien-ia-bf",
+        "title": "Rédiger des Fiches de Poste Précises et des Grilles d'Évaluation RH grâce à l'IA en Entreprise au Burkina",
+        "kw": "fiche de poste ia rh burkina, grille évaluation entretien candidat ouaga"
+      },
+      {
+        "id": "084",
+        "slug": "onboarding-tuteur-ia-accueil-nouveaux-salaries-whatsapp-bf",
+        "title": "L'Agent IA Tuteur d'Intégration : Accueillir et Guider les Nouveaux Salariés sur WhatsApp à Ouagadougou",
+        "kw": "onboarding tuteur ia whatsapp burkina, accueil nouveaux salariés entreprise ouaga"
+      },
+      {
+        "id": "085",
+        "slug": "evaluation-continue-competences-quiz-interactifs-salaries-ia",
+        "title": "Évaluation Continue des Connaissances : Créer des Quiz Métiers Automatisés par IA pour ses Équipes à Ouaga",
+        "kw": "quiz évaluation compétences salariés ia burkina, formation continue test connaissances ouaga"
+      },
+      {
+        "id": "086",
+        "slug": "analyse-climat-social-sondages-internes-anonymes-par-ia-bf",
+        "title": "Mesurer le Climat Social et Détecter les Risques de Démission par Analyse Sémantique des Sondages RH à Ouaga",
+        "kw": "climat social analyse ia burkina, sondage interne satisfaction salariés ouaga"
+      },
+      {
+        "id": "087",
+        "slug": "gestion-previsionnelle-emplois-competences-gpec-assistee-ia-bf",
+        "title": "GPEC et Cartographie des Compétences : Identifier les Futurs Métiers Manquants dans son Entreprise au Burkina",
+        "kw": "gpec prévisionnelle compétences ia burkina, cartographie compétences rh ouagadougou"
+      },
+      {
+        "id": "088",
+        "slug": "conformite-code-travail-burkina-faso-ia-rh-contrats-reglements",
+        "title": "Sécuriser les Contrats de Travail et Règlements Intérieurs avec l'IA selon le Code du Travail Burkinabè",
+        "kw": "contrat travail code travail burkina ia, conformité légale rh ouagadougou"
+      },
+      {
+        "id": "089",
+        "slug": "chasse-tetes-sourcing-talents-linkedin-automatise-par-ia-ouaga",
+        "title": "Sourcing de Cadres et Chasse de Têtes sur LinkedIn Automatisée par IA pour Entreprises à Ouagadougou",
+        "kw": "sourcing candidats linkedin ia burkina, chasse de têtes automatisée ouaga"
+      },
+      {
+        "id": "090",
+        "slug": "digitalisation-demandes-conges-attestations-salaries-ia-bf",
+        "title": "Automatiser les Demandes de Congés et l'Édition d'Attestations de Travail par Assistant IA RH à Ouaga",
+        "kw": "gestion congés attestations travail ia burkina, portail rh automatisé ouaga"
+      },
+      {
+        "id": "091",
+        "slug": "preparer-entretiens-annuels-evaluation-synthese-ia-ouaga",
+        "title": "Préparer et Synthétiser les Entretiens Annuels d'Évaluation en Quelques Clics grâce à l'IA en Entreprise",
+        "kw": "entretiens annuels évaluation ia burkina, synthèse bilans annuels rh ouaga"
+      },
+      {
+        "id": "092",
+        "slug": "calcul-masse-salariale-simulations-augmentations-ia-bf",
+        "title": "Modéliser l'Impact des Augmentations et de la Masse Salariale sur la Trésorerie d'Entreprise grâce à l'IA à Ouaga",
+        "kw": "simulation masse salariale ia burkina, calcul charges sociales cnss ouaga"
+      },
+      {
+        "id": "093",
+        "slug": "formation-personnalisee-salaries-parcours-adaptatifs-ia-bf",
+        "title": "Créer des Parcours de Formation Micro-Learning Personnalisés pour chaque Employé Burkinabè grâce à l'IA",
+        "kw": "micro learning personnalisé ia burkina, formation adaptative salariés ouaga"
+      },
+      {
+        "id": "094",
+        "slug": "prevention-burnout-fatigue-professionnelle-detection-signaux-faibles",
+        "title": "Détecter les Signaux Faibles d'Épuisement Professionnel et Prévenir le Burn-Out des Équipes avec l'IA à Ouaga",
+        "kw": "prévention burnout rh ia burkina, bien être au travail détection fatigue ouaga"
+      },
+      {
+        "id": "095",
+        "slug": "marque-employeur-attirer-diaspora-burkinabe-grace-ia-rh",
+        "title": "Renforcer sa Marque Employeur pour Séduire les Talents de la Diaspora Burkinabè grâce aux Outils d'IA",
+        "kw": "recruter diaspora burkinabè ia, marque employeur tech ouagadougou"
+      },
+      {
+        "id": "096",
+        "slug": "chatbot-interne-rh-repondre-questions-mutuelle-paie-ouaga",
+        "title": "Un Chatbot RH Interne : Répondre Instantanément aux Questions des Salariés sur la Mutuelle, Paie et Avantages",
+        "kw": "chatbot interne faq rh burkina, questions paie mutuelle agent ia ouaga"
+      },
+      {
+        "id": "097",
+        "slug": "recrutement-inclusif-egalite-chances-elimination-biais-bf",
+        "title": "Favoriser l'Égalité des Chances et l'Emploi Féminin : Paramétrer l'IA pour un Recrutement 100% Inclusif à Ouaga",
+        "kw": "recrutement inclusif ia burkina faso, égalité des chances emploi ouaga"
+      },
+      {
+        "id": "098",
+        "slug": "rgpd-cil-protection-donnees-candidats-salaries-ia-burkina",
+        "title": "Protection des Données des Salariés et Candidats : Respecter les Directives CIL lors de l'Usage de l'IA RH au Faso",
+        "kw": "protection données candidats cil burkina, conformité ia recrutement ouaga"
+      },
+      {
+        "id": "099",
+        "slug": "audit-rh-digital-mesurer-efficacite-service-personnel-ouaga",
+        "title": "L'Audit RH Digital : Comment Mesurer le Gain de Temps et d'Efficacité du Service Personnel grâce à l'IA",
+        "kw": "audit rh digital entreprise burkina, mesurer productivité service personnel ouaga"
+      },
+      {
+        "id": "100",
+        "slug": "accompagnement-transformation-rh-ia-barouba-group-ouagadougou",
+        "title": "Transformation RH et Déploiement d'Outils IA pour Entreprises avec BAROUBA GROUP à Ouagadougou",
+        "kw": "conseil rh transformation ia barouba group, modernisation recrutement burkina faso"
+      }
+    ]
+  },
+  {
+    "name": "Cluster 6 : L'IA pour la Comptabilité, Finance & Fiscalité Burkinabè",
+    "range": [
+      101,
+      120
+    ],
+    "articles": [
+      {
+        "id": "101",
+        "slug": "intelligence-artificielle-comptabilite-finance-burkina-faso-guide",
+        "title": "L'Intelligence Artificielle en Comptabilité et Finance au Burkina Faso : Automatiser et Sécuriser ses Flux",
+        "kw": "ia comptabilité finance burkina faso, intelligence artificielle comptable ouaga"
+      },
+      {
+        "id": "102",
+        "slug": "saisie-comptable-automatique-extraction-ocr-recus-factures-bf",
+        "title": "Éliminer la Saisie Comptable Manuelle : L'Extraction Intelligente de Factures et Pièces Jointes par IA à Ouaga",
+        "kw": "saisie comptable automatique ocr burkina, extraction factures ia ouagadougou"
+      },
+      {
+        "id": "103",
+        "slug": "rapprochement-bancaire-automatique-mobile-money-tresorerie-bf",
+        "title": "Rapprochement Bancaire Automatique : Réconcilier Relevés Bancaires et Comptes Marchands Orange/Wave par IA",
+        "kw": "rapprochement bancaire automatique ia burkina, réconciliation mobile money trésorerie ouaga"
+      },
+      {
+        "id": "104",
+        "slug": "prevention-fraude-financiere-interne-detection-anomalies-ia-bf",
+        "title": "Prévenir la Fraude Financière Interne : Algorithmes de Détection d'Anomalies de Paiement en Entreprise à Ouaga",
+        "kw": "détection fraude financière ia burkina, contrôle interne anomalies dépenses ouaga"
+      },
+      {
+        "id": "105",
+        "slug": "prevision-tresorerie-besoin-fonds-roulement-bfr-ia-sahel",
+        "title": "Prévoir sa Trésorerie à 90 Jours et Anticiper son BFR : La Modélisation Financière Prédictive par IA au Sahel",
+        "kw": "prévision trésorerie bfr ia burkina, modèle financier prédictif ouagadougou"
+      },
+      {
+        "id": "106",
+        "slug": "conformite-fiscale-dgi-burkina-faso-ia-veille-loi-finances",
+        "title": "Aide à la Conformité Fiscale DGI au Burkina : Analyser la Loi de Finances et les Déductions Légales par IA",
+        "kw": "veille fiscale dgi ia burkina faso, loi de finances conseils fiscaux chatgpt ouaga"
+      },
+      {
+        "id": "107",
+        "slug": "automatisation-facturation-normalisee-dgi-liaison-systemes-bf",
+        "title": "Liaison Automatisée avec la Facture Normalisée DGI au Burkina Faso : Éviter les Amendes et Erreurs de Calcul",
+        "kw": "facture normalisée dgi automatique burkina, liaison comptabilité ia ouagadougou"
+      },
+      {
+        "id": "108",
+        "slug": "recouvrement-creances-relances-clients-automatisees-ia-ouaga",
+        "title": "Recouvrement Intelligent des Créances : Scénarios de Relances Progressives par SMS et WhatsApp par IA à Ouaga",
+        "kw": "recouvrement créances ia burkina, relances impayés whatsapp automatiques ouaga"
+      },
+      {
+        "id": "109",
+        "slug": "analyse-couts-revient-marges-beneficiaires-produits-ia-bf",
+        "title": "Calcul Précis des Coûts de Revient et Marges Bénéficiaires par Produit grâce à l'IA en Milieu Industriel à Ouaga",
+        "kw": "calcul coût de revient ia burkina, marge bénéficiaire analytique ouagadougou"
+      },
+      {
+        "id": "110",
+        "slug": "preparation-bilan-annuel-etats-financiers-syscohada-ia-bf",
+        "title": "Préparer son Bilan Annuel et ses États Financiers SYSCOHADA Révisé 2 Fois Plus Vite grâce à l'IA à Ouaga",
+        "kw": "préparation bilan syscohada ia burkina, états financiers automatisés ouagadougou"
+      },
+      {
+        "id": "111",
+        "slug": "detection-doublons-erreurs-imputation-comptable-algorithmes-bf",
+        "title": "Détecter les Doublons de Paiement et Erreurs d'Imputation Comptable par Algorithmes d'Apprentissage au Faso",
+        "kw": "détection doublons factures ia burkina, contrôle erreurs imputation comptable ouaga"
+      },
+      {
+        "id": "112",
+        "slug": "optimisation-fiscale-legale-pme-burkina-faso-audit-ia",
+        "title": "Audit Fiscal Préventif par IA : Identifier les Crédits d'Impôt et Déductions Non Réclamées à Ouagadougou",
+        "kw": "audit fiscal préventif ia burkina, optimisation fiscale légale pme ouaga"
+      },
+      {
+        "id": "113",
+        "slug": "tableaux-bord-financiers-directeurs-financiers-power-bi-ia-bf",
+        "title": "Tableaux de Bord Financiers Dynamiques pour DAF : Connecter Comptabilité, Ventes et Alertes IA à Ouaga",
+        "kw": "dashboard financier daf power bi ia burkina, pilotage financier temps réel ouaga"
+      },
+      {
+        "id": "114",
+        "slug": "gestion-devises-risque-change-importations-ia-uemoa-bf",
+        "title": "Gérer le Risque de Change et les Dépenses en Devises Étrangères (USD, EUR, Yuan) pour Importateurs au Faso",
+        "kw": "gestion risque de change importateur burkina, prévision cours devises ia ouaga"
+      },
+      {
+        "id": "115",
+        "slug": "expert-comptable-augmente-comment-ia-valorise-cabinets-ouaga",
+        "title": "L'Expert-Comptable Augmenté : Pourquoi l'IA Transforme les Cabinets de Saisie en Conseillers Stratégiques à Ouaga",
+        "kw": "expert comptable augmenté ia burkina, modernisation cabinet comptable ouagadougou"
+      },
+      {
+        "id": "116",
+        "slug": "clôture-mensuelle-comptable-accelerer-arrete-comptes-ia-bf",
+        "title": "Accélérer la Clôture Mensuelle des Comptes : Passer de 15 Jours à 48 Heures grâce aux Automatisations IA",
+        "kw": "clôture mensuelle comptable rapide ia burkina, arrêté des comptes automatisé ouaga"
+      },
+      {
+        "id": "117",
+        "slug": "gestion-notes-frais-collaborateurs-scan-validation-ia-ouaga",
+        "title": "Gestion et Contrôle des Notes de Frais par Smartphone : Scan des Reçus et Validation Intelligente à Ouaga",
+        "kw": "gestion notes de frais mobile ia burkina, scan reçu validation dépense ouaga"
+      },
+      {
+        "id": "118",
+        "slug": "analyse-solvabilite-clients-b2b-scoring-credit-ia-sahel",
+        "title": "Évaluer la Solvabilité de ses Clients B2B avant de Livrer à Crédit : Le Scoring Financier Prédictif à Ouaga",
+        "kw": "évaluation solvabilité clients crédit ia burkina, scoring financier b2b ouagadougou"
+      },
+      {
+        "id": "119",
+        "slug": "conformite-bancaire-kyc-aml-anti-blanchiment-ia-uemoa-bf",
+        "title": "Conformité Bancaire KYC et Lutte Anti-Blanchiment (AML) : Solutions d'IA pour Établissements Financiers au Faso",
+        "kw": "kyc aml conformité bancaire ia burkina, anti blanchiment uemoa ouagadougou"
+      },
+      {
+        "id": "120",
+        "slug": "cabinet-integration-ia-finance-comptabilite-barouba-group-ouaga",
+        "title": "Modernisation Financière et Déploiement d'IA Comptable avec BAROUBA GROUP à Ouagadougou",
+        "kw": "intégration ia finance comptabilité barouba group, automatisation financière burkina"
+      }
+    ]
+  },
+  {
+    "name": "Cluster 7 : L'IA pour les Juristes, Cabinets d'Avocats & Notaires à Ouaga",
+    "range": [
+      121,
+      140
+    ],
+    "articles": [
+      {
+        "id": "121",
+        "slug": "intelligence-artificielle-professions-juridiques-burkina-faso",
+        "title": "L'Intelligence Artificielle pour les Juristes, Avocats et Notaires au Burkina Faso : Le Guide Déontologique",
+        "kw": "ia professions juridiques burkina faso, intelligence artificielle avocat notaire ouaga"
+      },
+      {
+        "id": "122",
+        "slug": "analyse-synthese-contrats-commerciaux-droit-ohada-par-ia",
+        "title": "Analyse et Synthèse Rapide de Contrats Commerciaux selon le Droit OHADA grâce à l'IA à Ouagadougou",
+        "kw": "analyse contrats droit ohada ia burkina, relecture juridique contrats chatgpt ouaga"
+      },
+      {
+        "id": "123",
+        "slug": "recherche-jurisprudence-doctrine-africaine-acceleree-ia-ouaga",
+        "title": "Recherche Accélérée de Jurisprudence CCJA et Doctrine Africaine par Modèles de Langage Spécialisés",
+        "kw": "recherche jurisprudence ccja ia burkina, recherche juridique droit des affaires ouaga"
+      },
+      {
+        "id": "124",
+        "slug": "redaction-projets-actes-notaries-statuts-societes-ia-bf",
+        "title": "Aide à la Rédaction de Projets d'Actes Notariés et Statuts de Sociétés SARL/SAS au Burkina avec l'IA",
+        "kw": "rédaction statuts société sarl ia burkina, actes notariés intelligence artificielle ouaga"
+      },
+      {
+        "id": "125",
+        "slug": "conformite-cil-protection-donnees-personnelles-audit-ia-bf",
+        "title": "Audit de Conformité aux Directives de la CIL : Cartographier les Risques Juridiques de son Entreprise par IA",
+        "kw": "audit conformité cil données personnelles burkina, diagnostic juridique cil ouaga"
+      },
+      {
+        "id": "126",
+        "slug": "secret-professionnel-confidentialite-avocats-usage-ia-ouaga",
+        "title": "Secret Professionnel et Confidentialité : Comment Utiliser l'IA sans Jamais Exposer les Dossiers de ses Clients",
+        "kw": "secret professionnel avocat usage ia burkina, anonymisation dossiers juridiques ouaga"
+      },
+      {
+        "id": "127",
+        "slug": "detection-clauses-abusives-pieges-contrats-fournisseurs-ia-bf",
+        "title": "Détecter les Clauses Abusives et Risques Cachés dans les Contrats Fournisseurs et Partenariats à Ouaga",
+        "kw": "détection clauses abusives contrats ia burkina, audit risques juridiques contrats ouaga"
+      },
+      {
+        "id": "128",
+        "slug": "redaction-conclusions-memoires-plaidoiries-aide-ia-ouaga",
+        "title": "Structurer et Rédiger des Ébauches de Conclusions et Mémoires Juridiques avec l'Assistance de l'IA à Ouaga",
+        "kw": "rédaction conclusions juridiques ia burkina, mémoire plaidoirie assistance ia ouaga"
+      },
+      {
+        "id": "129",
+        "slug": "veille-juridique-journal-officiel-burkina-faso-automatisee-ia",
+        "title": "Automatiser la Veille du Journal Officiel du Burkina Faso : Être Alerté Immédiatement des Nouveaux Décrets",
+        "kw": "veille journal officiel burkina ia, alertes nouveaux décrets lois ouagadougou"
+      },
+      {
+        "id": "130",
+        "slug": "gestion-contentieux-recouvrement-judiciaire-echeances-ia-bf",
+        "title": "Suivi des Contentieux et Calcul Automatique des Délais de Prescription Juridique par IA à Ouagadougou",
+        "kw": "gestion contentieux délais prescription ia burkina, suivi dossiers judiciaires ouaga"
+      },
+      {
+        "id": "131",
+        "slug": "droit-travail-burkinabe-resolution-litiges-licenciements-ia",
+        "title": "Calcul des Indemnités de Rupture et Sécurisation des Procédures de Licenciement selon le Code du Travail",
+        "kw": "calcul indemnités licenciement code travail burkina ia, litiges prudhommes ouaga"
+      },
+      {
+        "id": "132",
+        "slug": "due-diligence-juridique-fusions-acquisitions-entreprises-ouaga",
+        "title": "Accélérer les Audits Juridiques (Due Diligence) lors de Fusions, Remplois et Cessions d'Entreprises à Ouaga",
+        "kw": "due diligence juridique ia burkina, audit fusion acquisition entreprise ouaga"
+      },
+      {
+        "id": "133",
+        "slug": "droit-propriete-intellectuelle-oapi-redaction-brevets-marques-ia",
+        "title": "Assistance au Dépôt de Marques et Brevets OAPI : Vérifier les Risques de Conflit d'Antériorité par IA",
+        "kw": "dépôt marque brevet oapi ia burkina, vérification antériorité propriété intellectuelle"
+      },
+      {
+        "id": "134",
+        "slug": "anonymisation-automatique-jugements-pieces-juridiques-ia-bf",
+        "title": "Anonymiser Automatiquement des Décisions de Justice et Pièces de Procédure avant Publication ou Partage",
+        "kw": "anonymisation décisions justice ia burkina, caviardage documents confidentiels ouaga"
+      },
+      {
+        "id": "135",
+        "slug": "comparatif-versions-contrats-redlining-automatique-ia-ouaga",
+        "title": "Redlining Automatique : Comparer Deux Versions d'un Contrat de 80 Pages et Repérer Chaque Modification Subtile",
+        "kw": "comparaison versions contrats redlining ia burkina, révision contrat affaires ouaga"
+      },
+      {
+        "id": "136",
+        "slug": "chatbots-juridiques-internes-repondre-questions-droit-salaries",
+        "title": "Déployer un Assistant Juridique Interne pour Répondre aux Questions Récurrentes des Opérationnels à Ouaga",
+        "kw": "assistant juridique interne entreprise ia burkina, chatbot questions droit ouaga"
+      },
+      {
+        "id": "137",
+        "slug": "droit-minier-burkinabe-veille-cahiers-charges-rse-ia-sahel",
+        "title": "Le Droit Minier au Burkina Faso : Veille Réglementaire sur le Code Minier et les Obligations RSE par IA",
+        "kw": "droit minier code minier burkina ia, obligations rse secteur minier ouaga"
+      },
+      {
+        "id": "138",
+        "slug": "arbitrage-commercial-resolution-amiable-litiges-mediation-ia",
+        "title": "Aide à la Médiation et Négociation d'Accords Transactionnels dans les Litiges Commerciaux à Ouagadougou",
+        "kw": "médiation arbitrage commercial ia burkina, accord transactionnel amiable litige ouaga"
+      },
+      {
+        "id": "139",
+        "slug": "formation-avocats-juristes-utilisation-ethique-outils-ia-bf",
+        "title": "Former les Cabinets Juridiques aux Outils d'IA : Maîtrise des Prompts Juridiques et Règles Déontologiques",
+        "kw": "formation juristes ia burkina faso, cours prompt engineering juridique ouaga"
+      },
+      {
+        "id": "140",
+        "slug": "cabinet-legaltech-accompagnement-juridique-barouba-group-ouaga",
+        "title": "Solutions LegalTech & Accompagnement IA pour Professions Juridiques avec BAROUBA GROUP à Ouagadougou",
+        "kw": "legaltech burkina faso barouba group, solutions ia cabinets juridiques ouaga"
+      }
+    ]
+  },
+  {
+    "name": "Cluster 8 : L'IA dans l'Agriculture, Élevage & Agroalimentaire au Burkina",
+    "range": [
+      141,
+      160
+    ],
+    "articles": [
+      {
+        "id": "141",
+        "slug": "intelligence-artificielle-agriculture-burkina-faso-agritech-guide",
+        "title": "L'Intelligence Artificielle au Service de l'Agriculture et de l'Élevage au Burkina Faso : Le Guide AgriTech",
+        "kw": "ia agriculture burkina faso, agritech intelligence artificielle ouagadougou"
+      },
+      {
+        "id": "142",
+        "slug": "diagnostic-maladies-cultures-smartphone-vision-ia-burkina",
+        "title": "Diagnostiquer les Maladies des Plantes (Coton, Maïs, Tomate) par Simple Photo au Smartphone grâce à l'IA",
+        "kw": "diagnostic maladie plantes photo ia burkina, détection ravageurs cultures ouaga"
+      },
+      {
+        "id": "143",
+        "slug": "prevision-rendements-agricoles-cours-marches-cereales-ia-sahel",
+        "title": "Anticiper les Rendements et Prévoir les Cours des Céréales au Sahel : Modèles Prédictifs pour Coopératives",
+        "kw": "prévision rendements agricoles ia burkina, cours céréales marchés sahel ouaga"
+      },
+      {
+        "id": "144",
+        "slug": "optimisation-irrigation-goutte-a-goutte-capteurs-ia-burkina",
+        "title": "Irrigation Intelligente et Économie d'Eau au Burkina : Piloter le Goutte-à-Goutte par Capteurs Connectés et IA",
+        "kw": "irrigation intelligente ia burkina faso, économie eau agriculture sahel ouaga"
+      },
+      {
+        "id": "145",
+        "slug": "meteo-agricole-hyper-locale-satellite-ia-prevention-secheresse",
+        "title": "Météo Agricole Prédictive Hyper-Locale par Satellite et IA : Planifier les Semis et Prévenir les Risques",
+        "kw": "météo agricole satellite ia burkina, calendrier semis prédictif sahel ouaga"
+      },
+      {
+        "id": "146",
+        "slug": "gestion-intelligente-troupeaux-sante-animale-ia-elevage-bf",
+        "title": "Suivi de la Santé et Surveillance du Bétail par Vision Artificielle : L'IA au Service des Éleveurs Burkinabè",
+        "kw": "ia élevage bétail santé animale burkina, suivi troupeau caméra intelligente ouaga"
+      },
+      {
+        "id": "147",
+        "slug": "tracabilite-filiere-anacarde-mangue-karite-blockchain-ia-bf",
+        "title": "Traçabilité des Filières d'Exportation (Anacarde, Mangue, Karité) : Garantir la Qualité Bio grâce à l'IA",
+        "kw": "traçabilité anacarde sésame karité ia burkina, certification exportation bio ouaga"
+      },
+      {
+        "id": "148",
+        "slug": "dosage-optimal-engrais-pesticides-ia-sante-sols-burkinabe",
+        "title": "Analyse des Sols et Dosage Précis des Engrais : Réduire les Coûts et Préserver les Terres Agricoles par IA",
+        "kw": "analyse des sols engrais ia burkina, fertilisation précise cultures ouagadougou"
+      },
+      {
+        "id": "149",
+        "slug": "lutte-anti-acridienne-detection-precose-criquets-drones-ia-sahel",
+        "title": "Détection Précoce des Essaims de Criquets et Ravageurs au Sahel par Imagerie Drone et IA Prédictive",
+        "kw": "lutte anti acridienne drone ia sahel, détection criquets pèlerins burkina"
+      },
+      {
+        "id": "150",
+        "slug": "tri-calibrage-automatique-fruits-legumes-cameras-ia-usines-bf",
+        "title": "Tri et Calibrage Automatique des Fruits (Mangues, Tomates) en Usine de Transformation par Caméras IA à Bobo",
+        "kw": "tri automatique fruits caméras ia burkina, calibrage mangues usine bobo dioulasso"
+      },
+      {
+        "id": "151",
+        "slug": "gestion-stocks-silos-prevention-pertes-post-recolte-ia-bf",
+        "title": "Gestion Intelligente des Silos à Grains et Prévention des Pertes Post-Récolte par Capteurs et IA au Faso",
+        "kw": "gestion silos céréales pertes post récolte ia burkina, conservation grains ouaga"
+      },
+      {
+        "id": "152",
+        "slug": "conseil-agricole-vocal-langues-locales-whatsapp-moore-dioula",
+        "title": "Le Vulgarisateur Agricole Vocal sur WhatsApp : Conseiller les Producteurs Ruraux en Mooré et Dioula par IA",
+        "kw": "conseil agricole vocal whatsapp mooré burkina, chatbot paysan audio ouaga"
+      },
+      {
+        "id": "153",
+        "slug": "financement-agricole-credit-scoring-producteurs-ia-uemoa",
+        "title": "Faciliter l'Accès au Crédit Bancaire des Petits Producteurs : Le Scoring Agricole Prédictif par IA au Sahel",
+        "kw": "crédit agricole scoring ia burkina faso, financement petits producteurs ouaga"
+      },
+      {
+        "id": "154",
+        "slug": "surveillance-feux-brousse-parcs-naturels-satellites-ia-bf",
+        "title": "Détection en Temps Réel des Feux de Brousse et Déforestation dans les Réserves Naturelles par Satellites et IA",
+        "kw": "surveillance feux de brousse satellite ia burkina, protection environnement sahel"
+      },
+      {
+        "id": "155",
+        "slug": "pisciculture-aquaculture-intelligente-gestion-bassins-ia-ouaga",
+        "title": "Pisciculture et Aquaculture de Précision au Burkina : Gestion de la Qualité de l'Eau et Nourrissage par IA",
+        "kw": "pisciculture intelligente ia burkina, gestion bassins silures tilapias ouaga"
+      },
+      {
+        "id": "156",
+        "slug": "semences-ameliorees-selection-varietes-resistantes-secheresse",
+        "title": "L'IA dans la Recherche Agronomique : Sélectionner des Variétés Résistantes au Stress Hydrique et Chaud",
+        "kw": "sélection semences résistantes sécheresse ia burkina, recherche agronomique inera ouaga"
+      },
+      {
+        "id": "157",
+        "slug": "valorisation-dechets-agricoles-biogaz-compostage-optimise-ia",
+        "title": "Optimiser la Production de Biogaz et de Compost Organique à Partir des Déchets Agricoles grâce à l'IA",
+        "kw": "biogaz compostage déchets agricoles ia burkina, valorisation biomasse ouaga"
+      },
+      {
+        "id": "158",
+        "slug": "apiculture-moderne-ruches-connectees-surveillance-miel-ia-bf",
+        "title": "Apiculture Moderne et Ruches Connectées : Suivre la Santé des Abeilles et la Production de Miel par IA",
+        "kw": "ruches connectées apiculture ia burkina, production miel pur ouagadougou"
+      },
+      {
+        "id": "159",
+        "slug": "marche-agricole-digital-mise-relation-producteurs-acheteurs-ia",
+        "title": "Marketplaces Agricoles Intelligentes : Connecter Directement Producteurs Ruraux et Grossistes de Ouaga par IA",
+        "kw": "marché agricole en ligne ia burkina, mise en relation grossistes paysans ouaga"
+      },
+      {
+        "id": "160",
+        "slug": "agritech-solutions-intelligence-artificielle-barouba-group-bf",
+        "title": "Développement de Solutions AgriTech & IA pour l'Agro-Business avec BAROUBA GROUP au Burkina Faso",
+        "kw": "solutions agritech ia barouba group, intelligence artificielle agroalimentaire burkina"
+      }
+    ]
+  },
+  {
+    "name": "Cluster 9 : L'IA dans le BTP, Immobilier & Gestion Urbaine",
+    "range": [
+      161,
+      180
+    ],
+    "articles": [
+      {
+        "id": "161",
+        "slug": "intelligence-artificielle-btp-immobilier-burkina-faso-guide",
+        "title": "L'Intelligence Artificielle dans le BTP et l'Immobilier au Burkina Faso : Révolutionner la Construction",
+        "kw": "ia btp immobilier burkina faso, intelligence artificielle construction ouagadougou"
+      },
+      {
+        "id": "162",
+        "slug": "estimation-immobiliere-predictive-prix-terrains-villas-ouaga",
+        "title": "Estimation Immobilière Prédictive à Ouagadougou : Modéliser le Prix au M² des Parcelles et Villas par IA",
+        "kw": "estimation immobilière ia ouagadougou, prix terrain mètre carré ouaga 2000"
+      },
+      {
+        "id": "163",
+        "slug": "analyse-plans-architecturaux-metres-automatiques-ia-btp-bf",
+        "title": "Analyse Automatique de Plans Architecturaux et Devis Quantitatifs Estimatifs (DQE) par IA à Ouaga",
+        "kw": "métrés automatiques plans ia btp burkina, lecture plan architecte intelligence artificielle"
+      },
+      {
+        "id": "164",
+        "slug": "suivi-avancement-chantiers-btp-drones-vision-ia-burkina",
+        "title": "Suivi de Chantier par Drone et Vision IA : Détecter les Retards et Écarts d'Exécution en Temps Réel au Faso",
+        "kw": "suivi chantier drone ia burkina faso, détection retards construction btp ouaga"
+      },
+      {
+        "id": "165",
+        "slug": "conception-generative-batiments-bioclimatiques-chaleur-sahel",
+        "title": "Architecture Générative par IA : Concevoir des Bâtiments Bioclimatiques et Économes en Énergie au Sahel",
+        "kw": "conception générative architecture bioclimatique burkina, bâtiment résistant chaleur sahel"
+      },
+      {
+        "id": "166",
+        "slug": "gestion-locative-intelligente-recouvrement-loyers-whatsapp-ia",
+        "title": "Gestion Locative Automatisée : Relance des Loyers Impayés et Réception des Réclamations Locataires par IA",
+        "kw": "gestion locative ia whatsapp burkina, recouvrement loyers impayés ouagadougou"
+      },
+      {
+        "id": "167",
+        "slug": "visites-virtuelles-3d-home-staging-virtuel-immobilier-ouaga",
+        "title": "Home Staging Virtuel et Visites 3D Immersives Générées par IA pour Agences Immobilières à Ouaga",
+        "kw": "home staging virtuel ia ouagadougou, visite virtuelle 3d immobilier burkina"
+      },
+      {
+        "id": "168",
+        "slug": "securite-chantiers-btp-detection-non-port-epi-cameras-ia-bf",
+        "title": "Sécurité sur les Chantiers BTP : Détection Automatique du Non-Port des Équipements (Casques, Gilets) par Caméras IA",
+        "kw": "sécurité chantier btp caméras ia burkina, détection port casque protection ouaga"
+      },
+      {
+        "id": "169",
+        "slug": "optimisation-logistique-materiaux-construction-ciment-fer-ouaga",
+        "title": "Optimiser les Commandes de Matériaux (Ciment, Fer, Sable) et Éviter les Pénuries de Chantier grâce à l'IA",
+        "kw": "gestion approvisionnement chantier btp ia burkina, commande matériaux construction ouaga"
+      },
+      {
+        "id": "170",
+        "slug": "maintenance-predictive-batiments-climatiseurs-ascenseurs-ouaga",
+        "title": "Maintenance Prédictive des Équipements Tertiaires (Climatisation Centrale, Groupes, Ascenseurs) par IA à Ouaga",
+        "kw": "maintenance prédictive climatisation ia ouagadougou, gestion technique bâtiment burkina"
+      },
+      {
+        "id": "171",
+        "slug": "cadastre-cartographie-urbaine-detection-constructions-anarchiques",
+        "title": "Modernisation du Cadastre et Urbanisme : Détection des Constructions Non Autorisées par Imagerie Satellite et IA",
+        "kw": "cadastre moderne cartographie ia burkina, urbanisme imagerie satellite ouagadougou"
+      },
+      {
+        "id": "172",
+        "slug": "calcul-structurel-resistance-materiaux-beton-ia-ingenieurs-bf",
+        "title": "Assistance au Calcul de Structures et Résistance des Bétons pour Cabinets d'Ingénierie BTP au Burkina",
+        "kw": "calcul structure béton armé ia burkina, logiciel ingénierie génie civil ouaga"
+      },
+      {
+        "id": "173",
+        "slug": "generation-annonces-immobilieres-vendeuses-redaction-ia-ouaga",
+        "title": "Générer 50 Annonces Immobilières Vendeuses et Partageables sur Facebook en 5 Minutes grâce à l'IA à Ouaga",
+        "kw": "rédaction annonce immobilière ia burkina, textes vente villa chatgpt ouagadougou"
+      },
+      {
+        "id": "174",
+        "slug": "gestion-eau-pluviale-prevention-inondations-urbaines-ia-ouaga",
+        "title": "Modélisation des Écoulements Pluviaux et Prévention des Inondations Urbaines à Ouagadougou par IA",
+        "kw": "prévention inondations drainage pluvial ia ouaga, gestion voirie urbaine burkina"
+      },
+      {
+        "id": "175",
+        "slug": "prospection-fonciere-analyse-opportunites-lotissements-sahel",
+        "title": "Identifier les Zones d'Expansion et Opportunités Foncières à Fort Potentiel autour de Ouaga grâce à la Data",
+        "kw": "prospection foncière données ia burkina, investissement terrain prometteur ouaga"
+      },
+      {
+        "id": "176",
+        "slug": "bim-building-information-modeling-connecte-ia-entreprises-bf",
+        "title": "Le BIM (Building Information Modeling) Augmenté par l'IA : Gérer le Cycle de Vie des Bâtiments au Burkina",
+        "kw": "bim building information modeling ia burkina, maquette numérique bâtiment ouaga"
+      },
+      {
+        "id": "177",
+        "slug": "gestion-dechets-chantier-recyclage-gravats-ia-btp-durable",
+        "title": "Éco-Construction et Tri des Déchets de Chantier : Optimiser le Recyclage des Gravats par IA à Ouagadougou",
+        "kw": "gestion déchets chantier recyclage ia burkina, btp écologique durable ouaga"
+      },
+      {
+        "id": "178",
+        "slug": "analyse-risques-appels-offres-publics-btp-analyseur-ia-bf",
+        "title": "Analyser un Dossier d'Appel d'Offres Public (DAO) de 300 Pages en 15 Minutes : Repérer les Risques Financiers",
+        "kw": "analyse appel offres dao btp ia burkina, décryptage cahier des charges marchés publics ouaga"
+      },
+      {
+        "id": "179",
+        "slug": "smart-city-eclairage-public-intelligent-feux-tricolores-ia-ouaga",
+        "title": "Initiatives Smart City à Ouagadougou : Régulation Intelligente des Feux Tricolores et Éclairage Solaire par IA",
+        "kw": "smart city ouagadougou feux intelligents ia, gestion trafic urbain burkina"
+      },
+      {
+        "id": "180",
+        "slug": "solutions-ia-btp-immobilier-barouba-group-ouagadougou",
+        "title": "Déploiement de Solutions IA & Drones pour le BTP et l'Immobilier avec BAROUBA GROUP à Ouagadougou",
+        "kw": "solutions ia btp immobilier barouba group, agence tech construction burkina"
+      }
+    ]
+  },
+  {
+    "name": "Cluster 10 : L'IA dans le Secteur Minier, Énergie & Industrie Lourde",
+    "range": [
+      181,
+      200
+    ],
+    "articles": [
+      {
+        "id": "181",
+        "slug": "intelligence-artificielle-secteur-minier-burkina-faso-guide",
+        "title": "L'Intelligence Artificielle dans l'Industrie Minière au Burkina Faso : Optimiser l'Exploitation de l'Or",
+        "kw": "ia secteur minier burkina faso, intelligence artificielle mines or ouagadougou"
+      },
+      {
+        "id": "182",
+        "slug": "maintenance-predictive-concasseurs-moulins-engins-miniers-ia",
+        "title": "Maintenance Prédictive des Concasseurs et Broyeurs Miniers : Éviter les Arrêts d'Usine Coûteux grâce à l'IA",
+        "kw": "maintenance prédictive concasseur mine burkina, capteurs vibration ia industrie ouaga"
+      },
+      {
+        "id": "183",
+        "slug": "optimisation-rendement-recuperation-or-cyanuration-ia-bf",
+        "title": "Optimiser le Taux de Récupération de l'Or en Usine de Traitement Métallurgique par Algorithmes d'IA au Faso",
+        "kw": "taux récupération or métallurgie ia burkina, optimisation cyanuration lixiviation ouaga"
+      },
+      {
+        "id": "184",
+        "slug": "gestion-consommation-carburant-flottes-camions-miniers-ia-bf",
+        "title": "Traquer et Réduire les Pertes de Carburant sur les Flottes de Dumpers et Pelles Minières grâce à la Télématique IA",
+        "kw": "suivi carburant camions miniers ia burkina, réduction consommation gasoil mines sahel"
+      },
+      {
+        "id": "185",
+        "slug": "surveillance-stabilite-digues-residus-miniers-drones-ia-bf",
+        "title": "Surveillance de la Stabilité des Digues de Résidus Miniers (Tailings) par Drones et Détection d'Anomalies IA",
+        "kw": "surveillance digues résidus miniers drone ia burkina, sécurité bassins décantation ouaga"
+      },
+      {
+        "id": "186",
+        "slug": "securite-hse-mines-detection-zones-danger-alertes-temps-reel",
+        "title": "Sécurité HSE dans les Mines : Détection des Intrusions en Zone de Tir et Non-Respect des Protocoles par Caméras IA",
+        "kw": "sécurité hse mine caméras ia burkina, alertes temps réel zone de tir ouaga"
+      },
+      {
+        "id": "187",
+        "slug": "optimisation-centrales-solaires-hybrides-groupes-electrogenes-bf",
+        "title": "Gestion Intelligente des Centrales Hybrides Solaire-Diesel dans les Sites Industriels Éloignés au Faso",
+        "kw": "gestion centrale solaire hybride diesel ia burkina, optimisation énergie industrielle ouaga"
+      },
+      {
+        "id": "188",
+        "slug": "prospection-geologique-cartographie-anomalies-minières-ia",
+        "title": "L'IA en Exploration Géologique : Croiser Données Géophysiques et Sondages pour Détecter de Nouveaux Gisements",
+        "kw": "exploration géologique or ia burkina, cartographie anomalies minières ouaga"
+      },
+      {
+        "id": "189",
+        "slug": "gestion-stocks-pieces-rechange-critiques-anticipation-commandes",
+        "title": "Gestion Prédictive des Pièces de Rechange Critiques : Éviter les Ruptures Logistiques Importées d'Europe ou d'Asie",
+        "kw": "stocks pièces de rechange mine ia burkina, logistique minière prédictive ouaga"
+      },
+      {
+        "id": "190",
+        "slug": "surveillance-environnementale-qualite-air-eaux-rejets-ia-bf",
+        "title": "Surveillance Environnementale et RSE : Suivi Automatisé de la Qualité des Eaux et des Rejets Poussières par IA",
+        "kw": "surveillance environnementale mine ia burkina, contrôle qualité eau rse ouaga"
+      },
+      {
+        "id": "191",
+        "slug": "optimisation-plans-tir-mines-ciel-ouvert-fragmentation-ia",
+        "title": "Optimiser les Plans de Tir et la Fragmentation des Roches par Simulation Algorithmique en Mine à Ciel Ouvert",
+        "kw": "optimisation plans de tir mine ciel ouvert ia burkina, simulation dynamitage roches ouaga"
+      },
+      {
+        "id": "192",
+        "slug": "analyse-fatigue-chauffeurs-engins-lourds-detection-somnolence",
+        "title": "Détection de la Somnolence et de la Fatigue des Chauffeurs d'Engins Miniers par Caméras Embarquées IA",
+        "kw": "détection fatigue chauffeurs camions miniers ia burkina, sécurité routière site minier"
+      },
+      {
+        "id": "193",
+        "slug": "planification-maintenance-arrets-techniques-usines-ouaga",
+        "title": "Planifier les Arrêts Techniques Majeurs d'Usines Minières : Réduire le Temps d'Intervention grâce à l'IA",
+        "kw": "planification arrêt technique usine mine ia burkina, ordonnancement maintenance ouaga"
+      },
+      {
+        "id": "194",
+        "slug": "conformite-reglementaire-locale-local-content-fournisseurs-ia",
+        "title": "Gestion du Contenu Local (Local Content) Minier : Sélectionner et Auditer les Fournisseurs Burkinabè par IA",
+        "kw": "local content minier fournisseurs burkinabè ia, audit sous traitants locaux ouaga"
+      },
+      {
+        "id": "195",
+        "slug": "stabilite-reseaux-electriques-haute-tension-sonabel-ia-bf",
+        "title": "Stabilité des Réseaux Électriques Industriels : Anticiper les Baisses de Tension et Déclenchements par IA",
+        "kw": "stabilité réseau électrique industriel ia burkina, micro réseaux sonabel usines ouaga"
+      },
+      {
+        "id": "196",
+        "slug": "forage-dynamitage-precis-localisation-filons-auriferes-ia",
+        "title": "Forage de Précision : Guider les Foreuses Automatisées vers les Filons Aurifères grâce à la Modélisation 3D IA",
+        "kw": "forage guidé modélisation 3d ia mine burkina, cartographie filons aurifères ouaga"
+      },
+      {
+        "id": "197",
+        "slug": "recuperation-metaux-recyclage-dechets-electroniques-industries",
+        "title": "Valorisation des Scories et Recyclage des Déchets Miniers : Procédés Optimisés par Intelligence Artificielle",
+        "kw": "recyclage scories déchets miniers ia burkina, métallurgie extractive circulaire ouaga"
+      },
+      {
+        "id": "198",
+        "slug": "jumeaux-numeriques-usines-traitement-minerai-simulation-bf",
+        "title": "Les Jumeaux Numériques (Digital Twins) dans les Mines Burkinabè : Simuler les Flux de Minerai en Temps Réel",
+        "kw": "digital twin mine or burkina, jumeau numérique usine traitement ouagadougou"
+      },
+      {
+        "id": "199",
+        "slug": "audit-energie-decarbonation-sites-industriels-ia-sahel",
+        "title": "Audit Énergétique et Réduction de l'Empreinte Carbone des Sites Miniers : Arbitrages Énergétiques par IA",
+        "kw": "décarbonation site minier ia burkina, audit énergétique industrie sahel ouaga"
+      },
+      {
+        "id": "200",
+        "slug": "partenaire-ia-industrie-mines-barouba-group-burkina-faso",
+        "title": "Solutions d'IA Industrielle & Optimisation Minière avec BAROUBA GROUP au Burkina Faso",
+        "kw": "solutions ia industrie minière barouba group, cabinet conseil ia mines burkina"
+      }
+    ]
+  },
+  {
+    "name": "Cluster 11 : L'IA dans la Santé, Cliniques & Pharmacies à Ouagadougou",
+    "range": [
+      201,
+      220
+    ],
+    "articles": [
+      {
+        "id": "201",
+        "slug": "intelligence-artificielle-sante-cliniques-burkina-faso-guide",
+        "title": "L'Intelligence Artificielle dans la Santé au Burkina Faso : Moderniser Cliniques, Hôpitaux et Cabinets",
+        "kw": "ia santé cliniques burkina faso, télémédecine intelligence artificielle ouaga"
+      },
+      {
+        "id": "202",
+        "slug": "triage-medical-oriente-patients-urgences-ia-messagerie-bf",
+        "title": "Triage Médical Assisté et Orientation des Patients par IA sur WhatsApp : Désengorger les Urgences à Ouaga",
+        "kw": "triage médical assisté ia burkina, orientation patients whatsapp santé ouaga"
+      },
+      {
+        "id": "203",
+        "slug": "gestion-stocks-pharmacies-prevention-ruptures-medicaments-ouaga",
+        "title": "Gestion Prédictive des Stocks d'Officines : Éliminer les Ruptures de Médicaments Clés à Ouagadougou grâce à l'IA",
+        "kw": "gestion stocks pharmacie ia burkina, éviter rupture médicaments officine ouaga"
+      },
+      {
+        "id": "204",
+        "slug": "aide-diagnostic-radiologique-radiographies-poumon-ia-sahel",
+        "title": "Aide au Diagnostic en Imagerie Médicale : Détecter Pneumonies et Anomalies sur Radiographies Pulmonaires par IA",
+        "kw": "aide diagnostic radiologie ia burkina, dépistage radio thorax tuberculose sahel"
+      },
+      {
+        "id": "205",
+        "slug": "transcription-automatique-comptes-rendus-medicaux-voix-ia-bf",
+        "title": "Dicter ses Comptes-Rendus Médicaux à l'IA : Gagner 2 Heures par Jour par Médecin dans les Cliniques de Ouaga",
+        "kw": "dictée vocale médicale ia burkina, transcription automatique dossier patient ouaga"
+      },
+      {
+        "id": "206",
+        "slug": "surveillance-epidemique-detection-foyers-paludisme-dengue-ia",
+        "title": "Surveillance Épidémiologique Précoce : Anticiper les Pics de Paludisme et Dengue par Algorithmes d'IA à Ouaga",
+        "kw": "surveillance épidémie paludisme dengue ia burkina, prédiction pics sanitaires sahel"
+      },
+      {
+        "id": "207",
+        "slug": "dossier-medical-electronique-interoperable-recherche-ia-bf",
+        "title": "Le Dossier Médical Informatisé Intelligent : Recherche Instantanée d'Antécédents et Allergies par IA à Ouaga",
+        "kw": "dossier médical partagé ia burkina, dossier patient informatisé clinique ouaga"
+      },
+      {
+        "id": "208",
+        "slug": "interaction-medicamenteuse-alerte-automatique-prescription-ia",
+        "title": "Sécuriser les Prescriptions Médicales : Détection Automatique des Contre-Indications et Interactions Dangereuses",
+        "kw": "détection interactions médicamenteuses ia burkina, sécurité prescription ordonnance ouaga"
+      },
+      {
+        "id": "209",
+        "slug": "gestion-rendez-vous-consultations-rappel-sms-whatsapp-ia-bf",
+        "title": "Réduire le Taux de Rendez-Vous Médicaux Manqués : Système de Rappels Intelligents WhatsApp par IA à Ouaga",
+        "kw": "gestion rdv médicaux sms whatsapp ia burkina, rappel consultation clinique ouaga"
+      },
+      {
+        "id": "210",
+        "slug": "teleconsultation-assistee-ia-soins-zones-rurales-eloignees",
+        "title": "Télémédecine Augmentée en Milieu Rural : Guider les Infirmiers de Brousse avec des Outils de Diagnostic IA",
+        "kw": "télémédecine rurale ia burkina faso, soins santé zones isolées sahel"
+      },
+      {
+        "id": "211",
+        "slug": "depistage-retinopathie-diabetique-photos-fond-oeil-ia-bf",
+        "title": "Dépistage Mobile de la Rétinopathie Diabétique : Analyser les Fonds d'Œil au Smartphone par Vision IA au Faso",
+        "kw": "dépistage rétinopathie diabétique smartphone ia burkina, ophtalmologie ia ouaga"
+      },
+      {
+        "id": "212",
+        "slug": "gestion-lits-hospitaliers-flux-chambres-cliniques-ouaga",
+        "title": "Optimiser l'Occupation des Lits d'Hospitalisation et les Plannings de Blocs Opératoires par IA à Ouagadougou",
+        "kw": "gestion lits hospitaliers ia burkina, planning bloc opératoire clinique ouaga"
+      },
+      {
+        "id": "213",
+        "slug": "ethique-medicale-confidentialite-donnees-sante-cil-burkina",
+        "title": "Confidentialité Absolue des Données de Santé : Respecter le Secret Médical et les Normes CIL avec l'IA au Faso",
+        "kw": "confidentialité données santé cil burkina, éthique médicale ia ouagadougou"
+      },
+      {
+        "id": "214",
+        "slug": "analyse-biologique-laboratoire-detection-bacteries-ia-ouaga",
+        "title": "L'IA dans les Laboratoires d'Analyses Médicales : Comptage des Cellules et Détection de Parasites Sanguins à Ouaga",
+        "kw": "laboratoire analyse médicale ia burkina, comptage cellules frottis sanguin ouaga"
+      },
+      {
+        "id": "215",
+        "slug": "suivi-femmes-enceintes-consultations-prenatales-sms-ia-bf",
+        "title": "Suivi Prénatal et Santé Maternelle : Calendrier Automatisé de Rappels pour Femmes Enceintes en Langues Locales",
+        "kw": "santé maternelle suivi prénatal sms ia burkina, rappels consultations femmes enceintes"
+      },
+      {
+        "id": "216",
+        "slug": "gestion-facturation-assurances-mutuelles-sante-ia-cliniques",
+        "title": "Accélérer le Remboursement des Prises en Charge Mutuelles et Assurances Santé par Traitement IA des Feuilles",
+        "kw": "facturation assurance santé ia clinique burkina, prise en charge mutuelle rapide ouaga"
+      },
+      {
+        "id": "217",
+        "slug": "chatbots-education-nutrition-diabete-hypertension-sahel",
+        "title": "Conseils Nutritionnels et Suivi des Maladies Chroniques (Diabète, Hypertension) par Chatbot IA Médical à Ouaga",
+        "kw": "chatbot suivi diabète hypertension burkina, conseils nutritionnels santé sahel"
+      },
+      {
+        "id": "218",
+        "slug": "formation-personnel-soignant-outils-digitaux-sante-ouaga",
+        "title": "Former Médecins et Infirmiers aux Nouveaux Outils d'Intelligence Artificielle en Santé à Ouagadougou",
+        "kw": "formation soignants e-santé ia burkina, cours outils digitaux médecins ouaga"
+      },
+      {
+        "id": "219",
+        "slug": "lutte-contre-faux-medicaments-verification-authentification-ia",
+        "title": "Traquer les Faux Médicaments : Vérifier l'Authenticité des Emballages et QR Codes par Scan IA au Burkina",
+        "kw": "lutte faux médicaments scan ia burkina, vérification emballages officine ouaga"
+      },
+      {
+        "id": "220",
+        "slug": "solutions-esante-intelligence-artificielle-barouba-group-bf",
+        "title": "Déploiement de Solutions e-Santé & IA pour Cliniques avec BAROUBA GROUP à Ouagadougou",
+        "kw": "solutions e-santé ia barouba group, intégration informatique médicale burkina"
+      }
+    ]
+  },
+  {
+    "name": "Cluster 12 : Bases de Connaissances RAG & IA Privée Souveraine d'Entreprise",
+    "range": [
+      221,
+      240
+    ],
+    "articles": [
+      {
+        "id": "221",
+        "slug": "rag-retrieval-augmented-generation-entreprises-burkina-faso",
+        "title": "Le RAG (Retrieval-Augmented Generation) en Entreprise au Burkina Faso : L'IA Formée sur vos Propres Données",
+        "kw": "rag retrieval augmented generation burkina, ia privée données entreprise ouaga"
+      },
+      {
+        "id": "222",
+        "slug": "deployer-modele-ia-local-llama-mistral-serveur-ouagadougou",
+        "title": "Installer des Modèles d'IA Open-Source (Llama 3, Mistral) en Local sur Serveur Privé à Ouagadougou",
+        "kw": "installer llama mistral serveur privé burkina, ia locale souveraine ouagadougou"
+      },
+      {
+        "id": "223",
+        "slug": "creer-assistant-ia-procedures-internes-sop-collaborateurs-bf",
+        "title": "Créer l'Assistant IA Officiel de son Entreprise : Répondre aux Questions sur les Manuels de Procédures 24/7",
+        "kw": "assistant ia procédures internes burkina, chatbot sop documents entreprise ouaga"
+      },
+      {
+        "id": "224",
+        "slug": "bases-donnees-vectorielles-chroma-qdrant-pinecone-guide-sahel",
+        "title": "Comprendre et Choisir une Base de Données Vectorielle (Chroma, Qdrant, PGVector) pour Projets IA au Sahel",
+        "kw": "base vectorielle pgvector chroma burkina, indexation sémantique documents ouaga"
+      },
+      {
+        "id": "225",
+        "slug": "securiser-donnees-bancaires-minieres-fuites-ia-publique-bf",
+        "title": "Banques, Assurances et Mines : Pourquoi Bannir ChatGPT Public et Installer une Solution IA Souveraine",
+        "kw": "sécurité données bancaires ia burkina, interdiction chatgpt public entreprise ouaga"
+      },
+      {
+        "id": "226",
+        "slug": "decoupage-intelligent-documents-chunking-optimiser-rag-bf",
+        "title": "Techniques de Découpage de Documents (Chunking) : Optimiser la Précision des Réponses de son IA Interne",
+        "kw": "chunking découpage documents rag burkina, optimisation recherche vectorielle ouaga"
+      },
+      {
+        "id": "227",
+        "slug": "integration-base-connaissances-ia-slack-teams-whatsapp-interne",
+        "title": "Intégrer son IA d'Entreprise dans Slack, Microsoft Teams ou un Groupe WhatsApp Privé pour Collaborateurs",
+        "kw": "connecter ia interne slack teams whatsapp burkina, chatbot collaboratif entreprise ouaga"
+      },
+      {
+        "id": "228",
+        "slug": "gestion-droits-acces-documents-confidentiels-dans-rag-ouaga",
+        "title": "Gestion des Droits d'Accès dans un Système RAG : Éviter qu'un Salarié N'Accède aux Données Salariales de Direction",
+        "kw": "droits accès sécurité rag ia burkina, cloisonnement données confidentielles ouaga"
+      },
+      {
+        "id": "229",
+        "slug": "mettre-a-jour-base-connaissances-ia-temps-reel-automatique",
+        "title": "Mettre à Jour la Base de Connaissances de son IA en Temps Réel dès qu'une Nouvelle Note de Service Est Émise",
+        "kw": "mise à jour automatique base ia burkina, actualisation continue vectorielle ouaga"
+      },
+      {
+        "id": "230",
+        "slug": "cout-hebergement-infrastructure-ia-locale-serveurs-gpus-ouaga",
+        "title": "Quel Budget Matériel Prévoir pour Tourner une IA en Interne ? Serveurs GPU, Consommation Électrique à Ouaga",
+        "kw": "coût serveur gpu ia burkina faso, budget infrastructure ia souveraine ouaga"
+      },
+      {
+        "id": "231",
+        "slug": "comparatif-modeles-open-source-llama-gemma-mistral-qwen-bf",
+        "title": "Comparatif des Meilleurs Modèles Open-Source en Français : Llama 3 vs Mistral vs Qwen pour PME Burkinabè",
+        "kw": "comparatif modèles open source ia burkina, meilleur modèle langage français ouaga"
+      },
+      {
+        "id": "232",
+        "slug": "evaluation-qualite-reponses-systeme-rag-metriques-ragas-bf",
+        "title": "Mesurer la Précision de son IA Privée : Utiliser les Métriques de Fidélité et Pertinence (RAGAS) à Ouaga",
+        "kw": "évaluer qualité système rag burkina, tester précision chatbot interne ouaga"
+      },
+      {
+        "id": "233",
+        "slug": "ia-hybride-combiner-modeles-locaux-et-apis-cloud-securisees",
+        "title": "L'Architecture IA Hybride : Traiter les Données Secrètes en Local et Utiliser le Cloud pour le Texte Public",
+        "kw": "architecture ia hybride entreprise burkina, cloud privé public intelligence artificielle"
+      },
+      {
+        "id": "234",
+        "slug": "digitalisation-archives-papier-anciennes-scan-indexation-ia",
+        "title": "Numériser et Interroger 30 Ans d'Archives Papier Administratives grâce à l'OCR et au RAG au Burkina Faso",
+        "kw": "numérisation archives anciennes rag ia burkina, recherche intelligente vieux dossiers ouaga"
+      },
+      {
+        "id": "235",
+        "slug": "fine-tuning-vs-rag-quelle-methode-choisir-pour-entreprise-bf",
+        "title": "Fine-Tuning de Modèle vs RAG : Quelle Approche Est la Plus Économique et Efficace pour une PME à Ouaga ?",
+        "kw": "différence fine tuning et rag burkina, réentraîner modèle ia vs base documentaire"
+      },
+      {
+        "id": "236",
+        "slug": "sauvegarde-plan-reprise-activite-serveur-ia-entreprise-ouaga",
+        "title": "Plan de Reprise d'Activité (PRA) pour Systèmes IA : Sécuriser ses Modèles et Bases Vectorielles à Ouaga",
+        "kw": "sauvegarde pra serveur ia burkina, résilience informatique intelligence artificielle"
+      },
+      {
+        "id": "237",
+        "slug": "formation-administrateurs-systemes-gestion-ia-interne-bf",
+        "title": "Former ses Administrateurs Systèmes à la Gestion et au Monitoring des Modèles d'IA d'Entreprise à Ouaga",
+        "kw": "formation sysadmin gestion ia burkina, monitoring modèles langage serveurs ouaga"
+      },
+      {
+        "id": "238",
+        "slug": "ia-gouvernementale-institutions-publiques-souverainete-bf",
+        "title": "IA Souveraine pour Institutions Publiques et Ministères : Garantir l'Indépendance Numérique du Burkina Faso",
+        "kw": "ia souveraine institutions publiques burkina, indépendance numérique nationale ouaga"
+      },
+      {
+        "id": "239",
+        "slug": "audit-vulnerabilite-systemes-rag-prompt-injection-securite",
+        "title": "Cybersécurité des Systèmes RAG : Prévenir les Attaques par Injection de Prompt et Exfiltration de Données",
+        "kw": "sécurité système rag prompt injection burkina, protection fuite données ia ouaga"
+      },
+      {
+        "id": "240",
+        "slug": "deploiement-rag-ia-souveraine-barouba-group-ouagadougou",
+        "title": "Déploiement de Systèmes RAG & IA Privée Souveraine avec BAROUBA GROUP à Ouagadougou",
+        "kw": "déploiement rag barouba group academy, intégrateur ia souveraine burkina"
+      }
+    ]
+  },
+  {
+    "name": "Cluster 13 : Vision par Ordinateur, Reconnaissance Faciale & Sécurité",
+    "range": [
+      241,
+      260
+    ],
+    "articles": [
+      {
+        "id": "241",
+        "slug": "vision-par-ordinateur-intelligence-artificielle-burkina-faso",
+        "title": "La Vision par Ordinateur au Burkina Faso : Applications Pratiques pour la Sécurité et le Commerce",
+        "kw": "vision par ordinateur burkina faso, computer vision intelligence artificielle ouaga"
+      },
+      {
+        "id": "242",
+        "slug": "controle-acces-reconnaissance-faciale-bureaux-ouaga-normes",
+        "title": "Contrôle d'Accès par Reconnaissance Faciale dans les Sièges Sociaux à Ouagadougou : Efficacité et Normes",
+        "kw": "contrôle accès reconnaissance faciale ouagadougou, pointeuse faciale entreprise burkina"
+      },
+      {
+        "id": "243",
+        "slug": "lecture-automatique-plaques-immatriculation-parkings-ouaga",
+        "title": "Lecture Automatique des Plaques d'Immatriculation (LAPI) : Sécuriser Parkings et Entrées d'Usines à Ouaga",
+        "kw": "lecture automatique plaques lapi burkina, caméra reconnaissance plaques ouagadougou"
+      },
+      {
+        "id": "244",
+        "slug": "videosurveillance-intelligente-detection-intrusions-temps-reel-bf",
+        "title": "Vidéosurveillance Intelligente : Détection Automatique d'Intrusions, Colis Suspects et Alertes SMS à Ouaga",
+        "kw": "vidéosurveillance intelligente ia burkina, détection intrusion temps réel caméras ouaga"
+      },
+      {
+        "id": "245",
+        "slug": "comptage-visiteurs-analyse-parcours-magasins-retail-ia-ouaga",
+        "title": "Comptage des Visiteurs et Cartes de Chaleur en Magasin : Optimiser le Merchandising par Caméras IA à Ouaga",
+        "kw": "comptage clients magasin ia burkina, carte de chaleur caméra commerce ouagadougou"
+      },
+      {
+        "id": "246",
+        "slug": "controle-qualite-visuel-lignes-production-usines-burkina",
+        "title": "Contrôle Qualité Automatique en Usine : Détecter les Défauts d'Embouteillage et d'Emballage par Vision IA au Faso",
+        "kw": "contrôle qualité vision artificielle burkina, détection défauts fabrication caméras ouaga"
+      },
+      {
+        "id": "247",
+        "slug": "securite-routiere-detection-infractions-feux-rouges-ouaga",
+        "title": "Surveillance du Trafic et Détection des Infractions Routières par Caméras Intelligentes à Ouagadougou",
+        "kw": "caméras intelligentes trafic routier ouaga, détection franchissement feux rouges burkina"
+      },
+      {
+        "id": "248",
+        "slug": "reconnaissance-faciale-conformite-cil-droits-libertes-burkina",
+        "title": "Reconnaissance Faciale et Respect des Libertés : Les Démarches d'Autorisation Préalable auprès de la CIL au Faso",
+        "kw": "légalité reconnaissance faciale cil burkina, déclaration vidéosurveillance biométrique"
+      },
+      {
+        "id": "249",
+        "slug": "cameras-thermiques-ia-detection-incendies-points-chauds-sahel",
+        "title": "Caméras Thermiques et IA : Détection Précoce des Départs d'Incendie dans les Entrepôts et Usines au Sahel",
+        "kw": "caméra thermique détection incendie ia burkina, surveillance entrepôts chaleur ouaga"
+      },
+      {
+        "id": "250",
+        "slug": "gestion-files-attente-agences-bancaires-reduction-attente-ia",
+        "title": "Gestion Intelligente des Files d'Attente en Banque et Clinique : Réduire le Temps d'Attente grâce à la Vision IA",
+        "kw": "gestion files attente caméras ia burkina, temps attente guichets banque ouagadougou"
+      },
+      {
+        "id": "251",
+        "slug": "drones-surveillance-autonomes-rondes-securite-sites-isoles-bf",
+        "title": "Drones de Surveillance Autonomes : Rondes de Sécurité Nocturnes Programméées sur les Sites Industriels au Faso",
+        "kw": "drone surveillance automatique ia burkina, ronde sécurité nocturne site isolé ouaga"
+      },
+      {
+        "id": "252",
+        "slug": "detection-objets-yolo-embarque-systemes-temps-reel-sahel",
+        "title": "Déployer des Algorithmes YOLO sur Caméras de Bord et Équipements Légers : Guide pour Développeurs Burkinabè",
+        "kw": "déploiement yolo vision ia burkina, reconnaissance objets temps réel ouagadougou"
+      },
+      {
+        "id": "253",
+        "slug": "authentification-biometrique-lutte-usurpation-identite-bf",
+        "title": "Lutte contre la Fraude d'Identité : Vérification Biométrique Faciale et Détection du Vivant (Liveness Detection)",
+        "kw": "vérification identité biométrique ia burkina, liveness detection anti usurpation ouaga"
+      },
+      {
+        "id": "254",
+        "slug": "eclairage-nocturne-cameras-infrarouges-ia-obscurite-totale-bf",
+        "title": "Vidéosurveillance Nocturne par Infrarouge et IA : Maintenir la Détection de Menaces en Cas de Délestage à Ouaga",
+        "kw": "vidéosurveillance nocturne délestage burkina, caméra infrarouge vision ia ouagadougou"
+      },
+      {
+        "id": "255",
+        "slug": "comptage-vehicules-flux-transports-urbains-carrefours-ouaga",
+        "title": "Mesure des Flux de Véhicules et Pression du Trafic aux Grands Carrefours de Ouagadougou par Vision IA",
+        "kw": "comptage flux circulation véhicules ouaga, mesure trafic routier intelligence artificielle"
+      },
+      {
+        "id": "256",
+        "slug": "surveillance-perimetrique-clotures-capteurs-optiques-ia-bf",
+        "title": "Protection Périmétrique des Emprises Sensibles : Combiner Clôtures Électrifiées et Analyse Vidéo par IA à Ouaga",
+        "kw": "protection périmétrique site sensible burkina, vidéosurveillance barrière optique ia"
+      },
+      {
+        "id": "257",
+        "slug": "recherche-personnes-disparues-images-foules-capacites-ia",
+        "title": "Recherche de Personnes et Véhicules Signalés dans les Lieux Publics grâce aux Algorithmes de Vision à Ouaga",
+        "kw": "recherche personnes véhicules caméras ia burkina, sécurité publique analyse vidéo"
+      },
+      {
+        "id": "258",
+        "slug": "maintenance-materiel-cameras-nettoyage-optiques-poussiere-bf",
+        "title": "Entretenir ses Caméras de Vidéosurveillance IA face à la Poussière Sahélienne : Guide de Maintenance Préventive",
+        "kw": "nettoyage caméras poussière harmattan burkina, maintenance matériel vidéosurveillance ouaga"
+      },
+      {
+        "id": "259",
+        "slug": "cout-installation-systeme-vision-ia-entreprise-devis-ouaga",
+        "title": "Quel Budget pour Équiper son Entreprise d'un Système de Caméras IA Intelligentes à Ouagadougou ? Devis Types",
+        "kw": "prix installation caméras ia entreprise ouaga, devis vidéosurveillance intelligente burkina"
+      },
+      {
+        "id": "260",
+        "slug": "solutions-vision-artificielle-securite-barouba-group-ouaga",
+        "title": "Solutions de Vision par Ordinateur & Sécurité Augmentée avec BAROUBA GROUP à Ouagadougou",
+        "kw": "intégration vision par ordinateur barouba group, sécurité caméras ia burkina faso"
+      }
+    ]
+  },
+  {
+    "name": "Cluster 14 : Éthique, Législation, Souveraineté & Risques de l'IA en UEMOA",
+    "range": [
+      261,
+      280
+    ],
+    "articles": [
+      {
+        "id": "261",
+        "slug": "legislation-intelligence-artificielle-burkina-faso-uemoa-cadre",
+        "title": "Le Cadre Légal et Réglementaire de l'IA au Burkina Faso et dans l'Espace UEMOA : Ce Que les Entreprises Doivent Savoir",
+        "kw": "législation intelligence artificielle burkina faso, réglementation ia uemoa ouagadougou"
+      },
+      {
+        "id": "262",
+        "slug": "biais-algorithmiques-representativite-cultures-africaines-ia",
+        "title": "Les Biais Algorithmiques : Pourquoi les Modèles d'IA Occidentaux Comprennent Mal les Réalités Sahéliennes",
+        "kw": "biais algorithmiques afrique sahel, représentativité culturelle intelligence artificielle"
+      },
+      {
+        "id": "263",
+        "slug": "cybersecurite-menaces-ia-deepfakes-phishing-avance-burkina",
+        "title": "Les Nouvelles Cybermenaces Dopées à l'IA au Burkina Faso : Deepfakes Vocaux, Phishing et Escroqueries Mobile Money",
+        "kw": "cybercriminalité deepfake ia burkina, arnaque mobile money voix artificielle ouaga"
+      },
+      {
+        "id": "264",
+        "slug": "protection-donnees-personnelles-cil-sanctions-manquements-ia",
+        "title": "La Commission de l'Informatique et des Libertés (CIL) et l'IA : Les Sanctions Prévues en Cas de Manquement au Faso",
+        "kw": "sanctions cil données personnelles burkina, respect vie privée intelligence artificielle"
+      },
+      {
+        "id": "265",
+        "slug": "souverainete-numerique-pourquoi-afrique-doit-creer-ses-propres-ia",
+        "title": "Pourquoi l'Afrique de l'Ouest Doit Développer ses Propres Modèles de Langage et Infrastructures de Calcul",
+        "kw": "souveraineté numérique afrique ouest ia, indépendance technologique sahel burkina"
+      },
+      {
+        "id": "266",
+        "slug": "propriete-intellectuelle-oeuvres-generees-ia-droit-oapi-bf",
+        "title": "À Qui Appartient une Image ou un Texte Généré par IA au Burkina Faso ? Décryptage selon le Droit OAPI",
+        "kw": "droit auteur oeuvre ia oapi burkina, propriété intellectuelle texte généré ouaga"
+      },
+      {
+        "id": "267",
+        "slug": "responsabilite-juridique-en-cas-erreur-decision-prise-par-ia",
+        "title": "Qui Est Responsable en Cas d'Erreur Médicale ou Financière Provoquée par une IA au Burkina Faso ?",
+        "kw": "responsabilité juridique erreur ia burkina, droit des technologies dommage algorithme"
+      },
+      {
+        "id": "268",
+        "slug": "impact-environnemental-ia-consommation-eau-electricite-sahel",
+        "title": "L'Empreinte Écologique des Datacenters IA : Électricité et Refroidissement face aux Défis Climatiques Sahéliens",
+        "kw": "impact écologique ia consommation énergie sahel, empreinte carbone datacenters burkina"
+      },
+      {
+        "id": "269",
+        "slug": "formation-magistrats-avocats-comprendre-litiges-ia-ouaga",
+        "title": "Former les Juges et Magistrats Burkinabè aux Spécificités des Infractions et Litiges Liés à l'IA",
+        "kw": "formation magistrats droit de l'ia burkina, contentieux informatique tribunaux ouaga"
+      },
+      {
+        "id": "270",
+        "slug": "normes-internationales-iso-42001-management-ia-entreprises-bf",
+        "title": "La Norme ISO 42001 : Mettre en Place un Système de Management Responsable de l'IA dans son Entreprise à Ouaga",
+        "kw": "norme iso 42001 management ia burkina, certification gouvernance ia entreprise"
+      },
+      {
+        "id": "271",
+        "slug": "lutte-contre-desinformation-fake-news-elections-ia-burkina",
+        "title": "Détection des Faux Médias et Infox Générés par IA : Préserver la Paix Sociale et la Démocratie au Sahel",
+        "kw": "lutte désinformation deepfake burkina, détection infox fake news sahel ouaga"
+      },
+      {
+        "id": "272",
+        "slug": "accessibilite-ia-personnes-handicapees-audio-braille-ouaga",
+        "title": "L'IA pour l'Inclusion des Personnes en Situation de Handicap au Burkina : Synthèse Vocale et Traduction Braille",
+        "kw": "ia inclusion handicap burkina faso, outils digitaux accessibilité personnes aveugles"
+      },
+      {
+        "id": "273",
+        "slug": "impact-ia-sur-droits-salaries-licenciements-code-travail-bf",
+        "title": "Remplacement Technologique et Droit du Travail au Burkina : Quelles Obligations de Reclassement pour l'Employeur ?",
+        "kw": "licenciement économique automatisation code travail burkina, reclassement salariés ia"
+      },
+      {
+        "id": "274",
+        "slug": "audit-ethique-algorithmes-credit-scoring-discrimination-uemoa",
+        "title": "Auditer les Algorithmes Bancaires de Microcrédit : Éviter les Refus Automatiques Discriminatoires au Faso",
+        "kw": "audit algorithme scoring bancaire burkina, discrimination algorithmique crédit uemoa"
+      },
+      {
+        "id": "275",
+        "slug": "securite-nationale-defense-drones-militaires-ia-sahel",
+        "title": "L'Intelligence Artificielle dans la Sécurité et la Défense au Sahel : Surveillance Tactique et Analyse d'Images",
+        "kw": "ia défense sécurité sahel burkina, analyse renseignement images drones militaires"
+      },
+      {
+        "id": "276",
+        "slug": "donnees-publiques-open-data-pourquoi-burkina-doit-ouvrir-donnees",
+        "title": "L'Open Data au Burkina Faso : Pourquoi l'Ouverture des Données Publiques Est le Moteur de l'IA Locale",
+        "kw": "open data données publiques burkina faso, libération données développement ia"
+      },
+      {
+        "id": "277",
+        "slug": "drapeaux-rouges-fournisseurs-ia-pieges-contrats-editeurs-tech",
+        "title": "Les Drapeaux Rouges lors du Choix d'un Éditeur d'IA : Éviter d'Être Piégé par un Fournisseur Étranger à Ouaga",
+        "kw": "pièges contrats éditeurs ia burkina, vendor lock in fournisseur tech ouaga"
+      },
+      {
+        "id": "278",
+        "slug": "gouvernance-ia-comite-ethique-interne-grandes-entreprises-bf",
+        "title": "Créer un Comité d'Éthique et de Gouvernance de l'IA au Sein de sa Grande Entreprise au Burkina Faso",
+        "kw": "comité éthique gouvernance ia burkina, pilotage responsable intelligence artificielle"
+      },
+      {
+        "id": "279",
+        "slug": "strategie-nationale-intelligence-artificielle-vision-burkina-2030",
+        "title": "La Stratégie Nationale de Développement de l'IA au Burkina Faso : Priorités de l'État et Opportunités Privées",
+        "kw": "stratégie nationale ia burkina faso 2030, plan gouvernemental numérique sahel"
+      },
+      {
+        "id": "280",
+        "slug": "conseil-conformite-ethique-ia-barouba-group-ouagadougou",
+        "title": "Audit de Conformité Réglementaire & Éthique de l'IA avec BAROUBA GROUP à Ouagadougou",
+        "kw": "audit conformité éthique ia barouba group, conseil juridique intelligence artificielle ouaga"
+      }
+    ]
+  },
+  {
+    "name": "Cluster 15 : Méthodologie d'Implémentation & Accompagnement BAROUBA GROUP",
+    "range": [
+      281,
+      300
+    ],
+    "articles": [
+      {
+        "id": "281",
+        "slug": "etapes-reussir-projet-intelligence-artificielle-entreprise-ouaga",
+        "title": "Les 6 Étapes Incontournables pour Réussir son Premier Projet d'IA en Entreprise à Ouagadougou",
+        "kw": "étapes projet ia entreprise burkina, méthodologie intégration intelligence artificielle ouaga"
+      },
+      {
+        "id": "282",
+        "slug": "cadrage-besoins-ia-choisir-bon-cas-usage-rentable-pme-bf",
+        "title": "Le Cadrage des Besoins IA : Comment Choisir le Cas d'Usage le Plus Facile et le Plus Rentable en PME à Ouaga",
+        "kw": "cadrer projet ia pme burkina, sélectionner cas usage rentable ouagadougou"
+      },
+      {
+        "id": "283",
+        "slug": "proof-of-concept-poc-ia-valider-faisabilite-4-semaines-bf",
+        "title": "Réaliser un Proof of Concept (PoC) en 4 Semaines : Valider la Faisabilité Technique et les Gains avant d'Investir",
+        "kw": "proof of concept poc ia burkina, tester faisabilité intelligence artificielle ouaga"
+      },
+      {
+        "id": "284",
+        "slug": "pieges-passage-a-echelle-industrialisation-projets-ia-sahel",
+        "title": "Pourquoi 80% des PoC IA Ne Sont Jamais Industrialisés en Afrique (Et Comment Garantir leur Déploiement)",
+        "kw": "industrialisation projet ia burkina, passage échelle intelligence artificielle ouaga"
+      },
+      {
+        "id": "285",
+        "slug": "rediger-cahier-des-charges-projet-ia-modele-telecharger-ouaga",
+        "title": "Comment Rédiger un Cahier des Charges Efficace pour un Projet d'IA à Ouaga : Le Modèle Documenté",
+        "kw": "cahier des charges projet ia burkina, modèle brief technique intelligence artificielle"
+      },
+      {
+        "id": "286",
+        "slug": "choisir-entre-developpement-ia-interne-vs-prestataire-externe",
+        "title": "Développer son IA en Interne ou Faire Appel à un Intégrateur Expert : L'Arbitrage Stratégique du Dirigeant à Ouaga",
+        "kw": "développer ia interne vs agence burkina, choisir prestataire intégration ia ouaga"
+      },
+      {
+        "id": "287",
+        "slug": "formation-montee-competences-equipes-post-deploiement-ia-bf",
+        "title": "Former ses Collaborateurs à l'Utilisation Quotidienne des Nouveaux Outils d'IA : Le Plan de Formation Gagnant",
+        "kw": "formation collaborateurs outils ia burkina, adoption utilisateurs logiciels ia ouaga"
+      },
+      {
+        "id": "288",
+        "slug": "monitoring-performances-derives-modeles-ia-production-ouaga",
+        "title": "Monitoring et Maintenance Continue des Systèmes IA : Prévenir la Dérive des Modèles en Production à Ouaga",
+        "kw": "maintenance systèmes ia production burkina, surveillance dérive modèles langage ouaga"
+      },
+      {
+        "id": "289",
+        "slug": "securite-informatique-tests-penetration-systemes-ia-burkina",
+        "title": "Tests d'Intrusion et Sécurisation des Systèmes d'IA Déployés face aux Cyberattaques au Burkina Faso",
+        "kw": "pentest sécurité systèmes ia burkina, audit vulnérabilités serveurs ia ouagadougou"
+      },
+      {
+        "id": "290",
+        "slug": "calcul-tco-cout-global-possession-projet-ia-sur-3-ans-bf",
+        "title": "Calculer le TCO (Coût Global de Possession) d'un Projet d'IA sur 3 Ans : Serveurs, Licences, Maintenance à Ouaga",
+        "kw": "calcul tco projet ia burkina faso, coût total possession solution ia ouagadougou"
+      },
+      {
+        "id": "291",
+        "slug": "choisir-donnees-entrainement-propres-qualite-data-entreprises-bf",
+        "title": "Nettoyage et Qualification des Données d'Entreprise : Pourquoi 90% du Succès d'une IA Dépend de la Data",
+        "kw": "nettoyage données entraînement ia burkina, qualité des données entreprise ouaga"
+      },
+      {
+        "id": "292",
+        "slug": "gestion-interfaces-utilisateurs-ux-outils-ia-collaborateurs-bf",
+        "title": "L'Ergonomie des Outils IA : Concevoir des Interfaces Simples et Intuitives que les Employés Adoptent Volontiers",
+        "kw": "ergonomie interfaces outils ia burkina, adoption ux logiciels intelligence artificielle"
+      },
+      {
+        "id": "293",
+        "slug": "mise-en-place-kpi-roi-tableau-bord-direction-generale-ia-ouaga",
+        "title": "Construire le Tableau de Bord Exécutif de Suivi du Projet IA : Indicateurs Clés pour la Direction Générale",
+        "kw": "dashboard suivi projet ia direction ouaga, kpi rentabilité investissement technologique"
+      },
+      {
+        "id": "294",
+        "slug": "pilotage-agile-projets-ia-sprints-iterations-hebdomadaires-bf",
+        "title": "Piloter son Projet d'IA en Méthode Agile Scrum : Sprints de 2 Semaines et Livrables Visibles Immédiats à Ouaga",
+        "kw": "méthodologie agile projet ia burkina, gestion projet data sprint scrum ouagadougou"
+      },
+      {
+        "id": "295",
+        "slug": "accompagnement-juridique-contrats-integration-ia-garanties-bf",
+        "title": "Négocier son Contrat d'Intégration d'IA : Clauses de Niveau de Service (SLA), Confidentialité et Propriété à Ouaga",
+        "kw": "contrat intégration ia clauses sla burkina, garanties juridiques prestataire tech ouaga"
+      },
+      {
+        "id": "296",
+        "slug": "partenariat-entreprises-universites-recherche-appliquee-ia-ouaga",
+        "title": "Créer des Partenariats Gagnants entre Entreprises Privées et Laboratoires de Recherche en IA à Ouagadougou",
+        "kw": "partenariat entreprise université ia burkina, recherche appliquée intelligence artificielle"
+      },
+      {
+        "id": "297",
+        "slug": "audit-annuel-performance-systemes-ia-grille-audit-barouba",
+        "title": "L'Audit Annuel de Performance des Solutions d'IA : La Grille d'Évaluation en 20 Points de BAROUBA GROUP",
+        "kw": "audit annuel performance ia burkina, grille évaluation efficacité algorithmes ouaga"
+      },
+      {
+        "id": "298",
+        "slug": "plan-transformation-ia-3-ans-passer-pme-a-leader-technologique",
+        "title": "Bâtir son Plan de Transformation IA sur 3 Ans : Comment une PME Burkinabè Devient Leader de son Secteur",
+        "kw": "plan transformation ia 3 ans burkina, stratégie digitalisation entreprise ouagadougou"
+      },
+      {
+        "id": "299",
+        "slug": "temoignages-dirigeants-burkinabe-retour-experience-ia-reussie",
+        "title": "Témoignages de Dirigeants Burkinabè : Comment l'Intégration de l'IA a Révolutionné leur Entreprise à Ouaga",
+        "kw": "témoignages dirigeants burkinabè ia, retour expérience succès intelligence artificielle"
+      },
+      {
+        "id": "300",
+        "slug": "barouba-group-partenaire-strategique-ia-burkina-faso-uemoa",
+        "title": "BAROUBA GROUP : L'Intégrateur & Cabinet Conseil de Référence en Intelligence Artificielle au Burkina Faso et en Afrique de l'Ouest",
+        "kw": "intégrateur ia référence burkina faso, cabinet conseil intelligence artificielle barouba group uemoa"
+      }
+    ]
+  }
+]

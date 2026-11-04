@@ -1,0 +1,223 @@
+.page {
+  background-color: var(--bg-base);
+  min-height: 100vh;
+  padding-top: var(--nav-height);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* === HERO SECTION === */
+.hero {
+  position: relative;
+  padding: clamp(4.5rem, 8vw, 7rem) 0 clamp(3rem, 5vw, 4.5rem);
+  text-align: center;
+  overflow: hidden;
+  background-color: var(--bg-surface);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.heroGlow {
+  position: absolute;
+  top: -30%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 700px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(245, 166, 35, 0.15) 0%, transparent 70%);
+  filter: blur(90px);
+  pointer-events: none;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.45rem 1.2rem;
+  border-radius: 9999px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-default);
+  color: var(--color-gold);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  margin-bottom: 1.2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+}
+
+.badgeDiamond {
+  color: var(--color-gold);
+  font-size: 0.7rem;
+}
+
+.pageTitle {
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 4.6vw, 4rem);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  color: var(--text-primary);
+  margin-bottom: 1.2rem;
+  text-wrap: balance;
+}
+
+.pageSubtitle {
+  font-size: clamp(1rem, 1.6vw, 1.2rem);
+  color: var(--text-secondary);
+  line-height: 1.7;
+  max-width: 720px;
+  margin: 0 auto;
+  text-wrap: balance;
+}
+
+/* === PROJECTS SECTION === */
+.projectsSection {
+  padding: clamp(5rem, 8vw, 7.5rem) 0;
+}
+
+.projectsGrid {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(3rem, 5vw, 4.5rem);
+}
+
+.projectCard {
+  background: var(--bg-card);
+  border: 1px solid var(--border-default);
+  border-radius: 28px;
+  padding: clamp(2rem, 3.5vw, 3rem);
+  box-shadow: var(--card-shadow);
+  display: grid;
+  grid-template-columns: 1.15fr 0.95fr;
+  gap: clamp(2rem, 4vw, 3.5rem);
+  align-items: center;
+}
+
+@media (max-width: 950px) {
+  .projectCard {
+    grid-template-columns: 1fr;
+  }
+}
+
+.projectInfoCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.metaRow {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.categoryTag {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  padding: 4px 10px;
+  border-radius: 6px;
+  background: rgba(245, 166, 35, 0.12);
+  color: var(--color-gold);
+  border: 1px solid var(--border-default);
+}
+
+.locationText {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.pTitle {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 2.6vw, 2.2rem);
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 0.8rem;
+  line-height: 1.25;
+}
+
+.pDesc {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  margin-bottom: 1.6rem;
+}
+
+.metricsRow {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.8rem;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: 14px;
+  padding: 14px;
+  margin-bottom: 1.8rem;
+}
+
+@media (max-width: 600px) {
+  .metricsRow {
+    grid-template-columns: 1fr;
+  }
+}
+
+.metricItem {
+  text-align: center;
+}
+
+.metricVal {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--color-gold);
+  line-height: 1.1;
+  margin-bottom: 2px;
+}
+
+.metricLabel {
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+.techsRow {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.8rem;
+}
+
+.techPill {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  padding: 3px 10px;
+  border-radius: 6px;
+  background: var(--bg-base);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+}
+
+.cardCta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.85rem 1.6rem;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--color-gold), #D97706);
+  color: #0A0910 !important;
+  font-size: 0.88rem;
+  font-weight: 800;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  width: fit-content;
+  box-shadow: 0 4px 16px var(--color-gold-glow);
+}
+
+.cardCta:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.08);
+}
+
+.projectMockupCol {
+  width: 100%;
+}

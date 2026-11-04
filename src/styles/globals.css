@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+/* ============================================================
+   DESIGN SYSTEM 2026 — BAROUBA INTERNATIONAL GROUP
+   Signature Afro-Tech Haute Couture & Motion Design
+   ============================================================ */
+
+:root {
+  /* Brand Typography */
+  --font-display:          'Syne', 'Outfit', sans-serif;
+  --font-body:             'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono:             'JetBrains Mono', monospace;
+
+  /* Layout */
+  --container-max:         1320px;
+  --nav-height:            78px;
+
+  /* Accents */
+  --color-amber:           #F97316;
+  --color-emerald:         #10B981;
+
+  /* ==========================================================
+     DARK THEME (Default) — Warm Obsidian, Midnight Charcoal & Gold
+     ========================================================== */
+  --color-gold:            #F5A623;
+  --color-gold-light:      #FFD700;
+  --color-gold-dark:       #D97706;
+  --color-gold-glow:       rgba(245, 166, 35, 0.25);
+
+  --bg-base:               #09080F;
+  --bg-surface:            #12101C;
+  --bg-card:               rgba(20, 17, 32, 0.82);
+  --bg-card-hover:         rgba(28, 24, 46, 0.95);
+  --bg-elevated:           #19152A;
+  --bg-input:              #151224;
+
+  --border-subtle:         rgba(255, 255, 255, 0.08);
+  --border-default:        rgba(245, 166, 35, 0.18);
+  --border-highlight:      rgba(245, 166, 35, 0.45);
+
+  --text-primary:          #FFFFFF;
+  --text-secondary:        rgba(255, 255, 255, 0.74);
+  --text-muted:            rgba(255, 255, 255, 0.48);
+
+  --card-shadow:           0 20px 50px rgba(0, 0, 0, 0.65), 0 0 30px rgba(245, 166, 35, 0.08);
+  --card-shadow-hover:     0 30px 70px rgba(0, 0, 0, 0.85), 0 0 45px rgba(245, 166, 35, 0.22);
+
+  --afro-pattern-opacity:  0.045;
+  --mesh-opacity:          0.6;
+}
+
+/* ==========================================================
+   LIGHT THEME — Clean Champagne, Pearl & Warm Imperial Bronze Gold
+   ========================================================== */
+[data-theme='light'],
+body[data-theme='light'] {
+  --color-gold:            #B45309;
+  --color-gold-light:      #D97706;
+  --color-gold-dark:       #78350F;
+  --color-gold-glow:       rgba(180, 83, 9, 0.2);
+
+  --bg-base:               #F8F6F0;
+  --bg-surface:            #EFECE4;
+  --bg-card:               #FFFFFF;
+  --bg-card-hover:         #FAF8F3;
+  --bg-elevated:           #FFFFFF;
+  --bg-input:              #FFFFFF;
+
+  --border-subtle:         rgba(20, 17, 30, 0.08);
+  --border-default:        rgba(180, 83, 9, 0.22);
+  --border-highlight:      rgba(180, 83, 9, 0.55);
+
+  --text-primary:          #14111E;
+  --text-secondary:        #484354;
+  --text-muted:            #736D82;
+
+  --card-shadow:           0 14px 40px rgba(45, 30, 10, 0.08), 0 2px 8px rgba(0, 0, 0, 0.03);
+  --card-shadow-hover:     0 24px 60px rgba(45, 30, 10, 0.15), 0 6px 16px rgba(0, 0, 0, 0.06);
+
+  --afro-pattern-opacity:  0.055;
+  --mesh-opacity:          0.25;
+}
+
+/* Base reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-base);
+  color: var(--text-primary);
+  line-height: 1.6;
+  min-height: 100vh;
+  overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  position: relative;
+}
+
+/* Authentic Bogolan & Geometric Textile Pattern Overlay */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg width='160' height='160' viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23C5860F' stroke-width='1.2'%3E%3Cpath d='M80 0 L160 80 L80 160 L0 80 Z' stroke-dasharray='4 4'/%3E%3Cpath d='M80 20 L140 80 L80 140 L20 80 Z'/%3E%3Cpath d='M80 40 L120 80 L80 120 L40 80 Z' stroke-width='0.8'/%3E%3Ccircle cx='80' cy='80' r='10'/%3E%3Ccircle cx='80' cy='80' r='3' fill='%23C5860F'/%3E%3Cpath d='M0 0 L30 30 M160 0 L130 30 M160 160 L130 130 M0 160 L30 130'/%3E%3Cpath d='M80 0 L80 20 M80 140 L80 160 M0 80 L20 80 M140 80 L160 80' stroke-width='1.5'/%3E%3Ccircle cx='0' cy='0' r='6'/%3E%3Ccircle cx='160' cy='0' r='6'/%3E%3Ccircle cx='160' cy='160' r='6'/%3E%3Ccircle cx='0' cy='160' r='6'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 100px 100px;
+  opacity: var(--afro-pattern-opacity);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Ambient warm lighting mesh */
+body::after {
+  content: '';
+  position: fixed;
+  top: -20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1000px;
+  height: 600px;
+  background: radial-gradient(ellipse at 50% 30%, rgba(245, 166, 35, 0.16) 0%, rgba(230, 120, 20, 0.08) 35%, transparent 70%);
+  filter: blur(100px);
+  pointer-events: none;
+  z-index: 0;
+  opacity: var(--mesh-opacity);
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  color: var(--text-primary);
+}
+
+/* Links */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Global Container */
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: clamp(1.2rem, 3.5vw, 3rem);
+  padding-right: clamp(1.2rem, 3.5vw, 3rem);
+  position: relative;
+  z-index: 1;
+}
+
+/* Golden text gradient */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #FFE494 0%, #F5A623 50%, #D97706 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+[data-theme='light'] .text-gold-gradient,
+body[data-theme='light'] .text-gold-gradient {
+  background: linear-gradient(135deg, #B45309 0%, #92400E 50%, #78350F 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-base);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(245, 166, 35, 0.35);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(245, 166, 35, 0.6);
+}

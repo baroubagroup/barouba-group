@@ -1,0 +1,187 @@
+.page {
+  background-color: var(--bg-base);
+  min-height: 100vh;
+  padding-top: var(--nav-height);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* === HERO SECTION === */
+.hero {
+  position: relative;
+  padding: clamp(4.5rem, 8vw, 7rem) 0 clamp(3rem, 5vw, 4.5rem);
+  text-align: center;
+  overflow: hidden;
+  background-color: var(--bg-surface);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.heroGlow {
+  position: absolute;
+  top: -30%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 700px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(245, 166, 35, 0.15) 0%, transparent 70%);
+  filter: blur(90px);
+  pointer-events: none;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.45rem 1.2rem;
+  border-radius: 9999px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-default);
+  color: var(--color-gold);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  margin-bottom: 1.2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+}
+
+.badgeDiamond {
+  color: var(--color-gold);
+  font-size: 0.7rem;
+}
+
+.pageTitle {
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 4.6vw, 4rem);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  color: var(--text-primary);
+  margin-bottom: 1.2rem;
+  text-wrap: balance;
+}
+
+.pageSubtitle {
+  font-size: clamp(1rem, 1.6vw, 1.2rem);
+  color: var(--text-secondary);
+  line-height: 1.7;
+  max-width: 720px;
+  margin: 0 auto;
+  text-wrap: balance;
+}
+
+/* === SOLUTIONS SHOWCASE SECTION === */
+.solutionsSection {
+  padding: clamp(5rem, 8vw, 7.5rem) 0;
+  position: relative;
+}
+
+.solutionsList {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(3.5rem, 6vw, 5.5rem);
+}
+
+.solutionItem {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(2.5rem, 5vw, 4.5rem);
+  align-items: center;
+}
+
+.solutionItemReverse {
+  direction: rtl;
+}
+
+.solutionItemReverse > * {
+  direction: ltr;
+}
+
+@media (max-width: 950px) {
+  .solutionItem, .solutionItemReverse {
+    grid-template-columns: 1fr;
+    direction: ltr;
+  }
+}
+
+.solutionTextCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.solutionTag {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  background: rgba(245, 166, 35, 0.12);
+  color: var(--color-gold);
+  border: 1px solid var(--border-default);
+  width: fit-content;
+  margin-bottom: 1rem;
+}
+
+.solutionTitle {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  font-weight: 800;
+  color: var(--text-primary);
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.solutionDesc {
+  font-size: 0.96rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 1.6rem;
+}
+
+.benefitsList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.benefitRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  line-height: 1.45;
+}
+
+.benefitDiamond {
+  color: var(--color-gold);
+  font-size: 0.7rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.solutionCta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.85rem 1.6rem;
+  border-radius: 12px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-default);
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  width: fit-content;
+}
+
+.solutionCta:hover {
+  border-color: var(--color-gold);
+  color: var(--color-gold);
+  transform: translateX(4px);
+}
+
+.solutionMockupCol {
+  width: 100%;
+}

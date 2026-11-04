@@ -1,0 +1,12 @@
+.wrapper {
+  display: inline-flex;
+  cursor: pointer;
+  will-change: transform;
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  will-change: transform;
+}

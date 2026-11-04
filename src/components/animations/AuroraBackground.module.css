@@ -1,0 +1,69 @@
+.auroraContainer {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: var(--color-background);
+  min-height: 100vh;
+}
+
+.content {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+}
+
+.auroraGlow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1;
+  filter: blur(80px);
+  opacity: 0.5;
+}
+
+.auroraBlob1, .auroraBlob2, .auroraBlob3 {
+  position: absolute;
+  border-radius: 50%;
+  animation: auroraFlow 20s infinite alternate cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.auroraBlob1 {
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(circle, rgba(245,166,35,0.35) 0%, rgba(245,166,35,0) 70%);
+  top: -200px;
+  left: -200px;
+  animation-duration: 25s;
+}
+
+.auroraBlob2 {
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(230,120,20,0.25) 0%, rgba(230,120,20,0) 70%);
+  bottom: -100px;
+  right: -100px;
+  animation-duration: 30s;
+  animation-direction: alternate-reverse;
+}
+
+.auroraBlob3 {
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle, rgba(255,200,50,0.20) 0%, rgba(255,200,50,0) 70%);
+  top: 40%;
+  left: 30%;
+  animation-duration: 20s;
+  animation-delay: 5s;
+}
+
+@keyframes auroraFlow {
+  0% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(100px, -50px) scale(1.1); }
+  66% { transform: translate(-50px, 100px) scale(0.9); }
+  100% { transform: translate(50px, 50px) scale(1); }
+}
