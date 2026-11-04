@@ -1,8 +1,9 @@
 import type { Metadata } from 'next';
 import { Link } from '@/i18n/navigation';
-import { ArrowRight, Clock, BookOpen, Sparkles, Compass } from 'lucide-react';
+import { ArrowRight, BookOpen, Sparkles, Award, Compass, Layers } from 'lucide-react';
 import AfricanPatternRibbon from '@/components/v2/AfricanPatternRibbon';
 import { mockPosts } from '@/lib/data';
+import { getAllPillars } from '@/lib/seoArticles';
 import styles from './blog.module.css';
 
 export const metadata: Metadata = {
@@ -31,6 +32,7 @@ export const metadata: Metadata = {
 export default async function BlogPage() {
   const featured = mockPosts.find((p) => p.isFeatured) || mockPosts[0];
   const others = mockPosts.filter((p) => p._id !== featured._id);
+  const pillars = getAllPillars();
 
   return (
     <div className={styles.page}>
@@ -40,7 +42,7 @@ export default async function BlogPage() {
         <div className="container">
           <div className={styles.badge}>
             <span className={styles.badgeDiamond}>◆</span>
-            <span>PÔLE RECHERCHE, ÉTUDES & EXPERTISE DIGITALE BURKINA FASO</span>
+            <span>PÔLE RECHERCHE, ÉTUDES &amp; EXPERTISE DIGITALE BURKINA FASO</span>
           </div>
           <h1 className={styles.pageTitle}>
             Les Guides Stratégiques pour <span className="text-gold-gradient">Dominer le Marché</span>
@@ -80,7 +82,7 @@ export default async function BlogPage() {
                 </svg>
               </div>
               <div className={styles.visualTextBox}>
-                <div className={styles.visualSymbolTitle}>PÔLE INGÉNIERIE & IA</div>
+                <div className={styles.visualSymbolTitle}>PÔLE INGÉNIERIE &amp; IA</div>
                 <div className={styles.visualSymbolSub}>DOSSIER DE RÉFÉRENCE 2026</div>
               </div>
             </div>
@@ -89,9 +91,9 @@ export default async function BlogPage() {
       </section>
 
       {/* African Motif Frieze */}
-      <AfricanPatternRibbon label="DOSSIERS D'AUTORITÉ & ÉTUDES OPÉRATIONNELLES" />
+      <AfricanPatternRibbon label="DOSSIERS D'AUTORITÉ &amp; ÉTUDES OPÉRATIONNELLES" />
 
-      {/* Articles Grid */}
+      {/* Core Operational Articles */}
       <section className={styles.articlesSection}>
         <div className="container">
           <div className={styles.articlesGrid}>
@@ -120,6 +122,49 @@ export default async function BlogPage() {
           </div>
         </div>
       </section>
+
+      {/* Encyclopedic Pillar Guides Library */}
+      {pillars.length > 0 && (
+        <section className={styles.pillarsSection}>
+          <div className="container">
+            <div className={styles.pillarsHeader}>
+              <div className={styles.pillarsBadge}>
+                <Award size={16} />
+                <span>BIBLIOTHÈQUE OFFICIELLE DES 54 GUIDES PILIERS (10 000+ MOTS)</span>
+              </div>
+              <h2 className={styles.pillarsTitle}>
+                Les Ouvrages Majeurs d&apos;Autorité par <span className="text-gold-gradient">Domaine d&apos;Expertise</span>
+              </h2>
+              <p className={styles.pillarsSub}>
+                Conçus sous la direction de <strong>Monsieur SAKO BAROU BEN OUMAR</strong>. Plus de 580 000 mots rédigés, conformité CIL / OHADA / DGI et méthodologies d&apos;élite applicables au Sahel.
+              </p>
+            </div>
+
+            <div className={styles.pillarsGrid}>
+              {pillars.map((pillar) => (
+                <Link
+                  key={pillar.slug}
+                  href={`/blog/${pillar.slug}` as any}
+                  className={styles.pillarCard}
+                >
+                  <div className={styles.pillarTop}>
+                    <span className={styles.pillarCluster}>{pillar.cluster}</span>
+                    <span className={styles.pillarTag}>10 000+ Mots</span>
+                  </div>
+                  <h3 className={styles.pillarTitle}>{pillar.title}</h3>
+                  <div className={styles.pillarBottom}>
+                    <span className={styles.pillarAuthor}>Par M. SAKO BAROU BEN OUMAR</span>
+                    <div className={styles.pillarCta}>
+                      <span>Consulter l&apos;ouvrage</span>
+                      <ArrowRight size={14} />
+                    </div>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
     </div>
   );
 }
