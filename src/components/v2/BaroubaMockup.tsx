@@ -44,8 +44,8 @@ export default function BaroubaMockup({ type, compact = false }: BaroubaMockupPr
           <div className={styles.appHeader}>
             <div className={styles.brandBox}>
               <Image 
-                src="/logo-or.svg" 
-                alt="Barouba Group" 
+                src="/logo-symbole.svg" 
+                alt="Barouba Group Symbole" 
                 width={22} 
                 height={22} 
                 style={{ width: 'auto', height: '22px' }}
@@ -254,8 +254,8 @@ export default function BaroubaMockup({ type, compact = false }: BaroubaMockupPr
           <div className={styles.appHeader}>
             <div className={styles.brandBox}>
               <Image 
-                src="/logo-or.svg" 
-                alt="Barouba Group" 
+                src="/logo-clair.svg" 
+                alt="Barouba Group Academy" 
                 width={20} 
                 height={20} 
                 style={{ width: 'auto', height: '20px' }}

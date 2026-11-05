@@ -47,7 +47,7 @@ export default function Footer() {
         <div className={styles.brand}>
           <Link href="/" className={styles.logo}>
             <Image 
-              src="/logo-or.svg" 
+              src="/logo-principal.svg" 
               alt="BAROUBA INTERNATIONAL GROUP" 
               width={190} 
               height={52} 

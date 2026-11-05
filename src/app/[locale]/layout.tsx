@@ -191,8 +191,6 @@ export default async function RootLayout({ children, params }: RootLayoutProps) 
   return (
     <html lang={locale} suppressHydrationWarning>
       <head>
-        <link rel="alternate" hrefLang="fr" href="https://www.baroubagroup.com/fr" />
-        <link rel="alternate" hrefLang="x-default" href="https://www.baroubagroup.com/fr" />
         <Script id="theme-init" strategy="beforeInteractive">
           {`
             (function() {

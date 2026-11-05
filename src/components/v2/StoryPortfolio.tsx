@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 import { 
   Building2, 
   ArrowUpRight, 
@@ -20,6 +21,8 @@ const REAL_CASES = [
     title: 'Marque Cosmétique Haut de Gamme',
     location: 'Abidjan & Paris',
     period: 'Déploiement en 4 semaines',
+    image: '/images/plateforme-web-nextjs-burkina.webp',
+    imageAlt: 'Architecture E-commerce Next.js 16 et paiements locaux développée par Barouba Group',
     challenge: 'Un site WordPress qui plantait à chaque pic publicitaire, avec un temps de chargement de 4.8s et plus de 70% de paniers abandonnés.',
     solution: 'Architecture Next.js 16 découplée, passage en caisse ultra-simplifié en 1 clic et synchronisation de l’API de conversion Meta (CAPI).',
     mockupType: 'commerce' as const,
@@ -37,6 +40,8 @@ const REAL_CASES = [
     title: 'Société de Distribution & Logistique',
     location: 'Alger & Dubaï',
     period: 'Intégration en 3 semaines',
+    image: '/images/agent-ia-whatsapp-automation.webp',
+    imageAlt: 'Agent IA autonome WhatsApp et automatisation de processus métier par Barouba Group',
     challenge: 'Une équipe support submergée par 600+ messages WhatsApp quotidiens pour des demandes de prix, de stock et de devis.',
     solution: 'Création d’un agent IA sur mesure connecté directement à leur base de données. L’agent qualifie les prospects et génère les bons de commande automatiquement.',
     mockupType: 'ai' as const,
@@ -54,6 +59,8 @@ const REAL_CASES = [
     title: 'Plateforme de Formalisation & Entreprise',
     location: 'Afrique de l’Ouest',
     period: 'Livraison clés en main',
+    image: '/images/agence-communication-digitale-bobo.webp',
+    imageAlt: 'Stratégie de communication digitale, gestion de pages et acquisition par Barouba Group',
     challenge: 'Nécessité de moderniser un portail de démarches administratives pour traiter des milliers de demandes sans saturation de serveur.',
     solution: 'Plateforme sur mesure sécurisée avec formulaires dynamiques, téléversement de pièces jointes et tableau de bord de traitement en temps réel.',
     mockupType: 'portal' as const,
@@ -160,10 +167,25 @@ export default function StoryPortfolio() {
               </div>
             </div>
 
-            {/* Right: Proprietary Barouba Software Preview */}
+            {/* Right: Proprietary Barouba Software Preview & Real Visuals */}
             <div className={styles.previewCol}>
               <div className={styles.mockupWrapper}>
-                <BaroubaMockup type={currentCase.mockupType} />
+                <Image
+                  src={currentCase.image}
+                  alt={currentCase.imageAlt}
+                  width={800}
+                  height={500}
+                  priority={activeTab === 0}
+                  className={styles.caseImage}
+                  style={{
+                    width: '100%',
+                    height: 'auto',
+                    borderRadius: '12px',
+                    border: '1px solid rgba(245, 166, 35, 0.25)',
+                    boxShadow: '0 12px 36px rgba(0, 0, 0, 0.45)',
+                    display: 'block',
+                  }}
+                />
               </div>
             </div>
           </div>
