@@ -5,8 +5,11 @@ import { ShieldCheck, Clock, FileText, Lock, Sparkles, CheckCircle2 } from 'luci
 import styles from './devis.module.css';
 
 export const metadata: Metadata = {
-  title: 'Demander un Devis en Ligne & Cadrage Projet | BAROUBA GROUP SARL',
-  description: 'Estimez et configurez votre projet digital en ligne. Recevez une proposition technique et financière personnalisée sous 24h par le cabinet BAROUBA GROUP SARL.',
+  title: 'Demande de Devis & Cadrage Projet | BAROUBA GROUP',
+  description: 'Chiffrez votre projet web Next.js, agent IA ou campagne publicitaire. Étude de faisabilité rapide et diagnostic sans engagement.',
+  alternates: {
+    canonical: 'https://www.baroubagroup.com/fr/devis',
+  },
 };
 
 export default async function DevisPage() {

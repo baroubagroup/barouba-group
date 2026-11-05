@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: ArticlePageProps): Promise<Me
 
   return {
     title: `${post.title} | BAROUBA GROUP Insights`,
-    description: post.excerpt,
+    description: (post.excerpt || '').slice(0, 155),
     keywords: post.metaKeywords || [
       'création site web burkina faso',
       'agence web ouagadougou',

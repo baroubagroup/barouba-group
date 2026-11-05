@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import { Link } from '@/i18n/navigation';
 import type { Metadata } from 'next';
+import { setRequestLocale } from 'next-intl/server';
 import { BOUTIQUE_PRODUCTS, getBoutiqueProductBySlug } from '@/lib/boutiqueData';
 import AfricanPatternRibbon from '@/components/v2/AfricanPatternRibbon';
 import { WHATSAPP_NUMBER } from '@/lib/data';
@@ -30,23 +31,25 @@ interface ProductPageProps {
   params: Promise<{ slug: string; locale: string }>;
 }
 
-export async function generateStaticParams() {
-  return BOUTIQUE_PRODUCTS.map((p) => ({
-    slug: p.slug,
-  }));
-}
+export const dynamic = 'force-dynamic';
 
 export async function generateMetadata({ params }: ProductPageProps): Promise<Metadata> {
-  const { slug } = await params;
+  const { slug, locale } = await params;
   const product = getBoutiqueProductBySlug(slug);
   if (!product) return {};
 
+  const canonicalUrl = `https://www.baroubagroup.com/${locale}/boutique/${product.slug}`;
+
   return {
-    title: `${product.title} | Boutique Officielle BAROUBA GROUP SARL`,
+    title: `${product.title} | Boutique BAROUBA GROUP`,
     description: product.shortDesc,
+    alternates: {
+      canonical: canonicalUrl,
+    },
     openGraph: {
       title: `${product.title} — ${product.priceFCFA}`,
       description: product.shortDesc,
+      url: canonicalUrl,
     },
   };
 }
@@ -60,17 +63,48 @@ function WhatsAppIcon() {
 }
 
 export default async function ProductSinglePage({ params }: ProductPageProps) {
-  const { slug } = await params;
+  const { slug, locale } = await params;
+  setRequestLocale(locale);
   const product = getBoutiqueProductBySlug(slug);
 
   if (!product) {
     notFound();
   }
 
+  const cleanPrice = product.priceFCFA.replace(/[^0-9]/g, '');
+
+  const productSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    '@id': `https://www.baroubagroup.com/${locale}/boutique/${product.slug}#product`,
+    name: product.title,
+    description: product.shortDesc,
+    brand: {
+      '@type': 'Brand',
+      name: 'BAROUBA GROUP',
+    },
+    offers: {
+      '@type': 'Offer',
+      price: cleanPrice || '0',
+      priceCurrency: 'XOF',
+      availability: 'https://schema.org/InStock',
+      url: `https://www.baroubagroup.com/${locale}/boutique/${product.slug}`,
+      seller: {
+        '@type': 'Organization',
+        name: 'BAROUBA GROUP',
+      },
+    },
+  };
+
   const whatsappCheckoutUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(product.whatsappMessage)}`;
 
   return (
     <article className={styles.salesPage}>
+      {/* Schema.org Product Definition */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
+      />
       {/* Breadcrumb Bar */}
       <div className={styles.breadcrumbBar}>
         <div className="container">

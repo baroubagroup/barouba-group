@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import { Link } from '@/i18n/navigation';
 import type { Metadata } from 'next';
+import { setRequestLocale } from 'next-intl/server';
 import { 
   ArrowLeft, 
   ArrowRight, 
@@ -64,20 +65,60 @@ export async function generateMetadata({ params }: ServicePageProps): Promise<Me
   };
 }
 
-export async function generateStaticParams() {
-  return DETAILED_SERVICES.map((s) => ({ slug: s.slug }));
-}
+export const dynamic = 'force-dynamic';
 
 export default async function ServicePage({ params }: ServicePageProps) {
   const { slug, locale } = await params;
+  setRequestLocale(locale);
   const service = getDetailedServiceBySlug(slug);
 
   if (!service) {
     notFound();
   }
 
+  const serviceSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    '@id': `https://www.baroubagroup.com/${locale}/services/${service.slug}#service`,
+    name: service.title,
+    description: service.hookSubtitle,
+    provider: {
+      '@type': 'ProfessionalService',
+      name: 'BAROUBA GROUP',
+      url: 'https://www.baroubagroup.com',
+      telephone: '+226-74-82-66-66',
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: 'Bobo-Dioulasso',
+        addressRegion: 'Hauts-Bassins',
+        addressCountry: 'BF',
+      },
+    },
+    areaServed: {
+      '@type': 'Country',
+      name: 'Burkina Faso',
+    },
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: service.title,
+      itemListElement: service.deliverables.map((d, i) => ({
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'Service',
+          name: d.module,
+          description: d.items.join(', '),
+        },
+      })),
+    },
+  };
+
   return (
     <div className={styles.page}>
+      {/* Schema.org Service Definition */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
       {/* 01 // HERO SHOWCASE SECTION */}
       <section className={styles.hero}>
         <div className={styles.heroGlow} aria-hidden="true" />

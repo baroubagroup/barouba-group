@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation';
 import { Link } from '@/i18n/navigation';
 import type { Metadata } from 'next';
 import Image from 'next/image';
+import { setRequestLocale } from 'next-intl/server';
 import { sanityClient, getProjectBySlug } from '@/lib/sanity';
 import PageBuilderRenderer from '@/components/PageBuilder/PageBuilderRenderer';
 import FadeIn from '@/components/animations/FadeIn';
@@ -16,18 +17,19 @@ export async function generateMetadata({ params }: ProjectPageProps): Promise<Me
   const project = await getProjectBySlug(slug, locale);
   if (!project) return {};
   return {
-    title: `${project.title} — Étude de Cas | BAROUBA INTERNATIONAL GROUP`,
+    title: `${project.title} | Portfolio BAROUBA GROUP`,
+    alternates: {
+      canonical: `https://www.baroubagroup.com/${locale}/portfolio/${project.slug}`,
+    },
     description: project.description,
   };
 }
 
-export async function generateStaticParams() {
-  const projects = await sanityClient.fetch(`*[_type == "project"]{ "slug": slug.current }`);
-  return projects.filter((p: any) => p.slug).map((p: any) => ({ slug: p.slug }));
-}
+export const dynamic = 'force-dynamic';
 
 export default async function ProjectPage({ params }: ProjectPageProps) {
   const { slug, locale } = await params;
+  setRequestLocale(locale);
   const project = await getProjectBySlug(slug, locale);
 
   if (!project) notFound();

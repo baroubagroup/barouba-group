@@ -16,13 +16,36 @@ import { mockFormations, WHATSAPP_NUMBER } from '@/lib/data';
 import styles from './formations.module.css';
 
 export const metadata: Metadata = {
-  title: 'Formations & Accompagnement aux Métiers du Numérique — Marketing, E-commerce, CM & IA | BAROUBA GROUP',
-  description: 'Nous formons et accompagnons les entreprises et créateurs aux métiers du numérique : Marketing Digital, E-commerce, Community Management (gestion de pages), Intelligence Artificielle et vente en ligne.',
+  title: 'Formations Professionnelles Métiers du Web & IA | BAROUBA GROUP',
+  description: 'Formations certifiantes au Burkina Faso : IA générative, Community Management, Next.js et Tunnels WhatsApp avec accompagnement direct.',
+  alternates: {
+    canonical: 'https://www.baroubagroup.com/fr/formations',
+  },
+};
+
+const formationsSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'EducationalOccupationalProgram',
+  '@id': 'https://www.baroubagroup.com/fr/formations#program',
+  name: 'Académie Professionnelle & Mentorat BAROUBA GROUP',
+  description: 'Programme complet de formations et mentorat aux métiers du numérique en Afrique de l\'Ouest.',
+  provider: {
+    '@type': 'Organization',
+    name: 'BAROUBA GROUP',
+    url: 'https://www.baroubagroup.com',
+  },
+  educationalCredentialAwarded: 'Certificat d\'Aptitude Professionnelle BAROUBA GROUP',
+  programType: 'Professional Training',
 };
 
 export default async function FormationsPage() {
   return (
     <div className={styles.page}>
+      {/* Schema.org Educational Program */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(formationsSchema) }}
+      />
       {/* Hero */}
       <section className={styles.hero}>
         <div className={styles.heroGlow} aria-hidden="true" />

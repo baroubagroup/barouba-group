@@ -13,15 +13,42 @@ import { WHATSAPP_NUMBER } from '@/lib/data';
 import styles from './contact.module.css';
 
 export const metadata: Metadata = {
-  title: 'Demander un Devis en Ligne & Contact VIP | BAROUBA GROUP SARL',
-  description: 'Configurez votre projet en ligne et obtenez une estimation sur-mesure sous 24h ouvrées. Échangez directement avec la direction technique de BAROUBA GROUP à Ouagadougou.',
+  title: 'Contact Direct & Échange WhatsApp VIP | BAROUBA GROUP',
+  description: 'Contactez BAROUBA GROUP par WhatsApp au +226 74 82 66 66 ou email pour cadrer votre projet digital sous 24 à 48 heures ouvrées.',
+  alternates: {
+    canonical: 'https://www.baroubagroup.com/fr/contact',
+  },
 };
 
 const WHATSAPP_MESSAGE = 'Bonjour BAROUBA GROUP, je souhaite échanger sur un projet digital pour mon entreprise.';
 
+const contactSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ContactPage',
+  '@id': 'https://www.baroubagroup.com/fr/contact#contact',
+  name: 'Contact Direction BAROUBA GROUP',
+  url: 'https://www.baroubagroup.com/fr/contact',
+  mainEntity: {
+    '@type': 'ProfessionalService',
+    name: 'BAROUBA GROUP',
+    telephone: '+226-74-82-66-66',
+    email: 'contact@baroubagroup.com',
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Bobo-Dioulasso',
+      addressRegion: 'Hauts-Bassins',
+      addressCountry: 'BF',
+    },
+  },
+};
+
 export default async function ContactPage() {
   return (
     <div className={styles.page}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(contactSchema) }}
+      />
       {/* Hero */}
       <section className={styles.hero}>
         <div className={styles.heroGlow} aria-hidden="true" />

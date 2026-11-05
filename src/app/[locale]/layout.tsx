@@ -48,7 +48,6 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
   },
   alternates: {
-    canonical: 'https://www.baroubagroup.com/fr',
     languages: {
       'fr': 'https://www.baroubagroup.com/fr',
       'x-default': 'https://www.baroubagroup.com/fr',

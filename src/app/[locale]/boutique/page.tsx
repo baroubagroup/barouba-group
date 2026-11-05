@@ -18,8 +18,11 @@ import {
 import styles from './boutique.module.css';
 
 export const metadata: Metadata = {
-  title: 'Boutique Digitale — Templates, Outils IA & Abonnements | BAROUBA GROUP SARL',
-  description: 'Catalogue des solutions digitales prêtes à l’emploi conçues par BAROUBA GROUP : templates e-commerce Next.js, kits CAPI Meta & TikTok, moteurs de prompts IA et maintenance VIP.',
+  title: 'Boutique Digitale & Solutions Clés en Main | BAROUBA GROUP',
+  description: 'Templates Next.js haute conversion, tunnels de vente WhatsApp et packs d\'automatisation IA prêts au déploiement immédiat.',
+  alternates: {
+    canonical: 'https://www.baroubagroup.com/fr/boutique',
+  },
 };
 
 function WhatsAppIcon() {
@@ -30,9 +33,22 @@ function WhatsAppIcon() {
   );
 }
 
+const boutiqueSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  '@id': 'https://www.baroubagroup.com/fr/boutique#catalog',
+  name: 'Boutique Digitale BAROUBA GROUP',
+  description: 'Catalogue des solutions logicielles et kits d\'automatisation pour entreprises.',
+  url: 'https://www.baroubagroup.com/fr/boutique',
+};
+
 export default async function BoutiquePage() {
   return (
     <div className={styles.page}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(boutiqueSchema) }}
+      />
       {/* Hero Header */}
       <section className={styles.heroHeader}>
         <div className={styles.heroGlow} aria-hidden="true" />

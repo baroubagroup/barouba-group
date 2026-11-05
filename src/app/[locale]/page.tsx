@@ -23,6 +23,9 @@ export async function generateMetadata({ params }: HomeProps): Promise<Metadata>
     description: locale === 'fr'
       ? 'Agence digitale à Bobo-Dioulasso et Ouagadougou : création web Next.js, communication 360°, agents IA, tunnels WhatsApp et formations certifiantes.'
       : 'Digital agency in Bobo-Dioulasso & Ouagadougou: Next.js web creation, 360° communication, AI agents, WhatsApp funnels and certified training.',
+    alternates: {
+      canonical: 'https://www.baroubagroup.com/fr',
+    },
   };
 }
 

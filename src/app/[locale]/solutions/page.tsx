@@ -5,8 +5,11 @@ import AfricanPatternRibbon from '@/components/v2/AfricanPatternRibbon';
 import styles from './solutions.module.css';
 
 export const metadata: Metadata = {
-  title: 'Nos Solutions Logicielles & Plateformes Prêtes au Déploiement | BAROUBA GROUP',
-  description: 'Découvrez les écosystèmes et technologies développés par BAROUBA GROUP : plateformes Next.js 16, automatisation IA WhatsApp Cloud et tunnels de vente haute conversion.',
+  title: 'Solutions Métiers & Systèmes Critiques | BAROUBA GROUP',
+  description: 'Architectures logicielles pour banques, institutions, distributeurs et e-commerces à fort volume en Afrique de l\'Ouest.',
+  alternates: {
+    canonical: 'https://www.baroubagroup.com/fr/solutions',
+  },
 };
 
 const SOLUTIONS_DATA = [

@@ -7,9 +7,12 @@ import { getAllPillars } from '@/lib/seoArticles';
 import styles from './blog.module.css';
 
 export const metadata: Metadata = {
-  title: 'Blog Stratégique & Guides Pratiques — Digital, Web & IA au Burkina Faso | BAROUBA GROUP',
+  title: 'Blog Stratégique : Digital, Business & IA au Burkina Faso',
   description:
-    'Guides d’autorité, benchmarks tarifaires en FCFA et études de cas concrètes sur la création de sites web haute conversion, le Media Buying Meta / TikTok, et l’IA appliquée aux entreprises à Ouagadougou et Bobo-Dioulasso.',
+    'Analyses exclusives, guides concrets et stratégies numériques pour entreprises au Burkina Faso et en Afrique de l\'Ouest.',
+  alternates: {
+    canonical: 'https://www.baroubagroup.com/fr/blog',
+  },
   keywords: [
     'création site web burkina faso',
     'agence web ouagadougou',
@@ -21,7 +24,7 @@ export const metadata: Metadata = {
     'tunnel de vente whatsapp burkina',
   ],
   openGraph: {
-    title: 'Blog Stratégique & Guides Pratiques — Digital, Web & IA au Burkina Faso | BAROUBA GROUP',
+    title: 'Blog Stratégique : Digital, Business & IA au Burkina Faso',
     description:
       'Guides d’autorité et stratégies concrètes pour dominer le digital au Burkina Faso et en Afrique de l’Ouest.',
     url: 'https://www.baroubagroup.com/fr/blog',

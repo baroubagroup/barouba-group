@@ -6,15 +6,11 @@ import { WHATSAPP_NUMBER } from '@/lib/data';
 import styles from './cgv.module.css';
 
 export const metadata: Metadata = {
-  title: 'Conditions Générales de Vente (CGV) — BAROUBA INTERNATIONAL GROUP SARL',
-  description:
-    'Conditions Générales de Vente et d’Intervention de la société BAROUBA GROUP SARL à Ouagadougou (Burkina Faso). Cadre contractuel pour les prestations d’ingénierie web, communication digitale, publicité et formations.',
-  keywords: [
-    'conditions générales de vente barouba group',
-    'cgv agence digitale burkina faso',
-    'mentions légales barouba sarl',
-    'droit ohada contrat informatique ouagadougou'
-  ],
+  title: 'Conditions Générales de Vente (CGV) | BAROUBA GROUP',
+  description: 'Cadre contractuel, garanties de livraison, propriété intellectuelle et engagements de service de BAROUBA GROUP SARL.',
+  alternates: {
+    canonical: 'https://www.baroubagroup.com/fr/cgv',
+  },
 };
 
 const ARTICLES = [

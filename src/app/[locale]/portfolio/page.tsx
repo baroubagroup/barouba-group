@@ -6,7 +6,10 @@ import styles from './portfolio.module.css';
 
 export const metadata: Metadata = {
   title: 'Portfolio & Études de Cas Vérifiées | BAROUBA GROUP',
-  description: 'Découvrez les projets concrets conçus et déployés par BAROUBA GROUP : plateformes e-commerce à haut ROAS, assistants IA et portails institutionnels.',
+  description: 'Découvrez les projets réels développés par BAROUBA GROUP : plateformes Next.js, agents IA WhatsApp et campagnes à fort ROAS.',
+  alternates: {
+    canonical: 'https://www.baroubagroup.com/fr/portfolio',
+  },
 };
 
 const PROJECTS = [

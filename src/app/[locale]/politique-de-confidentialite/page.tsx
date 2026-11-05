@@ -6,16 +6,8 @@ import { WHATSAPP_NUMBER } from '@/lib/data';
 import styles from '../cgv/cgv.module.css';
 
 export const metadata: Metadata = {
-  title: 'Politique de Confidentialité & Protection des Données (CIL) — BAROUBA GROUP',
-  description:
-    'Politique de confidentialité et de protection des données personnelles de BAROUBA GROUP SARL au Burkina Faso. Conformité stricte à la loi N° 001-2021/AN, aux normes de la Commission de l’Informatique et des Libertés (CIL) et aux standards internationaux RGPD.',
-  keywords: [
-    'politique de confidentialité barouba group',
-    'protection des données personnelles burkina faso',
-    'conformité cil ouagadougou',
-    'commission informatique libertés burkina',
-    'mentions légales barouba group sarl',
-  ],
+  title: 'Politique de Confidentialité & CIL | BAROUBA GROUP',
+  description: 'Protection des données personnelles conformément à la Loi N° 001-2021/AN du Burkina Faso et aux standards internationaux RGPD.',
   alternates: {
     canonical: 'https://www.baroubagroup.com/fr/politique-de-confidentialite',
   },

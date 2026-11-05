@@ -24,8 +24,11 @@ import {
 import styles from './about.module.css';
 
 export const metadata: Metadata = {
-  title: 'À Propos — Expertise, Gouvernance & Piliers de Confiance | BAROUBA GROUP SARL',
-  description: 'Découvrez BAROUBA GROUP SARL, cabinet d’ingénierie logicielle, d’intelligence artificielle et d’expansion digitale au Burkina Faso (Siège social à Bobo-Dioulasso, bureaux à Ouagadougou). Rigueur contractuelle OHADA, gouvernance et excellence technique.',
+  title: 'À Propos de BAROUBA GROUP : Direction, Vision & Pôles',
+  description: 'Fondé par Monsieur SAKO BAROU BEN OUMAR à Bobo-Dioulasso, BAROUBA GROUP propulse la transformation digitale des entreprises en Afrique.',
+  alternates: {
+    canonical: 'https://www.baroubagroup.com/fr/a-propos',
+  },
 };
 
 function WhatsAppIcon() {

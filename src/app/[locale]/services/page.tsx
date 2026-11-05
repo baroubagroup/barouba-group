@@ -17,8 +17,11 @@ import { WHATSAPP_NUMBER } from '@/lib/data';
 import styles from './services.module.css';
 
 export const metadata: Metadata = {
-  title: 'Nos Services — Communication Digitale, Ingénierie Web, Solutions IA & Formations | BAROUBA GROUP',
-  description: 'Découvrez notre catalogue de services complets : communication digitale et community management, développement web Next.js 16, acquisition publicitaire Meta/TikTok, tunnels de vente et formations certifiantes.',
+  title: 'Services Digitaux & IA à Forte Valeur Ajoutée | BAROUBA GROUP',
+  description: 'Pôles d\'expertise de BAROUBA GROUP : développement web Next.js 16, agents IA autonomes WhatsApp, gestion de pages et acquisition Meta & TikTok Ads.',
+  alternates: {
+    canonical: 'https://www.baroubagroup.com/fr/services',
+  },
 };
 
 const SERVICES_DATA = [
