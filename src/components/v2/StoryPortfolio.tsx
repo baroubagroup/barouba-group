@@ -170,22 +170,29 @@ export default function StoryPortfolio() {
             {/* Right: Proprietary Barouba Software Preview & Real Visuals */}
             <div className={styles.previewCol}>
               <div className={styles.mockupWrapper}>
-                <Image
-                  src={currentCase.image}
-                  alt={currentCase.imageAlt}
-                  width={800}
-                  height={500}
-                  priority={activeTab === 0}
-                  className={styles.caseImage}
-                  style={{
-                    width: '100%',
-                    height: 'auto',
-                    borderRadius: '12px',
-                    border: '1px solid rgba(245, 166, 35, 0.25)',
-                    boxShadow: '0 12px 36px rgba(0, 0, 0, 0.45)',
-                    display: 'block',
-                  }}
-                />
+                {REAL_CASES.map((item, idx) => (
+                  <div
+                    key={item.id}
+                    style={{ display: idx === activeTab ? 'block' : 'none' }}
+                  >
+                    <Image
+                      src={item.image}
+                      alt={item.imageAlt}
+                      width={800}
+                      height={500}
+                      priority={idx === 0}
+                      className={styles.caseImage}
+                      style={{
+                        width: '100%',
+                        height: 'auto',
+                        borderRadius: '12px',
+                        border: '1px solid rgba(245, 166, 35, 0.25)',
+                        boxShadow: '0 12px 36px rgba(0, 0, 0, 0.45)',
+                        display: 'block',
+                      }}
+                    />
+                  </div>
+                ))}
               </div>
             </div>
           </div>
