@@ -34,7 +34,31 @@ export default function middleware(request: NextRequest) {
     }
   }
 
+  // 3. Permanent 308 redirect from root `/` to `/fr` (Consolidates PageRank & eliminates temporary redirect warning)
+  if (pathname === '/') {
+    const url = new URL('/fr', request.url);
+    const res = NextResponse.redirect(url, 308);
+    res.headers.set('Vary', 'Accept');
+    return res;
+  }
+
   const response = intlMiddleware(request);
+
+  // 4. Upgrade any temporary 307 redirect to permanent 308 redirect for SEO authority consolidation
+  if (response.status === 307) {
+    const location = response.headers.get('location');
+    if (location) {
+      const permResponse = NextResponse.redirect(new URL(location, request.url), 308);
+      response.headers.forEach((val, key) => {
+        if (key.toLowerCase() !== 'location') {
+          permResponse.headers.set(key, val);
+        }
+      });
+      permResponse.headers.set('Vary', 'Accept');
+      return permResponse;
+    }
+  }
+
   response.headers.set('Vary', 'Accept');
   return response;
 }
