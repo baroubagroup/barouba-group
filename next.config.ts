@@ -12,6 +12,15 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: '/en/:path*',
+        destination: '/fr/:path*',
+        permanent: true,
+      },
+    ];
+  },
   async rewrites() {
     return [
       {

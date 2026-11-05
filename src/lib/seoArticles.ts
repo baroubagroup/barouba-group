@@ -107,11 +107,20 @@ function initializeArticlesCache() {
     for (const entry of entries) {
       const fullPath = path.join(seoDir, entry);
       if (fs.statSync(fullPath).isDirectory()) {
-        const files = fs.readdirSync(fullPath).filter((f) => f.endsWith('.md'));
+        const files = fs
+          .readdirSync(fullPath)
+          .filter((f) => f.endsWith('.md') && !f.startsWith('MASTER_INDEX') && !f.startsWith('GLOBAL_SEO'));
+
         for (const file of files) {
           const rawSlug = file.replace(/\.md$/, '');
           const slug = rawSlug.toLowerCase();
-          const isPillar = file.startsWith('PILIER-');
+          const isPillar =
+            entry === 'grands-cours-et-piliers-fondamentaux-burkina' ||
+            slug.startsWith('guide-ultime-') ||
+            slug.startsWith('manuel-') ||
+            slug.startsWith('encyclopedie-') ||
+            slug.startsWith('cours-complet-') ||
+            slug.includes('pilier');
 
           const meta: SeoArticleMetadata = {
             title: rawSlug.replace(/-/g, ' '),
@@ -120,7 +129,7 @@ function initializeArticlesCache() {
             author: 'Monsieur SAKO BAROU BEN OUMAR — BAROUBA GROUP SARL',
             date: '2026-04-01',
             cluster: entry.replace(/-/g, ' '),
-            articleNumber: isPillar ? rawSlug.split('-').slice(0, 2).join('-') : '',
+            articleNumber: isPillar ? 'Pilier Majeur' : '',
             type: isPillar ? "Article Pilier / Guide d'Autorité" : 'Article de Maillage Sémantique',
             isPillar,
             relativePath: path.join(entry, file),
@@ -171,7 +180,6 @@ export function getAllSeoArticlesList(): { slug: string; isPillar: boolean; date
 export function getAllArticleSlugs(): string[] {
   initializeArticlesCache();
   if (!articlesCache) return [];
-  // Return unique slugs
   return Array.from(new Set(Array.from(articlesCache.values()).map((m) => m.slug)));
 }
 
@@ -179,7 +187,18 @@ export function getSeoArticleBySlug(slug: string): BlogPost | null {
   initializeArticlesCache();
   if (!articlesCache) return null;
 
-  const meta = articlesCache.get(slug.toLowerCase()) || articlesCache.get(slug);
+  const normalized = slug.toLowerCase();
+  let meta = articlesCache.get(normalized) || articlesCache.get(slug);
+
+  // Fallback for legacy numbered slugs (e.g. 001-..., pilier-01-..., 000-pilier-01-...)
+  if (!meta) {
+    const clean = normalized
+      .replace(/^000-pilier-\d+-/i, '')
+      .replace(/^pilier-\d+-/i, '')
+      .replace(/^\d+-/, '');
+    meta = articlesCache.get(clean);
+  }
+
   if (!meta) return null;
 
   const seoDir = getSeoDirectory();
@@ -225,7 +244,7 @@ export function getSeoArticleBySlug(slug: string): BlogPost | null {
         'Document d’autorité stratégique et opérationnel calibré pour le contexte burkinabè et ouest-africain.',
         'Conformité stricte aux réglementations CIL, OHADA et fiscale DGI.',
         'Solutions d’ingénierie logicielle et d’intelligence artificielle pilotées par BAROUBA GROUP SARL.',
-        'Accompagnement et cadrage personnalisé disponible directement à Ouagadougou et Bobo-Dioulasso.',
+        'Accompagnement et cadrage personnalisé disponible directement à Bobo-Dioulasso, Ouagadougou et à l’international.',
       ],
       faq: faq.length > 0 ? faq : undefined,
       content: cleanContent,

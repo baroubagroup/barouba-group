@@ -6,7 +6,7 @@ import { getAllSeoArticlesList } from '@/lib/seoArticles';
 const BASE_URL = 'https://www.baroubagroup.com';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const locales = ['fr', 'en'];
+  const locales = ['fr'];
 
   const staticPages = [
     '',

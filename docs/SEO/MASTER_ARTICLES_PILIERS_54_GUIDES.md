@@ -24,16 +24,16 @@ Pour asseoir une domination sémantique absolue et répondre avec une profondeur
 
 ### Domaine 1 : Automatisation des Processus Métier & Agents IA
 *Dossier thématique associé :* [`SEO/automatisation-et-agents-ia/`](./automatisation-et-agents-ia/)
-- **PILIER-01 :** [PILIER-01-guide-ultime-automatisation-processus-metier-burkina-faso.md](./automatisation-et-agents-ia/PILIER-01-guide-ultime-automatisation-processus-metier-burkina-faso.md) (10 922 mots)
-- **PILIER-02 :** [PILIER-02-manuel-strategique-agents-intelligence-artificielle-afrique.md](./automatisation-et-agents-ia/PILIER-02-manuel-strategique-agents-intelligence-artificielle-afrique.md) (10 906 mots)
-- **PILIER-03 :** [PILIER-03-encyclopedie-integration-no-code-low-code-uemoa.md](./automatisation-et-agents-ia/PILIER-03-encyclopedie-integration-no-code-low-code-uemoa.md) (10 892 mots)
+- **PILIER-01 :** [guide-ultime-automatisation-processus-metier-burkina-faso.md](./automatisation-et-agents-ia/guide-ultime-automatisation-processus-metier-burkina-faso.md) (10 922 mots)
+- **PILIER-02 :** [manuel-strategique-agents-intelligence-artificielle-afrique.md](./automatisation-et-agents-ia/manuel-strategique-agents-intelligence-artificielle-afrique.md) (10 906 mots)
+- **PILIER-03 :** [encyclopedie-integration-no-code-low-code-uemoa.md](./automatisation-et-agents-ia/encyclopedie-integration-no-code-low-code-uemoa.md) (10 892 mots)
 
 ---
 
 ### Domaine 2 : Branding, Identité Visuelle & Design de Marque
 *Dossier thématique associé :* [`SEO/branding-identite-visuelle-et-design/`](./branding-identite-visuelle-et-design/)
-- **PILIER-01 :** [PILIER-01-guide-ultime-branding-identite-marque-burkina-faso.md](./branding-identite-visuelle-et-design/PILIER-01-guide-ultime-branding-identite-marque-burkina-faso.md) (10 915 mots)
-- **PILIER-02 :** [PILIER-02-manuel-pratique-rebranding-evolution-visuelle-entreprises-sahel.md](./branding-identite-visuelle-et-design/PILIER-02-manuel-pratique-rebranding-evolution-visuelle-entreprises-sahel.md) (10 930 mots)
+- **PILIER-01 :** [guide-ultime-branding-identite-marque-burkina-faso.md](./branding-identite-visuelle-et-design/guide-ultime-branding-identite-marque-burkina-faso.md) (10 915 mots)
+- **PILIER-02 :** [manuel-pratique-rebranding-evolution-visuelle-entreprises-sahel.md](./branding-identite-visuelle-et-design/manuel-pratique-rebranding-evolution-visuelle-entreprises-sahel.md) (10 930 mots)
 - **PILIER-03 :** [PILIER-03-encyclopedie-charte-graphique-systeme-design-institutionnel-ouaga.md](./branding-identite-visuelle-et-design/PILIER-03-encyclopedie-charte-graphique-systeme-design-institutionnel-ouaga.md) (10 898 mots)
 
 ---
@@ -41,8 +41,8 @@ Pour asseoir une domination sémantique absolue et répondre avec une profondeur
 ### Domaine 3 : Création d'Entreprise, OAPI & Business Plan
 *Dossier thématique associé :* [`SEO/creation-entreprise-oapi-business-plan-burkina/`](./creation-entreprise-oapi-business-plan-burkina/)
 - **PILIER-01 :** [PILIER-01-guide-ultime-creation-formalisation-entreprise-burkina-faso.md](./creation-entreprise-oapi-business-plan-burkina/PILIER-01-guide-ultime-creation-formalisation-entreprise-burkina-faso.md) (10 935 mots)
-- **PILIER-02 :** [PILIER-02-manuel-pratique-protection-actifs-intellectuels-marques-brevets-oapi-ouaga.md](./creation-entreprise-oapi-business-plan-burkina/PILIER-02-manuel-pratique-protection-actifs-intellectuels-marques-brevets-oapi-ouaga.md) (10 912 mots)
-- **PILIER-03 :** [PILIER-03-encyclopedie-redaction-business-plans-bancables-negociation-financements-burkina.md](./creation-entreprise-oapi-business-plan-burkina/PILIER-03-encyclopedie-redaction-business-plans-bancables-negociation-financements-burkina.md) (10 948 mots)
+- **PILIER-02 :** [manuel-pratique-protection-actifs-intellectuels-marques-brevets-oapi-ouaga.md](./creation-entreprise-oapi-business-plan-burkina/manuel-pratique-protection-actifs-intellectuels-marques-brevets-oapi-ouaga.md) (10 912 mots)
+- **PILIER-03 :** [encyclopedie-redaction-business-plans-bancables-negociation-financements-burkina.md](./creation-entreprise-oapi-business-plan-burkina/encyclopedie-redaction-business-plans-bancables-negociation-financements-burkina.md) (10 948 mots)
 
 ---
 
@@ -72,9 +72,9 @@ Pour asseoir une domination sémantique absolue et répondre avec une profondeur
 
 ### Domaine 7 : Digitalisation & Logiciels Métiers sur Mesure
 *Dossier thématique associé :* [`SEO/digitalisation-et-logiciels-metiers-burkina/`](./digitalisation-et-logiciels-metiers-burkina/)
-- **PILIER-01 :** [PILIER-01-guide-ultime-digitalisation-corps-de-metier-burkina-faso.md](./digitalisation-et-logiciels-metiers-burkina/PILIER-01-guide-ultime-digitalisation-corps-de-metier-burkina-faso.md) (10 928 mots)
-- **PILIER-02 :** [PILIER-02-manuel-deploiement-erp-logiciels-metiers-specifiques-burkina.md](./digitalisation-et-logiciels-metiers-burkina/PILIER-02-manuel-deploiement-erp-logiciels-metiers-specifiques-burkina.md) (10 914 mots)
-- **PILIER-03 :** [PILIER-03-encyclopedie-conduite-changement-numerique-adoption-logicielle-pme-sahel.md](./digitalisation-et-logiciels-metiers-burkina/PILIER-03-encyclopedie-conduite-changement-numerique-adoption-logicielle-pme-sahel.md) (10 895 mots)
+- **PILIER-01 :** [guide-ultime-digitalisation-corps-de-metier-burkina-faso.md](./digitalisation-et-logiciels-metiers-burkina/guide-ultime-digitalisation-corps-de-metier-burkina-faso.md) (10 928 mots)
+- **PILIER-02 :** [manuel-deploiement-erp-logiciels-metiers-specifiques-burkina.md](./digitalisation-et-logiciels-metiers-burkina/manuel-deploiement-erp-logiciels-metiers-specifiques-burkina.md) (10 914 mots)
+- **PILIER-03 :** [encyclopedie-conduite-changement-numerique-adoption-logicielle-pme-sahel.md](./digitalisation-et-logiciels-metiers-burkina/encyclopedie-conduite-changement-numerique-adoption-logicielle-pme-sahel.md) (10 895 mots)
 
 ---
 
@@ -88,8 +88,8 @@ Pour asseoir une domination sémantique absolue et répondre avec une profondeur
 
 ### Domaine 9 : Emails Professionnels & Outils Cloud
 *Dossier thématique associé :* [`SEO/emails-professionnels-et-outils-cloud-burkina/`](./emails-professionnels-et-outils-cloud-burkina/)
-- **PILIER-01 :** [PILIER-01-guide-ultime-messagerie-professionnelle-adoption-cloud-entreprise-burkina.md](./emails-professionnels-et-outils-cloud-burkina/PILIER-01-guide-ultime-messagerie-professionnelle-adoption-cloud-entreprise-burkina.md) (10 933 mots)
-- **PILIER-02 :** [PILIER-02-manuel-migration-securisee-google-workspace-microsoft-365-sans-interruption-ouaga.md](./emails-professionnels-et-outils-cloud-burkina/PILIER-02-manuel-migration-securisee-google-workspace-microsoft-365-sans-interruption-ouaga.md) (10 917 mots)
+- **PILIER-01 :** [guide-ultime-messagerie-professionnelle-adoption-cloud-entreprise-burkina.md](./emails-professionnels-et-outils-cloud-burkina/guide-ultime-messagerie-professionnelle-adoption-cloud-entreprise-burkina.md) (10 933 mots)
+- **PILIER-02 :** [manuel-migration-securisee-google-workspace-microsoft-365-sans-interruption-ouaga.md](./emails-professionnels-et-outils-cloud-burkina/manuel-migration-securisee-google-workspace-microsoft-365-sans-interruption-ouaga.md) (10 917 mots)
 - **PILIER-03 :** [PILIER-03-encyclopedie-gouvernance-donnees-collaboratives-securite-emails-sahel.md](./emails-professionnels-et-outils-cloud-burkina/PILIER-03-encyclopedie-gouvernance-donnees-collaboratives-securite-emails-sahel.md) (10 904 mots)
 
 ---
@@ -120,9 +120,9 @@ Pour asseoir une domination sémantique absolue et répondre avec une profondeur
 
 ### Domaine 13 : Marketing d'Influence & Événementiel B2B
 *Dossier thématique associé :* [`SEO/marketing-influence-et-evenementiel-b2b-burkina/`](./marketing-influence-et-evenementiel-b2b-burkina/)
-- **PILIER-01 :** [PILIER-01-guide-ultime-marketing-influence-professionnel-burkina-faso-strategie-roi.md](./marketing-influence-et-evenementiel-b2b-burkina/PILIER-01-guide-ultime-marketing-influence-professionnel-burkina-faso-strategie-roi.md) (10 920 mots)
-- **PILIER-02 :** [PILIER-02-manuel-couverture-digitale-audiovisuelle-grands-salons-internationaux-siao-fespaco.md](./marketing-influence-et-evenementiel-b2b-burkina/PILIER-02-manuel-couverture-digitale-audiovisuelle-grands-salons-internationaux-siao-fespaco.md) (10 926 mots)
-- **PILIER-03 :** [PILIER-03-encyclopedie-regie-evenementielle-b2b-live-streaming-communication-prestige-ouaga.md](./marketing-influence-et-evenementiel-b2b-burkina/PILIER-03-encyclopedie-regie-evenementielle-b2b-live-streaming-communication-prestige-ouaga.md) (10 962 mots)
+- **PILIER-01 :** [guide-ultime-marketing-influence-professionnel-burkina-faso-strategie-roi.md](./marketing-influence-et-evenementiel-b2b-burkina/guide-ultime-marketing-influence-professionnel-burkina-faso-strategie-roi.md) (10 920 mots)
+- **PILIER-02 :** [manuel-couverture-digitale-audiovisuelle-grands-salons-internationaux-siao-fespaco.md](./marketing-influence-et-evenementiel-b2b-burkina/manuel-couverture-digitale-audiovisuelle-grands-salons-internationaux-siao-fespaco.md) (10 926 mots)
+- **PILIER-03 :** [encyclopedie-regie-evenementielle-b2b-live-streaming-communication-prestige-ouaga.md](./marketing-influence-et-evenementiel-b2b-burkina/encyclopedie-regie-evenementielle-b2b-live-streaming-communication-prestige-ouaga.md) (10 962 mots)
 
 ---
 
@@ -136,9 +136,9 @@ Pour asseoir une domination sémantique absolue et répondre avec une profondeur
 
 ### Domaine 15 : Publicité en Ligne & Media Buying
 *Dossier thématique associé :* [`SEO/publicite-en-ligne-media-buying/`](./publicite-en-ligne-media-buying/)
-- **PILIER-01 :** [PILIER-01-guide-ultime-media-buying-publicite-digitale-burkina-faso.md](./publicite-en-ligne-media-buying/PILIER-01-guide-ultime-media-buying-publicite-digitale-burkina-faso.md) (10 922 mots)
-- **PILIER-02 :** [PILIER-02-manuel-strategique-tunnel-vente-optimisation-taux-conversion-marche-burkinabe.md](./publicite-en-ligne-media-buying/PILIER-02-manuel-strategique-tunnel-vente-optimisation-taux-conversion-marche-burkinabe.md) (10 908 mots)
-- **PILIER-03 :** [PILIER-03-encyclopedie-tracking-avance-data-publicitaire-rentabilisation-budgets-fcfa.md](./publicite-en-ligne-media-buying/PILIER-03-encyclopedie-tracking-avance-data-publicitaire-rentabilisation-budgets-fcfa.md) (10 915 mots)
+- **PILIER-01 :** [guide-ultime-media-buying-publicite-digitale-burkina-faso.md](./publicite-en-ligne-media-buying/guide-ultime-media-buying-publicite-digitale-burkina-faso.md) (10 922 mots)
+- **PILIER-02 :** [manuel-strategique-tunnel-vente-optimisation-taux-conversion-marche-burkinabe.md](./publicite-en-ligne-media-buying/manuel-strategique-tunnel-vente-optimisation-taux-conversion-marche-burkinabe.md) (10 908 mots)
+- **PILIER-03 :** [encyclopedie-tracking-avance-data-publicitaire-rentabilisation-budgets-fcfa.md](./publicite-en-ligne-media-buying/encyclopedie-tracking-avance-data-publicitaire-rentabilisation-budgets-fcfa.md) (10 915 mots)
 
 ---
 
@@ -152,17 +152,17 @@ Pour asseoir une domination sémantique absolue et répondre avec une profondeur
 
 ### Domaine 17 : SEO Local, Google Maps & E-Réputation
 *Dossier thématique associé :* [`SEO/seo-local-google-maps-reputation-burkina/`](./seo-local-google-maps-reputation-burkina/)
-- **PILIER-01 :** [PILIER-01-guide-ultime-referencement-local-domination-google-maps-ouagadougou-bobo.md](./seo-local-google-maps-reputation-burkina/PILIER-01-guide-ultime-referencement-local-domination-google-maps-ouagadougou-bobo.md) (10 928 mots)
-- **PILIER-02 :** [PILIER-02-manuel-strategique-e-reputation-entreprise-avis-clients-desamorcage-crises.md](./seo-local-google-maps-reputation-burkina/PILIER-02-manuel-strategique-e-reputation-entreprise-avis-clients-desamorcage-crises.md) (10 914 mots)
-- **PILIER-03 :** [PILIER-03-encyclopedie-seo-onpage-technique-semantique-detroner-concurrents-burkina.md](./seo-local-google-maps-reputation-burkina/PILIER-03-encyclopedie-seo-onpage-technique-semantique-detroner-concurrents-burkina.md) (10 905 mots)
+- **PILIER-01 :** [guide-ultime-referencement-local-domination-google-maps-ouagadougou-bobo.md](./seo-local-google-maps-reputation-burkina/guide-ultime-referencement-local-domination-google-maps-ouagadougou-bobo.md) (10 928 mots)
+- **PILIER-02 :** [manuel-strategique-e-reputation-entreprise-avis-clients-desamorcage-crises.md](./seo-local-google-maps-reputation-burkina/manuel-strategique-e-reputation-entreprise-avis-clients-desamorcage-crises.md) (10 914 mots)
+- **PILIER-03 :** [encyclopedie-seo-onpage-technique-semantique-detroner-concurrents-burkina.md](./seo-local-google-maps-reputation-burkina/encyclopedie-seo-onpage-technique-semantique-detroner-concurrents-burkina.md) (10 905 mots)
 
 ---
 
 ### Domaine 18 : Communication Digitale, Institutionnelle & E-Réputation
 *Dossier thématique associé :* [`SEO/communication-digitale-entreprises-institutions-burkina/`](./communication-digitale-entreprises-institutions-burkina/)
-- **PILIER-01 :** [000-pilier-01-guide-ultime-strategie-plan-communication-digitale-entreprises-burkina.md](./communication-digitale-entreprises-institutions-burkina/000-pilier-01-guide-ultime-strategie-plan-communication-digitale-entreprises-burkina.md) (10 955 mots)
-- **PILIER-02 :** [000-pilier-02-manuel-strategique-communication-institutionnelle-ong-projets-developpement-burkina.md](./communication-digitale-entreprises-institutions-burkina/000-pilier-02-manuel-strategique-communication-institutionnelle-ong-projets-developpement-burkina.md) (10 909 mots)
-- **PILIER-03 :** [000-pilier-03-encyclopedie-communication-crise-digitale-e-reputation-gestion-bad-buzz-burkina.md](./communication-digitale-entreprises-institutions-burkina/000-pilier-03-encyclopedie-communication-crise-digitale-e-reputation-gestion-bad-buzz-burkina.md) (11 002 mots)
+- **PILIER-01 :** [guide-ultime-strategie-plan-communication-digitale-entreprises-burkina.md](./communication-digitale-entreprises-institutions-burkina/guide-ultime-strategie-plan-communication-digitale-entreprises-burkina.md) (10 955 mots)
+- **PILIER-02 :** [manuel-strategique-communication-institutionnelle-ong-projets-developpement-burkina.md](./communication-digitale-entreprises-institutions-burkina/manuel-strategique-communication-institutionnelle-ong-projets-developpement-burkina.md) (10 909 mots)
+- **PILIER-03 :** [encyclopedie-communication-crise-digitale-e-reputation-gestion-bad-buzz-burkina.md](./communication-digitale-entreprises-institutions-burkina/encyclopedie-communication-crise-digitale-e-reputation-gestion-bad-buzz-burkina.md) (11 002 mots)
 
 ---
 
