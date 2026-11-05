@@ -4,23 +4,25 @@ export default function robots(): MetadataRoute.Robots {
   return {
     rules: [
       {
-        userAgent: 'Googlebot',
-        allow: '/',
-        disallow: [
-          '/api/',
-          '/_next/',
-          '/admin/',
-          '/connexion',
-          '/studio/',
-        ],
-      },
-      {
         userAgent: '*',
         allow: '/',
         disallow: [
           '/api/',
           '/_next/',
           '/admin/',
+          '/admin/*',
+          '/connexion',
+          '/studio/',
+        ],
+      },
+      {
+        userAgent: 'Googlebot',
+        allow: '/',
+        disallow: [
+          '/api/',
+          '/_next/',
+          '/admin/',
+          '/admin/*',
           '/connexion',
           '/studio/',
         ],
