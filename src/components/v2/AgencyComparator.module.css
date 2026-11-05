@@ -1,8 +1,12 @@
 .section {
-  padding: clamp(6.5rem, 10vw, 9.5rem) 0;
+  padding: clamp(4.5rem, 8vw, 7rem) 0;
   position: relative;
   background-color: var(--bg-surface);
   border-top: 1px solid var(--border-subtle);
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .header {
@@ -302,11 +306,24 @@
 }
 
 .mobileBlockTag {
+  display: flex;
+  align-items: center;
+  gap: 6px;
   font-size: 11px;
   font-weight: 800;
   color: var(--color-gold);
   margin-bottom: 6px;
   text-transform: uppercase;
+}
+
+.checkIconMobile {
+  color: #10B981;
+  flex-shrink: 0;
+}
+
+.crossIconMobile {
+  color: #EF4444;
+  flex-shrink: 0;
 }
 
 .mobileBlockText {
@@ -324,6 +341,9 @@
 }
 
 .mobileBlockTagMuted {
+  display: flex;
+  align-items: center;
+  gap: 6px;
   font-size: 11px;
   font-weight: 700;
   color: var(--text-muted);
@@ -349,42 +369,62 @@
   }
   .mobileTabs {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 4px;
-    padding: 4px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
+    padding: 5px;
     width: 100%;
+    max-width: 380px;
     margin-top: 18px;
   }
   .mobileTab {
-    padding: 8px 4px;
-    font-size: 11px;
+    padding: 8px 12px;
+    font-size: 12px;
     text-align: center;
     white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    border-radius: 10px;
   }
   .mobileCardsView {
     display: flex;
+    flex-direction: column;
     gap: 12px;
   }
   .mobileRowCard {
     padding: 16px 14px;
     border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
   .mobileFeatureHeading {
     font-size: 14px;
-    margin-bottom: 8px;
+    margin-bottom: 2px;
   }
 }
 
 @media (max-width: 640px) {
   .section {
-    padding: 4rem 0;
+    padding: 3.2rem 0;
   }
   .title {
-    font-size: clamp(1.65rem, 6vw, 2.4rem);
+    font-size: clamp(1.45rem, 5.2vw, 2.2rem);
+    line-height: 1.2;
   }
   .header {
-    margin-bottom: 2rem;
+    margin-bottom: 1.8rem;
+  }
+  .mobileRowCard {
+    padding: 14px 12px;
+    border-radius: 14px;
+  }
+  .mobileBaroubaBlock, .mobileOtherBlock {
+    padding: 12px;
+  }
+  .mobileBlockText, .mobileBlockTextMuted {
+    font-size: 12.5px;
+  }
+  .footerCta {
+    width: 100%;
+    justify-content: center;
+    padding: 12px 18px;
   }
 }

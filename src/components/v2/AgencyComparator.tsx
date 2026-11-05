@@ -58,7 +58,7 @@ const COMPARISON_ROWS = [
 ];
 
 export default function AgencyComparator() {
-  const [selectedMobileView, setSelectedMobileView] = useState<'barouba' | 'classic' | 'freelance'>('barouba');
+  const [selectedCompetitor, setSelectedCompetitor] = useState<'classic' | 'freelance'>('classic');
 
   return (
     <section className={styles.section} id="pourquoi-nous">
@@ -77,25 +77,21 @@ export default function AgencyComparator() {
             Tous les prestataires ne se valent pas. Voici une comparaison objective et sans détour entre notre méthodologie d'élite et les offres habituelles du marché.
           </p>
 
-          {/* Mobile switcher */}
+          {/* Mobile switcher: Head-to-Head Comparison */}
           <div className={styles.mobileTabs}>
             <button
-              onClick={() => setSelectedMobileView('barouba')}
-              className={`${styles.mobileTab} ${selectedMobileView === 'barouba' ? styles.mobileTabActive : ''}`}
+              onClick={() => setSelectedCompetitor('classic')}
+              className={`${styles.mobileTab} ${selectedCompetitor === 'classic' ? styles.mobileTabActive : ''}`}
+              type="button"
             >
-              BAROUBA GROUP
+              vs Agence Classique
             </button>
             <button
-              onClick={() => setSelectedMobileView('classic')}
-              className={`${styles.mobileTab} ${selectedMobileView === 'classic' ? styles.mobileTabActive : ''}`}
+              onClick={() => setSelectedCompetitor('freelance')}
+              className={`${styles.mobileTab} ${selectedCompetitor === 'freelance' ? styles.mobileTabActive : ''}`}
+              type="button"
             >
-              Agence Classique
-            </button>
-            <button
-              onClick={() => setSelectedMobileView('freelance')}
-              className={`${styles.mobileTab} ${selectedMobileView === 'freelance' ? styles.mobileTabActive : ''}`}
-            >
-              Freelance Isolé
+              vs Freelance Isolé
             </button>
           </div>
         </div>
@@ -167,38 +163,37 @@ export default function AgencyComparator() {
           </div>
         </div>
 
-        {/* Mobile View Card */}
+        {/* Mobile View Card: Head-to-Head Visual Comparison */}
         <div className={styles.mobileCardsView}>
           {COMPARISON_ROWS.map((row, idx) => (
             <div key={idx} className={styles.mobileRowCard}>
               <h4 className={styles.mobileFeatureHeading}>{row.feature}</h4>
               
-              {selectedMobileView === 'barouba' && (
-                <div className={styles.mobileBaroubaBlock}>
-                  <div className={styles.mobileBlockTag}>BAROUBA GROUP</div>
-                  <p className={styles.mobileBlockText}>{row.barouba}</p>
+              {/* BAROUBA Advantage */}
+              <div className={styles.mobileBaroubaBlock}>
+                <div className={styles.mobileBlockTag}>
+                  <Check size={14} className={styles.checkIconMobile} />
+                  <span>BAROUBA GROUP (Standard Élite)</span>
                 </div>
-              )}
+                <p className={styles.mobileBlockText}>{row.barouba}</p>
+              </div>
 
-              {selectedMobileView === 'classic' && (
-                <div className={styles.mobileOtherBlock}>
-                  <div className={styles.mobileBlockTagMuted}>Agence Traditionnelle</div>
-                  <p className={styles.mobileBlockTextMuted}>{row.classicAgency}</p>
+              {/* Competitor Reality */}
+              <div className={styles.mobileOtherBlock}>
+                <div className={styles.mobileBlockTagMuted}>
+                  <X size={13} className={styles.crossIconMobile} />
+                  <span>{selectedCompetitor === 'classic' ? 'Agence Traditionnelle' : 'Freelance Isolé'}</span>
                 </div>
-              )}
-
-              {selectedMobileView === 'freelance' && (
-                <div className={styles.mobileOtherBlock}>
-                  <div className={styles.mobileBlockTagMuted}>Freelance Isolé</div>
-                  <p className={styles.mobileBlockTextMuted}>{row.freelance}</p>
-                </div>
-              )}
+                <p className={styles.mobileBlockTextMuted}>
+                  {selectedCompetitor === 'classic' ? row.classicAgency : row.freelance}
+                </p>
+              </div>
             </div>
           ))}
 
           <div className={styles.mobileCtaBox}>
             <a href="#contact" className={styles.footerCta}>
-              <span>Demander un audit comparatif</span>
+              <span>Demander un audit comparatif gratuit</span>
               <ArrowRight size={16} />
             </a>
           </div>

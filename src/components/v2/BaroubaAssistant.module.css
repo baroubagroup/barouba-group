@@ -464,3 +464,29 @@
     padding: 0.75rem 0.9rem 1.2rem;
   }
 }
+
+@media (max-width: 520px) {
+  .triggerBtn {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45), 0 0 16px rgba(245, 166, 35, 0.25);
+  }
+  .triggerText {
+    display: none;
+  }
+  .iconWrap {
+    width: 36px;
+    height: 36px;
+    border: none;
+    background: transparent;
+    box-shadow: none;
+  }
+  .assistantTriggerLogo {
+    width: 30px;
+    height: 30px;
+  }
+}

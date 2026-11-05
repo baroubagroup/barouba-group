@@ -1,5 +1,7 @@
 .mockupContainer {
   width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
   border-radius: 18px;
   overflow: hidden;
   background: var(--bg-card);
@@ -368,14 +370,39 @@
   border-radius: 10px;
 }
 
+@media (max-width: 600px) {
+  .metricsGrid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .portalStats {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .appHeader {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .workflowRow {
+    flex-wrap: wrap;
+    gap: 4px;
+    justify-content: flex-start;
+  }
+  .securitySealRow {
+    font-size: 0.65rem;
+    padding: 8px 10px;
+    flex-wrap: wrap;
+  }
+}
+
 @media (max-width: 480px) {
   .chromeBar {
     padding: 6px 10px;
   }
   .addressBar {
-    max-width: 130px;
-    padding: 2px 8px;
-    font-size: 0.62rem;
+    max-width: 120px;
+    padding: 2px 6px;
+    font-size: 0.58rem;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -384,15 +411,45 @@
     display: none;
   }
   .innerContent {
-    padding: 12px;
-    gap: 10px;
-  }
-  .metricsGrid {
-    grid-template-columns: 1fr;
+    padding: 10px;
     gap: 8px;
   }
-  .portalStats {
-    grid-template-columns: 1fr;
-    gap: 8px;
+  .appName {
+    font-size: 0.72rem;
+  }
+  .onlineStatus {
+    font-size: 0.6rem;
+  }
+  .perfPill {
+    font-size: 0.58rem;
+    padding: 2px 5px;
+  }
+  .whatsappCloudBadge {
+    font-size: 0.58rem;
+    padding: 2px 6px;
+  }
+  .checkoutBox {
+    padding: 8px 10px;
+  }
+  .checkoutItemTitle {
+    font-size: 0.76rem;
+  }
+  .checkoutAmount {
+    font-size: 0.95rem;
+  }
+  .checkoutSub {
+    font-size: 0.6rem;
+  }
+  .curPill {
+    font-size: 0.6rem;
+    padding: 2px 5px;
+  }
+  .chatBubbleUser, .chatBubbleBot {
+    font-size: 0.68rem;
+    padding: 6px 10px;
+    max-width: 95%;
+  }
+  .wfStep {
+    font-size: 0.6rem;
   }
 }

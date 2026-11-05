@@ -3,9 +3,12 @@
   min-height: calc(100vh - var(--nav-height));
   display: flex;
   align-items: center;
-  padding: clamp(6.5rem, 11vw, 9.5rem) 0 clamp(4rem, 7vw, 6rem);
+  padding: clamp(3rem, 6vw, 5rem) 0 clamp(3rem, 5vw, 4.5rem);
   overflow: hidden;
   background-color: var(--bg-base);
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 /* === BACKGROUND AMBIENT & AFRICAN MOTIF WATERMARK === */
@@ -76,7 +79,8 @@
   background: var(--bg-card);
   border: 1px solid var(--border-default);
   margin-bottom: 1.4rem;
-  width: fit-content;
+  max-width: 100%;
+  box-sizing: border-box;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
@@ -84,24 +88,27 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 .badgeText {
   font-family: var(--font-body);
   font-size: 0.74rem;
   font-weight: 800;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
   color: var(--color-gold);
+  line-height: 1.3;
 }
 
 .mainHeading {
-  font-size: clamp(1.85rem, 5.2vw, 3.8rem);
+  font-size: clamp(1.55rem, 4.8vw, 3.8rem);
   font-weight: 800;
-  line-height: 1.16;
+  line-height: 1.18;
   letter-spacing: -0.03em;
   margin: 0 0 1.2rem;
   color: var(--text-primary);
   text-wrap: balance;
+  word-break: break-word;
 }
 
 .description {
@@ -366,6 +373,8 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 0.9rem;
+  flex-wrap: wrap;
+  gap: 0.4rem;
 }
 
 .cardCategoryPill {
@@ -586,25 +595,30 @@
 
 @media (max-width: 768px) {
   .heroWrap {
-    padding: clamp(4.5rem, 9vw, 6rem) 0 2.5rem;
+    padding: 1.8rem 0 2rem;
     min-height: auto;
   }
   .afroBogolanWatermark {
     display: none;
   }
   .glowTop, .glowSide {
-    width: 260px;
-    height: 260px;
-    filter: blur(60px);
+    width: 220px;
+    height: 220px;
+    filter: blur(50px);
   }
   .badgeWrap {
     padding: 0.35rem 0.85rem;
     gap: 0.5rem;
     margin-bottom: 1rem;
+    max-width: 100%;
   }
   .badgeText {
     font-size: 0.68rem;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.04em;
+  }
+  .deckContainer {
+    width: 100%;
+    max-width: 100%;
   }
   .deckNav {
     display: flex;
@@ -615,6 +629,7 @@
     padding-bottom: 8px;
     scrollbar-width: none;
     width: 100%;
+    max-width: 100%;
   }
   .deckNav::-webkit-scrollbar {
     display: none;
@@ -631,22 +646,30 @@
   }
   .cardBox {
     min-height: auto;
+    width: 100%;
+    max-width: 100%;
   }
   .motionCard {
-    padding: 1.2rem;
-    border-radius: 20px;
+    padding: 1.1rem;
+    border-radius: 18px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
   }
   .layerCardBack1, .layerCardBack2 {
     display: none !important;
   }
   .chipsRow {
-    gap: 0.5rem;
-    margin-bottom: 1.8rem;
+    gap: 0.45rem;
+    margin-bottom: 1.6rem;
+    width: 100%;
   }
   .chip {
     font-size: 0.74rem;
     padding: 0.35rem 0.75rem;
     border-radius: 8px;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 }
 
@@ -665,17 +688,72 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     text-align: center;
-    gap: 0.5rem;
+    gap: 0.4rem;
     width: 100%;
-    padding-top: 1.5rem;
+    padding-top: 1.4rem;
   }
   .trustSeparator {
     display: none;
   }
   .trustVal {
-    font-size: 1.35rem;
+    font-size: 1.25rem;
   }
   .trustLabel {
-    font-size: 0.65rem;
+    font-size: 0.62rem;
+    line-height: 1.2;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroWrap {
+    padding: 1.2rem 0 1.5rem;
+  }
+  .mainHeading {
+    font-size: clamp(1.35rem, 5.5vw, 1.75rem);
+    line-height: 1.22;
+  }
+  .description {
+    font-size: 0.88rem;
+    line-height: 1.55;
+    margin-bottom: 1.2rem;
+  }
+  .badgeWrap {
+    padding: 0.3rem 0.75rem;
+  }
+  .badgeText {
+    font-size: 0.64rem;
+    letter-spacing: 0.02em;
+  }
+  .chipsRow {
+    gap: 0.35rem;
+    margin-bottom: 1.3rem;
+  }
+  .chip {
+    font-size: 0.72rem;
+    padding: 0.35rem 0.6rem;
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .motionCard {
+    padding: 0.95rem 0.85rem;
+    border-radius: 16px;
+  }
+  .cardTitle {
+    font-size: 1.15rem;
+  }
+  .cardTagline {
+    font-size: 0.8rem;
+    margin-bottom: 0.9rem;
+  }
+  .featureRow {
+    font-size: 0.78rem;
+    gap: 0.45rem;
+  }
+  .trustVal {
+    font-size: 1.15rem;
+  }
+  .trustLabel {
+    font-size: 0.58rem;
+    line-height: 1.15;
   }
 }
