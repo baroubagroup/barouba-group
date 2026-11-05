@@ -167,7 +167,7 @@ export default function AgencyComparator() {
         <div className={styles.mobileCardsView}>
           {COMPARISON_ROWS.map((row, idx) => (
             <div key={idx} className={styles.mobileRowCard}>
-              <h4 className={styles.mobileFeatureHeading}>{row.feature}</h4>
+              <h3 className={styles.mobileFeatureHeading}>{row.feature}</h3>
               
               {/* BAROUBA Advantage */}
               <div className={styles.mobileBaroubaBlock}>

@@ -21,8 +21,8 @@ export async function generateMetadata({ params }: HomeProps): Promise<Metadata>
       ? 'BAROUBA GROUP — Agence Digitale, Communication, Web Next.js, IA & Formations | Burkina Faso'
       : 'BAROUBA GROUP — Digital Agency, Communication, Web Next.js, AI & Training | Burkina Faso',
     description: locale === 'fr'
-      ? "BAROUBA GROUP à Ouagadougou : Communication Digitale, Community Management & gestion de pages, Plateformes Web Next.js 16, Publicité 360°, Tunnels de vente, Agents IA et Formations professionnelles certifiantes."
-      : "BAROUBA GROUP in Ouagadougou: Digital Communication, Community Management, Next.js 16 Web Platforms, 360° Ads, Sales Funnels, AI Agents & Certified Professional Training.",
+      ? "BAROUBA GROUP à Bobo-Dioulasso (interventions à Ouagadougou et tout le Burkina Faso) : Communication Digitale, Community Management, Plateformes Web Next.js 16, Publicité 360°, Tunnels de vente, Agents IA et Formations professionnelles certifiantes."
+      : "BAROUBA GROUP in Bobo-Dioulasso (interventions in Ouagadougou & across Burkina Faso): Digital Communication, Community Management, Next.js 16 Web Platforms, 360° Ads, Sales Funnels, AI Agents & Certified Professional Training.",
   };
 }
 

@@ -249,7 +249,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
               <div className={styles.takeawaysBox}>
                 <div className={styles.takeawaysHeader}>
                   <CheckCircle2 size={20} className={styles.takeawaysIcon} />
-                  <h3 className={styles.takeawaysTitle}>Les Points Clés à Retenir</h3>
+                  <h2 className={styles.takeawaysTitle}>Les Points Clés à Retenir</h2>
                 </div>
                 <ul className={styles.takeawaysList}>
                   {post.keyTakeaways.map((item: string, idx: number) => (
@@ -267,7 +267,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
               <nav className={styles.tocBox} aria-label="Sommaire de l'article">
                 <div className={styles.tocTitleRow}>
                   <Bookmark size={17} color="var(--color-gold)" />
-                  <h4 className={styles.tocTitle}>Sommaire du Guide</h4>
+                  <h2 className={styles.tocTitle}>Sommaire du Guide</h2>
                 </div>
                 <ul className={styles.tocList}>
                   {headings.map((h, idx) => (
@@ -387,7 +387,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
               <section className={styles.faqSection} aria-label="Questions Fréquentes">
                 <div className={styles.faqHeader}>
                   <span className={styles.faqBadge}>QUESTIONS FRÉQUEMMENT POSÉES</span>
-                  <h3 className={styles.faqTitle}>Foire Aux Questions (FAQ)</h3>
+                  <h2 className={styles.faqTitle}>Foire Aux Questions (FAQ)</h2>
                 </div>
                 <div className={styles.faqList}>
                   {post.faq.map((item: BlogPostFAQ, idx: number) => (
@@ -408,9 +408,9 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
             {/* Bottom Conversion & Contact CTA */}
             <div className={styles.ctaBox}>
               <div className={styles.ctaTextCol}>
-                <h3 className={styles.ctaTitle}>Vous souhaitez appliquer ces stratégies à votre entreprise ?</h3>
+                <h2 className={styles.ctaTitle}>Vous souhaitez appliquer ces stratégies à votre entreprise ?</h2>
                 <p className={styles.ctaDesc}>
-                  Discutez directement de votre projet avec la direction de BAROUBA GROUP à Ouagadougou. Diagnostic et plan d'action personnalisé sans engagement.
+                  Discutez directement de votre projet avec la direction de BAROUBA GROUP (Bobo-Dioulasso, Ouagadougou & International). Diagnostic et plan d'action personnalisé sans engagement.
                 </p>
               </div>
 
@@ -430,7 +430,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
             {/* Related Articles Section */}
             {relatedPosts.length > 0 && (
               <section className={styles.relatedSection}>
-                <h3 className={styles.relatedTitle}>Poursuivre votre lecture stratégique</h3>
+                <h2 className={styles.relatedTitle}>Poursuivre votre lecture stratégique</h2>
                 <div className={styles.relatedGrid}>
                   {relatedPosts.map((rel) => (
                     <Link
@@ -440,7 +440,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
                     >
                       <div>
                         <span className={styles.relatedTag}>{rel.category.title}</span>
-                        <h4 className={styles.relatedHeading}>{rel.title}</h4>
+                        <h3 className={styles.relatedHeading}>{rel.title}</h3>
                         <p className={styles.relatedExcerpt}>{rel.excerpt}</p>
                       </div>
                       <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', color: 'var(--color-gold)', fontSize: '0.82rem', fontWeight: 700, marginTop: '1rem' }}>

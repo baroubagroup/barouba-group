@@ -87,7 +87,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
           <div className={styles.detailsGrid}>
             {project.technologies && project.technologies.length > 0 && (
               <div className={styles.techBox}>
-                <h3 className={styles.boxTitle}>Technologies Utilisées</h3>
+                <h2 className={styles.boxTitle}>Technologies Utilisées</h2>
                 <div className={styles.techList}>
                   {project.technologies.map((tech: string) => (
                     <span key={tech} className={styles.techTag}>{tech}</span>
@@ -98,7 +98,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
 
             {project.results && (
               <div className={styles.resultsBox}>
-                <h3 className={styles.boxTitle}>Résultats Obtenus</h3>
+                <h2 className={styles.boxTitle}>Résultats Obtenus</h2>
                 <p className={styles.resultsText}>{project.results}</p>
               </div>
             )}

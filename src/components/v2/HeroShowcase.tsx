@@ -261,7 +261,7 @@ export default function HeroShowcase() {
                       </div>
                     </div>
 
-                    <h3 className={styles.cardTitle}>{activeCard.title}</h3>
+                    <h2 className={styles.cardTitle}>{activeCard.title}</h2>
                     <p className={styles.cardTagline}>{activeCard.tagline}</p>
 
                     {/* Proprietary Barouba Group Mockup (No third-party logos) */}

@@ -192,7 +192,7 @@ export default async function ServicesPage() {
           {/* Bottom Callout */}
           <div className={styles.ctaBox}>
             <div className={styles.ctaText}>
-              <h3 className={styles.ctaTitle}>Vous avez un projet spécifique à chiffrer ou des équipes à former ?</h3>
+              <h2 className={styles.ctaTitle}>Vous avez un projet spécifique à chiffrer ou des équipes à former ?</h2>
               <p className={styles.ctaDesc}>
                 Nos ingénieurs, stratèges et formateurs étudient vos besoins et vous répondent avec une proposition claire et un plan d'action sous 24 à 48 heures ouvrées.
               </p>
