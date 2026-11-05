@@ -59,15 +59,22 @@
 /* === GRID LAYOUT === */
 .grid {
   display: grid;
-  grid-template-columns: 1.15fr 0.95fr;
-  gap: clamp(2.5rem, 5vw, 4.5rem);
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.95fr);
+  gap: clamp(2rem, 4vw, 4.5rem);
   align-items: center;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 /* Left Column: Human proposition */
 .textCol {
   position: relative;
   z-index: 2;
+  min-width: 0;
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .badgeWrap {
@@ -98,6 +105,8 @@
   letter-spacing: 0.06em;
   color: var(--color-gold);
   line-height: 1.3;
+  white-space: normal;
+  word-break: break-word;
 }
 
 .mainHeading {
@@ -107,8 +116,9 @@
   letter-spacing: -0.03em;
   margin: 0 0 1.2rem;
   color: var(--text-primary);
-  text-wrap: balance;
+  text-wrap: pretty;
   word-break: break-word;
+  max-width: 100%;
 }
 
 .description {
@@ -117,7 +127,8 @@
   color: var(--text-secondary);
   margin-bottom: 2rem;
   max-width: 620px;
-  text-wrap: balance;
+  text-wrap: pretty;
+  word-break: break-word;
 }
 
 /* Value Chips */
@@ -126,6 +137,9 @@
   flex-wrap: wrap;
   gap: 0.75rem;
   margin-bottom: 2.4rem;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .chip {
@@ -140,6 +154,8 @@
   font-weight: 600;
   color: var(--text-primary);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .chipDiamond {
@@ -154,6 +170,9 @@
   gap: 1.2rem;
   flex-wrap: wrap;
   margin-bottom: 3rem;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .primaryBtn {
@@ -225,6 +244,9 @@
   padding-top: 1.8rem;
   border-top: 1px solid var(--border-subtle);
   flex-wrap: wrap;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .trustItem {
@@ -257,6 +279,10 @@
 .visualCol {
   position: relative;
   z-index: 2;
+  min-width: 0;
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .deckContainer {
@@ -264,14 +290,19 @@
   flex-direction: column;
   gap: 1.2rem;
   max-width: 540px;
+  width: 100%;
+  box-sizing: border-box;
   margin: 0 auto;
 }
 
 /* Deck Stepper Nav */
 .deckNav {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 0.6rem;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .navPill {
@@ -575,21 +606,34 @@
 
 @media (max-width: 1050px) {
   .grid {
-    grid-template-columns: 1fr;
-    gap: 3rem;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2.5rem;
+    width: 100%;
+    max-width: 100%;
   }
   .textCol {
-    text-align: center;
+    text-align: left;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+  .visualCol {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
   }
   .description {
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
   }
   .chipsRow, .ctaRow, .trustBar {
-    justify-content: center;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -602,23 +646,130 @@
     display: none;
   }
   .glowTop, .glowSide {
-    width: 220px;
-    height: 220px;
+    width: 200px;
+    height: 200px;
     filter: blur(50px);
+  }
+  .grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.8rem;
+    width: 100%;
+    max-width: 100%;
+  }
+  .textCol {
+    align-items: flex-start;
+    text-align: left;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
   }
   .badgeWrap {
     padding: 0.35rem 0.85rem;
     gap: 0.5rem;
     margin-bottom: 1rem;
     max-width: 100%;
+    align-self: flex-start;
   }
   .badgeText {
     font-size: 0.68rem;
     letter-spacing: 0.04em;
+    line-height: 1.35;
+  }
+  .mainHeading {
+    font-size: clamp(1.4rem, 5.5vw, 2.2rem);
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    text-align: left;
+    width: 100%;
+    max-width: 100%;
+  }
+  .description {
+    font-size: clamp(0.88rem, 3.2vw, 1.02rem);
+    line-height: 1.6;
+    margin-bottom: 1.4rem;
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+  .chipsRow {
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    max-width: 100%;
+    align-items: stretch;
+  }
+  .chip {
+    font-size: 0.76rem;
+    padding: 0.45rem 0.85rem;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    justify-content: flex-start;
+  }
+  .ctaRow {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    gap: 0.75rem;
+    margin-bottom: 1.8rem;
+  }
+  .primaryBtn, .secondaryBtn {
+    width: 100%;
+    max-width: 100%;
+    justify-content: center;
+    padding: 0.95rem 1.4rem;
+    box-sizing: border-box;
+    font-size: 0.92rem;
+  }
+  .trustBar {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.35rem;
+    width: 100%;
+    max-width: 100%;
+    padding-top: 1.2rem;
+    text-align: center;
+    box-sizing: border-box;
+    border-top: 1px solid var(--border-subtle);
+  }
+  .trustSeparator {
+    display: none;
+  }
+  .trustItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+  }
+  .trustVal {
+    font-size: clamp(1.1rem, 3.8vw, 1.4rem);
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 0.15rem;
+  }
+  .trustLabel {
+    font-size: clamp(0.58rem, 2vw, 0.7rem);
+    line-height: 1.2;
+    text-align: center;
+    color: var(--text-muted);
+  }
+  .visualCol {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
   }
   .deckContainer {
     width: 100%;
     max-width: 100%;
+    box-sizing: border-box;
   }
   .deckNav {
     display: flex;
@@ -630,6 +781,7 @@
     scrollbar-width: none;
     width: 100%;
     max-width: 100%;
+    box-sizing: border-box;
   }
   .deckNav::-webkit-scrollbar {
     display: none;
@@ -639,6 +791,7 @@
     scroll-snap-align: start;
     padding: 0.5rem 0.85rem;
     border-radius: 12px;
+    box-sizing: border-box;
   }
   .navPillTitle {
     font-size: 0.72rem;
@@ -648,6 +801,7 @@
     min-height: auto;
     width: 100%;
     max-width: 100%;
+    box-sizing: border-box;
   }
   .motionCard {
     padding: 1.1rem;
@@ -659,101 +813,58 @@
   .layerCardBack1, .layerCardBack2 {
     display: none !important;
   }
-  .chipsRow {
-    gap: 0.45rem;
-    margin-bottom: 1.6rem;
-    width: 100%;
-  }
-  .chip {
-    font-size: 0.74rem;
-    padding: 0.35rem 0.75rem;
-    border-radius: 8px;
-    max-width: 100%;
-    box-sizing: border-box;
-  }
-}
-
-@media (max-width: 580px) {
-  .ctaRow {
-    flex-direction: column;
-    width: 100%;
-    gap: 0.75rem;
-  }
-  .primaryBtn, .secondaryBtn {
-    width: 100%;
-    justify-content: center;
-    padding: 0.95rem 1.4rem;
-  }
-  .trustBar {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    text-align: center;
-    gap: 0.4rem;
-    width: 100%;
-    padding-top: 1.4rem;
-  }
-  .trustSeparator {
-    display: none;
-  }
-  .trustVal {
-    font-size: 1.25rem;
-  }
-  .trustLabel {
-    font-size: 0.62rem;
-    line-height: 1.2;
-  }
 }
 
 @media (max-width: 480px) {
   .heroWrap {
     padding: 1.2rem 0 1.5rem;
   }
+  .badgeWrap {
+    padding: 0.3rem 0.7rem;
+    gap: 0.45rem;
+    margin-bottom: 0.85rem;
+  }
+  .badgeText {
+    font-size: 0.63rem;
+    letter-spacing: 0.02em;
+  }
   .mainHeading {
-    font-size: clamp(1.35rem, 5.5vw, 1.75rem);
+    font-size: clamp(1.3rem, 5.8vw, 1.7rem);
     line-height: 1.22;
+    margin-bottom: 0.85rem;
   }
   .description {
-    font-size: 0.88rem;
+    font-size: 0.86rem;
     line-height: 1.55;
     margin-bottom: 1.2rem;
   }
-  .badgeWrap {
-    padding: 0.3rem 0.75rem;
-  }
-  .badgeText {
-    font-size: 0.64rem;
-    letter-spacing: 0.02em;
-  }
   .chipsRow {
-    gap: 0.35rem;
+    gap: 0.4rem;
     margin-bottom: 1.3rem;
   }
   .chip {
     font-size: 0.72rem;
-    padding: 0.35rem 0.6rem;
-    width: 100%;
-    justify-content: flex-start;
+    padding: 0.4rem 0.7rem;
   }
   .motionCard {
     padding: 0.95rem 0.85rem;
     border-radius: 16px;
   }
   .cardTitle {
-    font-size: 1.15rem;
+    font-size: 1.1rem;
   }
   .cardTagline {
-    font-size: 0.8rem;
-    margin-bottom: 0.9rem;
+    font-size: 0.78rem;
+    margin-bottom: 0.85rem;
   }
   .featureRow {
-    font-size: 0.78rem;
+    font-size: 0.76rem;
     gap: 0.45rem;
   }
   .trustVal {
-    font-size: 1.15rem;
+    font-size: 1.1rem;
   }
   .trustLabel {
     font-size: 0.58rem;
-    line-height: 1.15;
   }
 }

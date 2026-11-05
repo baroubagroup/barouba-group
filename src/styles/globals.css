@@ -212,6 +212,16 @@ a {
   box-sizing: border-box;
 }
 
+@media (max-width: 768px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+}
+
 @media (max-width: 480px) {
   .container {
     padding-left: 14px;
