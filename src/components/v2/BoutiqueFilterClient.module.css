@@ -329,6 +329,17 @@
   white-space: nowrap;
 }
 
+.mockupBadgePurple {
+  font-size: 0.7rem;
+  font-weight: 800;
+  color: #c084fc;
+  background: rgba(192, 132, 252, 0.12);
+  border: 1px solid rgba(192, 132, 252, 0.3);
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.4rem;
+  white-space: nowrap;
+}
+
 /* Card Content */
 .cardContent {
   padding: 1.5rem;

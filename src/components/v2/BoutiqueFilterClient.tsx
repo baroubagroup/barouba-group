@@ -12,8 +12,11 @@ import {
   ArrowRight, 
   Star, 
   Layers, 
-  Terminal,
-  Server
+  Video,
+  Bot,
+  Zap,
+  Lock,
+  Smartphone
 } from 'lucide-react';
 import styles from './BoutiqueFilterClient.module.css';
 
@@ -25,9 +28,9 @@ type CategoryFilter = 'all' | 'template' | 'tool' | 'subscription';
 
 const CATEGORIES: { id: CategoryFilter; label: string; icon: React.ReactNode }[] = [
   { id: 'all', label: 'Tous les produits', icon: <Layers size={16} /> },
-  { id: 'template', label: 'Templates & Codebases', icon: <Palette size={16} /> },
+  { id: 'template', label: 'Templates & Tunnels', icon: <Palette size={16} /> },
   { id: 'tool', label: 'Outils & Prompts IA', icon: <Sparkles size={16} /> },
-  { id: 'subscription', label: 'Abonnements & Sérénité', icon: <ShieldCheck size={16} /> },
+  { id: 'subscription', label: 'Abonnements & Sécurité', icon: <ShieldCheck size={16} /> },
 ];
 
 function WhatsAppIcon() {
@@ -103,6 +106,52 @@ function ProductVisualPreview({ slug }: { slug: string }) {
             <div className={styles.mockupHeading}>100% Conversions Capturées</div>
           </div>
           <div className={styles.mockupBadgeBlue}>0% Perte</div>
+        </div>
+      </div>
+    );
+  }
+
+  if (slug === 'pack-creatifs-ia-affiches-video-ads') {
+    return (
+      <div className={styles.mockupMiniWindow}>
+        <div className={styles.mockupMiniHeader}>
+          <div className={styles.mockupDots}>
+            <span className={styles.dotRed} />
+            <span className={styles.dotYellow} />
+            <span className={styles.dotGreen} />
+          </div>
+          <span className={styles.mockupUrl}>studio-creatifs.baroubagroup.com</span>
+          <span className={styles.mockupTag}>8K Video 🎬</span>
+        </div>
+        <div className={styles.mockupMiniBody}>
+          <div className={styles.mockupLeft}>
+            <div className={styles.mockupPill}>Canva Pro • Kling AI • 9:16 Ads</div>
+            <div className={styles.mockupHeading}>50 Affiches + Hooks 3s TikTok</div>
+          </div>
+          <div className={styles.mockupBadgePurple}>-60% CAC</div>
+        </div>
+      </div>
+    );
+  }
+
+  if (slug === 'systeme-acquisition-whatsapp-crm-pro') {
+    return (
+      <div className={styles.mockupMiniWindow}>
+        <div className={styles.mockupMiniHeader}>
+          <div className={styles.mockupDots}>
+            <span className={styles.dotRed} />
+            <span className={styles.dotYellow} />
+            <span className={styles.dotGreen} />
+          </div>
+          <span className={styles.mockupUrl}>bot-closing.whatsapp.api</span>
+          <span className={styles.mockupTag}>24/7 Bot 🤖</span>
+        </div>
+        <div className={styles.mockupMiniBody}>
+          <div className={styles.mockupLeft}>
+            <div className={styles.mockupPill}>Make / n8n • Google Sheets CRM</div>
+            <div className={styles.mockupHeading}>Qualification & Relance J+1/J+3</div>
+          </div>
+          <div className={styles.mockupBadgeGreen}>0 Lead Perdu</div>
         </div>
       </div>
     );
@@ -219,7 +268,7 @@ export default function BoutiqueFilterClient({ products }: BoutiqueFilterClientP
                       <span className={styles.priceMain}>{product.priceFCFA}</span>
                       <span className={styles.priceEur}>({product.priceEUR})</span>
                       {product.originalPriceFCFA && (
-                        <span className={styles.discountBadge}>Remise</span>
+                        <span className={styles.discountBadge}>Remise Immédiate</span>
                       )}
                     </div>
                     {product.originalPriceFCFA && (
@@ -232,13 +281,6 @@ export default function BoutiqueFilterClient({ products }: BoutiqueFilterClientP
 
                 {/* Action Buttons */}
                 <div className={styles.actionsRow}>
-                  <Link
-                    href={{ pathname: '/boutique/[slug]', params: { slug: product.slug } }}
-                    className={styles.btnDetails}
-                  >
-                    <span>Voir la fiche complète</span>
-                    <ArrowRight size={15} />
-                  </Link>
                   <a
                     href={whatsappUrl}
                     target="_blank"
@@ -247,8 +289,15 @@ export default function BoutiqueFilterClient({ products }: BoutiqueFilterClientP
                     title="Commander directement sur WhatsApp"
                   >
                     <WhatsAppIcon />
-                    <span>Commander</span>
+                    <span>Commander sur WhatsApp</span>
                   </a>
+                  <Link
+                    href={{ pathname: '/boutique/[slug]', params: { slug: product.slug } }}
+                    className={styles.btnDetails}
+                  >
+                    <span>Fiche détaillée</span>
+                    <ArrowRight size={14} />
+                  </Link>
                 </div>
               </div>
             </div>

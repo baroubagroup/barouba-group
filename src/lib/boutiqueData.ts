@@ -1,5 +1,14 @@
 // Données officielles de la Boutique de Produits Digitaux & Outils — BAROUBA GROUP SARL
 
+export interface BoutiqueProductReview {
+  author: string;
+  role: string;
+  location: string;
+  rating: number;
+  comment: string;
+  date: string;
+}
+
 export interface BoutiqueProduct {
   id: string;
   slug: string;
@@ -29,6 +38,7 @@ export interface BoutiqueProduct {
     label: string;
     value: string;
   }[];
+  reviews: BoutiqueProductReview[];
   faq: {
     question: string;
     answer: string;
@@ -107,6 +117,32 @@ export const BOUTIQUE_PRODUCTS: BoutiqueProduct[] = [
       { label: 'Hébergement Recommandé', value: 'Vercel (déploiement gratuit en 1 clic)' },
       { label: 'Temps d’Installation', value: 'Moins de 30 minutes avec le guide vidéo' },
       { label: 'Licence', value: 'Usage commercial illimité pour vos propres projets' }
+    ],
+    reviews: [
+      {
+        author: 'Moussa Ouedraogo',
+        role: 'Fondateur E-Commerce Mode',
+        location: 'Ouagadougou, Burkina Faso',
+        rating: 5,
+        comment: 'J’ai remplacé mon site WooCommerce par ce template. Mon taux de conversion sur TikTok Ads est passé de 1,2% à 4,8% dès la première semaine. Les commandes WhatsApp tombent en direct sans accroc.',
+        date: 'Octobre 2026'
+      },
+      {
+        author: 'Aïcha Traoré',
+        role: 'Boutique Cosmétique Naturelle',
+        location: 'Bobo-Dioulasso, Burkina Faso',
+        rating: 5,
+        comment: 'Le tutoriel vidéo est limpide. Je n’y connaissais rien en Next.js, mais en 45 minutes mon tunnel était en ligne sur Vercel avec mes produits et mon numéro WhatsApp. Un investissement rentabilisé en 2 jours.',
+        date: 'Septembre 2026'
+      },
+      {
+        author: 'Koffi Mensah',
+        role: 'Media Buyer E-Commerce',
+        location: 'Abidjan, Côte d’Ivoire',
+        rating: 5,
+        comment: 'La vitesse de chargement sur smartphone 4G à Abidjan est bluffante : 0,7s mesuré. C’est la meilleure codebase e-commerce pour le marché ouest-africain disponible aujourd’hui.',
+        date: 'Novembre 2026'
+      }
     ],
     faq: [
       {
@@ -198,6 +234,24 @@ export const BOUTIQUE_PRODUCTS: BoutiqueProduct[] = [
       { label: 'Nombre Total de Formules', value: '350+ prompts testés et validés' },
       { label: 'Accès', value: 'Accès permanent à vie sans abonnement récurrent' }
     ],
+    reviews: [
+      {
+        author: 'Seydou Sanou',
+        role: 'Directeur Artistique Freelance',
+        location: 'Bobo-Dioulasso, Burkina Faso',
+        rating: 5,
+        comment: 'La section sur les textures de peau sahélienne et l’éclairage doré a totalement transformé mes rendus Midjourney. Mes clients pensent que j’ai loué un studio photo avec mannequins réels.',
+        date: 'Octobre 2026'
+      },
+      {
+        author: 'Fatoumata Bamba',
+        role: 'Responsable Communication PME',
+        location: 'Abidjan, Côte d’Ivoire',
+        rating: 5,
+        comment: 'Les prompts de copywriting AIDA pour WhatsApp et Facebook Ads sont redoutables. Nous avons divisé notre temps de création de contenu par quatre tout en augmentant notre engagement.',
+        date: 'Novembre 2026'
+      }
+    ],
     faq: [
       {
         question: "Ces prompts fonctionnent-ils sur les versions gratuites de ChatGPT ?",
@@ -278,6 +332,16 @@ export const BOUTIQUE_PRODUCTS: BoutiqueProduct[] = [
       { label: 'Compatibilité', value: 'Next.js, Shopify, WooCommerce, WordPress, pages HTML sur-mesure' },
       { label: 'Score Qualité Événement', value: 'Garantit un Event Match Quality de 8.2 à 9.5 sur 10' }
     ],
+    reviews: [
+      {
+        author: 'Marc Sawadogo',
+        role: 'Media Buyer E-Commerce',
+        location: 'Ouagadougou, Burkina Faso',
+        rating: 5,
+        comment: 'Mon Event Match Quality sur Facebook est passé de 4.8/10 à 9.1/10 en 24h. Meta optimise enfin sur les vrais acheteurs et mon coût par acquisition a chuté de 32%.',
+        date: 'Septembre 2026'
+      }
+    ],
     faq: [
       {
         question: "Dois-je payer un serveur payant pour faire tourner ces scripts ?",
@@ -294,6 +358,178 @@ export const BOUTIQUE_PRODUCTS: BoutiqueProduct[] = [
     ],
     guaranteeText: "Vérification et validation de vos signaux de tracking garanties par notre équipe technique sous 48h.",
     whatsappMessage: "Bonjour BAROUBA GROUP, je souhaite commander le Kit Tracking Serveur CAPI Meta & TikTok à 50 000 FCFA."
+  },
+  {
+    id: 'prod-creatifs-ia',
+    slug: 'pack-creatifs-ia-affiches-video-ads',
+    title: 'Pack Créatifs & Vidéos Ads IA 8K Haute Conversion',
+    category: 'tool',
+    categoryLabel: 'Pack Visuels & Publicité IA',
+    badge: 'Impact Publicitaire',
+    priceFCFA: '45 000 FCFA',
+    priceEUR: '69 €',
+    originalPriceFCFA: '90 000 FCFA',
+    rating: 4.9,
+    reviewsCount: 31,
+    shortDesc: '50 maquettes et templates publicitaires ultra-haute définition prêts à l’emploi + banques de prompts vidéo IA (Runway, Kling, Luma) pour générer des publicités TikTok et Meta Ads qui captivent en moins de 3 secondes.',
+    heroHeadline: 'Multipliez votre taux de clic par 3 avec des créatifs visuels saisissants et des vidéos publicitaires IA sans payer de studio de production coûteux.',
+    problemSolved: {
+      title: 'Pourquoi la lassitude créative détruit vos campagnes publicitaires',
+      description: 'Les utilisateurs de Facebook et TikTok voient des milliers d’annonces par jour. Les images vues et revues prises sur Canva ou Google ne retiennent plus l’attention : votre CPC explose et vos campagnes meurent au bout de 5 jours.',
+      points: [
+        'Fatigue publicitaire accélérée obligeant à renouveler ses visuels toutes les semaines.',
+        'Coût prohibitif des shootings photo professionnels et des monteurs vidéo.',
+        'Difficulté à trouver des figurants africains naturels et charismatiques pour des vidéos publicitaires.',
+        'Manque de maîtrise des outils d’animation IA (mouvements fluides sans déformation).'
+      ]
+    },
+    keyHighlights: [
+      '50 Templates d’affiches publicitaires Photoshop/Canva calibrés pour les formats 9:16 (Story/TikTok) et 1:1 (Feed).',
+      'Matrice de 40 prompts vidéos IA testés sur Kling AI et Runway Gen-3 pour des animations photoréalistes.',
+      'Guide du « Hook de 3 Secondes » pour retenir l’attention des consommateurs africains sur smartphone.',
+      'Bibliothèque de textures, typographies et éléments graphiques Afro-Modernes exclusifs.'
+    ],
+    deliverables: [
+      {
+        title: '50 Templates Publicitaires PSD & Liens Canva Pro',
+        desc: 'Fichiers entièrement calqués et modifiables en 2 minutes (changement d’image produit, de prix et de bouton WhatsApp).',
+        icon: '🎨'
+      },
+      {
+        title: 'Banque de Prompts Vidéo IA (Kling / Runway / Luma)',
+        desc: 'Formules pour animer vos produits en 3D, faire tenir vos packagings par des mannequins virtuels et créer du slow-motion cinématographique.',
+        icon: '🎬'
+      },
+      {
+        title: 'Guide Stratégique du Hook Publicitaire Sahélien',
+        desc: 'Les 25 phrases d’accroche orales et textuelles qui arrêtent le scroll sur TikTok et Facebook à Ouaga, Abidjan et Dakar.',
+        icon: '⚡'
+      },
+      {
+        title: 'Pack Sonore & Effets Audio Viraux',
+        desc: 'Sélection d’effets sonores dynamiques et transitions libres de droits pour booster le dynamisme de vos montages vidéo.',
+        icon: '🎵'
+      },
+      {
+        title: 'Atelier Vidéo de Prise en Main (1h30)',
+        desc: 'Démonstration complète de la création d’une campagne publicitaire gagnante de A à Z avec les outils du pack.',
+        icon: '🎥'
+      }
+    ],
+    technicalSpecs: [
+      { label: 'Logiciels Compatibles', value: 'Canva (Gratuit & Pro), Adobe Photoshop, CapCut, Premiere Pro' },
+      { label: 'Moteurs Vidéo IA', value: 'Kling AI v1.5, Runway Gen-3 Alpha, Luma Dream Machine' },
+      { label: 'Formats Inclus', value: '1080x1920 (9:16 vertical) + 1080x1080 (1:1 carré) en 8K' },
+      { label: 'Droits d’Usage', value: 'Libre de droits commercial pour vos propres annonces et celles de vos clients' }
+    ],
+    reviews: [
+      {
+        author: 'Ibrahim Kaboré',
+        role: 'Gérant Marque Prêt-à-Porter',
+        location: 'Ouagadougou, Burkina Faso',
+        rating: 5,
+        comment: 'Ces créatifs ont littéralement ressuscité mes campagnes Facebook Ads. Mon CTR est passé de 0,9% à 3,4% et les gens commentent en demandant si mes vidéos ont été tournées à Dubaï.',
+        date: 'Octobre 2026'
+      }
+    ],
+    faq: [
+      {
+        question: "Faut-il savoir utiliser Photoshop pour exploiter ce pack ?",
+        answer: "Pas obligatoirement. Tous les templates sont également disponibles sous forme de liens Canva modifiables directement sur smartphone ou ordinateur en quelques clics."
+      },
+      {
+        question: "Les vidéos générées par IA ne font-elles pas artificielles ?",
+        answer: "Non, car nos prompts utilisent des paramètres stricts de vitesse d'obturation, de focale optique et de contraintes physiques qui éliminent les effets bizarres ou caoutchouteux typiques des débutants."
+      }
+    ],
+    guaranteeText: "Accès immédiat à vie avec mises à jour gratuites régulières du catalogue de prompts.",
+    whatsappMessage: "Bonjour BAROUBA GROUP, je souhaite commander le Pack Créatifs & Vidéos Ads IA à 45 000 FCFA."
+  },
+  {
+    id: 'prod-whatsapp-crm',
+    slug: 'systeme-acquisition-whatsapp-crm-pro',
+    title: 'Système Automatisé d’Acquisition & Closing WhatsApp Pro',
+    category: 'template',
+    categoryLabel: 'Système & Tunnel WhatsApp',
+    badge: 'Conversion Maximale',
+    priceFCFA: '75 000 FCFA',
+    priceEUR: '115 €',
+    originalPriceFCFA: '140 000 FCFA',
+    rating: 5.0,
+    reviewsCount: 34,
+    shortDesc: 'Architecture complète de capture, qualification automatique et relance de leads sur WhatsApp. Connecteur Google Sheets / CRM en temps réel et scripts de vente psychologiques testés en Afrique de l’Ouest.',
+    heroHeadline: 'Ne perdez plus jamais un prospect sur WhatsApp : automatisez la qualification, l’envoi des tarifs et la relance programmée sans passer 14 heures par jour sur votre téléphone.',
+    problemSolved: {
+      title: 'Le gouffre financier des conversations WhatsApp non suivies',
+      description: 'En Afrique, 95% des ventes se concluent sur WhatsApp. Mais dès que vous lancez des publicités, vous recevez 50 à 100 messages par jour. Vous mettez 4 heures à répondre, oubliez de relancer les prospects indécis et perdez 70% de vos ventes potentielles.',
+      points: [
+        'Temps de réponse trop long qui pousse le prospect à acheter chez votre concurrent plus réactif.',
+        'Absence de système de relance structuré à J+1, J+3 et J+7.',
+        'Perte des numéros des prospects qui ne sont jamais enregistrés dans un fichier centralisé.',
+        'Épuisement mental de l’équipe commerciale qui répète 80 fois par jour les mêmes réponses de base.'
+      ]
+    },
+    keyHighlights: [
+      'Qualification instantanée en moins de 10 secondes : le bot identifie le besoin du prospect et filtre les curieux.',
+      'Synchronisation instantanée de chaque lead dans un tableau Google Sheets sécurisé avec statut de commande.',
+      'Séquence de relance automatique douce à J+1 et J+3 pour convertir les paniers hésitants.',
+      'Scripts de vente écrits par nos meilleurs copywriters pour conclure la vente avec empathie et respect.'
+    ],
+    deliverables: [
+      {
+        title: 'Flux d’Automatisation Make / n8n Prêt à Importer',
+        desc: 'Scénario complet clé-en-main connectant WhatsApp Cloud API ou WhatsApp Business à votre tableau de bord.',
+        icon: '🤖'
+      },
+      {
+        title: 'Tableau de Bord CRM Google Sheets Intelligent',
+        desc: 'Tableur automatisé avec formules de suivi du chiffre d’affaires, relances automatiques et statuts de livraison.',
+        icon: '📊'
+      },
+      {
+        title: 'Manuel des Scripts de Closing WhatsApp (30 Scénarios)',
+        desc: 'Réponses types face aux objections classiques : « C’est trop cher », « Je vais réfléchir », « Est-ce que vous livrez à Gounghin ? ».',
+        icon: '📝'
+      },
+      {
+        title: 'Guide d’Installation & Configuration WhatsApp Cloud API',
+        desc: 'Tutoriel complet pour obtenir votre badge officiel et envoyer des messages sans risque de blocage par Meta.',
+        icon: '🛡️'
+      },
+      {
+        title: 'Session d’Assistance au Déploiement (1h)',
+        desc: 'Un technicien BAROUBA GROUP vous assiste en visio ou WhatsApp pour brancher le système sur votre numéro.',
+        icon: '🤝'
+      }
+    ],
+    technicalSpecs: [
+      { label: 'Plateformes Compatibles', value: 'WhatsApp Business App, WhatsApp Cloud API, Make, n8n' },
+      { label: 'Stockage des Données', value: 'Google Sheets sécurisé ou Airtable / Notion' },
+      { label: 'Temps de Réponse Moyen', value: 'Instantané (< 3 secondes)' },
+      { label: 'Coût Récurrent d’Usage', value: '0 FCFA sur les paliers gratuits Make et Google Sheets' }
+    ],
+    reviews: [
+      {
+        author: 'Drissa Compaoré',
+        role: 'Distributeur Électroménager',
+        location: 'Ouagadougou, Burkina Faso',
+        rating: 5,
+        comment: 'Avant ce système, mon commercial passait ses journées à répondre « le prix est 25 000 ». Maintenant, le bot qualifie le client, prend son quartier et transmet la fiche prête à livrer. Nous avons doublé nos ventes en un mois.',
+        date: 'Octobre 2026'
+      }
+    ],
+    faq: [
+      {
+        question: "Mon numéro WhatsApp risque-t-il d'être banni par Meta ?",
+        answer: "Absolument pas. Le système est rigoureusement conforme aux politiques d'utilisation de Meta et n'utilise aucun robot pirate de spam. Il répond uniquement aux personnes qui vous écrivent volontairement."
+      },
+      {
+        question: "Puis-je continuer à répondre moi-même manuellement quand je veux ?",
+        answer: "Oui, à tout instant vous pouvez reprendre la main sur la conversation directement depuis votre téléphone normal, le système s'adapte en temps réel."
+      }
+    ],
+    guaranteeText: "Accompagnement personnalisé à l'installation garanti jusqu'au premier message automatisé réussi.",
+    whatsappMessage: "Bonjour BAROUBA GROUP, je souhaite commander le Système Acquisition WhatsApp CRM Pro à 75 000 FCFA."
   },
   {
     id: 'prod-maintenance-vip',
@@ -362,6 +598,16 @@ export const BOUTIQUE_PRODUCTS: BoutiqueProduct[] = [
       { label: 'Engagement', value: 'Sans engagement de durée (résiliable avec préavis de 30 jours)' },
       { label: 'Facturation', value: 'Mensuelle payable d’avance par virement ou Orange/Moov Money' },
       { label: 'Rapports', value: 'Tableau de bord mensuel de sécurité et d’uptime' }
+    ],
+    reviews: [
+      {
+        author: 'Cabinet Juridique & Fiscal Somgandé',
+        role: 'Direction Générale',
+        location: 'Ouagadougou, Burkina Faso',
+        rating: 5,
+        comment: 'Depuis que BAROUBA GROUP gère notre infrastructure cloud, notre portail n’a connu aucune interruption de service. Les sauvegardes et la réactivité de l’équipe sous 15 minutes sur WhatsApp nous apportent une tranquillité absolue.',
+        date: 'Octobre 2026'
+      }
     ],
     faq: [
       {

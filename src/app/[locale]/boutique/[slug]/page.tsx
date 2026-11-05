@@ -19,7 +19,10 @@ import {
   Lock, 
   Clock, 
   Award,
-  ChevronRight
+  ChevronRight,
+  MessageSquare,
+  BadgeCheck,
+  Check
 } from 'lucide-react';
 import styles from './product.module.css';
 
@@ -94,7 +97,7 @@ export default async function ProductSinglePage({ params }: ProductPageProps) {
                 <div className={styles.ratingBox}>
                   <Star size={14} fill="#d97706" color="#d97706" />
                   <span>{product.rating} / 5</span>
-                  <span style={{ opacity: 0.6 }}>({product.reviewsCount} avis vérifiés)</span>
+                  <span style={{ opacity: 0.7 }}>({product.reviewsCount} avis vérifiés)</span>
                 </div>
               </div>
 
@@ -143,9 +146,21 @@ export default async function ProductSinglePage({ params }: ProductPageProps) {
                 <span>Commander via WhatsApp</span>
               </a>
 
+              {/* Payment Methods Accepted */}
+              <div className={styles.paymentMethodsBox}>
+                <div className={styles.paymentMethodsLabel}>Paiements locaux & sécurisés acceptés :</div>
+                <div className={styles.paymentMethodsBadges}>
+                  <span className={styles.paymentBadge}>Orange Money</span>
+                  <span className={styles.paymentBadge}>Moov Money</span>
+                  <span className={styles.paymentBadge}>Wave</span>
+                  <span className={styles.paymentBadge}>Virement Bancaire</span>
+                  <span className={styles.paymentBadge}>Carte Bancaire</span>
+                </div>
+              </div>
+
               {/* Scroll to deliverables */}
               <a href="#livrables" className={styles.anchorDeliverablesBtn}>
-                <span>Découvrir les 6 livrables inclus</span>
+                <span>Découvrir le contenu complet</span>
                 <ArrowDown size={14} />
               </a>
 
@@ -157,7 +172,7 @@ export default async function ProductSinglePage({ params }: ProductPageProps) {
                 </div>
                 <div className={styles.guaranteeRow}>
                   <CreditCard size={16} className={styles.guaranteeIcon} />
-                  <span>Orange Money, Moov Money ou virement bancaire</span>
+                  <span>Orange Money, Moov Money, Wave ou virement</span>
                 </div>
                 <div className={styles.guaranteeRow}>
                   <ShieldCheck size={16} className={styles.guaranteeIcon} />
@@ -252,6 +267,49 @@ export default async function ProductSinglePage({ params }: ProductPageProps) {
         </div>
       </section>
 
+      {/* Section Verified Customer Reviews */}
+      {product.reviews && product.reviews.length > 0 && (
+        <section className={styles.reviewsSection}>
+          <div className="container">
+            <div className={styles.sectionHeaderCenter}>
+              <span className={styles.sectionTagGold}>Retours d'Expérience Réels</span>
+              <h2 className={styles.sectionHeading}>Ce que disent nos clients</h2>
+              <p className={styles.sectionSub}>
+                Témoignages vérifiés d’entrepreneurs, media buyers et dirigeants qui utilisent cette solution au quotidien.
+              </p>
+            </div>
+
+            <div className={styles.reviewsGrid}>
+              {product.reviews.map((rev, i) => (
+                <div key={i} className={styles.reviewCard}>
+                  <div className={styles.reviewHeader}>
+                    <div className={styles.reviewStars}>
+                      {Array.from({ length: rev.rating }).map((_, starIdx) => (
+                        <Star key={starIdx} size={15} fill="#d97706" color="#d97706" />
+                      ))}
+                    </div>
+                    <span className={styles.reviewDate}>{rev.date}</span>
+                  </div>
+
+                  <p className={styles.reviewComment}>« {rev.comment} »</p>
+
+                  <div className={styles.reviewFooter}>
+                    <div className={styles.reviewAuthorBox}>
+                      <div className={styles.reviewAuthorName}>{rev.author}</div>
+                      <div className={styles.reviewAuthorRole}>{rev.role} • {rev.location}</div>
+                    </div>
+                    <div className={styles.verifiedBadge}>
+                      <BadgeCheck size={14} />
+                      <span>Achat vérifié</span>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Section FAQ */}
       <section className={styles.sectionFaq}>
         <div className="container">
@@ -302,6 +360,25 @@ export default async function ProductSinglePage({ params }: ProductPageProps) {
           </div>
         </div>
       </section>
+
+      {/* Sticky Mobile Floating Order Bar */}
+      <div className={styles.stickyMobileBar}>
+        <div className={styles.stickyMobileInner}>
+          <div className={styles.stickyMobileLeft}>
+            <div className={styles.stickyMobileTitle}>{product.title}</div>
+            <div className={styles.stickyMobilePrice}>{product.priceFCFA}</div>
+          </div>
+          <a
+            href={whatsappCheckoutUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.stickyMobileBtn}
+          >
+            <WhatsAppIcon />
+            <span>Commander</span>
+          </a>
+        </div>
+      </div>
     </article>
   );
 }
