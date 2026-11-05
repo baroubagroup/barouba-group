@@ -188,7 +188,7 @@ export default async function RootLayout({ children, params }: RootLayoutProps) 
   };
 
   return (
-    <html lang={locale} suppressHydrationWarning>
+    <html lang={locale} data-scroll-behavior="smooth" suppressHydrationWarning>
       <head>
         <Script id="theme-init" strategy="beforeInteractive">
           {`
