@@ -95,11 +95,11 @@
 }
 
 .mainHeading {
-  font-size: clamp(2.4rem, 4.6vw, 3.9rem);
+  font-size: clamp(1.85rem, 5.2vw, 3.8rem);
   font-weight: 800;
-  line-height: 1.14;
+  line-height: 1.16;
   letter-spacing: -0.03em;
-  margin: 0 0 1.4rem;
+  margin: 0 0 1.2rem;
   color: var(--text-primary);
   text-wrap: balance;
 }
@@ -567,7 +567,7 @@
 @media (max-width: 1050px) {
   .grid {
     grid-template-columns: 1fr;
-    gap: 3.5rem;
+    gap: 3rem;
   }
   .textCol {
     text-align: center;
@@ -581,5 +581,101 @@
   }
   .chipsRow, .ctaRow, .trustBar {
     justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroWrap {
+    padding: clamp(4.5rem, 9vw, 6rem) 0 2.5rem;
+    min-height: auto;
+  }
+  .afroBogolanWatermark {
+    display: none;
+  }
+  .glowTop, .glowSide {
+    width: 260px;
+    height: 260px;
+    filter: blur(60px);
+  }
+  .badgeWrap {
+    padding: 0.35rem 0.85rem;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  .badgeText {
+    font-size: 0.68rem;
+    letter-spacing: 0.05em;
+  }
+  .deckNav {
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    gap: 0.5rem;
+    padding-bottom: 8px;
+    scrollbar-width: none;
+    width: 100%;
+  }
+  .deckNav::-webkit-scrollbar {
+    display: none;
+  }
+  .navPill {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    padding: 0.5rem 0.85rem;
+    border-radius: 12px;
+  }
+  .navPillTitle {
+    font-size: 0.72rem;
+    max-width: 130px;
+  }
+  .cardBox {
+    min-height: auto;
+  }
+  .motionCard {
+    padding: 1.2rem;
+    border-radius: 20px;
+  }
+  .layerCardBack1, .layerCardBack2 {
+    display: none !important;
+  }
+  .chipsRow {
+    gap: 0.5rem;
+    margin-bottom: 1.8rem;
+  }
+  .chip {
+    font-size: 0.74rem;
+    padding: 0.35rem 0.75rem;
+    border-radius: 8px;
+  }
+}
+
+@media (max-width: 580px) {
+  .ctaRow {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.75rem;
+  }
+  .primaryBtn, .secondaryBtn {
+    width: 100%;
+    justify-content: center;
+    padding: 0.95rem 1.4rem;
+  }
+  .trustBar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding-top: 1.5rem;
+  }
+  .trustSeparator {
+    display: none;
+  }
+  .trustVal {
+    font-size: 1.35rem;
+  }
+  .trustLabel {
+    font-size: 0.65rem;
   }
 }

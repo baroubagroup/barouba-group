@@ -394,3 +394,15 @@
   border-color: #d97706;
   color: #b45309;
 }
+
+@media (max-width: 580px) {
+  .customActions {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.75rem;
+  }
+  .btnCtaWhatsapp, .btnCtaDevis {
+    width: 100%;
+    justify-content: center;
+  }
+}

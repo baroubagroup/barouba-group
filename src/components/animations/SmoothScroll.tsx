@@ -9,14 +9,20 @@ interface SmoothScrollProps {
 
 export default function SmoothScroll({ children }: SmoothScrollProps) {
   useEffect(() => {
+    // Only enable Lenis on desktop screens with fine pointer (mouse/trackpad)
+    // On mobile touch devices, native momentum scrolling is 60-120fps responsive and zero-lag
+    if (typeof window === 'undefined') return;
+    const isTouchOrMobile = window.innerWidth < 1024 || window.matchMedia('(pointer: coarse)').matches;
+    if (isTouchOrMobile) return;
+
     const lenis = new Lenis({
-      duration: 1.2,
+      duration: 1.1,
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
       orientation: 'vertical',
       gestureOrientation: 'vertical',
       smoothWheel: true,
       wheelMultiplier: 1,
-      touchMultiplier: 2,
+      touchMultiplier: 1.5,
     });
 
     // Sync GSAP ScrollTrigger with Lenis for perfect coordination
@@ -31,7 +37,6 @@ export default function SmoothScroll({ children }: SmoothScrollProps) {
         });
         gsap.ticker.lagSmoothing(0);
       } catch {
-        // GSAP not needed, fallback to plain RAF
         function raf(time: number) {
           lenis.raf(time);
           requestAnimationFrame(raf);

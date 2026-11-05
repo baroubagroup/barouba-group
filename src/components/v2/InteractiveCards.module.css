@@ -264,3 +264,27 @@
   color: var(--color-gold);
   transform: translateX(4px);
 }
+
+@media (max-width: 640px) {
+  .section {
+    padding: 4rem 0;
+  }
+  .title {
+    font-size: clamp(1.7rem, 6vw, 2.4rem);
+  }
+  .header {
+    margin-bottom: 2.5rem;
+  }
+  .imageWrap {
+    height: 170px;
+  }
+  .cardContent {
+    padding: 1.2rem;
+  }
+  .cardInner {
+    border-radius: 20px;
+  }
+  .cardHeading {
+    font-size: 1.22rem;
+  }
+}

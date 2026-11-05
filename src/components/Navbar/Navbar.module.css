@@ -265,7 +265,7 @@
   inset: 0;
   top: 70px;
   background: var(--bg-base);
-  padding: 2rem;
+  padding: 1.5rem 1.5rem 4rem;
   display: flex;
   flex-direction: column;
   transform: translateY(-100%);
@@ -274,6 +274,33 @@
   transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
   z-index: 99;
   border-top: 1px solid var(--border-default);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  max-height: calc(100vh - 70px);
+}
+
+@media (max-width: 480px) {
+  .brandTitle {
+    font-size: 0.96rem;
+  }
+  .brandBadge {
+    display: none;
+  }
+  .inner {
+    gap: 0.6rem;
+  }
+  .navbar {
+    padding: 0.7rem 0;
+  }
+  .mobileMenu {
+    top: 62px;
+    padding: 1.2rem 1rem 4rem;
+    max-height: calc(100vh - 62px);
+  }
+  .mobileLink {
+    padding: 0.8rem 1rem;
+    font-size: 0.98rem;
+  }
 }
 
 .mobileOpen {

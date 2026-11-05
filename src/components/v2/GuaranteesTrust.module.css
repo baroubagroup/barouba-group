@@ -191,3 +191,29 @@
     grid-column: span 1;
   }
 }
+
+@media (max-width: 640px) {
+  .section {
+    padding: 4rem 0;
+  }
+  .title {
+    font-size: clamp(1.65rem, 6vw, 2.4rem);
+  }
+  .header {
+    margin-bottom: 2rem;
+  }
+  .card {
+    padding: 22px 16px;
+    border-radius: 18px;
+  }
+  .ndaStrip {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+    border-radius: 14px;
+    gap: 12px;
+  }
+  .ndaBtn {
+    width: 100%;
+  }
+}

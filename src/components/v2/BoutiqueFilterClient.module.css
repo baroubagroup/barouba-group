@@ -540,3 +540,33 @@
   box-shadow: 0 4px 15px rgba(37, 211, 102, 0.35);
   transform: translateY(-1px);
 }
+
+@media (max-width: 640px) {
+  .filterBar {
+    justify-content: flex-start;
+    overflow-x: auto;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    scrollbar-width: none;
+  }
+  .filterBar::-webkit-scrollbar {
+    display: none;
+  }
+  .tabsContainer {
+    flex-wrap: nowrap;
+    border-radius: 14px;
+    padding: 0.35rem;
+    width: max-content;
+  }
+  .tabBtn {
+    padding: 0.45rem 0.85rem;
+    font-size: 0.8rem;
+    white-space: nowrap;
+  }
+  .cardBody {
+    padding: 1.1rem;
+  }
+  .priceAmount {
+    font-size: 1.35rem;
+  }
+}

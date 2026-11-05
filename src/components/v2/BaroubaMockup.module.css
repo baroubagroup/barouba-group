@@ -367,3 +367,32 @@
   padding: 10px 14px;
   border-radius: 10px;
 }
+
+@media (max-width: 480px) {
+  .chromeBar {
+    padding: 6px 10px;
+  }
+  .addressBar {
+    max-width: 130px;
+    padding: 2px 8px;
+    font-size: 0.62rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .sslBadge {
+    display: none;
+  }
+  .innerContent {
+    padding: 12px;
+    gap: 10px;
+  }
+  .metricsGrid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .portalStats {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+}

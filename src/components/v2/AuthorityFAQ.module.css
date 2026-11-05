@@ -214,3 +214,32 @@
     justify-content: center;
   }
 }
+
+@media (max-width: 640px) {
+  .section {
+    padding: 4rem 0;
+  }
+  .title {
+    font-size: clamp(1.65rem, 6vw, 2.4rem);
+  }
+  .header {
+    margin-bottom: 2rem;
+  }
+  .faqQuestionBtn {
+    padding: 16px 14px;
+    gap: 12px;
+  }
+  .questionText {
+    font-size: 14px;
+  }
+  .faqAnswerBox {
+    padding: 0 14px 18px;
+  }
+  .answerText {
+    font-size: 13px;
+  }
+  .contactCardPrompt {
+    padding: 18px 14px;
+    border-radius: 16px;
+  }
+}

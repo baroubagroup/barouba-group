@@ -348,11 +348,43 @@
     display: none;
   }
   .mobileTabs {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4px;
+    padding: 4px;
+    width: 100%;
+    margin-top: 18px;
+  }
+  .mobileTab {
+    padding: 8px 4px;
+    font-size: 11px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   .mobileCardsView {
     display: flex;
+    gap: 12px;
+  }
+  .mobileRowCard {
+    padding: 16px 14px;
+    border-radius: 16px;
+  }
+  .mobileFeatureHeading {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding: 4rem 0;
+  }
+  .title {
+    font-size: clamp(1.65rem, 6vw, 2.4rem);
+  }
+  .header {
+    margin-bottom: 2rem;
   }
 }

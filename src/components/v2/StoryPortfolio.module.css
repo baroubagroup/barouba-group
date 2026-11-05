@@ -359,6 +359,41 @@
 }
 
 @media (max-width: 680px) {
+  .section {
+    padding: 4rem 0;
+  }
+  .title {
+    font-size: clamp(1.65rem, 6vw, 2.4rem);
+  }
+  .header {
+    margin-bottom: 2rem;
+  }
+  .tabsRow {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 8px;
+    width: 100%;
+    scrollbar-width: none;
+    gap: 0.5rem;
+  }
+  .tabsRow::-webkit-scrollbar {
+    display: none;
+  }
+  .tabBtn {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    padding: 0.55rem 1rem;
+    border-radius: 12px;
+  }
+  .caseCard {
+    padding: 1.2rem;
+    border-radius: 20px;
+  }
+  .deviceScreen {
+    height: 190px;
+  }
   .metricsBox {
     grid-template-columns: 1fr;
   }

@@ -293,12 +293,26 @@
 @media (max-width: 680px) {
   .inner {
     grid-template-columns: 1fr;
-    gap: 2.5rem;
-    padding-block: 3rem 2rem;
+    gap: 2rem;
+    padding-block: 2.5rem 1.5rem;
+  }
+  .desc {
+    font-size: 0.85rem;
   }
   .bottomInner {
     flex-direction: column;
     text-align: center;
-    gap: 0.6rem;
+    gap: 0.8rem;
+  }
+  .legalLinksBottom {
+    justify-content: center;
+    gap: 0.8rem;
+  }
+  .taglineBottom {
+    justify-content: center;
+  }
+  .socialLink {
+    width: 42px;
+    height: 42px;
   }
 }

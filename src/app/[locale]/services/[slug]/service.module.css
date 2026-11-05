@@ -1113,3 +1113,22 @@
   gap: 1.2rem;
   flex-wrap: wrap;
 }
+
+@media (max-width: 580px) {
+  .ctaButtons {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.75rem;
+  }
+  .primaryWaBtn, .secondaryBtn {
+    width: 100%;
+    justify-content: center;
+  }
+  .finalCtaBox {
+    padding: 2rem 1.2rem;
+    border-radius: 20px;
+  }
+  .ctaTitle {
+    font-size: 1.55rem;
+  }
+}
