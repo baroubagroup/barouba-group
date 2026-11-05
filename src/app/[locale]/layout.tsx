@@ -52,6 +52,9 @@ export const metadata: Metadata = {
     follow: true,
     googleBot: { index: true, follow: true },
   },
+  verification: {
+    google: 'google40bfcfaf213895bf',
+  },
   other: {
     'geo.region': 'BF',
     'geo.placename': 'Bobo-Dioulasso, Ouagadougou',
