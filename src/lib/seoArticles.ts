@@ -150,6 +150,24 @@ export function getAllPillars(): SeoArticleMetadata[] {
   return pillarsCache || [];
 }
 
+export function getAllSeoArticlesList(): { slug: string; isPillar: boolean; date: string }[] {
+  initializeArticlesCache();
+  if (!articlesCache) return [];
+  const seen = new Set<string>();
+  const list: { slug: string; isPillar: boolean; date: string }[] = [];
+  for (const meta of articlesCache.values()) {
+    if (!seen.has(meta.slug)) {
+      seen.add(meta.slug);
+      list.push({
+        slug: meta.slug,
+        isPillar: meta.isPillar,
+        date: meta.date,
+      });
+    }
+  }
+  return list;
+}
+
 export function getAllArticleSlugs(): string[] {
   initializeArticlesCache();
   if (!articlesCache) return [];

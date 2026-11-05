@@ -1,7 +1,7 @@
 import type { MetadataRoute } from 'next';
 import { mockPosts, mockFormations } from '@/lib/data';
 import { BOUTIQUE_PRODUCTS } from '@/lib/boutiqueData';
-import { getAllPillars } from '@/lib/seoArticles';
+import { getAllSeoArticlesList } from '@/lib/seoArticles';
 
 const BASE_URL = 'https://www.baroubagroup.com';
 
@@ -29,7 +29,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   const entries: MetadataRoute.Sitemap = [];
-  const pillars = getAllPillars();
+  const seoArticles = getAllSeoArticlesList();
 
   for (const locale of locales) {
     // 1. Static Pages
@@ -71,16 +71,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.95,
       });
     }
+  }
 
-    // 5. High-Authority Pillar Guides (10,000+ words each)
-    for (const pillar of pillars) {
-      entries.push({
-        url: `${BASE_URL}/${locale}/blog/${pillar.slug}`,
-        lastModified: new Date(pillar.date),
-        changeFrequency: 'weekly',
-        priority: 0.9,
-      });
-    }
+  // 5. Complete Encyclopedic Knowledge Base (3,045 Articles: 51 High-Authority Pillars + 2,994 Semantic Satellites)
+  for (const item of seoArticles) {
+    entries.push({
+      url: `${BASE_URL}/fr/blog/${item.slug}`,
+      lastModified: new Date(item.date),
+      changeFrequency: item.isPillar ? 'weekly' : 'monthly',
+      priority: item.isPillar ? 0.95 : 0.8,
+    });
   }
 
   return entries;
