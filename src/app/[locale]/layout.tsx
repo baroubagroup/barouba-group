@@ -47,6 +47,9 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
   },
+  alternates: {
+    canonical: 'https://www.baroubagroup.com/fr',
+  },
   robots: {
     index: true,
     follow: true,
@@ -79,14 +82,40 @@ export default async function RootLayout({ children, params }: RootLayoutProps) 
 
   const organizationSchema = {
     '@context': 'https://schema.org',
-    '@type': 'ProfessionalService',
+    '@type': ['Organization', 'ProfessionalService'],
     name: 'BAROUBA GROUP',
-    alternateName: 'BAROUBA INTERNATIONAL GROUP',
+    legalName: 'BAROUBA INTERNATIONAL GROUP SARL',
+    alternateName: ['BAROUBA INTERNATIONAL GROUP', 'BAROUBA GROUP SARL'],
     url: 'https://www.baroubagroup.com',
     logo: 'https://www.baroubagroup.com/logo-or.svg',
     image: 'https://www.baroubagroup.com/og-image.jpg',
     description:
-      "Agence digitale de référence, communication digitale, gestion de pages et Pôle IA au Burkina Faso. Création de plateformes web Next.js 16, Media Buying Meta & TikTok, Tunnels WhatsApp et Formations professionnelles certifiantes.",
+      "Agence digitale de référence, communication digitale, ingénierie web Next.js 16, Media Buying Meta & TikTok, agents IA sur WhatsApp et Formations professionnelles certifiantes au Burkina Faso et en Afrique de l'Ouest.",
+    telephone: '+226-74-82-66-66',
+    email: 'contact@baroubagroup.com',
+    founder: {
+      '@type': 'Person',
+      name: 'Monsieur SAKO BAROU BEN OUMAR',
+      jobTitle: 'Fondateur & Directeur Général',
+    },
+    contactPoint: [
+      {
+        '@type': 'ContactPoint',
+        telephone: '+226-74-82-66-66',
+        contactType: 'customer support',
+        email: 'contact@baroubagroup.com',
+        availableLanguage: ['French', 'English'],
+        areaServed: ['BF', 'CI', 'SN', 'ML', 'NE'],
+      },
+      {
+        '@type': 'ContactPoint',
+        telephone: '+226-74-82-66-66',
+        contactType: 'sales',
+        email: 'contact@baroubagroup.com',
+        availableLanguage: ['French'],
+        areaServed: ['BF', 'CI', 'SN', 'ML', 'NE'],
+      },
+    ],
     address: {
       '@type': 'PostalAddress',
       addressLocality: 'Bobo-Dioulasso',
@@ -105,8 +134,21 @@ export default async function RootLayout({ children, params }: RootLayoutProps) 
       { '@type': 'Country', name: 'Mali' },
       { '@type': 'Country', name: 'Niger' },
     ],
+    knowsAbout: [
+      'Création de sites web Next.js',
+      'Intelligence Artificielle générative',
+      'Agents IA WhatsApp Business',
+      'Automatisation de processus n8n',
+      'Media Buying Meta et TikTok Ads',
+      'Community Management',
+      'Formation Métiers du Numérique',
+      'Cybersécurité et Conformité CIL',
+    ],
     priceRange: 'FCFA',
-    telephone: '+226XXXXXXXX',
+    sameAs: [
+      'https://www.facebook.com/baroubagroup',
+      'https://wa.me/22674826666',
+    ],
   };
 
   return (

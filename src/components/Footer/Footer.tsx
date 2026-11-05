@@ -33,6 +33,7 @@ export default function Footer() {
     { href: '/solutions' as const, label: 'Solutions Entreprises' },
     { href: '/boutique' as const, label: 'Boutique & Outils' },
     { href: '/cgv' as const, label: 'Conditions Générales de Vente (CGV)' },
+    { href: '/politique-de-confidentialite' as const, label: 'Politique de Confidentialité (CIL)' },
     { href: '/contact' as const, label: 'Contact & Devis Sous 24h' },
   ];
 

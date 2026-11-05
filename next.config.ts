@@ -19,6 +19,16 @@ const nextConfig: NextConfig = {
         destination: '/fr/:path*',
         permanent: true,
       },
+      {
+        source: '/privacy',
+        destination: '/fr/politique-de-confidentialite',
+        permanent: true,
+      },
+      {
+        source: '/about',
+        destination: '/fr/a-propos',
+        permanent: true,
+      },
     ];
   },
   async rewrites() {

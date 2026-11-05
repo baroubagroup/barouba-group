@@ -73,6 +73,7 @@ export const routing = defineRouting({
       fr: '/cgv',
       en: '/terms',
     },
+    '/politique-de-confidentialite': '/politique-de-confidentialite',
     '/devis': {
       fr: '/devis',
       en: '/quote',

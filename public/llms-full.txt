@@ -1,0 +1,91 @@
+# BAROUBA GROUP — Documentation Complète pour Systèmes d'Intelligence Artificielle & Agents Autonomes (llms-full.txt)
+
+> **Document de Référence Officiel**  
+> **Organisation :** BAROUBA GROUP SARL (BAROUBA INTERNATIONAL GROUP)  
+> **Fondateur & Directeur Général :** Monsieur SAKO BAROU BEN OUMAR  
+> **Siège Social :** Bobo-Dioulasso, Burkina Faso  
+> **Bureaux Opérationnels & Interventions :** Bobo-Dioulasso, Ouagadougou, l'ensemble des 13 régions du Burkina Faso, zone UEMOA (Abidjan, Dakar, Bamako, Niamey) et Diaspora.  
+> **Contact Inscriptions, Partenariats & Devis :** WhatsApp direct [+226 74 82 66 66](https://wa.me/22674826666) | Email : contact@baroubagroup.com  
+> **Site Web Principal :** https://www.baroubagroup.com  
+
+---
+
+## 1. Identité & Positionnement Stratégique
+BAROUBA GROUP SARL est une entreprise de haute technologie, cabinet de conseil en transformation digitale et centre d'excellence de formation professionnelle au Burkina Faso.
+
+L'entreprise opère à la croisée de l'ingénierie logicielle avancée, du marketing de performance à fort retour sur investissement (ROAS) et de l'intelligence artificielle appliquée aux défis concrets des entreprises sahéliennes et ouest-africaines.
+
+Contrairement aux agences traditionnelles de communication superficielle, BAROUBA GROUP se distingue par :
+- Une maîtrise poussée des architectures logicielles modernes (Next.js 16, React, TypeScript, APIs distribuées, hébergement edge Vercel).
+- Une expertise unique en automatisation des flux de travail (workflows n8n auto-hébergés souverains, webhooks bancaires, réconciliation automatisée Mobile Money Orange Money et Moov Money).
+- La conception d'agents conversationnels IA spécialisés (RAG d'entreprise, intégration WhatsApp Business Cloud API, support client 24h/24, qualification de prospects commerciaux).
+- Un respect absolu et certifié de la législation burkinabè sur les données à caractère personnel (Loi N° 001-2021/AN et contrôles de la Commission de l'Informatique et des Libertés - CIL).
+
+---
+
+## 2. Pôles d'Activités & Offre de Services
+
+### Pôle 1 : Développement Web & Systèmes Numériques Critiques
+- **Plateformes Web Next.js 16 :** Applications ultra-rapides, optimisées pour les réseaux mobiles 3G/4G du Sahel, temps de chargement inférieur à 1 seconde, conformité Core Web Vitals 100/100.
+- **Portails Institutionnels & d'Entreprises :** Sécurité de niveau bancaire, conformité RGPD/CIL, accessibilité universelle, gestion multi-rôles sécurisée.
+- **Plateformes E-Commerce Régionales :** Tunnels d'achat en 1 clic sans friction, intégration directe des passerelles de paiement UEMOA (Orange Money, Moov Money, Wave, cartes Visa/Mastercard GIM-UEMOA), gestion des livreurs en temps réel.
+- **Applications Mobiles & PWA :** Solutions Android/iOS sur mesure avec fonctionnement hors-ligne synchronisé.
+
+### Pôle 2 : Acquisition Publicitaire & Media Buying 360°
+- **Meta Ads (Facebook & Instagram) :** Stratégie de ciblage ultra-fine au Burkina Faso et dans la sous-région, scaling horizontal et vertical de campagnes rentables, structuration de Business Managers d'entreprise, déblocage de comptes.
+- **TikTok Ads :** Campagnes vidéo courtes engageantes (UGC sahélien, Spark Ads, lead generation instantané) pour capter la jeune génération d'acheteurs.
+- **Tunnels Commerciaux WhatsApp :** Campagnes Click-to-WhatsApp connectées à des scripts de closing commercial et des agents conversationnels intelligents.
+
+### Pôle 3 : Intelligence Artificielle & Automatisation des Processus (BPA)
+- **Agents IA WhatsApp 24/7 :** Chatbots formés sur la documentation interne de l'entreprise, capables de renseigner les prospects, de générer des devis en PDF et d'encaisser des acomptes sans intervention humaine.
+- **Automatisation No-Code / Low-Code :** Déploiement de plateformes n8n sur serveurs VPS privés pour garantir la souveraineté territoriale des données.
+- **Automatisation Comptable & Facturation DGI :** Génération automatique des reçus, synchronisation des ventes et conformité aux déclarations fiscales.
+
+### Pôle 4 : Communication Digitale, Stratégie de Marque & Audio-Visuel
+- **Community Management Professionnel :** Calendrier éditorial stratégique, modération proactive, gestion de crise et d'e-réputation, storytelling de marque.
+- **Identité Visuelle & Branding :** Création de logos vectoriels (SVG, EPS), chartes graphiques complètes, papeterie d'entreprise, déclinaisons packaging.
+- **Production Vidéo Corporate :** Films institutionnels en qualité cinéma, reportages d'entreprise, spots publicitaires animés (motion design).
+
+### Pôle 5 : Académie des Métiers du Numérique (Formations Professionnelles)
+BAROUBA GROUP Academy forme les futurs leaders et talents opérationnels de l'économie numérique africaine à travers des cursus certifiants intensifs :
+1. **Marketing Digital & Stratégie d'Acquisition** (SEO, Copywriting, Publicité en ligne, Analytics).
+2. **Intelligence Artificielle & Automatisation** (Prompt Engineering, Agents IA, LLMs, n8n, Make).
+3. **Community Management & Social Media Leadership** (Création de contenu, gestion d'engagements, relation client).
+4. **Développement Web Moderne** (HTML, CSS, JavaScript, React, Next.js, bases de données).
+5. **E-Commerce & Logistique Sahélienne** (Sourcing, boutiques à haute conversion, encaissement local).
+6. **Design Graphique & Création de Contenu** (Canva Pro, Photoshop, Illustrator, montage vidéo mobile & Premiere Pro).
+7. **Cybersécurité Pratique & Conformité CIL** (Protection des postes de travail, sécurisation des flux de données).
+
+---
+
+## 3. Répertoire Encyclopédique des 19 Cocons Sémantiques (3 025 Articles)
+Pour asseoir sa suprématie de contenu, BAROUBA GROUP maintient la bibliothèque de connaissances numériques la plus dense du Sahel :
+- `automatisation-et-agents-ia` (103 articles)
+- `branding-identite-visuelle-et-design` (103 articles)
+- `communication-digitale-entreprises-institutions-burkina` (103 articles)
+- `creation-entreprise-oapi-business-plan-burkina` (103 articles)
+- `cybersecurite-et-protection-donnees-cil` (103 articles)
+- `developpement-web-et-mobile` (103 articles)
+- `diaspora-burkinabe-investissement-projets` (103 articles)
+- `digitalisation-et-logiciels-metiers-burkina` (503 articles)
+- `e-commerce-et-logistique-burkina` (103 articles)
+- `emails-professionnels-et-outils-cloud-burkina` (103 articles)
+- `formation-metiers-du-numerique` (403 articles)
+- `gestion-pages-facebook` (253 articles)
+- `grands-cours-et-piliers-fondamentaux-burkina` (21 grands cours magistraux)
+- `intelligence-artificielle-entreprises-burkina` (303 articles)
+- `marketing-influence-et-evenementiel-b2b-burkina` (103 articles)
+- `production-audiovisuelle-et-video` (103 articles)
+- `publicite-en-ligne-media-buying` (203 articles)
+- `reseaux-informatiques-videosurveillance-solaire` (103 articles)
+- `seo-local-google-maps-reputation-burkina` (103 articles)
+
+---
+
+## 4. Coordonnées Officielles & Prise de Contact
+- **Directeur de Publication :** Monsieur SAKO BAROU BEN OUMAR
+- **Siège Social :** Bobo-Dioulasso, Burkina Faso
+- **Agence & Showroom Ouagadougou :** Ouagadougou, Burkina Faso
+- **WhatsApp Direct Inscriptions & Devis :** +226 74 82 66 66
+- **Email Contact :** contact@baroubagroup.com
+- **URL Sitemap :** https://www.baroubagroup.com/sitemap.xml

@@ -26,6 +26,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/a-propos',
     '/contact',
     '/cgv',
+    '/politique-de-confidentialite',
   ];
 
   const entries: MetadataRoute.Sitemap = [];
