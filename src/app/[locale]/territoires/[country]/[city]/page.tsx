@@ -539,7 +539,7 @@ export default async function CityOrServicePage({ params }: CityOrServicePagePro
                 </div>
 
                 <Link
-                  href={`/territoires/${country.slug}/${cityObj.slug}/${s.slug}` as any}
+                  href={`/${s.slug === 'creation-site-internet' ? 'creation-site-web' : s.slug === 'formations-metiers-du-web-ia' ? 'formation' : s.slug}-${cityObj.slug}` as any}
                   className={styles.cardLink}
                 >
                   <span>Découvrir l&apos;offre à {cityObj.name}</span>
@@ -582,7 +582,7 @@ export default async function CityOrServicePage({ params }: CityOrServicePagePro
 
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginTop: '1.2rem', paddingTop: '1rem', borderTop: '1px solid rgba(255, 255, 255, 0.08)' }}>
                   <Link
-                    href={`/solutions/${sector.solutionSlugPrefix}-${cityObj.slug}` as any}
+                    href={`/${sector.solutionSlugPrefix}-${cityObj.slug}` as any}
                     className={styles.cardLink}
                     style={{ fontSize: '0.88rem', color: 'var(--color-gold)' }}
                   >
@@ -590,7 +590,7 @@ export default async function CityOrServicePage({ params }: CityOrServicePagePro
                     <ArrowRight size={14} />
                   </Link>
                   <Link
-                    href={`/solutions/${sector.priceSlugPrefix}-${cityObj.slug}` as any}
+                    href={`/${sector.priceSlugPrefix}-${cityObj.slug}` as any}
                     style={{ fontSize: '0.82rem', color: 'rgba(255, 255, 255, 0.6)', display: 'inline-flex', alignItems: 'center', gap: '0.35rem', textDecoration: 'none' }}
                   >
                     <span>Estimation des tarifs & budget</span>
