@@ -10,76 +10,348 @@ import {
   ShieldCheck, 
   PhoneCall, 
   TrendingUp, 
-  Sparkles,
   Layers,
   CheckCircle2,
-  AlertTriangle
+  AlertTriangle,
+  HelpCircle,
+  Award,
+  Users
 } from 'lucide-react';
 import AfricanPatternRibbon from '@/components/v2/AfricanPatternRibbon';
+import TerritoryDossierModal from '@/components/v2/TerritoryDossierModal';
+import TerritoryServiceIcon from '@/components/v2/TerritoryServiceIcon';
 import { 
   getCountryBySlug, 
   getCityBySlug, 
+  getTerritoryServiceBySlug,
+  getCitiesByCountry,
   TERRITORY_SERVICES 
 } from '@/lib/territoriesData';
 import { WHATSAPP_NUMBER } from '@/lib/data';
 import styles from '../../territoires.module.css';
 
-interface CityPageProps {
+interface CityOrServicePageProps {
   params: Promise<{ country: string; city: string; locale: string }>;
 }
 
 export const dynamic = 'force-dynamic';
 
-export async function generateMetadata({ params }: CityPageProps): Promise<Metadata> {
-  const { country: countrySlug, city: citySlug, locale } = await params;
+export async function generateMetadata({ params }: CityOrServicePageProps): Promise<Metadata> {
+  const { country: countrySlug, city: slug, locale } = await params;
   const country = getCountryBySlug(countrySlug);
-  const city = getCityBySlug(countrySlug, citySlug);
-  if (!country || !city) return {};
+  if (!country) return {};
 
-  return {
-    title: `Agence Digitale & IA à ${city.name} (${country.name}) | BAROUBA GROUP`,
-    description: `Développement web Next.js 16, agents IA, tunnels WhatsApp et publicité Meta/TikTok Ads à ${city.name}. Accélération commerciale garantie par BAROUBA GROUP.`,
-    alternates: {
-      canonical: `https://www.baroubagroup.com/${locale}/territoires/${country.slug}/${city.slug}`,
-    },
-  };
+  // Case 1 : City Hub
+  const city = getCityBySlug(countrySlug, slug);
+  if (city) {
+    return {
+      title: `Agence Digitale, Web & IA à ${city.name} (${country.name}) | BAROUBA GROUP`.slice(0, 65),
+      description: `${city.status || city.name} : développement Next.js 16, agents IA, tunnels WhatsApp et publicité Meta/TikTok par BAROUBA GROUP.`.slice(0, 155),
+      alternates: {
+        canonical: `https://www.baroubagroup.com/${locale}/territoires/${country.slug}/${city.slug}`,
+      },
+    };
+  }
+
+  // Case 2 : National Country Service Page (e.g. /territoires/burkina-faso/creation-site-internet)
+  const service = getTerritoryServiceBySlug(slug);
+  if (service) {
+    const cleanTitle = `${service.shortTitle} au ${country.name} | BAROUBA GROUP`.slice(0, 65);
+    const cleanDesc = service.hook.replace('{city}', country.name).slice(0, 155);
+    return {
+      title: cleanTitle,
+      description: cleanDesc,
+      alternates: {
+        canonical: `https://www.baroubagroup.com/${locale}/territoires/${country.slug}/${service.slug}`,
+      },
+    };
+  }
+
+  return {};
 }
 
-export default async function CityPage({ params }: CityPageProps) {
-  const { country: countrySlug, city: citySlug, locale } = await params;
+export default async function CityOrServicePage({ params }: CityOrServicePageProps) {
+  const { country: countrySlug, city: slug, locale } = await params;
   setRequestLocale(locale);
 
   const country = getCountryBySlug(countrySlug);
-  const city = getCityBySlug(countrySlug, citySlug);
-  if (!country || !city) notFound();
+  if (!country) notFound();
 
+  const city = getCityBySlug(countrySlug, slug);
+  const service = getTerritoryServiceBySlug(slug);
+
+  // If neither matches, 404
+  if (!city && !service) notFound();
+
+  // =========================================================================
+  // SCÉNARIO A : PAGE NATIONALE DE SERVICE (Ex: /territoires/burkina-faso/creation-site-internet)
+  // =========================================================================
+  if (service && !city) {
+    const cities = getCitiesByCountry(country.slug);
+    const canonicalUrl = `https://www.baroubagroup.com/${locale}/territoires/${country.slug}/${service.slug}`;
+
+    const nationalSchema = {
+      '@context': 'https://schema.org',
+      '@graph': [
+        {
+          '@type': 'Service',
+          '@id': `${canonicalUrl}#service`,
+          name: `${service.name} au ${country.name}`,
+          serviceType: service.shortTitle,
+          description: service.description.replace(/\{city\}/g, country.name),
+          provider: {
+            '@type': 'ProfessionalService',
+            name: 'BAROUBA GROUP',
+            telephone: '+226-74-82-66-66',
+            address: {
+              '@type': 'PostalAddress',
+              addressLocality: 'Bobo-Dioulasso',
+              addressCountry: 'BF',
+            },
+          },
+          areaServed: {
+            '@type': 'Country',
+            name: country.name,
+          },
+        },
+        {
+          '@type': 'FAQPage',
+          '@id': `${canonicalUrl}#faq`,
+          mainEntity: service.faq.map((item) => ({
+            '@type': 'Question',
+            name: item.question.replace(/\{city\}/g, country.name),
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: item.answer.replace(/\{city\}/g, country.name),
+            },
+          })),
+        },
+      ],
+    };
+
+    const whatsappMessage = `Bonjour Monsieur Sako, je vous contacte depuis le ${country.name} pour le service "${service.shortTitle}". Pouvons-nous échanger sur mon projet ?`;
+
+    return (
+      <div className={styles.page}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(nationalSchema) }}
+        />
+
+        {/* Hero National */}
+        <section className={styles.hero}>
+          <div className={styles.heroGlow} aria-hidden="true" />
+          <div className="container">
+            <nav className={styles.breadcrumb} aria-label="Fil d'Ariane">
+              <Link href="/">Accueil</Link>
+              <span className={styles.breadcrumbSeparator}>/</span>
+              <Link href="/territoires">Territoires</Link>
+              <span className={styles.breadcrumbSeparator}>/</span>
+              <Link href={`/territoires/${country.slug}` as any}>{country.name}</Link>
+              <span className={styles.breadcrumbSeparator}>/</span>
+              <span className={styles.breadcrumbCurrent}>{service.shortTitle}</span>
+            </nav>
+
+            <div className={styles.badge}>
+              <TerritoryServiceIcon iconType={service.iconType} size={16} />
+              <span>Pôle National — {country.name} {country.flag}</span>
+            </div>
+
+            <h1 className={styles.title}>
+              {service.shortTitle} au <br />
+              <span className={styles.highlight}>{country.name}</span>
+            </h1>
+
+            <p className={styles.subtitle}>
+              {service.hook.replace(/\{city\}/g, country.name)}
+            </p>
+
+            <div className={styles.heroActions}>
+              <a
+                href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(whatsappMessage)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.btnPrimary}
+              >
+                <PhoneCall size={18} />
+                <span>Échanger avec la Direction sur WhatsApp</span>
+              </a>
+              <Link href="/devis" className={styles.btnSecondary}>
+                <TrendingUp size={18} />
+                <span>Demander un Devis au {country.name}</span>
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        <AfricanPatternRibbon />
+
+        {/* Détails du Service & Livrables */}
+        <section className={styles.section}>
+          <div className="container">
+            <div className={styles.sectionHeaderLeft}>
+              <span className={styles.sectionBadge}>Ingénierie & Méthode</span>
+              <h2 className={styles.sectionTitle}>
+                Ce Qui Est Déployé pour Votre Entreprise au <span className={styles.highlight}>{country.name}</span>
+              </h2>
+              <p className={styles.sectionSubtitle} style={{ fontSize: '1.05rem', lineHeight: '1.8' }}>
+                {service.description.replace(/\{city\}/g, country.name)}
+              </p>
+            </div>
+
+            <div className={styles.deliverablesList} style={{ maxWidth: '900px', margin: '2.5rem 0' }}>
+              {service.deliverables.map((d, index) => (
+                <div key={index} className={styles.deliverableItem}>
+                  <div className={styles.deliverableIcon}>
+                    <CheckCircle2 size={24} />
+                  </div>
+                  <div>
+                    <h3 className={styles.deliverableTitle}>{d.title}</h3>
+                    <p className={styles.deliverableDesc}>{d.desc.replace(/\{city\}/g, country.name)}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Bénéfices */}
+            <div className={styles.card} style={{ borderColor: 'rgba(16, 185, 129, 0.3)', marginTop: '2rem' }}>
+              <div className={styles.cardTop}>
+                <div className={styles.cardIcon} style={{ background: 'rgba(16, 185, 129, 0.12)', color: '#10B981' }}>
+                  <Award size={22} />
+                </div>
+                <span className={styles.cardTag} style={{ color: '#10B981' }}>Garanties de Performance</span>
+              </div>
+              <h3 className={styles.cardTitle}>Avantages Concurrentiels Directs</h3>
+              <div className={styles.benefitsGrid} style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))' }}>
+                {service.benefits.map((b, i) => (
+                  <div key={i} className={styles.benefitItem}>
+                    <CheckCircle2 size={18} className={styles.benefitIcon} />
+                    <span>{b}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Déclinaison par Ville pour ce Service */}
+        <section className={`${styles.section} ${styles.sectionAlt}`}>
+          <div className="container">
+            <div className={styles.sectionHeader}>
+              <span className={styles.sectionBadge}>Maillage Par Ville</span>
+              <h2 className={styles.sectionTitle}>
+                Déploiement de ce Service dans les {cities.length} Pôles du <span className={styles.highlight}>{country.name}</span>
+              </h2>
+              <p className={styles.sectionSubtitle}>
+                Chaque antenne municipale bénéficie d&apos;un ciblage localisé pour capturer les clients de votre secteur.
+              </p>
+            </div>
+
+            <div className={styles.grid}>
+              {cities.map((c) => (
+                <div key={c.slug} className={styles.card}>
+                  <div className={styles.cardTop}>
+                    <div className={styles.cardIcon}>
+                      <MapPin size={20} />
+                    </div>
+                    {c.status && <span className={styles.cardTag}>{c.region}</span>}
+                  </div>
+                  <h3 className={styles.cardTitle}>{c.name}</h3>
+                  <p className={styles.cardDesc}>{c.heroSubtitle}</p>
+                  <Link
+                    href={`/territoires/${country.slug}/${c.slug}/${service.slug}` as any}
+                    className={styles.cardLink}
+                  >
+                    <span>Voir l&apos;offre à {c.name}</span>
+                    <ArrowRight size={16} />
+                  </Link>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ Nationale */}
+        <section className={styles.section}>
+          <div className="container">
+            <div className={styles.sectionHeader}>
+              <span className={styles.sectionBadge}>Foire Aux Questions</span>
+              <h2 className={styles.sectionTitle}>
+                Questions Fréquentes — <span className={styles.highlight}>{country.name}</span>
+              </h2>
+            </div>
+            <div className={styles.faqGrid}>
+              {service.faq.map((item, idx) => (
+                <div key={idx} className={styles.faqItem}>
+                  <h3 className={styles.faqQuestion}>
+                    <HelpCircle size={20} className={styles.faqQuestionIcon} />
+                    <span>{item.question.replace(/\{city\}/g, country.name)}</span>
+                  </h3>
+                  <p className={styles.faqAnswer}>
+                    {item.answer.replace(/\{city\}/g, country.name)}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Cadrage Final */}
+        <div className="container">
+          <div className={styles.ctaBox}>
+            <h2 className={styles.ctaTitle}>
+              Propulsez Votre Entreprise au <span className={styles.highlight}>{country.name}</span>
+            </h2>
+            <p className={styles.ctaText}>
+              Bénéficiez de l&apos;expertise de BAROUBA GROUP pour dominer votre secteur au {country.name}. 
+              Cadrage stratégique sous 24h ouvrées avec Monsieur Sako Barou Ben Oumar.
+            </p>
+            <div className={styles.ctaButtons}>
+              <a
+                href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(whatsappMessage)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.btnPrimary}
+              >
+                <PhoneCall size={18} />
+                <span>Échanger sur WhatsApp (+226 74 82 66 66)</span>
+              </a>
+              <Link href="/devis" className={styles.btnSecondary}>
+                <TrendingUp size={18} />
+                <span>Demander une Faisabilité Gratuite</span>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // =========================================================================
+  // SCÉNARIO B : HUB VILLE APPROFONDI (Ex: /territoires/burkina-faso/bobo-dioulasso)
+  // =========================================================================
+  const cityObj = city!;
   const citySchema = {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
-    name: `BAROUBA GROUP — Pôle d'Intervention ${city.name}`,
+    name: `BAROUBA GROUP — Pôle d'Intervention ${cityObj.name}`,
     image: 'https://www.baroubagroup.com/logo-or.svg',
-    url: `https://www.baroubagroup.com/${locale}/territoires/${country.slug}/${city.slug}`,
+    url: `https://www.baroubagroup.com/${locale}/territoires/${country.slug}/${cityObj.slug}`,
     telephone: '+226-74-82-66-66',
     priceRange: '$$',
     address: {
       '@type': 'PostalAddress',
-      addressLocality: city.name,
-      addressRegion: city.region,
+      addressLocality: cityObj.name,
+      addressRegion: cityObj.region,
       addressCountry: country.iso,
     },
     geo: {
       '@type': 'GeoCoordinates',
       addressCountry: country.iso,
     },
-    openingHoursSpecification: {
-      '@type': 'OpeningHoursSpecification',
-      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
-      opens: '08:00',
-      closes: '19:00',
-    },
     areaServed: {
       '@type': 'City',
-      name: city.name,
+      name: cityObj.name,
     },
   };
 
@@ -101,30 +373,30 @@ export default async function CityPage({ params }: CityPageProps) {
             <span className={styles.breadcrumbSeparator}>/</span>
             <Link href={`/territoires/${country.slug}` as any}>{country.name}</Link>
             <span className={styles.breadcrumbSeparator}>/</span>
-            <span className={styles.breadcrumbCurrent}>{city.name}</span>
+            <span className={styles.breadcrumbCurrent}>{cityObj.name}</span>
           </nav>
 
           <div className={styles.badge}>
             <MapPin size={16} />
-            <span>Pôle Opérationnel — {city.name}, {country.name}</span>
+            <span>Pôle Territorial — {cityObj.name}, {country.name}</span>
           </div>
 
           <h1 className={styles.title}>
             Agence Digitale, Web Next.js & IA à <br />
-            <span className={styles.highlight}>{city.name}</span>
+            <span className={styles.highlight}>{cityObj.name} ({country.name})</span>
           </h1>
 
-          <p className={styles.subtitle}>{city.heroSubtitle}</p>
+          <p className={styles.subtitle}>{cityObj.heroSubtitle}</p>
 
           <div className={styles.heroActions}>
             <a
-              href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(`Bonjour Monsieur Sako, je vous contacte depuis ${city.name} pour échanger sur mon projet digital.`)}`}
+              href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(`Bonjour Monsieur Sako, je vous contacte depuis ${cityObj.name} (${country.name}) pour échanger sur mon projet digital.`)}`}
               target="_blank"
               rel="noopener noreferrer"
               className={styles.btnPrimary}
             >
               <PhoneCall size={18} />
-              <span>Échanger sur WhatsApp depuis {city.name}</span>
+              <span>Échanger sur WhatsApp depuis {cityObj.name}</span>
             </a>
             <Link href="/devis" className={styles.btnSecondary}>
               <TrendingUp size={18} />
@@ -136,34 +408,85 @@ export default async function CityPage({ params }: CityPageProps) {
 
       <AfricanPatternRibbon />
 
-      {/* 02 // CONTEXTE LOCAL & DÉFIS ÉCONOMIQUES */}
+      {/* 02 // DOSSIER TERRITORIAL APPROFONDI (HISTOIRE + ÉCONOMIE + ENJEUX) */}
       <section className={styles.section}>
         <div className="container">
-          <div className={styles.grid2}>
+          <div className={styles.sectionHeaderLeft}>
+            <span className={styles.sectionBadge}>Dossier Économique & Territorial</span>
+            <h2 className={styles.sectionTitle}>
+              Comprendre les Réalités & Dynamiques de <span className={styles.highlight}>{cityObj.name}</span>
+            </h2>
+            <p className={styles.sectionSubtitle}>
+              Une implantation réussie repose sur une maîtrise intime du tissu socio-économique, 
+              des habitudes marchandes locales et des leviers de croissance propres à {cityObj.name}.
+            </p>
+          </div>
+
+          <div className={styles.grid2} style={{ marginTop: '2.5rem' }}>
+            {/* Carte 1 : Histoire & Situation */}
             <div className={styles.card} style={{ borderColor: 'rgba(245, 166, 35, 0.3)' }}>
               <div className={styles.cardTop}>
                 <div className={styles.cardIcon}>
                   <Building2 size={22} />
                 </div>
-                <span className={styles.cardTag}>Écosystème Local</span>
+                <span className={styles.cardTag}>Histoire & Géographie</span>
               </div>
-              <h2 className={styles.cardTitle} style={{ fontSize: '1.4rem' }}>
-                Profil Économique de {city.name}
-              </h2>
-              <p className={styles.cardDesc} style={{ fontSize: '1rem', lineHeight: '1.7' }}>
-                {city.economicProfile}
+              <h3 className={styles.cardTitle}>
+                {cityObj.name} dans l&apos;Économie du {country.name}
+              </h3>
+              <p className={styles.cardDesc} style={{ fontSize: '0.95rem', lineHeight: '1.75' }}>
+                {cityObj.historyAndGeo}
               </p>
               <div className={styles.cardMeta}>
-                <span>Quartiers & Pôles d&apos;activité clés :</span>
-                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginTop: '0.5rem' }}>
-                  {city.localAnchors.map((anchor, i) => (
+                <div className={styles.cardMetaRow}>
+                  <Users size={14} className={styles.cardMetaIcon} />
+                  <span>Bassin démographique : <strong>{cityObj.population || 'Majeur'}</strong></span>
+                </div>
+                <div className={styles.cardMetaRow}>
+                  <MapPin size={14} className={styles.cardMetaIcon} />
+                  <span>Région administrative : <strong>{cityObj.region}</strong></span>
+                </div>
+              </div>
+
+              {/* Bouton Popup Voir Plus */}
+              <TerritoryDossierModal
+                cityName={cityObj.name}
+                countryName={country.name}
+                region={cityObj.region}
+                population={cityObj.population}
+                historyAndGeo={cityObj.historyAndGeo}
+                economicDossier={cityObj.economicDossier}
+                digitalChallenges={cityObj.digitalChallenges}
+                localAnchors={cityObj.localAnchors}
+              />
+            </div>
+
+            {/* Carte 2 : Économie & Défis Numériques */}
+            <div className={styles.card} style={{ borderColor: 'rgba(255, 255, 255, 0.15)' }}>
+              <div className={styles.cardTop}>
+                <div className={styles.cardIcon} style={{ background: 'rgba(249, 115, 22, 0.12)', color: '#F97316' }}>
+                  <AlertTriangle size={22} />
+                </div>
+                <span className={styles.cardTag}>Défis de Transformation</span>
+              </div>
+              <h3 className={styles.cardTitle}>
+                Enjeux Numériques des Entreprises à {cityObj.name}
+              </h3>
+              <p className={styles.cardDesc} style={{ fontSize: '0.95rem', lineHeight: '1.75' }}>
+                {cityObj.digitalChallenges}
+              </p>
+              <div className={styles.cardMeta}>
+                <span>Grands quartiers & carrefours d&apos;activité :</span>
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.45rem', marginTop: '0.5rem' }}>
+                  {cityObj.localAnchors.map((anchor, i) => (
                     <span
                       key={i}
                       style={{
-                        fontSize: '0.8rem',
-                        padding: '0.2rem 0.6rem',
+                        fontSize: '0.78rem',
+                        padding: '0.25rem 0.6rem',
                         borderRadius: '6px',
-                        background: 'rgba(245, 166, 35, 0.1)',
+                        background: 'rgba(245, 166, 35, 0.08)',
+                        border: '1px solid rgba(245, 166, 35, 0.2)',
                         color: 'var(--color-gold)',
                       }}
                     >
@@ -173,39 +496,20 @@ export default async function CityPage({ params }: CityPageProps) {
                 </div>
               </div>
             </div>
-
-            <div className={styles.card} style={{ borderColor: 'rgba(255, 255, 255, 0.15)' }}>
-              <div className={styles.cardTop}>
-                <div className={styles.cardIcon} style={{ background: 'rgba(249, 115, 22, 0.12)', color: '#F97316' }}>
-                  <AlertTriangle size={22} />
-                </div>
-                <span className={styles.cardTag}>Défis de Croissance</span>
-              </div>
-              <h2 className={styles.cardTitle} style={{ fontSize: '1.4rem' }}>
-                Enjeux Numériques des Entreprises à {city.name}
-              </h2>
-              <p className={styles.cardDesc} style={{ fontSize: '1rem', lineHeight: '1.7' }}>
-                {city.challenges}
-              </p>
-              <div className={styles.benefitItem} style={{ marginTop: 'auto' }}>
-                <CheckCircle2 size={16} className={styles.benefitIcon} />
-                <span>Interventions adaptées aux réalités terrain de {city.name}</span>
-              </div>
-            </div>
           </div>
         </div>
       </section>
 
-      {/* 03 // 5 SOLUTIONS SPÉCIFIQUES POUR CETTE VILLE */}
+      {/* 03 // 5 SOLUTIONS DÉDIÉES SANS AUCUNE ICÔNE SPARKLES */}
       <section className={`${styles.section} ${styles.sectionAlt}`}>
         <div className="container">
           <div className={styles.sectionHeader}>
-            <span className={styles.sectionBadge}>Offres Dédiées à {city.name}</span>
+            <span className={styles.sectionBadge}>Catalogue d&apos;Intervention</span>
             <h2 className={styles.sectionTitle}>
-              Nos 5 Leviers d&apos;Accélération pour <span className={styles.highlight}>{city.name}</span>
+              Nos 5 Leviers d&apos;Accélération pour <span className={styles.highlight}>{cityObj.name}</span>
             </h2>
             <p className={styles.sectionSubtitle}>
-              Chaque solution est calibrée pour répondre aux habitudes d&apos;achat et à la dynamique commerciale locale.
+              Chaque pilier est calibré pour convertir le public de {cityObj.name} et s&apos;adapter aux canaux de vente locaux.
             </p>
           </div>
 
@@ -214,18 +518,18 @@ export default async function CityPage({ params }: CityPageProps) {
               <div key={s.slug} className={styles.card}>
                 <div className={styles.cardTop}>
                   <div className={styles.cardIcon}>
-                    <Sparkles size={22} />
+                    <TerritoryServiceIcon iconType={s.iconType} size={22} />
                   </div>
-                  <span className={styles.cardTag}>Offre 0{idx + 1}</span>
+                  <span className={styles.cardTag}>Pilier 0{idx + 1}</span>
                 </div>
 
                 <h3 className={styles.cardTitle}>{s.shortTitle}</h3>
-                <p className={styles.cardDesc}>{s.hook.replace('{city}', city.name)}</p>
+                <p className={styles.cardDesc}>{s.hook.replace('{city}', cityObj.name)}</p>
 
                 <div className={styles.cardMeta}>
                   <div className={styles.cardMetaRow}>
                     <CheckCircle2 size={14} className={styles.cardMetaIcon} />
-                    <span>Livraison : <strong>10 à 21 jours ouvrés</strong></span>
+                    <span>Délai garanti : <strong>10 à 21 jours</strong></span>
                   </div>
                   <div className={styles.cardMetaRow}>
                     <ShieldCheck size={14} className={styles.cardMetaIcon} />
@@ -234,10 +538,10 @@ export default async function CityPage({ params }: CityPageProps) {
                 </div>
 
                 <Link
-                  href={`/territoires/${country.slug}/${city.slug}/${s.slug}` as any}
+                  href={`/territoires/${country.slug}/${cityObj.slug}/${s.slug}` as any}
                   className={styles.cardLink}
                 >
-                  <span>Découvrir l&apos;offre à {city.name}</span>
+                  <span>Découvrir l&apos;offre à {cityObj.name}</span>
                   <ArrowRight size={16} />
                 </Link>
               </div>
@@ -246,19 +550,19 @@ export default async function CityPage({ params }: CityPageProps) {
         </div>
       </section>
 
-      {/* 04 // ANCRAGE ET GARANTIE */}
+      {/* 04 // CADRAGE FINAL & DIRECTION */}
       <div className="container">
         <div className={styles.ctaBox}>
           <h2 className={styles.ctaTitle}>
-            Vous Développez une Activité à <span className={styles.highlight}>{city.name}</span> ?
+            Vous Développez une Activité à <span className={styles.highlight}>{cityObj.name}</span> ?
           </h2>
           <p className={styles.ctaText}>
-            Bénéficiez de la puissance technique d&apos;une agence technologique reconnue, avec un accompagnement sur-mesure 
-            pour les entrepreneurs, commerçants et institutions de {city.name}.
+            Bénéficiez de la puissance technologique de BAROUBA GROUP avec un accompagnement sur-mesure 
+            pour les entrepreneurs, commerçants et institutions de {cityObj.name}.
           </p>
           <div className={styles.ctaButtons}>
             <a
-              href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(`Bonjour Monsieur Sako, je souhaite un devis pour mon entreprise située à ${city.name}.`)}`}
+              href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(`Bonjour Monsieur Sako, je souhaite un devis pour mon entreprise située à ${cityObj.name} (${country.name}).`)}`}
               target="_blank"
               rel="noopener noreferrer"
               className={styles.btnPrimary}

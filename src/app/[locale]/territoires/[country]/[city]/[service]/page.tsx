@@ -20,6 +20,7 @@ import {
   ArrowLeft
 } from 'lucide-react';
 import AfricanPatternRibbon from '@/components/v2/AfricanPatternRibbon';
+import TerritoryServiceIcon from '@/components/v2/TerritoryServiceIcon';
 import { 
   getCountryBySlug, 
   getCityBySlug, 
@@ -187,7 +188,7 @@ export default async function ServiceCityPage({ params }: ServiceCityPageProps) 
           </nav>
 
           <div className={styles.badge}>
-            <Sparkles size={16} />
+            <TerritoryServiceIcon iconType={service.iconType} size={16} />
             <span>{service.badge} — {city.name}, {country.name}</span>
           </div>
 
@@ -242,7 +243,7 @@ export default async function ServiceCityPage({ params }: ServiceCityPageProps) 
                 <span className={styles.cardTag}>Contexte Sectoriel</span>
               </div>
               <h3 className={styles.cardTitle}>Défis Spécifiques à {city.name}</h3>
-              <p className={styles.cardDesc}>{city.challenges}</p>
+              <p className={styles.cardDesc}>{city.digitalChallenges}</p>
               <div className={styles.cardMeta}>
                 <span>Pôles d&apos;intervention & quartiers desservis :</span>
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.4rem', marginTop: '0.5rem' }}>
@@ -355,7 +356,7 @@ export default async function ServiceCityPage({ params }: ServiceCityPageProps) 
               <div key={other.slug} className={styles.card}>
                 <div className={styles.cardTop}>
                   <div className={styles.cardIcon}>
-                    <Sparkles size={20} />
+                    <TerritoryServiceIcon iconType={other.iconType} size={20} />
                   </div>
                   <span className={styles.cardTag}>{city.name}</span>
                 </div>

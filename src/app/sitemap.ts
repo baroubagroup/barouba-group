@@ -5,6 +5,7 @@ import { getAllSeoArticlesList } from '@/lib/seoArticles';
 import { 
   TERRITORY_COUNTRIES, 
   TERRITORY_CITIES, 
+  TERRITORY_SERVICES,
   getAllTerritoryCombos 
 } from '@/lib/territoriesData';
 
@@ -93,6 +94,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
         changeFrequency: 'weekly',
         priority: 0.9,
       });
+
+      // 5b. National Country-level Service Landing Pages (2 countries × 5 services = 10 URLs)
+      for (const service of TERRITORY_SERVICES) {
+        entries.push({
+          url: `${BASE_URL}/${locale}/territoires/${country.slug}/${service.slug}`,
+          lastModified: new Date(),
+          changeFrequency: 'weekly',
+          priority: 0.95,
+        });
+      }
     }
 
     for (const city of TERRITORY_CITIES) {

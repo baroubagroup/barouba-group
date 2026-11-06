@@ -13,6 +13,7 @@ import {
   Sparkles
 } from 'lucide-react';
 import AfricanPatternRibbon from '@/components/v2/AfricanPatternRibbon';
+import TerritoryServiceIcon from '@/components/v2/TerritoryServiceIcon';
 import { 
   TERRITORY_COUNTRIES, 
   TERRITORY_CITIES, 
@@ -192,7 +193,7 @@ export default async function TerritoiresPage({ params }: TerritoiresPageProps) 
               <div key={service.slug} className={styles.card}>
                 <div className={styles.cardTop}>
                   <div className={styles.cardIcon}>
-                    <Sparkles size={22} />
+                    <TerritoryServiceIcon iconType={service.iconType} size={22} />
                   </div>
                   <span className={styles.cardTag}>Pilier 0{idx + 1}</span>
                 </div>
