@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   title: 'Services Digitaux & IA à Forte Valeur Ajoutée | BAROUBA GROUP',
   description: 'Pôles d\'expertise de BAROUBA GROUP : développement web Next.js 16, agents IA autonomes WhatsApp, gestion de pages et acquisition Meta & TikTok Ads.',
   alternates: {
-    canonical: 'https://www.baroubagroup.com/fr/services',
+    canonical: 'https://www.baroubagroup.com/services',
   },
 };
 

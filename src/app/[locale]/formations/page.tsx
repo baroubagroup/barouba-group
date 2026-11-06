@@ -19,14 +19,14 @@ export const metadata: Metadata = {
   title: 'Formations Professionnelles Métiers du Web & IA | BAROUBA GROUP',
   description: 'Formations certifiantes au Burkina Faso : IA générative, Community Management, Next.js et Tunnels WhatsApp avec accompagnement direct.',
   alternates: {
-    canonical: 'https://www.baroubagroup.com/fr/formations',
+    canonical: 'https://www.baroubagroup.com/formations',
   },
 };
 
 const formationsSchema = {
   '@context': 'https://schema.org',
   '@type': 'EducationalOccupationalProgram',
-  '@id': 'https://www.baroubagroup.com/fr/formations#program',
+  '@id': 'https://www.baroubagroup.com/formations#program',
   name: 'Académie Professionnelle & Mentorat BAROUBA GROUP',
   description: 'Programme complet de formations et mentorat aux métiers du numérique en Afrique de l\'Ouest.',
   provider: {

@@ -34,9 +34,16 @@ export default function middleware(request: NextRequest) {
     }
   }
 
-  // 3. Permanent 308 redirect from root `/` to `/fr` (Consolidates PageRank & eliminates temporary redirect warning)
-  if (pathname === '/') {
-    const url = new URL('/fr', request.url);
+  // 3. Permanent 308 redirect from legacy `/fr` and `/fr/*` to clean root URLs
+  if (pathname === '/fr' || pathname === '/fr/') {
+    const url = new URL('/', request.url);
+    const res = NextResponse.redirect(url, 308);
+    res.headers.set('Vary', 'Accept');
+    return res;
+  }
+  if (pathname.startsWith('/fr/')) {
+    const cleanPath = pathname.replace(/^\/fr/, '') || '/';
+    const url = new URL(cleanPath + request.nextUrl.search, request.url);
     const res = NextResponse.redirect(url, 308);
     res.headers.set('Vary', 'Accept');
     return res;

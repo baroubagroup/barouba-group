@@ -50,7 +50,7 @@ export async function generateMetadata({ params }: ServiceCityPageProps): Promis
     title: cleanTitle,
     description: cleanDesc,
     alternates: {
-      canonical: `https://www.baroubagroup.com/${locale}/territoires/${country.slug}/${city.slug}/${service.slug}`,
+      canonical: `https://www.baroubagroup.com/territoires/${country.slug}/${city.slug}/${service.slug}`,
     },
   };
 }
@@ -64,7 +64,7 @@ export default async function ServiceCityPage({ params }: ServiceCityPageProps) 
   const service = getTerritoryServiceBySlug(serviceSlug);
   if (!country || !city || !service) notFound();
 
-  const canonicalUrl = `https://www.baroubagroup.com/${locale}/territoires/${country.slug}/${city.slug}/${service.slug}`;
+  const canonicalUrl = `https://www.baroubagroup.com/territoires/${country.slug}/${city.slug}/${service.slug}`;
 
   // Rich Schema.org : Service + LocalBusiness + FAQPage
   const pageSchema = {
@@ -134,19 +134,19 @@ export default async function ServiceCityPage({ params }: ServiceCityPageProps) 
             '@type': 'ListItem',
             position: 2,
             name: 'Territoires',
-            item: `https://www.baroubagroup.com/${locale}/territoires`,
+            item: `https://www.baroubagroup.com/territoires`,
           },
           {
             '@type': 'ListItem',
             position: 3,
             name: country.name,
-            item: `https://www.baroubagroup.com/${locale}/territoires/${country.slug}`,
+            item: `https://www.baroubagroup.com/territoires/${country.slug}`,
           },
           {
             '@type': 'ListItem',
             position: 4,
             name: city.name,
-            item: `https://www.baroubagroup.com/${locale}/territoires/${country.slug}/${city.slug}`,
+            item: `https://www.baroubagroup.com/territoires/${country.slug}/${city.slug}`,
           },
           {
             '@type': 'ListItem',

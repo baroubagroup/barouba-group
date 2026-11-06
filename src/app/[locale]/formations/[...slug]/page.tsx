@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: FormationPageProps): Promise<
     title: `${formation.title} | Formations BAROUBA GROUP`,
     description: formation.shortDescription,
     alternates: {
-      canonical: `https://www.baroubagroup.com/${locale}/formations/${slugArray.join('/')}`,
+      canonical: `https://www.baroubagroup.com/formations/${slugArray.join('/')}`,
     },
   };
 }

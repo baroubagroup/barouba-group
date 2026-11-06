@@ -49,8 +49,8 @@ export const metadata: Metadata = {
   },
   alternates: {
     languages: {
-      'fr': 'https://www.baroubagroup.com/fr',
-      'x-default': 'https://www.baroubagroup.com/fr',
+      'fr': 'https://www.baroubagroup.com',
+      'x-default': 'https://www.baroubagroup.com',
     },
   },
   robots: {
@@ -156,7 +156,7 @@ export default async function RootLayout({ children, params }: RootLayoutProps) 
       },
       {
         '@type': 'FAQPage',
-        '@id': 'https://www.baroubagroup.com/fr#faq',
+        '@id': 'https://www.baroubagroup.com/#faq',
         mainEntity: [
           {
             '@type': 'Question',

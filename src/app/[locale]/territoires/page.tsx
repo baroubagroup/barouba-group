@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: TerritoiresPageProps): Promis
     title: 'Implantations & Territoires d\'Intervention | BAROUBA GROUP',
     description: 'Découvrez les zones d\'intervention de BAROUBA GROUP au Burkina Faso et en Côte d\'Ivoire : création web Next.js, agents IA et publicité à Bobo, Ouaga, Abidjan et Bouaké.',
     alternates: {
-      canonical: `https://www.baroubagroup.com/${locale}/territoires`,
+      canonical: `https://www.baroubagroup.com/territoires`,
     },
   };
 }
@@ -47,9 +47,9 @@ export default async function TerritoiresPage({ params }: TerritoiresPageProps) 
   const hubSchema = {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
-    '@id': 'https://www.baroubagroup.com/fr/territoires#hub',
+    '@id': 'https://www.baroubagroup.com/territoires#hub',
     name: 'Implantations et Territoires BAROUBA GROUP',
-    url: 'https://www.baroubagroup.com/fr/territoires',
+    url: 'https://www.baroubagroup.com/territoires',
     description: 'Hub territorial officiel de BAROUBA GROUP couvrant les pôles économiques du Burkina Faso et de la Côte d\'Ivoire.',
     mainEntity: {
       '@type': 'ProfessionalService',

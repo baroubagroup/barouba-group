@@ -48,7 +48,7 @@ export async function generateMetadata({ params }: CityOrServicePageProps): Prom
       title: `Agence Digitale, Web & IA à ${city.name} (${country.name}) | BAROUBA GROUP`.slice(0, 65),
       description: `${city.status || city.name} : développement Next.js 16, agents IA, tunnels WhatsApp et publicité Meta/TikTok par BAROUBA GROUP.`.slice(0, 155),
       alternates: {
-        canonical: `https://www.baroubagroup.com/${locale}/territoires/${country.slug}/${city.slug}`,
+        canonical: `https://www.baroubagroup.com/territoires/${country.slug}/${city.slug}`,
       },
     };
   }
@@ -62,7 +62,7 @@ export async function generateMetadata({ params }: CityOrServicePageProps): Prom
       title: cleanTitle,
       description: cleanDesc,
       alternates: {
-        canonical: `https://www.baroubagroup.com/${locale}/territoires/${country.slug}/${service.slug}`,
+        canonical: `https://www.baroubagroup.com/territoires/${country.slug}/${service.slug}`,
       },
     };
   }
@@ -88,7 +88,7 @@ export default async function CityOrServicePage({ params }: CityOrServicePagePro
   // =========================================================================
   if (service && !city) {
     const cities = getCitiesByCountry(country.slug);
-    const canonicalUrl = `https://www.baroubagroup.com/${locale}/territoires/${country.slug}/${service.slug}`;
+    const canonicalUrl = `https://www.baroubagroup.com/territoires/${country.slug}/${service.slug}`;
 
     const nationalSchema = {
       '@context': 'https://schema.org',
@@ -336,7 +336,7 @@ export default async function CityOrServicePage({ params }: CityOrServicePagePro
     '@type': 'LocalBusiness',
     name: `BAROUBA GROUP — Pôle d'Intervention ${cityObj.name}`,
     image: 'https://www.baroubagroup.com/logo-or.svg',
-    url: `https://www.baroubagroup.com/${locale}/territoires/${country.slug}/${cityObj.slug}`,
+    url: `https://www.baroubagroup.com/territoires/${country.slug}/${cityObj.slug}`,
     telephone: '+226-74-82-66-66',
     priceRange: '$$',
     address: {

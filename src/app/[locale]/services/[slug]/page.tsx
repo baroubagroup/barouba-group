@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: ServicePageProps): Promise<Me
   const service = getDetailedServiceBySlug(slug);
   if (!service) return {};
 
-  const canonicalUrl = `https://www.baroubagroup.com/${locale}/services/${service.slug}`;
+  const canonicalUrl = `https://www.baroubagroup.com/services/${service.slug}`;
 
   return {
     title: `${service.title} | BAROUBA GROUP`,
@@ -79,7 +79,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
   const serviceSchema = {
     '@context': 'https://schema.org',
     '@type': 'Service',
-    '@id': `https://www.baroubagroup.com/${locale}/services/${service.slug}#service`,
+    '@id': `https://www.baroubagroup.com/services/${service.slug}#service`,
     name: service.title,
     description: service.hookSubtitle,
     provider: {

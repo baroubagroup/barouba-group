@@ -16,17 +16,27 @@ const nextConfig: NextConfig = {
     return [
       {
         source: '/en/:path*',
-        destination: '/fr/:path*',
+        destination: '/:path*',
+        permanent: true,
+      },
+      {
+        source: '/fr',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/fr/:path*',
+        destination: '/:path*',
         permanent: true,
       },
       {
         source: '/privacy',
-        destination: '/fr/politique-de-confidentialite',
+        destination: '/politique-de-confidentialite',
         permanent: true,
       },
       {
         source: '/about',
-        destination: '/fr/a-propos',
+        destination: '/a-propos',
         permanent: true,
       },
     ];

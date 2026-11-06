@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: 'Solutions Métiers & Systèmes Critiques | BAROUBA GROUP',
   description: 'Architectures logicielles pour banques, institutions, distributeurs et e-commerces à fort volume en Afrique de l\'Ouest.',
   alternates: {
-    canonical: 'https://www.baroubagroup.com/fr/solutions',
+    canonical: 'https://www.baroubagroup.com/solutions',
   },
 };
 

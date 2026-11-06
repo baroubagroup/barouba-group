@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: 'Politique de Confidentialité & CIL | BAROUBA GROUP',
   description: 'Protection des données personnelles conformément à la Loi N° 001-2021/AN du Burkina Faso et aux standards internationaux RGPD.',
   alternates: {
-    canonical: 'https://www.baroubagroup.com/fr/politique-de-confidentialite',
+    canonical: 'https://www.baroubagroup.com/politique-de-confidentialite',
   },
 };
 

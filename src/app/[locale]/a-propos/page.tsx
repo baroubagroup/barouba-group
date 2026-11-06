@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   title: 'À Propos de BAROUBA GROUP : Direction, Vision & Pôles',
   description: 'Fondé par Monsieur SAKO BAROU BEN OUMAR à Bobo-Dioulasso, BAROUBA GROUP propulse la transformation digitale des entreprises en Afrique.',
   alternates: {
-    canonical: 'https://www.baroubagroup.com/fr/a-propos',
+    canonical: 'https://www.baroubagroup.com/a-propos',
   },
 };
 

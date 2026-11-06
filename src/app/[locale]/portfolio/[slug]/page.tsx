@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: ProjectPageProps): Promise<Me
   return {
     title: `${project.title} | Portfolio BAROUBA GROUP`,
     alternates: {
-      canonical: `https://www.baroubagroup.com/${locale}/portfolio/${project.slug}`,
+      canonical: `https://www.baroubagroup.com/portfolio/${project.slug}`,
     },
     description: project.description,
   };

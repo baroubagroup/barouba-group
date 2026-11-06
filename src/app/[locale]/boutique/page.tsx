@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   title: 'Boutique Digitale & Solutions Clés en Main | BAROUBA GROUP',
   description: 'Templates Next.js haute conversion, tunnels de vente WhatsApp et packs d\'automatisation IA prêts au déploiement immédiat.',
   alternates: {
-    canonical: 'https://www.baroubagroup.com/fr/boutique',
+    canonical: 'https://www.baroubagroup.com/boutique',
   },
 };
 
@@ -36,10 +36,10 @@ function WhatsAppIcon() {
 const boutiqueSchema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
-  '@id': 'https://www.baroubagroup.com/fr/boutique#catalog',
+  '@id': 'https://www.baroubagroup.com/boutique#catalog',
   name: 'Boutique Digitale BAROUBA GROUP',
   description: 'Catalogue des solutions logicielles et kits d\'automatisation pour entreprises.',
-  url: 'https://www.baroubagroup.com/fr/boutique',
+  url: 'https://www.baroubagroup.com/boutique',
 };
 
 export default async function BoutiquePage() {

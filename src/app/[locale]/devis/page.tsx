@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: 'Demande de Devis & Cadrage Projet | BAROUBA GROUP',
   description: 'Chiffrez votre projet web Next.js, agent IA ou campagne publicitaire. Étude de faisabilité rapide et diagnostic sans engagement.',
   alternates: {
-    canonical: 'https://www.baroubagroup.com/fr/devis',
+    canonical: 'https://www.baroubagroup.com/devis',
   },
 };
 

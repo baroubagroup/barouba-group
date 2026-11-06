@@ -38,7 +38,7 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
   const product = getBoutiqueProductBySlug(slug);
   if (!product) return {};
 
-  const canonicalUrl = `https://www.baroubagroup.com/${locale}/boutique/${product.slug}`;
+  const canonicalUrl = `https://www.baroubagroup.com/boutique/${product.slug}`;
 
   return {
     title: `${product.title} | Boutique BAROUBA GROUP`,
@@ -76,7 +76,7 @@ export default async function ProductSinglePage({ params }: ProductPageProps) {
   const productSchema = {
     '@context': 'https://schema.org',
     '@type': 'Product',
-    '@id': `https://www.baroubagroup.com/${locale}/boutique/${product.slug}#product`,
+    '@id': `https://www.baroubagroup.com/boutique/${product.slug}#product`,
     name: product.title,
     description: product.shortDesc,
     brand: {
@@ -88,7 +88,7 @@ export default async function ProductSinglePage({ params }: ProductPageProps) {
       price: cleanPrice || '0',
       priceCurrency: 'XOF',
       availability: 'https://schema.org/InStock',
-      url: `https://www.baroubagroup.com/${locale}/boutique/${product.slug}`,
+      url: `https://www.baroubagroup.com/boutique/${product.slug}`,
       seller: {
         '@type': 'Organization',
         name: 'BAROUBA GROUP',

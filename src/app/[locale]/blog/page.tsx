@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description:
     'Analyses exclusives, guides concrets et stratégies numériques pour entreprises au Burkina Faso et en Afrique de l\'Ouest.',
   alternates: {
-    canonical: 'https://www.baroubagroup.com/fr/blog',
+    canonical: 'https://www.baroubagroup.com/blog',
   },
   keywords: [
     'création site web burkina faso',
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     title: 'Blog Stratégique : Digital, Business & IA au Burkina Faso',
     description:
       'Guides d’autorité et stratégies concrètes pour dominer le digital au Burkina Faso et en Afrique de l’Ouest.',
-    url: 'https://www.baroubagroup.com/fr/blog',
+    url: 'https://www.baroubagroup.com/blog',
     type: 'website',
   },
 };

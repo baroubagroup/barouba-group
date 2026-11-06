@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title: 'Contact Direct & Échange WhatsApp VIP | BAROUBA GROUP',
   description: 'Contactez BAROUBA GROUP par WhatsApp au +226 74 82 66 66 ou email pour cadrer votre projet digital sous 24 à 48 heures ouvrées.',
   alternates: {
-    canonical: 'https://www.baroubagroup.com/fr/contact',
+    canonical: 'https://www.baroubagroup.com/contact',
   },
 };
 
@@ -25,9 +25,9 @@ const WHATSAPP_MESSAGE = 'Bonjour BAROUBA GROUP, je souhaite échanger sur un pr
 const contactSchema = {
   '@context': 'https://schema.org',
   '@type': 'ContactPage',
-  '@id': 'https://www.baroubagroup.com/fr/contact#contact',
+  '@id': 'https://www.baroubagroup.com/contact#contact',
   name: 'Contact Direction BAROUBA GROUP',
-  url: 'https://www.baroubagroup.com/fr/contact',
+  url: 'https://www.baroubagroup.com/contact',
   mainEntity: {
     '@type': 'ProfessionalService',
     name: 'BAROUBA GROUP',

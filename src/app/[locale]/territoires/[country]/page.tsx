@@ -39,7 +39,7 @@ export async function generateMetadata({ params }: CountryPageProps): Promise<Me
     title: `Agence Digitale, Web & IA au ${country.name} | BAROUBA GROUP`.slice(0, 65),
     description: `Leader technologique au ${country.name} : développement web Next.js 16, agents IA, tunnels WhatsApp et publicité Meta/TikTok Ads. Cadrage sous 24h.`.slice(0, 155),
     alternates: {
-      canonical: `https://www.baroubagroup.com/${locale}/territoires/${country.slug}`,
+      canonical: `https://www.baroubagroup.com/territoires/${country.slug}`,
     },
   };
 }
@@ -59,11 +59,11 @@ export default async function CountryPage({ params }: CountryPageProps) {
     name: country.name,
     identifier: country.iso,
     description: country.description,
-    url: `https://www.baroubagroup.com/${locale}/territoires/${country.slug}`,
+    url: `https://www.baroubagroup.com/territoires/${country.slug}`,
     containsPlace: cities.map((c) => ({
       '@type': 'City',
       name: c.name,
-      url: `https://www.baroubagroup.com/${locale}/territoires/${country.slug}/${c.slug}`,
+      url: `https://www.baroubagroup.com/territoires/${country.slug}/${c.slug}`,
     })),
   };
 

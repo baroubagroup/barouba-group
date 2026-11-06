@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: 'Conditions Générales de Vente (CGV) | BAROUBA GROUP',
   description: 'Cadre contractuel, garanties de livraison, propriété intellectuelle et engagements de service de BAROUBA GROUP SARL.',
   alternates: {
-    canonical: 'https://www.baroubagroup.com/fr/cgv',
+    canonical: 'https://www.baroubagroup.com/cgv',
   },
 };
 

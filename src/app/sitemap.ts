@@ -42,7 +42,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // 1. Static Pages
     for (const page of staticPages) {
       entries.push({
-        url: `${BASE_URL}/${locale}${page}`,
+        url: `${BASE_URL}${page}`,
         lastModified: new Date(),
         changeFrequency: page === '' || page === '/blog' || page === '/devis' ? 'daily' : 'weekly',
         priority: page === '' ? 1.0 : page.startsWith('/services/') || page === '/devis' ? 0.95 : 0.85,
@@ -52,7 +52,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // 2. Boutique Digital Products
     for (const product of BOUTIQUE_PRODUCTS) {
       entries.push({
-        url: `${BASE_URL}/${locale}/boutique/${product.slug}`,
+        url: `${BASE_URL}/boutique/${product.slug}`,
         lastModified: new Date(),
         changeFrequency: 'weekly',
         priority: 0.9,
@@ -62,7 +62,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // 3. Formations
     for (const formation of mockFormations) {
       entries.push({
-        url: `${BASE_URL}/${locale}/formations/${formation.slug.current}`,
+        url: `${BASE_URL}/formations/${formation.slug.current}`,
         lastModified: new Date(),
         changeFrequency: 'weekly',
         priority: 0.85,
@@ -72,7 +72,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // 4. Featured Core Blog Posts
     for (const post of mockPosts) {
       entries.push({
-        url: `${BASE_URL}/${locale}/blog/${post.slug.current}`,
+        url: `${BASE_URL}/blog/${post.slug.current}`,
         lastModified: new Date(post.updatedAt || post.publishedAt),
         changeFrequency: 'weekly',
         priority: 0.95,
@@ -81,7 +81,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // 5. Territories & Programmatic SEO (123 URLs: Hub + Countries + Cities + Services)
     entries.push({
-      url: `${BASE_URL}/${locale}/territoires`,
+      url: `${BASE_URL}/territoires`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.9,
@@ -89,7 +89,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     for (const country of TERRITORY_COUNTRIES) {
       entries.push({
-        url: `${BASE_URL}/${locale}/territoires/${country.slug}`,
+        url: `${BASE_URL}/territoires/${country.slug}`,
         lastModified: new Date(),
         changeFrequency: 'weekly',
         priority: 0.9,
@@ -98,7 +98,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       // 5b. National Country-level Service Landing Pages (2 countries × 5 services = 10 URLs)
       for (const service of TERRITORY_SERVICES) {
         entries.push({
-          url: `${BASE_URL}/${locale}/territoires/${country.slug}/${service.slug}`,
+          url: `${BASE_URL}/territoires/${country.slug}/${service.slug}`,
           lastModified: new Date(),
           changeFrequency: 'weekly',
           priority: 0.95,
@@ -108,7 +108,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     for (const city of TERRITORY_CITIES) {
       entries.push({
-        url: `${BASE_URL}/${locale}/territoires/${city.countrySlug}/${city.slug}`,
+        url: `${BASE_URL}/territoires/${city.countrySlug}/${city.slug}`,
         lastModified: new Date(),
         changeFrequency: 'weekly',
         priority: 0.9,
@@ -117,7 +117,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     for (const combo of getAllTerritoryCombos()) {
       entries.push({
-        url: `${BASE_URL}/${locale}/territoires/${combo.country.slug}/${combo.city.slug}/${combo.service.slug}`,
+        url: `${BASE_URL}/territoires/${combo.country.slug}/${combo.city.slug}/${combo.service.slug}`,
         lastModified: new Date(),
         changeFrequency: 'weekly',
         priority: 0.95,
@@ -128,7 +128,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // 6. Complete Encyclopedic Knowledge Base (3,045 Articles: 51 High-Authority Pillars + 2,994 Semantic Satellites)
   for (const item of seoArticles) {
     entries.push({
-      url: `${BASE_URL}/fr/blog/${item.slug}`,
+      url: `${BASE_URL}/blog/${item.slug}`,
       lastModified: new Date(item.date),
       changeFrequency: item.isPillar ? 'weekly' : 'monthly',
       priority: item.isPillar ? 0.95 : 0.8,

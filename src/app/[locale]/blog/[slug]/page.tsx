@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: ArticlePageProps): Promise<Me
   const post = await getPostBySlug(slug, locale);
   if (!post) return {};
 
-  const canonicalUrl = `https://www.baroubagroup.com/${locale}/blog/${post.slug.current}`;
+  const canonicalUrl = `https://www.baroubagroup.com/blog/${post.slug.current}`;
 
   return {
     title: `${post.title} | BAROUBA GROUP Insights`,
@@ -118,7 +118,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
     },
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': `https://www.baroubagroup.com/${locale}/blog/${post.slug.current}`,
+      '@id': `https://www.baroubagroup.com/blog/${post.slug.current}`,
     },
     inLanguage: 'fr-BF',
     keywords: post.metaKeywords?.join(', '),
@@ -139,13 +139,13 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
         '@type': 'ListItem',
         position: 2,
         name: 'Blog & Perspectives',
-        item: `https://www.baroubagroup.com/${locale}/blog`,
+        item: `https://www.baroubagroup.com/blog`,
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: post.title,
-        item: `https://www.baroubagroup.com/${locale}/blog/${post.slug.current}`,
+        item: `https://www.baroubagroup.com/blog/${post.slug.current}`,
       },
     ],
   };
