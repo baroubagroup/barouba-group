@@ -29,6 +29,7 @@ export default function Navbar() {
   const navLinks = [
     { href: '/' as const, label: t('home') },
     { href: '/services' as const, label: t('services') },
+    { href: '/territoires' as const, label: t('territoires') },
     { href: '/formations' as const, label: t('formations') },
     { href: '/solutions' as const, label: t('solutions', { fallback: 'Solutions' }) },
     { href: '/portfolio' as const, label: t('portfolio') },

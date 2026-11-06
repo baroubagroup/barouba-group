@@ -1,6 +1,6 @@
 import { notFound, redirect } from 'next/navigation';
 import { Link } from '@/i18n/navigation';
-import { ArrowLeft, Clock, MessageSquare, ChevronDown, CheckCircle2, Bookmark, ArrowRight } from 'lucide-react';
+import { ArrowLeft, Clock, MessageSquare, ChevronDown, CheckCircle2, Bookmark, ArrowRight, Globe2 } from 'lucide-react';
 import Image from 'next/image';
 import AfricanPatternRibbon from '@/components/v2/AfricanPatternRibbon';
 import { getPostBySlug } from '@/lib/sanity';
@@ -425,6 +425,44 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
                 <MessageSquare size={17} />
                 <span>Échanger sur WhatsApp</span>
               </a>
+            </div>
+
+            {/* Internal Linking Booster — Territoires */}
+            <div className={styles.territoryBoosterBox}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', color: 'var(--color-gold)', marginBottom: '0.5rem', fontWeight: 700, fontSize: '0.85rem' }}>
+                <Globe2 size={16} />
+                <span>EXPANSION & DÉPLOIEMENT TERRITORIAL</span>
+              </div>
+              <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1.25rem', fontWeight: 800, marginBottom: '0.5rem', color: 'var(--text-primary)' }}>
+                Vous développez une activité au Burkina Faso, en Côte d&apos;Ivoire ou dans la sous-région ?
+              </h3>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '0.92rem', lineHeight: '1.6', marginBottom: '1rem' }}>
+                Découvrez notre accompagnement sur-mesure pour votre entreprise (création web Next.js 16, agents IA, tunnels WhatsApp et publicité Meta/TikTok) adapté aux spécificités de votre marché.
+              </p>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', alignItems: 'center' }}>
+                <Link href="/territoires" className={styles.territoryLinkPill}>
+                  <span>Explorer tous les territoires</span>
+                  <ArrowRight size={13} />
+                </Link>
+                <Link href={"/territoires/burkina-faso" as any} className={styles.territoryLinkPill}>
+                  <span>🇧🇫 Burkina Faso</span>
+                </Link>
+                <Link href={"/territoires/cote-divoire" as any} className={styles.territoryLinkPill}>
+                  <span>🇨🇮 Côte d&apos;Ivoire</span>
+                </Link>
+                <Link href={"/territoires/burkina-faso/bobo-dioulasso" as any} className={styles.territoryLinkPill}>
+                  <span>Bobo-Dioulasso (Siège)</span>
+                </Link>
+                <Link href={"/territoires/burkina-faso/ouagadougou" as any} className={styles.territoryLinkPill}>
+                  <span>Ouagadougou</span>
+                </Link>
+                <Link href={"/territoires/cote-divoire/abidjan" as any} className={styles.territoryLinkPill}>
+                  <span>Abidjan</span>
+                </Link>
+                <Link href={"/territoires/cote-divoire/bouake" as any} className={styles.territoryLinkPill}>
+                  <span>Bouaké</span>
+                </Link>
+              </div>
             </div>
 
             {/* Related Articles Section */}

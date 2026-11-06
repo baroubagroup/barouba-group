@@ -578,3 +578,35 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+
+/* Territory Internal Linking Booster */
+.territoryBoosterBox {
+  margin: 3rem 0;
+  padding: 2rem;
+  background: linear-gradient(135deg, rgba(20, 17, 32, 0.95) 0%, rgba(28, 24, 46, 0.95) 100%);
+  border: 1px solid var(--border-default);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.territoryLinkPill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.75rem;
+  background: rgba(245, 166, 35, 0.08);
+  border: 1px solid rgba(245, 166, 35, 0.25);
+  border-radius: 8px;
+  color: var(--color-gold);
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.territoryLinkPill:hover {
+  background: rgba(245, 166, 35, 0.2);
+  border-color: var(--color-gold);
+  transform: translateY(-1px);
+}

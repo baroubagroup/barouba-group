@@ -243,7 +243,7 @@ export default async function CityOrServicePage({ params }: CityOrServicePagePro
                 Déploiement de ce Service dans les {cities.length} Pôles du <span className={styles.highlight}>{country.name}</span>
               </h2>
               <p className={styles.sectionSubtitle}>
-                Chaque antenne municipale bénéficie d&apos;un ciblage localisé pour capturer les clients de votre secteur.
+                Chaque ville bénéficie d&apos;une stratégie sur-mesure pour capturer les opportunités commerciales de votre secteur.
               </p>
             </div>
 
