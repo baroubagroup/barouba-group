@@ -20,6 +20,7 @@ import {
 import AfricanPatternRibbon from '@/components/v2/AfricanPatternRibbon';
 import TerritoryDossierModal from '@/components/v2/TerritoryDossierModal';
 import TerritoryServiceIcon from '@/components/v2/TerritoryServiceIcon';
+import { B2B_SECTORS } from '@/lib/solutionsData';
 import { 
   getCountryBySlug, 
   getCityBySlug, 
@@ -506,7 +507,7 @@ export default async function CityOrServicePage({ params }: CityOrServicePagePro
           <div className={styles.sectionHeader}>
             <span className={styles.sectionBadge}>Catalogue d&apos;Intervention</span>
             <h2 className={styles.sectionTitle}>
-              Nos 5 Leviers d&apos;Accélération pour <span className={styles.highlight}>{cityObj.name}</span>
+              Nos Pôles d&apos;Expertise & Métiers d&apos;Acquisition pour <span className={styles.highlight}>{cityObj.name}</span>
             </h2>
             <p className={styles.sectionSubtitle}>
               Chaque pilier est calibré pour convertir le public de {cityObj.name} et s&apos;adapter aux canaux de vente locaux.
@@ -544,6 +545,58 @@ export default async function CityOrServicePage({ params }: CityOrServicePagePro
                   <span>Découvrir l&apos;offre à {cityObj.name}</span>
                   <ArrowRight size={16} />
                 </Link>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+            {/* 04 // SOLUTIONS & APPLICATIONS B2B SECTORIELLES */}
+      <section className={styles.section}>
+        <div className="container">
+          <div className={styles.sectionHeaderLeft}>
+            <span className={styles.sectionBadge}>Ingénierie B2B Sectorielle</span>
+            <h2 className={styles.sectionTitle}>
+              Solutions Métiers & Logiciels par Secteur à <span className={styles.highlight}>{cityObj.name}</span>
+            </h2>
+            <p className={styles.sectionSubtitle}>
+              Chaque industrie a ses impératifs de rentabilité. BAROUBA GROUP conçoit des plateformes web 
+              et logiciels sur-mesure pour les directeurs et fondateurs d&apos;entreprises à {cityObj.name}.
+            </p>
+          </div>
+
+          <div className={styles.grid} style={{ marginTop: '2.5rem' }}>
+            {B2B_SECTORS.map((sector) => (
+              <div key={sector.id} className={styles.card} style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+                <div>
+                  <div className={styles.cardTop}>
+                    <span className={styles.cardTag}>{sector.badge}</span>
+                  </div>
+                  <h3 className={styles.cardTitle} style={{ fontSize: '1.15rem', marginTop: '0.5rem' }}>
+                    {sector.name}
+                  </h3>
+                  <p className={styles.cardDesc} style={{ fontSize: '0.88rem', color: 'rgba(255, 255, 255, 0.7)' }}>
+                    Cible : {sector.targetRole} à {cityObj.name}.
+                  </p>
+                </div>
+
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginTop: '1.2rem', paddingTop: '1rem', borderTop: '1px solid rgba(255, 255, 255, 0.08)' }}>
+                  <Link
+                    href={`/solutions/${sector.solutionSlugPrefix}-${cityObj.slug}` as any}
+                    className={styles.cardLink}
+                    style={{ fontSize: '0.88rem', color: 'var(--color-gold)' }}
+                  >
+                    <span>Découvrir la Solution Métier</span>
+                    <ArrowRight size={14} />
+                  </Link>
+                  <Link
+                    href={`/solutions/${sector.priceSlugPrefix}-${cityObj.slug}` as any}
+                    style={{ fontSize: '0.82rem', color: 'rgba(255, 255, 255, 0.6)', display: 'inline-flex', alignItems: 'center', gap: '0.35rem', textDecoration: 'none' }}
+                  >
+                    <span>Estimation des tarifs & budget</span>
+                    <ArrowRight size={12} />
+                  </Link>
+                </div>
               </div>
             ))}
           </div>

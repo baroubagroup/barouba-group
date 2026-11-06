@@ -29,12 +29,26 @@ export interface TerritoryCity {
   heroSubtitle: string;
 }
 
+export type TerritoryIconType = 
+  | 'globe' 
+  | 'cpu' 
+  | 'megaphone' 
+  | 'smartphone' 
+  | 'graduation' 
+  | 'target' 
+  | 'layers' 
+  | 'users' 
+  | 'trending-up' 
+  | 'search' 
+  | 'message-square' 
+  | 'code';
+
 export interface TerritoryService {
   slug: string;
   name: string;
   shortTitle: string;
   badge: string;
-  iconType: 'globe' | 'cpu' | 'megaphone' | 'smartphone' | 'graduation';
+  iconType: TerritoryIconType;
   metaTitle: string;
   hook: string;
   description: string;
@@ -967,7 +981,7 @@ export const TERRITORY_SERVICES: TerritoryService[] = [
     iconType: 'globe',
     metaTitle: 'Création de Site Web à {city} ({country}) | Plateforme Next.js Pro',
     hook: 'Développez une présence digitale dominante à {city} avec un site web Next.js 16 ultra-rapide (< 0.8s), optimisé pour Google et conçu pour convertir vos visiteurs en clients fidèles.',
-    description: "À {city}, la majorité des sites internet souffrent d'une lenteur rédhibitoire sur réseau mobile 3G/4G et d'un manque d'optimisation commerciale. BAROUBA GROUP conçoit des plateformes Next.js 16 sur-mesure intégrant l'architecture Server-Side Rendering (SSR), des paiements Mobile Money (Orange Money, Moov, Wave) et un référencement Google chirurgical taillé pour dominer les recherches à {city}.",
+    description: "À {city}, la majorité des sites internet souffrent d'une lenteur rédhibitoire sur réseau mobile 3G/4G et d'un manque criant d'optimisation commerciale. BAROUBA GROUP conçoit des plateformes Next.js 16 sur-mesure intégrant l'architecture Server-Side Rendering (SSR), des paiements Mobile Money (Orange Money, Moov, Wave) et un référencement Google chirurgical taillé pour dominer les recherches à {city}.",
     deliverables: [
       {
         title: 'Architecture Next.js 16 & Vercel Edge Network',
@@ -983,7 +997,7 @@ export const TERRITORY_SERVICES: TerritoryService[] = [
       },
       {
         title: 'Design Afro-Tech Haute Couture & UX Responsive',
-        desc: 'Interface ergonomique luxueuse adaptée à l\'image de prestige de votre marque, 100% optimisée pour les écrans de smartphones.',
+        desc: "Interface ergonomique luxueuse adaptée à l'image de prestige de votre marque, 100% optimisée pour les écrans de smartphones.",
       },
     ],
     benefits: [
@@ -995,7 +1009,7 @@ export const TERRITORY_SERVICES: TerritoryService[] = [
     faq: [
       {
         question: 'Pourquoi choisir Next.js plutôt que WordPress à {city} ?',
-        answer: 'Sur les réseaux mobiles d\'Afrique de l\'Ouest, WordPress est souvent lourd, lent et vulnérable aux attaques. Next.js 16 génère des pages précompilées ultra-légères qui se chargent en un clin d\'œil, offrant le meilleur score SEO sur Google.',
+        answer: "Sur les réseaux mobiles d'Afrique de l'Ouest, WordPress est souvent lourd, lent et vulnérable aux attaques. Next.js 16 génère des pages précompilées ultra-légères qui se chargent en un clin d'œil, offrant le meilleur score SEO sur Google.",
       },
       {
         question: 'Comment se déroule la collaboration si nous sommes basés à {city} ?',
@@ -1003,7 +1017,295 @@ export const TERRITORY_SERVICES: TerritoryService[] = [
       },
       {
         question: 'Puis-je modifier mes textes et produits de manière autonome ?',
-        answer: 'Oui, nous livrons chaque plateforme avec un panneau d\'administration fluide et intuitif, complété par une formation vidéo personnalisée pour vos équipes.',
+        answer: "Oui, nous livrons chaque plateforme avec un panneau d'administration fluide et intuitif, complété par une formation vidéo personnalisée pour vos équipes.",
+      },
+    ],
+  },
+  {
+    slug: 'media-buyer',
+    name: 'Media Buyer & Publicité Haute Performance (Meta & TikTok Ads)',
+    shortTitle: 'Media Buyer & Publicité Ads',
+    badge: 'Acquisition Payante & Scaling ROAS',
+    iconType: 'target',
+    metaTitle: 'Media Buyer à {city} ({country}) | Publicité Meta & TikTok Ads Pro',
+    hook: 'Confiez la rentabilité de vos campagnes publicitaires à {city} à un Media Buyer certifié : scaling prévisible, créatives percutantes et élimination du gaspillage de budget.',
+    description: "À {city}, lancer des publicités sans méthode rigoureuse revient à jeter son budget par la fenêtre. BAROUBA GROUP déploie une approche d'ingénierie publicitaire orientée pur retour sur investissement (ROAS). Nous structurons vos campagnes Facebook Ads, Instagram Ads et TikTok Ads avec un ciblage précis, la configuration du Pixel et de l'API de Conversions (CAPI), ainsi que la création de créatives vidéo à fort impact pour générer un flux continu d'acheteurs qualifiés.",
+    deliverables: [
+      {
+        title: 'Stratégie d’Achat Média & Architecture TOFU / MOFU / BOFU',
+        desc: 'Structure de campagnes éprouvée pour tester, isoler et scaler méthodiquement les audiences et angles marketing les plus rentables.',
+      },
+      {
+        title: 'Tracking Avancé Meta Pixel & Conversion API (CAPI)',
+        desc: 'Configuration technique sans faille pour mesurer 100% des conversions et contourner les restrictions iOS et bloqueurs de pub.',
+      },
+      {
+        title: 'Direction Artistique & Scripts Vidéo Haute Conversion',
+        desc: 'Rédaction de scripts psychologiques, hooks captivants et montages vidéo verticaux adaptés aux usages mobiles de {city}.',
+      },
+      {
+        title: 'Pilotage Budgétaire Quotidien & A/B Testing Continu',
+        desc: 'Surveillance active du coût par acquisition (CPA), optimisation des enchères et scaling progressif sans dégradation du ROAS.',
+      },
+    ],
+    benefits: [
+      'Multiplication de votre retour sur investissement publicitaire (ROAS > 3.5x moyen constaté)',
+      'Élimination définitive du gaspillage de budget publicitaire sur des clics sans valeur',
+      'Capacité d’accélérer vos ventes à {city} et vers tous les marchés de la sous-région',
+      'Reporting hebdomadaire transparent et contact direct avec votre Media Buyer assigné',
+    ],
+    faq: [
+      {
+        question: 'Quel budget publicitaire minimum faut-il pour démarrer à {city} ?',
+        answer: 'Nous préconisons un budget média de départ d’au moins 150 000 à 300 000 FCFA par mois. Cela permet aux algorithmes de Meta et TikTok de sortir rapidement de la phase d’apprentissage et de cibler vos acheteurs idéaux.',
+      },
+      {
+        question: 'Comment protégez-vous nos comptes publicitaires contre les blocages ?',
+        answer: 'Nous appliquons rigoureusement les politiques publicitaires Meta et TikTok, sécurisons vos Business Managers par double authentification et structurons des comptes de secours conformes.',
+      },
+      {
+        question: 'Prenez-vous en charge la réalisation des vidéos et des visuels ?',
+        answer: 'Oui, notre studio créatif conçoit l’ensemble des créatives (vidéos dynamiques, carrousels, visuels de conversion) pour maximiser l’attention et le taux de clic.',
+      },
+    ],
+  },
+  {
+    slug: 'conception-tunnel-de-vente',
+    name: 'Conception de Tunnels de Vente Haute Conversion & Vente d’Offres en Ligne',
+    shortTitle: 'Tunnel de Vente & Vente en Ligne',
+    badge: 'Architecture de Conversion & Vente',
+    iconType: 'layers',
+    metaTitle: 'Conception de Tunnel de Vente à {city} ({country}) | Architecture Haute Conversion',
+    hook: 'Automatisez la vente de vos produits, services et formations à {city} grâce à un tunnel de conversion sur-mesure conçu pour transformer vos visiteurs en acheteurs confirmés.',
+    description: "Un site vitrine ordinaire informe, mais un tunnel de vente vend. À {city}, nous concevons des parcours clients chirurgicalement optimisés pour éliminer toute hésitation : page de capture percutante, vidéo de vente persuasive (VSL), bon de commande direct avec paiements Mobile Money et CB, et séquences d’upsell pour maximiser la valeur moyenne par transaction sans friction.",
+    deliverables: [
+      {
+        title: 'Copywriting Persuasif & Psychologie d’Achat',
+        desc: 'Rédaction percutante ciblant les désirs profonds, peurs et objections de vos acheteurs à {city} pour déclencher le passage à l’acte immédiat.',
+      },
+      {
+        title: 'Pages de Capture & Vidéos de Vente (VSL) Ultra-Rapides',
+        desc: 'Landing pages ergonomiques codées en Next.js, se chargeant en moins d’une seconde sur smartphone même avec une connexion mobile instable.',
+      },
+      {
+        title: 'Checkout Optimisé & Passerelles Mobile Money Intégrées',
+        desc: 'Paiement en Francs CFA en 1 clic par Orange Money, Moov Money, Wave et carte bancaire avec reçu électronique immédiat.',
+      },
+      {
+        title: 'Système d’Upsell, Order Bump & Récupération d’Abandons',
+        desc: 'Offres complémentaires stratégiques pour augmenter le panier moyen de 25% à 45% et séquences automatisées de réactivation.',
+      },
+    ],
+    benefits: [
+      'Génération automatique de ventes et réservations 24h/24 sans dépendre d’échanges manuels interminables',
+      'Idéal pour vendre des offres d’accompagnement haut de gamme, formations, abonnements et produits physiques',
+      'Expérience d’achat fluide pensée pour les comportements des consommateurs de {city}',
+      'Propriété totale de votre infrastructure de vente sans dépendre d’abonnements logiciels tiers coûteux',
+    ],
+    faq: [
+      {
+        question: 'Quelle est la différence fondamentale entre un site web et un tunnel de vente ?',
+        answer: 'Un site internet standard propose de multiples menus et choix qui dispersent l’attention. Un tunnel de vente ne présente qu’une seule trajectoire guidée : faire passer le prospect d’inconnu à client acheteur qualifié.',
+      },
+      {
+        question: 'Peut-on vendre des produits physiques ou uniquement des services avec un tunnel ?',
+        answer: 'Nos tunnels de vente s’appliquent avec un immense succès aux produits physiques (cosmétiques, mode, électronique), tout comme aux services d’entreprises, immobilier et formations.',
+      },
+      {
+        question: 'Le tunnel est-il accessible sur les connexions internet mobiles lentes à {city} ?',
+        answer: 'Oui, c’est l’atout de notre technologie Next.js déployée sur CDN Edge : nos pages de vente s’affichent instantanément même en réseau 3G dégradé.',
+      },
+    ],
+  },
+  {
+    slug: 'community-manager',
+    name: 'Community Management & Stratégie de Gestion de Page Facebook & Réseaux Sociaux',
+    shortTitle: 'Community Manager & Réseaux Sociaux',
+    badge: 'Branding & Engagement Communautaire',
+    iconType: 'users',
+    metaTitle: 'Community Manager à {city} ({country}) | Gestion de Page Facebook Pro',
+    hook: 'Propulsez la notoriété et la réputation de votre entreprise à {city} avec un Community Manager dédié : stratégie éditoriale, visuels haut de gamme et animation quotidienne engagée.',
+    description: "À {city}, une page Facebook inactive, aux visuels amateurs ou aux messages laissés sans réponse détruit silencieusement la crédibilité de votre marque. BAROUBA GROUP prend en main votre communication sociale : calendrier éditorial mensuel, création de contenus visuels et vidéos soignés, modération réactive 7j/7 et animation stratégique pour convertir vos abonnés en clients fidèles et ambassadeurs.",
+    deliverables: [
+      {
+        title: 'Stratégie Éditoriale & Calendrier Mensuel de Publication',
+        desc: 'Définition des piliers de contenu (autorité, preuve sociale, éducation, vente) et programmation rigoureuse aux heures de forte affluence à {city}.',
+      },
+      {
+        title: 'Création Graphique Haute Couture & Formats Verticaux (Reels)',
+        desc: 'Visuels raffinés conformes à votre charte graphique, carrousels éducatifs et montages vidéos courts pour maximiser la portée organique.',
+      },
+      {
+        title: 'Modération Active & Gestion Professionnelle des Messages Privés',
+        desc: 'Réponses rapides, courtoises et commerciales aux commentaires et messages pour ne perdre aucun prospect tiède ou chaud.',
+      },
+      {
+        title: 'Rapports Mensuels d’Engagement & Veille Concurrentielle',
+        desc: 'Tableau de bord synthétique mesurant la croissance de l’audience, les taux d’engagement et les retombées concrètes sur vos ventes à {city}.',
+      },
+    ],
+    benefits: [
+      'Image de marque premium renforçant instantanément la confiance de vos partenaires d’affaires',
+      'Libération totale de votre temps et de celui de vos équipes pour vous consacrer à votre métier',
+      'Fédération d’une communauté active et engagée autour des valeurs de votre entreprise',
+      'Surveillance continue des tendances et initiatives de vos concurrents directs à {city}',
+    ],
+    faq: [
+      {
+        question: 'Combien de publications réalisez-vous par semaine sur notre page à {city} ?',
+        answer: 'Selon la formule retenue, nous publions entre 3 et 5 posts qualitatifs par semaine, alternant visuels de marque, vidéos courtes, témoignages clients et publications d’autorité.',
+      },
+      {
+        question: 'Prenez-vous en charge la prise de photos et le tournage à {city} ?',
+        answer: 'Nous pouvons valoriser vos banques d’images existantes, créer des visuels graphiques 100% sur-mesure, ou organiser des sessions de captation photo/vidéo sur place lors de nos missions.',
+      },
+      {
+        question: 'Comment traitez-vous les demandes de prix formulées en commentaire ?',
+        answer: 'Nous appliquons un script d’accueil chaleureux et redirigeons poliment le prospect vers la messagerie privée ou votre ligne WhatsApp commerciale pour le qualifier efficacement.',
+      },
+    ],
+  },
+  {
+    slug: 'expert-whatsapp-business-api',
+    name: 'Expert WhatsApp Business API & Automatisation Messagerie Entreprise Meta',
+    shortTitle: 'WhatsApp Business API Certifié',
+    badge: 'Partenaire Intégrateur Meta Officiel',
+    iconType: 'message-square',
+    metaTitle: 'Expert WhatsApp Business API à {city} ({country}) | Solution Officielle Meta',
+    hook: 'Passez au niveau supérieur de la relation client à {city} avec l’API officielle WhatsApp Cloud : badge vert vérifié, zéro risque de bannissement et boîte de réception multi-agents.',
+    description: "L’usage d’outils WhatsApp non officiels ou de scripts de spam expose votre entreprise à {city} à la perte définitive de vos numéros de téléphone commerciaux. BAROUBA GROUP déploie pour vous l’infrastructure officielle Meta WhatsApp Business API Cloud : vérification d’entreprise Meta, obtention du badge vert certifié, campagnes de notifications de masse conformes et intégration avec vos outils métiers pour gérer des milliers de conversations simultanément.",
+    deliverables: [
+      {
+        title: 'Vérification d’Entreprise Meta Business Manager & Badge Vert',
+        desc: 'Montage et validation complète de votre dossier d’entreprise auprès des équipes Meta pour obtenir le statut officiel vérifié.',
+      },
+      {
+        title: 'Déploiement de l’API WhatsApp Cloud Haute Performance',
+        desc: 'Connexion directe et sécurisée aux serveurs Meta sans passerelle intermédiaire, garantissant une délivrabilité de 100% et zéro temps d’arrêt.',
+      },
+      {
+        title: 'Boîte de Réception Partagée Multi-Utilisateurs',
+        desc: 'Permettez à l’ensemble de votre équipe commerciale et support à {city} de répondre en même temps sur le même numéro d’entreprise officiel.',
+      },
+      {
+        title: 'Modèles de Messages Approuvés & Campagnes Broadcast Ciblées',
+        desc: 'Création de templates officiels conformes Meta pour envoyer notifications de commande, rappels de rendez-vous et offres promotionnelles à grande échelle.',
+      },
+    ],
+    benefits: [
+      'Protection intégrale de votre actif commercial : zéro risque de blocage ou bannissement par Meta',
+      'Affichage immédiat du nom officiel de votre entreprise avec badge vert sans enregistrement préalable du numéro',
+      'Organisation centralisée de vos échanges clients avec attribution de tickets et historique archivé',
+      'Capacité d’absorber des pics d’activité massifs sans dégradation du temps de réponse',
+    ],
+    faq: [
+      {
+        question: 'Pourquoi abandonner l’application WhatsApp Business classique au profit de l’API à {city} ?',
+        answer: 'L’application gratuite est bridée à un petit nombre d’appareils et bloque immédiatement le numéro en cas d’envois multiples. L’API officielle offre des utilisateurs illimités, une sécurité absolue et des automatisations avancées conformes.',
+      },
+      {
+        question: 'Pouvons-nous conserver notre numéro de téléphone d’entreprise habituel ?',
+        answer: 'Oui, nous pouvons faire migrer votre numéro existant vers l’API Cloud officielle dès que votre compte Business Manager Meta est validé.',
+      },
+      {
+        question: 'Quels sont les coûts des messages appliqués par Meta ?',
+        answer: 'Meta facture les conversations par tranches de 24 heures selon des barèmes transparents très abordables. Nous paramétrons vos flux pour optimiser chaque franc CFA dépensé.',
+      },
+    ],
+  },
+  {
+    slug: 'strategie-acquisition-digitale',
+    name: 'Stratégie & Consultation en Acquisition Digitale pour Dirigeants & PME',
+    shortTitle: 'Stratégie & Acquisition Digitale',
+    badge: 'Conseil Stratégique & Croissance B2B',
+    iconType: 'trending-up',
+    metaTitle: 'Stratégie d’Acquisition Digitale à {city} ({country}) | Conseil & Audit',
+    hook: 'Structurez un moteur d’acquisition client robuste et pérenne à {city} : audit approfondi, arbitrage des canaux marketing et plan d’action pragmatique pour générer des prospects qualifiés.',
+    description: "Multiplier les actions marketing désordonnées à {city} est la cause première de la stagnation des entreprises. BAROUBA GROUP intervient en tant que cabinet conseil stratégique en acquisition digitale : nous analysons votre coût d’acquisition client (CAC), modélisons la valeur vie de vos clients (LTV) et concevons un plan d’accélération sur-mesure combinant SEO, publicité payante, création de contenu et closing commercial.",
+    deliverables: [
+      {
+        title: 'Audit Approfondi de votre Écosystème Commercial & Digital',
+        desc: 'Diagnostic rigoureux de vos flux de prospects actuels, identification des points de fuite et analyse des leviers sous-exploités à {city}.',
+      },
+      {
+        title: 'Plan Stratégique d’Acquisition Multicanale 90 Jours',
+        desc: 'Feuille de route claire précisant les canaux prioritaires, les budgets préconisés et les objectifs de retour sur investissement chiffrés.',
+      },
+      {
+        title: 'Modélisation Financière CAC, LTV & Marges Opérationnelles',
+        desc: 'Calcul rigoureux des seuils de rentabilité pour chaque canal afin de garantir que chaque franc CFA investi génère du bénéfice net.',
+      },
+      {
+        title: 'Sessions de Cadrage Stratégique & Direction Marketing Déléguée',
+        desc: 'Accompagnement direct du dirigeant et des équipes pour piloter le déploiement opérationnel et lever les blocages tactiques.',
+      },
+    ],
+    benefits: [
+      'Visibilité prévisible sur votre volume de prospects entrants chaque semaine',
+      'Économies substantielles grâce à l’élimination des dépenses marketing non rentables',
+      'Synergie totale entre votre communication, votre marketing et vos équipes de vente',
+      'Appui d’experts chevronnés maîtrisant les réalités du tissu économique de {city}',
+    ],
+    faq: [
+      {
+        question: 'À qui s’adresse cette consultation stratégique en acquisition à {city} ?',
+        answer: 'Elle s’adresse aux directeurs généraux, gérants de PME/PMI et fondateurs d’entreprises ambitieuses qui veulent structurer leur croissance et dépasser leurs plafonds de verre commerciaux.',
+      },
+      {
+        question: 'Combien de temps dure la phase de cadrage et d’audit initial ?',
+        answer: 'L’audit approfondi et la feuille de route stratégique sont finalisés en 14 à 21 jours ouvrés, accompagnés d’une restitution détaillée en séance de travail avec votre direction.',
+      },
+      {
+        question: 'Votre cabinet prend-il également en charge l’exécution des plans préconisés ?',
+        answer: 'Oui, BAROUBA GROUP dispose des spécialistes internes (media buyers, développeurs, copywriters) pour assurer l’exécution technique clé en main de l’ensemble de la stratégie.',
+      },
+    ],
+  },
+  {
+    slug: 'referencement-seo-local',
+    name: 'Référencement SEO Local & Domination Google Maps à {city}',
+    shortTitle: 'SEO Local & Référencement Google',
+    badge: 'Visibilité Organique N°1',
+    iconType: 'search',
+    metaTitle: 'Référencement SEO Local à {city} ({country}) | N°1 sur Google & Maps',
+    hook: 'Positionnez votre établissement au sommet des résultats de recherche Google et Google Maps à {city}. Captez les clients locaux prêts à acheter au moment précis de leur recherche.',
+    description: "Lorsque des clients recherchent vos services à {city}, c’est sur Google qu’ils regardent en premier. Si votre entreprise n’apparaît pas dans les trois premières positions de Google Maps ou dans les résultats naturels locaux, ce sont vos concurrents directs qui encaissent. BAROUBA GROUP déploie une stratégie SEO locale complète : optimisation de votre fiche Google Business Profile, balisage Schema.org géolocalisé, netlinking de proximité et création de contenus d’autorité locale.",
+    deliverables: [
+      {
+        title: 'Optimisation & Certification Google Business Profile',
+        desc: 'Configuration exhaustive de votre fiche d’établissement, géolocalisation chirurgicale, choix des catégories d’activité et photos professionnelles.',
+      },
+      {
+        title: 'Balisage Schema.org LocalBusiness & Optimisation On-Page',
+        desc: 'Structuration technique de votre site web pour indiquer sans ambiguïté aux robots Google votre implantation et vos zones d’intervention à {city}.',
+      },
+      {
+        title: 'Citations Locales & Netlinking d’Autorité Panafricain',
+        desc: 'Inscription dans les annuaires d’entreprises fiables et création de signaux de pertinence géographique renforçant votre autorité locale.',
+      },
+      {
+        title: 'Système de Récolte Proactive des Avis Clients 5 Étoiles',
+        desc: 'Mise en place de processus automatisés pour accumuler des avis élogieux réguliers qui rassurent les prospects et boostent votre classement.',
+      },
+    ],
+    benefits: [
+      'Afflux régulier d’appels téléphoniques et de visites de prospects qualifiés sans budget publicitaire au clic',
+      'Confiance immédiate des acheteurs grâce aux avis clients vérifiés et à la présence sur la carte',
+      'Visibilité pérenne qui continue de travailler pour votre entreprise jour et nuit pendant des années',
+      'Domination incontestée sur vos concurrents locaux qui négligent encore leur référencement',
+    ],
+    faq: [
+      {
+        question: 'Sous quel délai peut-on espérer grimper dans Google Maps à {city} ?',
+        answer: 'Sur les requêtes locales ciblées, des améliorations significatives de positionnement et d’appels entrants s’observent couramment entre 4 et 8 semaines après la mise à niveau de la fiche.',
+      },
+      {
+        question: 'Faut-il posséder un local ouvert au public pour bénéficier du SEO local à {city} ?',
+        answer: 'Non, les entreprises de services intervenant au domicile ou dans les locaux de leurs clients peuvent configurer une zone de desserte spécifique sans afficher publiquement leur adresse résidentielle.',
+      },
+      {
+        question: 'Le résultat est-il pérenne si l’on arrête d’optimiser le site ?',
+        answer: 'Contrairement à la publicité qui s’éteint dès que le budget s’arrête, les positions acquises en SEO local restent très stables dans le temps avec un minimum d’entretien régulier.',
       },
     ],
   },
@@ -1014,146 +1316,50 @@ export const TERRITORY_SERVICES: TerritoryService[] = [
     badge: 'Intelligence Artificielle Opérationnelle',
     iconType: 'cpu',
     metaTitle: 'Agents IA & Automatisation à {city} ({country}) | Solutions Métiers',
-    hook: 'Automatisez votre service client, la qualification de vos prospects et votre gestion interne à {city} grâce à des agents IA connectés à WhatsApp et vos bases de données.',
-    description: "Ne perdez plus aucun prospect à {city} à cause d'une réponse tardive sur WhatsApp ou d'une surcharge administrative. BAROUBA GROUP déploie des agents intelligents entraînés sur votre catalogue et vos procédures internes, capables de répondre 24h/24, de calculer des devis personnalisés et de synchroniser vos commandes sans intervention humaine.",
+    hook: 'Automatisez votre service client, la qualification de vos prospects et votre gestion interne à {city} grâce à des agents IA connectés à vos outils métiers et bases de données.',
+    description: "Ne perdez plus aucun prospect à {city} à cause d'une réponse tardive ou d'une surcharge administrative. BAROUBA GROUP déploie des agents intelligents entraînés sur votre catalogue et vos procédures internes, capables de répondre 24h/24, de calculer des devis personnalisés et de synchroniser vos commandes sans intervention humaine.",
     deliverables: [
       {
-        title: 'Agent Conversationnel WhatsApp Métier 24/7',
+        title: 'Agent Conversationnel Métier 24h/24',
         desc: 'Compréhension du langage naturel, réponse instantanée aux questions fréquentes et qualification commerciale des prospects jour et nuit.',
       },
       {
-        title: 'Workflows d\'Automatisation Inter-Logiciels',
-        desc: 'Connexion fluide entre WhatsApp, Google Sheets, CRM, ERP et logiciels de facturation pour éliminer la saisie manuelle d\'erreurs.',
+        title: 'Workflows d’Automatisation Inter-Logiciels',
+        desc: 'Connexion fluide entre messageries, CRM, ERP, Google Sheets et logiciels de facturation pour éliminer la saisie manuelle et les erreurs.',
       },
       {
-        title: 'Générateur Automatique de Devis & Factures PDF',
-        desc: 'Production instantanée de documents PDF professionnels chiffrés envoyés directement sur le smartphone de votre client.',
+        title: 'Générateur Automatique de Devis & Factures',
+        desc: 'Calcul instantané des tarifs selon les critères du client et envoi automatique du document PDF officiel certifié.',
       },
       {
-        title: 'Tableau de Bord Analytique & Supervision Humaine',
-        desc: 'Suivi en temps réel des conversations, des taux de satisfaction et bascule instantanée vers un opérateur humain en cas de dossier complexe.',
-      },
-    ],
-    benefits: [
-      'Disponibilité totale 24h/24 et 7j/7 sans coût salarial supplémentaire',
-      'Temps de réponse client réduit de plusieurs heures à moins de 3 secondes',
-      'Zéro perte de prospect pendant les nuits, week-ends et jours fériés',
-      'Concentration de votre équipe sur la vente et les tâches à très forte valeur ajoutée',
-    ],
-    faq: [
-      {
-        question: 'L\'agent IA comprend-il les spécificités de communication locale à {city} ?',
-        answer: 'Absolument. Nos modèles sont paramétrés et enrichis avec les expressions, habitudes commerciales et contextes d\'échange propres à l\'Afrique de l\'Ouest.',
-      },
-      {
-        question: 'Que se passe-t-il si un client pose une question trop complexe ?',
-        answer: 'L\'agent détecte automatiquement la complexité ou l\'urgence et transfère immédiatement la conversation à un collaborateur humain avec un résumé structuré du dossier.',
-      },
-      {
-        question: 'Combien de temps faut-il pour mettre en place un agent IA ?',
-        answer: 'Le déploiement standard prend entre 7 et 14 jours, incluant l\'entraînement sur vos données, les tests de sécurité et la formation de votre personnel.',
-      },
-    ],
-  },
-  {
-    slug: 'publicite-facebook-tiktok-ads',
-    name: 'Publicité Meta & TikTok Ads (Media Buying 360°)',
-    shortTitle: 'Publicité Facebook, Instagram & TikTok Ads',
-    badge: 'Acquisition & Scaling Rentable',
-    iconType: 'megaphone',
-    metaTitle: 'Agence Publicité Facebook & TikTok Ads à {city} | ROAS Garanti',
-    hook: 'Générez un flux continu de prospects qualifiés à {city} avec des campagnes publicitaires ciblées à fort retour sur investissement (Tracking serveur CAPI & créatifs IA).',
-    description: "Brûler du budget publicitaire sans rentabilité mesurable est la première erreur des annonceurs à {city}. BAROUBA GROUP structure vos campagnes sur Facebook, Instagram et TikTok avec une approche mathématique : ciblage comportemental précis, tracking serveur CAPI anti-déperdition, créatifs publicitaires percutants et optimisation quotidienne du coût par acquisition.",
-    deliverables: [
-      {
-        title: 'Tracking Serveur CAPI de Niveau 1 (Meta & TikTok)',
-        desc: 'Mesure exacte des conversions contournant les blocages iOS et les pertes de données réseau pour alimenter l\'algorithme d\'achat avec des données pures.',
-      },
-      {
-        title: 'Production de Créatifs Publicitaires IA Haute Conversion',
-        desc: 'Vidéos courtes accrocheuses (format Reels/TikTok) et visuels haute définition conçus pour stopper le scroll dès la 1ère seconde.',
-      },
-      {
-        title: 'Copywriting Persuasif Ouest-Africain',
-        desc: 'Textes de vente rédigés avec les déclencheurs psychologiques qui résonnent auprès des consommateurs et décideurs de {city}.',
-      },
-      {
-        title: 'Pilotage & Reporting Hebdomadaire Transparent',
-        desc: 'Suivi transparent du budget dépensé, du coût par prospect (CPL) et du retour sur dépenses publicitaires (ROAS) généré.',
+        title: 'Synchronisation des Données & Tableaux de Bord de Gestion',
+        desc: 'Mise à jour en temps réel des stocks, des rendez-vous et des encaissements dans vos outils de pilotage centralisés.',
       },
     ],
     benefits: [
-      'Génération prévisible de nouveaux prospects qualifiés chaque matin sur WhatsApp',
-      'Réduction de 30% à 50% du coût d\'acquisition client par rapport à la moyenne du marché',
-      'Élimination du gaspillage publicitaire grâce au tracking serveur CAPI de niveau 1',
-      'Visibilité massive et statut d\'autorité pour votre marque auprès des décideurs de {city}',
+      'Disponibilité commerciale ininterrompue 24h/24 et 7j/7 pour capter tous les prospects',
+      'Réduction drastique des coûts opérationnels et du temps passé sur des tâches répétitives sans valeur',
+      'Zéro prospect perdu grâce à des temps de réponse inférieurs à 30 secondes',
+      'Intégration sur-mesure respectant scrupuleusement la confidentialité de vos données d’entreprise',
     ],
     faq: [
       {
-        question: 'Quel budget publicitaire minimum faut-il pour démarrer à {city} ?',
-        answer: 'Nous recommandons un budget média de départ de 50 000 à 150 000 FCFA pour tester les premiers angles et valider la rentabilité avant de monter en puissance (scaling).',
+        question: 'L’IA est-elle capable de comprendre les expressions et le contexte local de {city} ?',
+        answer: 'Oui, nos modèles sont ajustés pour comprendre le français d’Afrique de l’Ouest, les formulations courantes et les termes spécifiques à votre secteur d’activité.',
       },
       {
-        question: 'Comment assurez-vous que les prospects reçus sont qualifiés ?',
-        answer: 'Nous intégrons des formulaires de qualification ou des filtres de questions avant l\'arrivée sur WhatsApp pour écarter les curieux et ne transmettre que les clients prêts à payer.',
+        question: 'Que se passe-t-il si un client pose une question complexe ou imprévue ?',
+        answer: 'L’agent IA détecte ses limites de confiance et bascule immédiatement et proprement la conversation vers un conseiller humain de votre équipe.',
       },
       {
-        question: 'Combien de temps avant d\'obtenir les premiers résultats ?',
-        answer: 'Dès le lancement effectif des campagnes (souvent 48h après validation des visuels), les premiers prospects commencent à entrer le jour même.',
-      },
-    ],
-  },
-  {
-    slug: 'tunnels-de-vente-whatsapp',
-    name: 'Tunnels de Vente WhatsApp & E-commerce Mobile Money',
-    shortTitle: 'Tunnels de Vente WhatsApp & Mobile Money',
-    badge: 'Conversion Directe en Francs CFA',
-    iconType: 'smartphone',
-    metaTitle: 'Tunnel de Vente WhatsApp & E-commerce à {city} | Paiement Mobile',
-    hook: 'Transformez vos prospects en acheteurs en quelques secondes via WhatsApp avec intégration native Orange Money, Moov Money et Wave à {city}.',
-    description: "En Afrique francophone, 85% des transactions digitales se concluent sur WhatsApp. À {city}, obliger un client à remplir un long formulaire de carte bancaire fait chuter les ventes de 90%. BAROUBA GROUP crée des tunnels de vente friction-zéro où le client découvre l'offre, pose ses questions et règle sa commande directement avec son compte Mobile Money.",
-    deliverables: [
-      {
-        title: 'Landing Page de Vente Mobile-First Ultra-Légère',
-        desc: 'Page de vente responsive présentant l\'offre de manière irrésistible avec bouton d\'achat direct vers WhatsApp sans formulaire lourd.',
-      },
-      {
-        title: 'Intégration Paiements Mobile Money (Orange, Moov, Wave)',
-        desc: 'Passerelle d\'encaissement sécurisée permettant au client de payer instantanément sans quitter son application mobile.',
-      },
-      {
-        title: 'Séquence Automatisée de Relance Commerciale WhatsApp',
-        desc: 'Relance intelligente des paniers abandonnés sur WhatsApp pour récupérer jusqu\'à 35% de chiffre d\'affaires perdu.',
-      },
-      {
-        title: 'Gestionnaire de Stock & Notification Livreur Automatique',
-        desc: 'Alerte immédiate de votre équipe logistique dès qu\'une commande est validée pour une expédition locale sans délai.',
-      },
-    ],
-    benefits: [
-      'Encaissement immédiat et sécurisé en Francs CFA sans litige bancaire',
-      'Expérience d\'achat fluide correspondant aux usages réels des consommateurs de {city}',
-      'Taux d\'ouverture de 98% sur WhatsApp contre moins de 15% pour les emails',
-      'Idéal pour produits physiques, formations, abonnements et prestations de services',
-    ],
-    faq: [
-      {
-        question: 'Les clients de {city} ont-ils confiance pour payer par Mobile Money ?',
-        answer: 'Oui, le Mobile Money est le mode de paiement le plus sécurisé et le plus populaire au Burkina et en Côte d\'Ivoire. Nos passerelles agréées rassurent le client avec un reçu instantané.',
-      },
-      {
-        question: 'Le système gère-t-il les frais de livraison selon les quartiers de {city} ?',
-        answer: 'Tout à fait. Le sélecteur de quartier calcule automatiquement le tarif de livraison adapté au lieu exact de réception de la marchandise.',
-      },
-      {
-        question: 'Peut-on coupler ce tunnel avec nos publicités Facebook ?',
-        answer: 'C\'est la configuration reine : une publicité vidéo Meta Ads qui redirige directement vers le tunnel de vente pour un retour sur investissement maximal.',
+        question: 'Mes données d’entreprise et celles de mes clients sont-elles protégées ?',
+        answer: 'Absolument. Nous appliquons des protocoles de chiffrement stricts et vos données internes ne sont jamais utilisées pour entraîner des modèles publics tiers.',
       },
     ],
   },
   {
     slug: 'formations-metiers-du-web-ia',
-    name: 'Formations Professionnelles Métiers du Web & IA',
+    name: 'Formations Professionnelles Métiers du Web & IA (Barouba Academy)',
     shortTitle: 'Formations Certifiantes Web, Marketing & IA',
     badge: 'Développement des Compétences & Avenir',
     iconType: 'graduation',
@@ -1166,15 +1372,15 @@ export const TERRITORY_SERVICES: TerritoryService[] = [
         desc: 'Chaque module débouche sur la réalisation de projets concrets directement utilisables en entreprise ou en freelance.',
       },
       {
-        title: 'Certificat Professionnel d\'Aptitude BAROUBA GROUP',
-        desc: 'Attestation officielle valorisant votre expertise auprès des recruteurs et donneurs d\'ordres nationaux et internationaux.',
+        title: 'Certificat Professionnel d’Aptitude BAROUBA GROUP',
+        desc: 'Attestation officielle valorisant votre expertise auprès des recruteurs et donneurs d’ordres nationaux et internationaux.',
       },
       {
         title: 'Accompagnement & Mentorat VIP Post-Formation',
         desc: 'Accès direct aux formateurs pour débloquer vos difficultés et perfectionner vos compétences après le cursus.',
       },
       {
-        title: 'Boîte à Outils, Code Source & Prompts Prêts à l\'Emploi',
+        title: 'Boîte à Outils, Code Source & Prompts Prêts à l’Emploi',
         desc: 'Fourniture de bibliothèques de code, templates de tunnels et scripts IA pour accélérer vos propres projets sans repartir de zéro.',
       },
     ],
@@ -1182,20 +1388,20 @@ export const TERRITORY_SERVICES: TerritoryService[] = [
       'Acquisition de compétences immédiatement monétisables sur le marché du travail',
       'Possibilité de suivre en présentiel ou en ligne depuis {city} avec support réactif',
       'Paiement échelonné en FCFA disponible par Mobile Money',
-      'Accès exclusif à la communauté des alumni et opportunités d\'affaires du réseau',
+      'Accès exclusif à la communauté des alumni et opportunités d’affaires du réseau',
     ],
     faq: [
       {
         question: 'Faut-il avoir des prérequis en informatique pour suivre les cours à {city} ?',
-        answer: 'Nos formations comportent des niveaux débutants complets et des niveaux avancés. Une simple familiarité avec l\'ordinateur et une forte motivation suffisent pour démarrer.',
+        answer: 'Nos formations comportent des parcours débutants complets et des modules avancés. Une simple familiarité avec l’ordinateur et une forte motivation suffisent pour démarrer.',
       },
       {
-        question: 'Les cours sont-ils accessibles aux personnes en poste à {city} ?',
-        answer: 'Oui, nous proposons des sessions en cours du soir et le week-end, ainsi que des modules en ligne flexibles permettant d\'apprendre à votre propre rythme.',
+        question: 'Les cours sont-ils compatibles avec un emploi du temps professionnel à {city} ?',
+        answer: 'Oui, nous proposons des créneaux en cours du soir et le week-end, ainsi qu’un accès e-learning flexible pour progresser à votre propre rythme.',
       },
       {
-        question: 'Le certificat est-il reconnu par les entreprises ?',
-        answer: 'Le certificat BAROUBA GROUP atteste de la validation de compétences techniques réelles sur des projets concrets, ce qui constitue le meilleur gage d\'employabilité.',
+        question: 'Le certificat est-il reconnu par les entreprises et recruteurs ?',
+        answer: 'Le certificat BAROUBA GROUP atteste de la validation de compétences techniques réelles sur des projets concrets, ce qui constitue le meilleur gage d’employabilité.',
       },
     ],
   },
@@ -1216,7 +1422,16 @@ export function getCityBySlug(countrySlug: string, citySlug: string): TerritoryC
 }
 
 export function getTerritoryServiceBySlug(serviceSlug: string): TerritoryService | undefined {
-  return TERRITORY_SERVICES.find((s) => s.slug === serviceSlug);
+  const direct = TERRITORY_SERVICES.find((s) => s.slug === serviceSlug);
+  if (direct) return direct;
+  // Aliases for backward compatibility
+  if (serviceSlug === 'publicite-facebook-tiktok-ads') {
+    return TERRITORY_SERVICES.find((s) => s.slug === 'media-buyer');
+  }
+  if (serviceSlug === 'tunnels-de-vente-whatsapp') {
+    return TERRITORY_SERVICES.find((s) => s.slug === 'conception-tunnel-de-vente');
+  }
+  return undefined;
 }
 
 export interface TerritoryCombo {
