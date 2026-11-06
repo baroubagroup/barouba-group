@@ -4,7 +4,7 @@ import { BlogPost, BlogPostFAQ } from './articles/types';
 import { cmPillarPost } from './articles/cmPillarPost';
 
 export type { BlogPost, BlogPostFAQ };
-export const WHATSAPP_NUMBER = '226XXXXXXXX'; // Format officiel Burkina Faso (+226)
+export const WHATSAPP_NUMBER = '22674826666'; // Format officiel Burkina Faso (+226 74 82 66 66)
 
 export const mockPosts: BlogPost[] = [
   {

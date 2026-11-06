@@ -79,6 +79,10 @@ export const routing = defineRouting({
       en: '/quote',
     },
     '/contact': '/contact',
+    '/territoires': '/territoires',
+    '/territoires/[country]': '/territoires/[country]',
+    '/territoires/[country]/[city]': '/territoires/[country]/[city]',
+    '/territoires/[country]/[city]/[service]': '/territoires/[country]/[city]/[service]',
   },
 });
 

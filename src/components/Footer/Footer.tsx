@@ -28,6 +28,7 @@ export default function Footer() {
 
   const navigationLinks = [
     { href: '/a-propos' as const, label: 'À Propos de l’Agence' },
+    { href: '/territoires' as const, label: 'Territoires & Villes d’Intervention' },
     { href: '/portfolio' as const, label: 'Nos Réalisations & Études de Cas' },
     { href: '/blog' as const, label: 'Blog Stratégique & Guides SEO' },
     { href: '/solutions' as const, label: 'Solutions Entreprises' },

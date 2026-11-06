@@ -2,6 +2,11 @@ import type { MetadataRoute } from 'next';
 import { mockPosts, mockFormations } from '@/lib/data';
 import { BOUTIQUE_PRODUCTS } from '@/lib/boutiqueData';
 import { getAllSeoArticlesList } from '@/lib/seoArticles';
+import { 
+  TERRITORY_COUNTRIES, 
+  TERRITORY_CITIES, 
+  getAllTerritoryCombos 
+} from '@/lib/territoriesData';
 
 const BASE_URL = 'https://www.baroubagroup.com';
 
@@ -72,9 +77,44 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.95,
       });
     }
+
+    // 5. Territories & Programmatic SEO (123 URLs: Hub + Countries + Cities + Services)
+    entries.push({
+      url: `${BASE_URL}/${locale}/territoires`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    });
+
+    for (const country of TERRITORY_COUNTRIES) {
+      entries.push({
+        url: `${BASE_URL}/${locale}/territoires/${country.slug}`,
+        lastModified: new Date(),
+        changeFrequency: 'weekly',
+        priority: 0.9,
+      });
+    }
+
+    for (const city of TERRITORY_CITIES) {
+      entries.push({
+        url: `${BASE_URL}/${locale}/territoires/${city.countrySlug}/${city.slug}`,
+        lastModified: new Date(),
+        changeFrequency: 'weekly',
+        priority: 0.9,
+      });
+    }
+
+    for (const combo of getAllTerritoryCombos()) {
+      entries.push({
+        url: `${BASE_URL}/${locale}/territoires/${combo.country.slug}/${combo.city.slug}/${combo.service.slug}`,
+        lastModified: new Date(),
+        changeFrequency: 'weekly',
+        priority: 0.95,
+      });
+    }
   }
 
-  // 5. Complete Encyclopedic Knowledge Base (3,045 Articles: 51 High-Authority Pillars + 2,994 Semantic Satellites)
+  // 6. Complete Encyclopedic Knowledge Base (3,045 Articles: 51 High-Authority Pillars + 2,994 Semantic Satellites)
   for (const item of seoArticles) {
     entries.push({
       url: `${BASE_URL}/fr/blog/${item.slug}`,
