@@ -39,6 +39,7 @@ export const routing = defineRouting({
       fr: '/solutions',
       en: '/solutions',
     },
+    '/solutions/[slug]': '/solutions/[slug]',
     '/formations': {
       fr: '/formations',
       en: '/training',

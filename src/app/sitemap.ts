@@ -2,6 +2,7 @@ import type { MetadataRoute } from 'next';
 import { mockPosts, mockFormations } from '@/lib/data';
 import { BOUTIQUE_PRODUCTS } from '@/lib/boutiqueData';
 import { getAllSeoArticlesList } from '@/lib/seoArticles';
+import { getAllB2bCombos } from '@/lib/solutionsData';
 import { 
   TERRITORY_COUNTRIES, 
   TERRITORY_CITIES, 
@@ -125,7 +126,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
   }
 
-  // 6. Complete Encyclopedic Knowledge Base (3,045 Articles: 51 High-Authority Pillars + 2,994 Semantic Satellites)
+      // 5c. B2B Sector Solutions & Pricing Matrix (15 Sectors × 54 Cities & 12 Countries = 1,980 URLs)
+    for (const b2b of getAllB2bCombos()) {
+      entries.push({
+        url: `${BASE_URL}/solutions/${b2b.slug}`,
+        lastModified: new Date(),
+        changeFrequency: 'weekly',
+        priority: 0.95,
+      });
+    }
+
+    // 6. Complete Encyclopedic Knowledge Base (3,045 Articles: 51 High-Authority Pillars + 2,994 Semantic Satellites)
   for (const item of seoArticles) {
     entries.push({
       url: `${BASE_URL}/blog/${item.slug}`,
