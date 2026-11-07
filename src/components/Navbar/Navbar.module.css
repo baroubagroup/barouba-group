@@ -310,3 +310,84 @@
     display: none; /* Keep clean on small mobile header, accessible via menu button */
   }
 }
+
+/* =========================================================================
+   LIGHT THEME OVERRIDES — PEARL LUXURY FLOATING CAPSULE
+   ========================================================================= */
+:global([data-theme='light']) .inner,
+:global(body[data-theme='light']) .inner {
+  background: rgba(255, 255, 255, 0.94);
+  border-color: rgba(180, 83, 9, 0.25);
+  box-shadow: 
+    0 10px 30px rgba(45, 30, 10, 0.08), 
+    0 2px 8px rgba(0, 0, 0, 0.03),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+:global([data-theme='light']) .scrolled .inner,
+:global(body[data-theme='light']) .scrolled .inner {
+  background: rgba(255, 255, 255, 0.98);
+  border-color: rgba(180, 83, 9, 0.35);
+  box-shadow: 
+    0 14px 40px rgba(45, 30, 10, 0.12), 
+    0 0 20px rgba(180, 83, 9, 0.08);
+}
+
+:global([data-theme='light']) .brandTitle,
+:global(body[data-theme='light']) .brandTitle {
+  color: #14111E;
+}
+
+:global([data-theme='light']) .brandBadge,
+:global(body[data-theme='light']) .brandBadge {
+  color: #B45309;
+}
+
+:global([data-theme='light']) .navLink,
+:global(body[data-theme='light']) .navLink {
+  color: #484354;
+}
+
+:global([data-theme='light']) .navLink:hover,
+:global(body[data-theme='light']) .navLink:hover {
+  color: #14111E;
+  background: rgba(180, 83, 9, 0.08);
+}
+
+:global([data-theme='light']) .active,
+:global(body[data-theme='light']) .active {
+  color: #B45309 !important;
+  background: rgba(180, 83, 9, 0.12) !important;
+}
+
+:global([data-theme='light']) .mobileToggle,
+:global(body[data-theme='light']) .mobileToggle {
+  background: rgba(180, 83, 9, 0.06);
+  border-color: rgba(180, 83, 9, 0.22);
+  color: #14111E;
+}
+
+:global([data-theme='light']) .mobileMenu,
+:global(body[data-theme='light']) .mobileMenu {
+  background: rgba(255, 255, 255, 0.98);
+  border-color: rgba(180, 83, 9, 0.25);
+  box-shadow: 0 16px 40px rgba(45, 30, 10, 0.12);
+}
+
+:global([data-theme='light']) .mobileLink,
+:global(body[data-theme='light']) .mobileLink {
+  color: #14111E;
+}
+
+:global([data-theme='light']) .mobileLink:hover,
+:global(body[data-theme='light']) .mobileLink:hover {
+  background: rgba(180, 83, 9, 0.06);
+  color: #B45309;
+}
+
+:global([data-theme='light']) .activeMobile,
+:global(body[data-theme='light']) .activeMobile {
+  background: rgba(180, 83, 9, 0.12) !important;
+  color: #B45309 !important;
+}
+

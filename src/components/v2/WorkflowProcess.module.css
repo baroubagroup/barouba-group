@@ -407,3 +407,107 @@
     font-size: 13px;
   }
 }
+
+/* =========================================================================
+   LIGHT THEME OVERRIDES — CLEAN METHODOLOGY CARDS & TIMELINE
+   ========================================================================= */
+:global([data-theme='light']) .stepCard,
+:global(body[data-theme='light']) .stepCard {
+  background: #FFFFFF;
+  border-color: rgba(180, 83, 9, 0.2);
+  box-shadow: 0 8px 24px rgba(45, 30, 10, 0.06);
+}
+
+:global([data-theme='light']) .stepCardActive,
+:global(body[data-theme='light']) .stepCardActive {
+  background: #FFFDF9;
+  border-color: rgba(180, 83, 9, 0.5);
+  box-shadow: 0 16px 36px rgba(45, 30, 10, 0.12), 0 0 20px rgba(180, 83, 9, 0.12);
+}
+
+:global([data-theme='light']) .stepCard:hover,
+:global(body[data-theme='light']) .stepCard:hover {
+  border-color: #B45309;
+  box-shadow: 0 14px 32px rgba(45, 30, 10, 0.1);
+}
+
+:global([data-theme='light']) .stepNumberBadge,
+:global(body[data-theme='light']) .stepNumberBadge {
+  background: rgba(180, 83, 9, 0.1);
+  border-color: rgba(180, 83, 9, 0.25);
+  color: #B45309;
+}
+
+:global([data-theme='light']) .phaseTag,
+:global(body[data-theme='light']) .phaseTag {
+  color: #736D82;
+}
+
+:global([data-theme='light']) .iconCircle,
+:global(body[data-theme='light']) .iconCircle {
+  background: rgba(180, 83, 9, 0.08);
+  border-color: rgba(180, 83, 9, 0.22);
+  color: #B45309;
+  box-shadow: 0 4px 12px rgba(45, 30, 10, 0.06);
+}
+
+:global([data-theme='light']) .stepTitle,
+:global(body[data-theme='light']) .stepTitle {
+  color: #14111E;
+}
+
+:global([data-theme='light']) .stepSummary,
+:global(body[data-theme='light']) .stepSummary {
+  color: #484354;
+}
+
+:global([data-theme='light']) .deliverableItem,
+:global(body[data-theme='light']) .deliverableItem {
+  color: #14111E;
+}
+
+:global([data-theme='light']) .checkIcon,
+:global(body[data-theme='light']) .checkIcon {
+  color: #B45309;
+}
+
+:global([data-theme='light']) .clientRoleBox,
+:global(body[data-theme='light']) .clientRoleBox {
+  background: #F8F6F0;
+  border-color: rgba(180, 83, 9, 0.18);
+}
+
+:global([data-theme='light']) .clientRoleLabel,
+:global(body[data-theme='light']) .clientRoleLabel {
+  color: #B45309;
+}
+
+:global([data-theme='light']) .clientRoleText,
+:global(body[data-theme='light']) .clientRoleText {
+  color: #484354;
+}
+
+:global([data-theme='light']) .assuranceBanner,
+:global(body[data-theme='light']) .assuranceBanner {
+  background: #FFFFFF;
+  border-color: rgba(180, 83, 9, 0.22);
+  box-shadow: 0 8px 24px rgba(45, 30, 10, 0.06);
+}
+
+:global([data-theme='light']) .bannerTitle,
+:global(body[data-theme='light']) .bannerTitle {
+  color: #14111E;
+}
+
+:global([data-theme='light']) .bannerSub,
+:global(body[data-theme='light']) .bannerSub {
+  color: #484354;
+}
+
+:global([data-theme='light']) .bannerIconBox,
+:global(body[data-theme='light']) .bannerIconBox {
+  background: rgba(180, 83, 9, 0.08);
+  border-color: rgba(180, 83, 9, 0.22);
+  color: #B45309;
+}
+

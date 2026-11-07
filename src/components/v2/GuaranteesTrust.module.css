@@ -407,3 +407,94 @@
     font-size: 12.5px;
   }
 }
+
+/* =========================================================================
+   LIGHT THEME OVERRIDES — LEGAL GUARANTEES & TRUST SYSTEM
+   ========================================================================= */
+:global([data-theme='light']) .card,
+:global(body[data-theme='light']) .card {
+  background: #FFFFFF;
+  border-color: rgba(180, 83, 9, 0.2);
+  box-shadow: 0 8px 24px rgba(45, 30, 10, 0.06);
+}
+
+:global([data-theme='light']) .card:hover,
+:global(body[data-theme='light']) .card:hover {
+  border-color: #B45309;
+  box-shadow: 0 16px 36px rgba(45, 30, 10, 0.12);
+}
+
+:global([data-theme='light']) .cardWatermark,
+:global(body[data-theme='light']) .cardWatermark {
+  color: rgba(180, 83, 9, 0.05);
+}
+
+:global([data-theme='light']) .numberBadge,
+:global(body[data-theme='light']) .numberBadge {
+  background: rgba(180, 83, 9, 0.08);
+  border-color: rgba(180, 83, 9, 0.25);
+  color: #B45309;
+}
+
+:global([data-theme='light']) .tagBadge,
+:global(body[data-theme='light']) .tagBadge {
+  background: rgba(180, 83, 9, 0.08);
+  border-color: rgba(180, 83, 9, 0.25);
+  color: #B45309;
+}
+
+:global([data-theme='light']) .iconBox,
+:global(body[data-theme='light']) .iconBox {
+  background: rgba(180, 83, 9, 0.08);
+  border-color: rgba(180, 83, 9, 0.22);
+  color: #B45309;
+  box-shadow: 0 4px 12px rgba(45, 30, 10, 0.06);
+}
+
+:global([data-theme='light']) .cardTitle,
+:global(body[data-theme='light']) .cardTitle {
+  color: #14111E;
+}
+
+:global([data-theme='light']) .cardSummary,
+:global(body[data-theme='light']) .cardSummary {
+  color: #484354;
+}
+
+:global([data-theme='light']) .clauseMention,
+:global(body[data-theme='light']) .clauseMention {
+  background: rgba(180, 83, 9, 0.06);
+  border-color: rgba(180, 83, 9, 0.25);
+  color: #B45309;
+}
+
+:global([data-theme='light']) .verifiedRow,
+:global(body[data-theme='light']) .verifiedRow {
+  border-top-color: rgba(180, 83, 9, 0.15);
+  color: #736D82;
+}
+
+:global([data-theme='light']) .ndaStrip,
+:global(body[data-theme='light']) .ndaStrip {
+  background: #FFFFFF;
+  border-color: rgba(180, 83, 9, 0.22);
+  box-shadow: 0 8px 24px rgba(45, 30, 10, 0.06);
+}
+
+:global([data-theme='light']) .ndaTitle,
+:global(body[data-theme='light']) .ndaTitle {
+  color: #14111E;
+}
+
+:global([data-theme='light']) .ndaText,
+:global(body[data-theme='light']) .ndaText {
+  color: #484354;
+}
+
+:global([data-theme='light']) .ndaIconBox,
+:global(body[data-theme='light']) .ndaIconBox {
+  background: rgba(180, 83, 9, 0.08);
+  border-color: rgba(180, 83, 9, 0.22);
+  color: #B45309;
+}
+

@@ -447,3 +447,86 @@
     display: none;
   }
 }
+
+/* =========================================================================
+   LIGHT THEME OVERRIDES — LUXURY WHITE & CHAMPAGNE STACKED CARDS
+   ========================================================================= */
+:global([data-theme='light']) .stackCard,
+:global(body[data-theme='light']) .stackCard {
+  background: #FFFFFF;
+  border-color: rgba(180, 83, 9, 0.22);
+  box-shadow: 
+    0 -8px 24px rgba(45, 30, 10, 0.08), 
+    0 16px 36px rgba(45, 30, 10, 0.12),
+    0 2px 6px rgba(0, 0, 0, 0.03);
+}
+
+:global([data-theme='light']) .stackCard:hover,
+:global(body[data-theme='light']) .stackCard:hover {
+  border-color: #B45309;
+  box-shadow: 
+    0 -10px 28px rgba(45, 30, 10, 0.12), 
+    0 22px 50px rgba(45, 30, 10, 0.16), 
+    0 0 20px rgba(180, 83, 9, 0.15);
+}
+
+:global([data-theme='light']) .cardTabRim,
+:global(body[data-theme='light']) .cardTabRim {
+  background: linear-gradient(90deg, rgba(180, 83, 9, 0.08), rgba(180, 83, 9, 0.02));
+  border-bottom: 1px solid rgba(180, 83, 9, 0.16);
+}
+
+:global([data-theme='light']) .tabBadge,
+:global(body[data-theme='light']) .tabBadge {
+  color: #14111E;
+}
+
+:global([data-theme='light']) .tabNumber,
+:global(body[data-theme='light']) .tabNumber {
+  color: #B45309;
+}
+
+:global([data-theme='light']) .tabStatus,
+:global(body[data-theme='light']) .tabStatus {
+  background: rgba(180, 83, 9, 0.1);
+  border-color: rgba(180, 83, 9, 0.25);
+  color: #B45309;
+}
+
+:global([data-theme='light']) .cardIndexBadge,
+:global(body[data-theme='light']) .cardIndexBadge {
+  background: rgba(180, 83, 9, 0.08);
+  border-color: rgba(180, 83, 9, 0.25);
+  color: #B45309;
+}
+
+:global([data-theme='light']) .cardTitle,
+:global(body[data-theme='light']) .cardTitle {
+  color: #14111E;
+}
+
+:global([data-theme='light']) .cardSubtitle,
+:global(body[data-theme='light']) .cardSubtitle {
+  color: #B45309;
+}
+
+:global([data-theme='light']) .cardDescription,
+:global(body[data-theme='light']) .cardDescription {
+  color: #484354;
+}
+
+:global([data-theme='light']) .highlightsLabel,
+:global(body[data-theme='light']) .highlightsLabel {
+  color: #B45309;
+}
+
+:global([data-theme='light']) .highlightItem,
+:global(body[data-theme='light']) .highlightItem {
+  color: #14111E;
+}
+
+:global([data-theme='light']) .mockupWrapper,
+:global(body[data-theme='light']) .mockupWrapper {
+  box-shadow: 0 8px 24px rgba(45, 30, 10, 0.08);
+}
+
