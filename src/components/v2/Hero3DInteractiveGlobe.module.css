@@ -3,7 +3,7 @@
   position: relative;
   width: 100%;
   max-width: 580px;
-  height: 520px;
+  height: 500px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -50,6 +50,7 @@
   border: 1px solid rgba(245, 166, 35, 0.35);
   border-radius: 14px;
   backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.1);
   z-index: 5;
   pointer-events: none;
@@ -74,7 +75,7 @@
 }
 
 .hudBadgeBottomRight {
-  bottom: 12%;
+  bottom: 8%;
   right: 2%;
   animation-delay: 2.4s;
 }
@@ -128,117 +129,48 @@
   color: var(--text-secondary);
 }
 
-/* Active City Info Bar (Bottom Controls) */
-.controlsBar {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.6rem;
-  z-index: 6;
-  pointer-events: auto;
+/* === LIGHT THEME OVERRIDES FOR HUD BADGES === */
+:global([data-theme='light']) .hudBadge,
+:global(body[data-theme='light']) .hudBadge {
+  background: rgba(255, 255, 255, 0.92);
+  border-color: rgba(180, 83, 9, 0.28);
+  box-shadow: 0 10px 25px rgba(45, 30, 10, 0.08), 0 2px 6px rgba(0, 0, 0, 0.04);
 }
 
-.cityTabs {
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-  padding: 0.3rem 0.5rem;
-  background: rgba(13, 16, 25, 0.92);
-  border: 1px solid rgba(245, 166, 35, 0.25);
-  border-radius: 9999px;
-  backdrop-filter: blur(10px);
-  max-width: 100%;
-  overflow-x: auto;
-  scrollbar-width: none;
+:global([data-theme='light']) .hudTitle,
+:global(body[data-theme='light']) .hudTitle {
+  color: #736D82;
 }
 
-.cityTabs::-webkit-scrollbar {
-  display: none;
+:global([data-theme='light']) .hudMetric,
+:global(body[data-theme='light']) .hudMetric {
+  color: #B45309;
 }
 
-.cityBtn {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-  padding: 0.35rem 0.75rem;
-  border-radius: 9999px;
-  background: transparent;
-  border: 1px solid transparent;
-  color: var(--text-secondary);
-  font-size: 0.72rem;
-  font-weight: 700;
-  cursor: pointer;
-  white-space: nowrap;
-  transition: all 0.2s ease;
+:global([data-theme='light']) .hudSub,
+:global(body[data-theme='light']) .hudSub {
+  color: #484354;
 }
 
-.cityBtn:hover {
-  color: var(--text-primary);
-  background: rgba(255, 255, 255, 0.05);
-}
-
-.cityBtnActive {
-  background: rgba(245, 166, 35, 0.18);
-  border-color: rgba(245, 166, 35, 0.5);
-  color: var(--color-gold);
-  box-shadow: 0 0 12px rgba(245, 166, 35, 0.2);
-}
-
-.cityDot {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: var(--color-gold);
-  box-shadow: 0 0 6px var(--color-gold);
-}
-
-.dragHint {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  font-size: 0.68rem;
-  font-weight: 700;
-  color: var(--text-muted);
-  letter-spacing: 0.04em;
-}
-
-.desktopHint {
-  display: inline;
-}
-
-.mobileHint {
-  display: none;
-}
-
-.dragIcon {
-  font-size: 0.8rem;
-  color: var(--color-gold);
+:global([data-theme='light']) .hudIconBox,
+:global(body[data-theme='light']) .hudIconBox {
+  background: rgba(180, 83, 9, 0.08);
+  border-color: rgba(180, 83, 9, 0.25);
+  color: #B45309;
 }
 
 /* === RESPONSIVE BREAKPOINTS === */
 @media (max-width: 960px) {
-  /* CRITICAL UX FIX: Disable pointer events on 3D canvas so mobile scrolling
+  /* Disable pointer events on 3D canvas so mobile scrolling
      is 100% free and never trapped by the WebGL view */
   .canvasWrapper {
     pointer-events: none;
     touch-action: pan-y;
   }
 
-  .desktopHint {
-    display: none;
-  }
-
-  .mobileHint {
-    display: inline;
-  }
-
   .globeContainer {
     max-width: 100%;
-    height: 400px;
+    height: 380px;
     margin-top: 1rem;
   }
 
@@ -281,10 +213,5 @@
 
   .hudBadgeBottomRight {
     display: none; /* Keep clean on small mobile viewports */
-  }
-
-  .cityBtn {
-    padding: 0.3rem 0.6rem;
-    font-size: 0.68rem;
   }
 }

@@ -1,8 +1,8 @@
 'use client';
 
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 import * as THREE from 'three';
-import { Zap, Bot, TrendingUp, Sparkles } from 'lucide-react';
+import { Zap, Bot, TrendingUp } from 'lucide-react';
 import styles from './Hero3DInteractiveGlobe.module.css';
 
 interface HubCity {
@@ -33,7 +33,6 @@ function latLonToVector3(lat: number, lon: number, radius: number): THREE.Vector
 
 export default function Hero3DInteractiveGlobe() {
   const containerRef = useRef<HTMLDivElement>(null);
-  const [activeCityId, setActiveCityId] = useState<string>('bobo');
 
   // References for interactive target rotation
   const targetRotationRef = useRef<{ x: number; y: number }>({ x: 0.15, y: -0.8 });
@@ -351,19 +350,6 @@ export default function Hero3DInteractiveGlobe() {
     };
   }, []);
 
-  // Handler for city buttons: smoothly rotates globe to target city
-  const handleSelectCity = (city: HubCity) => {
-    setActiveCityId(city.id);
-    // Convert city lon/lat to target Y/X angles
-    const targetY = -((city.lon + 180) * (Math.PI / 180)) + Math.PI / 2;
-    const targetX = ((city.lat) * (Math.PI / 180)) * 0.4;
-
-    targetRotationRef.current = {
-      x: Math.max(-0.6, Math.min(0.6, targetX)),
-      y: targetY,
-    };
-  };
-
   return (
     <div className={styles.globeContainer}>
       {/* Golden Backlight Glow */}
@@ -403,33 +389,6 @@ export default function Hero3DInteractiveGlobe() {
           <span className={styles.hudTitle}>ROAS Publicitaire</span>
           <span className={styles.hudMetric}>+185% Croissance</span>
           <span className={styles.hudSub}>Media Buying Scientifique</span>
-        </div>
-      </div>
-
-      {/* Interactive City Hub Selector (Bottom) */}
-      <div className={styles.controlsBar}>
-        <div className={styles.cityTabs}>
-          {HUBS.map((city) => {
-            const isActive = activeCityId === city.id;
-            return (
-              <button
-                key={city.id}
-                type="button"
-                onClick={() => handleSelectCity(city)}
-                className={`${styles.cityBtn} ${isActive ? styles.cityBtnActive : ''}`}
-                title={city.role}
-              >
-                {isActive && <span className={styles.cityDot} />}
-                <span>{city.isHQ ? `⭐ ${city.name}` : city.name}</span>
-              </button>
-            );
-          })}
-        </div>
-
-        <div className={styles.dragHint}>
-          <span className={styles.dragIcon}>✦</span>
-          <span className={styles.desktopHint}>Faites pivoter la sphère 3D à la souris</span>
-          <span className={styles.mobileHint}>Touchez une ville pour orienter la sphère 3D</span>
         </div>
       </div>
     </div>
