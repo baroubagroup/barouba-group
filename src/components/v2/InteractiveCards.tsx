@@ -168,12 +168,11 @@ export default function InteractiveCards() {
             return (
               <div
                 key={pillar.id}
-                className={styles.stackCard}
+                className={`${styles.stackCard} ${isLast ? styles.lastCard : ''}`}
                 style={{
-                  top: `calc(var(--nav-height, 75px) + ${16 + index * 10}px)`,
+                  '--card-index': index,
                   zIndex: index + 1,
-                  marginBottom: isLast ? '3rem' : '32vh',
-                }}
+                } as React.CSSProperties}
               >
                 {/* Physical Card Tab Rim (visible even when cards stack) */}
                 <div className={styles.cardTabRim}>
@@ -219,7 +218,7 @@ export default function InteractiveCards() {
                     </div>
                   </div>
 
-                  {/* Right Column: Live Interactive Mockup */}
+                  {/* Right Column: Live Interactive Mockup (Desktop) */}
                   <div className={styles.cardRightCol}>
                     <div className={styles.mockupWrapper}>
                       <BaroubaMockup type={pillar.mockupType} />

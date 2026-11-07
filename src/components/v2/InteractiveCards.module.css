@@ -93,34 +93,47 @@
 .deckContainer {
   position: relative;
   width: 100%;
-  max-width: 1080px;
+  max-width: 1100px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
 
-/* === STACK CARD (STICKY) === */
+/* === STACK CARD (STICKY DECK) === */
 .stackCard {
   position: sticky;
+  top: calc(var(--nav-height, 75px) + 16px + (var(--card-index, 0) * 10px));
+  margin-bottom: clamp(450px, 65vh, 650px);
   width: 100%;
   box-sizing: border-box;
-  background: linear-gradient(145deg, rgba(20, 24, 38, 0.98), rgba(11, 14, 22, 0.99));
+
+  /* Solid opaque dark background - ZERO backdrop-filter for 60/120fps GPU scroll */
+  background: #0D1019;
+  background: linear-gradient(165deg, #131726 0%, #0A0D15 100%);
   border: 1px solid rgba(245, 166, 35, 0.28);
   border-radius: 28px;
   box-shadow: 
-    0 -14px 35px rgba(0, 0, 0, 0.65), 
-    0 25px 60px rgba(0, 0, 0, 0.85),
+    0 -10px 25px rgba(0, 0, 0, 0.65), 
+    0 20px 50px rgba(0, 0, 0, 0.8),
     inset 0 1px 0 rgba(255, 255, 255, 0.08);
   overflow: hidden;
-  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
-  backdrop-filter: blur(20px);
+
+  /* GPU Compositor optimizations: no transitions on layout to prevent scroll jank */
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  will-change: transform;
+  contain: content;
+}
+
+.lastCard {
+  margin-bottom: 3.5rem !important;
 }
 
 .stackCard:hover {
   border-color: var(--color-gold);
   box-shadow: 
-    0 -16px 40px rgba(0, 0, 0, 0.75), 
-    0 30px 70px rgba(0, 0, 0, 0.9),
+    0 -12px 30px rgba(0, 0, 0, 0.75), 
+    0 25px 60px rgba(0, 0, 0, 0.9),
     0 0 25px rgba(245, 166, 35, 0.12);
 }
 
@@ -128,11 +141,12 @@
 .cardTabRim {
   height: 42px;
   padding: 0 1.8rem;
-  background: linear-gradient(90deg, rgba(245, 166, 35, 0.12), rgba(245, 166, 35, 0.03));
+  background: linear-gradient(90deg, rgba(245, 166, 35, 0.14), rgba(245, 166, 35, 0.03));
   border-bottom: 1px solid rgba(245, 166, 35, 0.18);
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-shrink: 0;
 }
 
 .cardTabLeft {
@@ -190,9 +204,9 @@
 /* === CARD MAIN GRID (LANDSCAPE DESKTOP SPLIT) === */
 .cardMainGrid {
   display: grid;
-  grid-template-columns: 1.1fr 1fr;
-  gap: clamp(1.8rem, 3.5vw, 2.8rem);
-  padding: clamp(1.8rem, 3vw, 2.6rem);
+  grid-template-columns: 1.15fr 1fr;
+  gap: clamp(1.8rem, 3vw, 2.8rem);
+  padding: clamp(1.8rem, 2.5vw, 2.4rem);
   align-items: center;
 }
 
@@ -200,7 +214,7 @@
 .cardLeftCol {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 0.9rem;
 }
 
 .cardHeadingGroup {
@@ -241,7 +255,7 @@
 .cardDescription {
   font-size: 0.92rem;
   color: var(--text-secondary);
-  line-height: 1.65;
+  line-height: 1.6;
   margin: 0;
 }
 
@@ -249,8 +263,8 @@
 .highlightsContainer {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
-  margin-top: 0.4rem;
+  gap: 0.45rem;
+  margin-top: 0.2rem;
 }
 
 .highlightsLabel {
@@ -264,7 +278,7 @@
 .highlightsList {
   display: flex;
   flex-direction: column;
-  gap: 0.45rem;
+  gap: 0.4rem;
 }
 
 .highlightItem {
@@ -285,7 +299,7 @@
 
 /* === ACTION ROW === */
 .actionRow {
-  margin-top: 0.8rem;
+  margin-top: 0.6rem;
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -303,7 +317,7 @@
   font-weight: 800;
   text-decoration: none;
   box-shadow: 0 4px 16px rgba(245, 166, 35, 0.3);
-  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .primaryServiceBtn:hover {
@@ -311,7 +325,7 @@
   box-shadow: 0 6px 22px rgba(245, 166, 35, 0.45);
 }
 
-/* === RIGHT COLUMN: MOCKUP === */
+/* === RIGHT COLUMN: MOCKUP (DESKTOP) === */
 .cardRightCol {
   width: 100%;
 }
@@ -323,37 +337,97 @@
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
 }
 
-/* === RESPONSIVE BREAKPOINTS === */
+/* =========================================================================
+   === RESPONSIVE BREAKPOINTS (MOBILE & TABLET OPTIMIZATIONS) ===
+   ========================================================================= */
 @media (max-width: 960px) {
-  .cardMainGrid {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-    padding: 1.5rem;
+  /* On mobile: fixed top position to guarantee no card overflows the viewport */
+  .stackCard {
+    top: calc(var(--nav-height, 65px) + 10px);
+    margin-bottom: clamp(340px, 50vh, 460px);
+    border-radius: 20px;
+    box-shadow: 
+      0 -8px 20px rgba(0, 0, 0, 0.65), 
+      0 12px 30px rgba(0, 0, 0, 0.75);
   }
 
-  .stackCard {
-    border-radius: 20px;
+  .lastCard {
+    margin-bottom: 2.5rem !important;
   }
 
   .cardTabRim {
-    height: 38px;
-    padding: 0 1.2rem;
+    height: 36px;
+    padding: 0 1rem;
   }
 
-  .tabBadge {
-    display: none;
-  }
-
+  .tabBadge,
   .tabDivider {
     display: none;
   }
 
+  .tabStatus {
+    font-size: 0.62rem;
+    padding: 2px 6px;
+  }
+
+  .cardMainGrid {
+    grid-template-columns: 1fr;
+    gap: 0.9rem;
+    padding: 1.1rem 1.25rem 1.35rem;
+  }
+
+  .cardLeftCol {
+    gap: 0.7rem;
+  }
+
+  .cardHeadingGroup {
+    gap: 0.65rem;
+  }
+
+  .cardIndexBadge {
+    font-size: 1.15rem;
+    padding: 3px 8px;
+    border-radius: 8px;
+  }
+
   .cardTitle {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
+    line-height: 1.25;
+  }
+
+  .cardSubtitle {
+    font-size: 0.85rem;
+    line-height: 1.35;
   }
 
   .cardDescription {
-    font-size: 0.88rem;
+    font-size: 0.84rem;
+    line-height: 1.45;
+    /* Limit to 3 lines on mobile for perfect ergonomic fit */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .highlightsContainer {
+    gap: 0.35rem;
+    margin-top: 0.1rem;
+  }
+
+  .highlightsLabel {
+    font-size: 0.68rem;
+  }
+
+  .highlightItem {
+    font-size: 0.8rem;
+    line-height: 1.35;
+    gap: 0.5rem;
+  }
+
+  .geoMarker {
+    font-size: 0.6rem;
+    margin-top: 3px;
   }
 
   .actionRow {
@@ -363,5 +437,13 @@
   .primaryServiceBtn {
     width: 100%;
     justify-content: center;
+    padding: 0.75rem 1.2rem;
+    font-size: 0.86rem;
+  }
+
+  /* HIDE bulky desktop mockup on mobile so card height is compact (~370px)
+     and NEVER cuts off or fights with mobile screen scroll */
+  .cardRightCol {
+    display: none;
   }
 }
