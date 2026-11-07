@@ -6,6 +6,7 @@ import AfricanPatternRibbon from '@/components/v2/AfricanPatternRibbon';
 import { getPostBySlug } from '@/lib/sanity';
 import { mockPosts, WHATSAPP_NUMBER, BlogPost, BlogPostFAQ } from '@/lib/data';
 import type { Metadata } from 'next';
+import MarkdownRenderer from './MarkdownRenderer';
 import styles from './article.module.css';
 
 interface ArticlePageProps {
@@ -83,10 +84,20 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
     lines.forEach((line: string) => {
       const trimmed = line.trim();
       if (trimmed.startsWith('## ')) {
+        const text = trimmed.replace('## ', '').trim();
+        const lower = text.toLowerCase();
+        if (
+          lower.includes('table des matières') ||
+          lower.includes('foire aux questions') ||
+          lower.includes('sommaire') ||
+          lower.includes('contact & accompagnement')
+        ) {
+          return;
+        }
         h2Count++;
         headings.push({
           id: `section-${h2Count}`,
-          text: trimmed.replace('## ', '').trim(),
+          text,
         });
       }
     });
@@ -282,105 +293,8 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
               </nav>
             )}
 
-            {/* Prose Content */}
-            <div className={styles.proseContent}>
-              {post.content ? (
-                post.content.split('\n\n').map((paragraph: string, idx: number) => {
-                  const trimmed = paragraph.trim();
-
-                  // Table Parsing
-                  if (trimmed.startsWith('|') && trimmed.includes('\n|')) {
-                    const tableLines = trimmed
-                      .split('\n')
-                      .map((l) => l.trim())
-                      .filter((l) => l.startsWith('|'));
-                    if (tableLines.length >= 2) {
-                      const headerCells = tableLines[0]
-                        .split('|')
-                        .map((c) => c.trim())
-                        .filter(Boolean);
-                      // Skip index 1 if it's the divider row (:---)
-                      const dataRows = tableLines.slice(2).map((row) =>
-                        row
-                          .split('|')
-                          .map((c) => c.trim())
-                          .filter(Boolean)
-                      );
-                      return (
-                        <div key={idx} className={styles.tableContainer}>
-                          <table className={styles.contentTable}>
-                            <thead>
-                              <tr>
-                                {headerCells.map((h, i) => (
-                                  <th key={i}>{h.replace(/\*\*/g, '')}</th>
-                                ))}
-                              </tr>
-                            </thead>
-                            <tbody>
-                              {dataRows.map((r, rowIdx) => (
-                                <tr key={rowIdx}>
-                                  {r.map((cell, cellIdx) => (
-                                    <td key={cellIdx}>{cell.replace(/\*\*/g, '')}</td>
-                                  ))}
-                                </tr>
-                              ))}
-                            </tbody>
-                          </table>
-                        </div>
-                      );
-                    }
-                  }
-
-                  // H2 Headings
-                  if (trimmed.startsWith('## ')) {
-                    currentH2Index++;
-                    const sectionId = `section-${currentH2Index}`;
-                    return (
-                      <h2 key={idx} id={sectionId}>
-                        {trimmed.replace('## ', '')}
-                      </h2>
-                    );
-                  }
-
-                  // H3 Headings
-                  if (trimmed.startsWith('### ')) {
-                    return <h3 key={idx}>{trimmed.replace('### ', '')}</h3>;
-                  }
-
-                  // Blockquotes
-                  if (trimmed.startsWith('> ')) {
-                    return <blockquote key={idx}>{trimmed.replace('> ', '')}</blockquote>;
-                  }
-
-                  // Unordered Lists
-                  if (trimmed.startsWith('- ') || trimmed.startsWith('1. ')) {
-                    const items = trimmed.split('\n').filter((l) => l.trim().length > 0);
-                    return (
-                      <ul key={idx}>
-                        {items.map((item, i) => (
-                          <li key={i}>{item.replace(/^[-*]|\d+\.\s*/, '').trim()}</li>
-                        ))}
-                      </ul>
-                    );
-                  }
-
-                  // Code Blocks
-                  if (trimmed.startsWith('```') && trimmed.endsWith('```')) {
-                    const code = trimmed.replace(/^```[a-z]*\n?/, '').replace(/```$/, '');
-                    return (
-                      <pre key={idx} style={{ background: 'var(--bg-surface)', padding: '1.2rem', borderRadius: '12px', overflowX: 'auto', fontSize: '0.88rem', border: '1px solid var(--border-subtle)', margin: '1.8rem 0' }}>
-                        <code>{code}</code>
-                      </pre>
-                    );
-                  }
-
-                  // Standard Paragraph
-                  return <p key={idx}>{trimmed}</p>;
-                })
-              ) : (
-                <p>{post.excerpt}</p>
-              )}
-            </div>
+            {/* Prose Content with full rich formatting & executive styling */}
+            <MarkdownRenderer content={post.content || post.excerpt} />
 
             {/* Native FAQ Accordion (W3C standard & 100% crawlable) */}
             {post.faq && post.faq.length > 0 && (

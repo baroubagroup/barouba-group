@@ -62,13 +62,12 @@ function extractFaqFromContent(content: string): { cleanContent: string; faq: Bl
   const faq: BlogPostFAQ[] = [];
   let cleanContent = content;
 
-  // Check for Schema.org JSON script block at bottom
-  const scriptRegex = /<script\s+type="application\/ld\+json">([\s\S]*?)<\/script>/i;
-  const match = content.match(scriptRegex);
-
-  if (match) {
+  // 1. Check for ```json code block containing FAQPage
+  const codeBlockRegex = /```(?:json)?\s*(\{[\s\S]*?"@type"\s*:\s*"FAQPage"[\s\S]*?\})\s*```/i;
+  const codeMatch = content.match(codeBlockRegex);
+  if (codeMatch) {
     try {
-      const json = JSON.parse(match[1]);
+      const json = JSON.parse(codeMatch[1]);
       if (json['@type'] === 'FAQPage' && Array.isArray(json.mainEntity)) {
         for (const item of json.mainEntity) {
           if (item['@type'] === 'Question' && item.name && item.acceptedAnswer?.text) {
@@ -82,9 +81,45 @@ function extractFaqFromContent(content: string): { cleanContent: string; faq: Bl
     } catch {
       // Ignore JSON parse errors
     }
-    // Remove the script tag so it is not rendered as raw markdown
-    cleanContent = content.replace(scriptRegex, '').trim();
+    cleanContent = cleanContent.replace(codeBlockRegex, '').trim();
   }
+
+  // 2. Check for Schema.org JSON script block at bottom
+  const scriptRegex = /<script\s+type="application\/ld\+json">([\s\S]*?)<\/script>/i;
+  const match = cleanContent.match(scriptRegex);
+
+  if (match) {
+    try {
+      const json = JSON.parse(match[1]);
+      if (json['@type'] === 'FAQPage' && Array.isArray(json.mainEntity) && faq.length === 0) {
+        for (const item of json.mainEntity) {
+          if (item['@type'] === 'Question' && item.name && item.acceptedAnswer?.text) {
+            faq.push({
+              question: item.name,
+              answer: item.acceptedAnswer.text,
+            });
+          }
+        }
+      }
+    } catch {
+      // Ignore JSON parse errors
+    }
+    // Remove the script tag so it is not rendered as raw markdown
+    cleanContent = cleanContent.replace(scriptRegex, '').trim();
+  }
+
+  // 3. Remove standalone ## Foire Aux Questions... heading if followed by stripped FAQ schema
+  cleanContent = cleanContent.replace(/##\s+Foire Aux Questions[^\n]*\n*/gi, '').trim();
+
+  // 4. Remove duplicate unformatted ## Table des Matières block (page already has a dedicated component)
+  cleanContent = cleanContent.replace(/##\s+Table des Matières[\s\S]*?(?=\n##\s+|$)/gi, '').trim();
+
+  // 5. Transform AI-prompt style internal notes into executive synthesis
+  cleanContent = cleanContent
+    .replace(/>\s*\*\*En résumé\s*:\*\*\s*Ce document d'autorité constitue le guide stratégique[^\n]*/gi, 
+      '> **Synthèse Stratégique & Cadrage Exécutif :** Ce guide de référence analyse en profondeur les leviers d\'action, architectures opérationnelles et exigences réglementaires indispensables pour piloter vos initiatives.')
+    .replace(/\bce document d'autorité\b/gi, "ce guide d'experts")
+    .replace(/\bCe document d'autorité\b/gi, "Ce guide d'experts");
 
   return { cleanContent, faq };
 }
@@ -213,7 +248,12 @@ export function getSeoArticleBySlug(slug: string): BlogPost | null {
     const { cleanContent, faq } = extractFaqFromContent(content);
 
     const title = frontmatter.title || meta.title;
-    const excerpt = frontmatter.description || cleanContent.substring(0, 220).replace(/[#*`>]/g, '').trim() + '...';
+    let excerpt = frontmatter.description || '';
+    if (!excerpt || excerpt.toLowerCase().includes('en résumé') || excerpt.toLowerCase().includes("document d'autorité")) {
+      excerpt = `Guide stratégique et opérationnel complet sur ${title} au Burkina Faso et en Afrique de l'Ouest : méthodologies d'élite, architectures techniques et cadre réglementaire OHADA/CIL par BAROUBA GROUP.`;
+    } else {
+      excerpt = excerpt.replace(/\bce document d'autorité\b/gi, "ce guide d'experts").replace(/\bCe document d'autorité\b/gi, "Ce guide d'experts");
+    }
     const keywords = frontmatter.keywords
       ? frontmatter.keywords.split(',').map((k) => k.trim()).filter(Boolean)
       : [meta.cluster, 'burkina faso', 'ouagadougou', 'barouba group'];
