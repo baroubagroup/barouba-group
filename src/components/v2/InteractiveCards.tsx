@@ -9,6 +9,7 @@ const PILLARS = [
   {
     id: 'comm-digital',
     number: '01',
+    badge: 'GESTION DE PAGES 7J/7',
     title: 'Communication Digitale & Community Management',
     subtitle: 'Gestion complète de vos pages réseaux sociaux, animation & image de marque',
     description: 'Nous gérons et animons au quotidien vos pages Facebook, Instagram, TikTok et LinkedIn : création de calendrier éditorial, visuels captivants, Reels percutants, modération des commentaires et gestion active de vos messages privés 7j/7.',
@@ -24,6 +25,7 @@ const PILLARS = [
   {
     id: 'web-dev',
     number: '02',
+    badge: 'ARCHITECTURE ULTRA-RAPIDE',
     title: 'Développement Web & Plateformes Métiers Next.js 16',
     subtitle: 'Sites vitrines d’élite, portails cloud & applications sur-mesure',
     description: 'Architecture Next.js 16 et TypeScript sans compromis. Votre plateforme est instantanée (< 0.8s), sécurisée, adaptée au réseau mobile d’Afrique de l’Ouest et conçue pour convertir vos prospects dès la première seconde.',
@@ -39,6 +41,7 @@ const PILLARS = [
   {
     id: 'growth-ads',
     number: '03',
+    badge: 'ROAS & CROISSANCE CHIFFRÉE',
     title: 'Acquisition & Publicité 360° (Meta & TikTok Ads)',
     subtitle: 'Campagnes publicitaires scientifiques pilotées au centime près',
     description: 'Nous concevons vos visuels et vidéos publicitaires à fort hook et pilotons vos budgets sur Meta Ads, TikTok Ads et Google Ads pour maximiser votre ROAS par rapport à chaque franc investi.',
@@ -54,6 +57,7 @@ const PILLARS = [
   {
     id: 'funnels-whatsapp',
     number: '04',
+    badge: 'TUNNEL HYBRIDE WHATSAPP',
     title: 'Tunnels de Vente & Vente WhatsApp Haute Conversion',
     subtitle: 'Parcours d’achat direct adapté aux mentalités d’Afrique de l’Ouest',
     description: 'Nous combinons la puissance visuelle d’une Landing Page monoproduit ultra-rapide et la réassurance chaleureuse de WhatsApp Business avec des scripts de closing et protocoles anti-refus à la livraison.',
@@ -69,6 +73,7 @@ const PILLARS = [
   {
     id: 'ai-automation',
     number: '05',
+    badge: 'INTELLIGENCE ARTIFICIELLE',
     title: 'Agents IA & Automatisation Métier 24/7',
     subtitle: 'Vos prospects qualifiés et orientés jour et nuit sans délai',
     description: 'Déploiement d’assistants conversationnels intelligents connectés à votre catalogue, votre CRM et l’API officielle de WhatsApp Cloud pour qualifier vos prospects et générer des devis en temps réel.',
@@ -84,6 +89,7 @@ const PILLARS = [
   {
     id: 'academy-formation',
     number: '06',
+    badge: 'ACADÉMIE & MENTORAT',
     title: 'Formations & Accompagnement aux Métiers du Numérique',
     subtitle: '« Nous formons et nous accompagnons » vos équipes vers l’autonomie',
     description: 'Programmes certifiants et mentorat pratique en Marketing Digital, E-commerce, Community Management, IA et développement web. Pas de cours magistraux abstraits : un coaching sur vos vrais cas d’entreprises jusqu’au résultat.',
@@ -99,6 +105,7 @@ const PILLARS = [
   {
     id: 'ecommerce-global',
     number: '07',
+    badge: 'COMMERCE SAHÉLIEN SCALABLE',
     title: 'E-Commerce & Expansion Sous-Régionale',
     subtitle: 'Boutiques scalables, logistique locale et paiements sécurisés',
     description: 'Déploiement d’écosystèmes marchands multi-devises (FCFA, EUR, USD), gestion centralisée des stocks et intégration avec vos partenaires logistiques locaux pour scaler sans friction.',
@@ -114,6 +121,7 @@ const PILLARS = [
   {
     id: 'portal-systems',
     number: '08',
+    badge: 'SYSTÈMES HAUTE DISPONIBILITÉ',
     title: 'Portails d’Entreprise & Systèmes Critiques',
     subtitle: 'Applications sur mesure à haute disponibilité (99.98%) et zéro panne',
     description: 'Développement de systèmes de formalisation, espaces membres sécurisés et plateformes transactionnelles pour entreprises et institutions exigeant une disponibilité absolue.',
@@ -145,49 +153,82 @@ export default function InteractiveCards() {
           <p className={styles.subtitle}>
             De la gestion quotidienne de vos réseaux sociaux au développement d'applications Next.js 16 et aux formations certifiantes : chaque service est pensé pour faire grandir votre entreprise avec un retour sur investissement chiffré.
           </p>
+
+          <div className={styles.deckScrollHint}>
+            <span className={styles.deckHintIcon}>↓</span>
+            <span>Faites défiler vers le bas pour superposer nos 8 pôles d’excellence</span>
+          </div>
         </div>
 
-        {/* Cards Grid - All 8 Services Visible */}
-        <div className={styles.cardsGrid}>
-          {PILLARS.map((pillar) => (
-            <div key={pillar.id} className={styles.cardItem}>
-              <div className={styles.cardInner}>
-                {/* 100% Proprietary Barouba Software Preview */}
-                <div className={styles.mockupArea}>
-                  <BaroubaMockup type={pillar.mockupType} compact />
+        {/* Sticky Stacking Cards Deck (Empilement au Scroll) */}
+        <div className={styles.deckContainer}>
+          {PILLARS.map((pillar, index) => {
+            const isLast = index === PILLARS.length - 1;
+
+            return (
+              <div
+                key={pillar.id}
+                className={styles.stackCard}
+                style={{
+                  top: `calc(var(--nav-height, 75px) + ${16 + index * 10}px)`,
+                  zIndex: index + 1,
+                  marginBottom: isLast ? '3rem' : '32vh',
+                }}
+              >
+                {/* Physical Card Tab Rim (visible even when cards stack) */}
+                <div className={styles.cardTabRim}>
+                  <div className={styles.cardTabLeft}>
+                    <span className={styles.tabDot} />
+                    <span className={styles.tabNumber}>EXPERTISE {pillar.number} / 08</span>
+                    <span className={styles.tabDivider}>•</span>
+                    <span className={styles.tabBadge}>{pillar.badge}</span>
+                  </div>
+                  <div className={styles.cardTabRight}>
+                    <span className={styles.tabStatus}>BAROUBA SOUVERAIN</span>
+                  </div>
                 </div>
 
-                {/* Content Area */}
-                <div className={styles.cardContent}>
-                  <div className={styles.contentHeader}>
-                    <span className={styles.numberBadge}>{pillar.number}</span>
-                    <h3 className={styles.cardHeading}>{pillar.title}</h3>
-                  </div>
+                <div className={styles.cardMainGrid}>
+                  {/* Left Column: Strategic Value & Deliverables */}
+                  <div className={styles.cardLeftCol}>
+                    <div className={styles.cardHeadingGroup}>
+                      <span className={styles.cardIndexBadge}>{pillar.number}</span>
+                      <h3 className={styles.cardTitle}>{pillar.title}</h3>
+                    </div>
 
-                  <p className={styles.cardSubtitle}>{pillar.subtitle}</p>
-                  <p className={styles.cardDesc}>{pillar.description}</p>
+                    <p className={styles.cardSubtitle}>{pillar.subtitle}</p>
+                    <p className={styles.cardDescription}>{pillar.description}</p>
 
-                  {/* Highlights with handcrafted geometric markers */}
-                  <div className={styles.highlightsList}>
-                    {pillar.highlights.map((item, i) => (
-                      <div key={i} className={styles.highlightRow}>
-                        <span className={styles.geoMarker}>◆</span>
-                        <span>{item}</span>
+                    <div className={styles.highlightsContainer}>
+                      <div className={styles.highlightsLabel}>Livrables & Garanties Clés :</div>
+                      <div className={styles.highlightsList}>
+                        {pillar.highlights.map((item, i) => (
+                          <div key={i} className={styles.highlightItem}>
+                            <span className={styles.geoMarker}>◆</span>
+                            <span>{item}</span>
+                          </div>
+                        ))}
                       </div>
-                    ))}
+                    </div>
+
+                    <div className={styles.actionRow}>
+                      <Link href={pillar.linkHref as any} className={styles.primaryServiceBtn}>
+                        <span>{pillar.linkText}</span>
+                        <ArrowRight size={16} />
+                      </Link>
+                    </div>
                   </div>
 
-                  {/* Action Link */}
-                  <div className={styles.cardActionRow}>
-                    <Link href={pillar.linkHref as any} className={styles.cardLink}>
-                      <span>{pillar.linkText}</span>
-                      <ArrowRight size={16} />
-                    </Link>
+                  {/* Right Column: Live Interactive Mockup */}
+                  <div className={styles.cardRightCol}>
+                    <div className={styles.mockupWrapper}>
+                      <BaroubaMockup type={pillar.mockupType} />
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
