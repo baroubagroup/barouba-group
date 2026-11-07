@@ -206,6 +206,14 @@
   letter-spacing: 0.04em;
 }
 
+.desktopHint {
+  display: inline;
+}
+
+.mobileHint {
+  display: none;
+}
+
 .dragIcon {
   font-size: 0.8rem;
   color: var(--color-gold);
@@ -213,9 +221,24 @@
 
 /* === RESPONSIVE BREAKPOINTS === */
 @media (max-width: 960px) {
+  /* CRITICAL UX FIX: Disable pointer events on 3D canvas so mobile scrolling
+     is 100% free and never trapped by the WebGL view */
+  .canvasWrapper {
+    pointer-events: none;
+    touch-action: pan-y;
+  }
+
+  .desktopHint {
+    display: none;
+  }
+
+  .mobileHint {
+    display: inline;
+  }
+
   .globeContainer {
     max-width: 100%;
-    height: 420px;
+    height: 400px;
     margin-top: 1rem;
   }
 

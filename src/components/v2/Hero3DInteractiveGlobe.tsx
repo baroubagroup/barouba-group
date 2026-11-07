@@ -217,8 +217,10 @@ export default function Hero3DInteractiveGlobe() {
     globeGroup.rotation.x = 0.18;
     globeGroup.rotation.y = -0.6;
 
-    // --- F. TOUCH / MOUSE DRAG TO SPIN THE GLOBE ---
+    // --- F. MOUSE DRAG TO SPIN THE GLOBE (DESKTOP ONLY - NEVER TRAP MOBILE SCROLL) ---
     const onPointerDown = (e: PointerEvent) => {
+      // On mobile or touch screens, allow standard touch scrolling with zero interference
+      if (e.pointerType === 'touch') return;
       isDraggingRef.current = true;
       previousPointerPositionRef.current = { x: e.clientX, y: e.clientY };
     };
@@ -426,7 +428,8 @@ export default function Hero3DInteractiveGlobe() {
 
         <div className={styles.dragHint}>
           <span className={styles.dragIcon}>✦</span>
-          <span>Faites pivoter la sphère 3D à la souris ou au doigt</span>
+          <span className={styles.desktopHint}>Faites pivoter la sphère 3D à la souris</span>
+          <span className={styles.mobileHint}>Touchez une ville pour orienter la sphère 3D</span>
         </div>
       </div>
     </div>

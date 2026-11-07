@@ -3,7 +3,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { 
-  Sparkles, 
   Search, 
   Palette, 
   Code2, 
@@ -92,7 +91,7 @@ export default function WorkflowProcess() {
           transition={{ duration: 0.65, ease: [0.16, 1, 0.3, 1] }}
         >
           <div className={styles.badge}>
-            <Sparkles size={14} className={styles.badgeIcon} />
+            <span className={styles.badgeDiamond}>◆</span>
             <span>NOTRE MANIÈRE DE TRAVAILLER</span>
           </div>
 

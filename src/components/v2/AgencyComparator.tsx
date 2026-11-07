@@ -4,7 +4,6 @@ import { useState } from 'react';
 import { 
   Check, 
   X, 
-  Sparkles, 
   ShieldCheck, 
   ArrowRight,
   Flame,
@@ -66,7 +65,7 @@ export default function AgencyComparator() {
         {/* Header */}
         <div className={styles.header}>
           <div className={styles.badge}>
-            <Sparkles size={14} className={styles.badgeIcon} />
+            <span className={styles.badgeDiamond}>◆</span>
             <span>LA DIFFÉRENCE BAROUBA</span>
           </div>
 

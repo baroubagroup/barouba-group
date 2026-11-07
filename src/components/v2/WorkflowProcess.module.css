@@ -48,8 +48,10 @@
   margin-bottom: 1.2rem;
 }
 
-.badgeIcon {
+.badgeIcon,
+.badgeDiamond {
   color: var(--color-gold);
+  font-size: 0.72rem;
 }
 
 .title {

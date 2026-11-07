@@ -1,8 +1,8 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { useTranslations, useLocale } from 'next-intl';
-import { Link, usePathname, useRouter } from '@/i18n/navigation';
+import { useTranslations } from 'next-intl';
+import { Link, usePathname } from '@/i18n/navigation';
 import Image from 'next/image';
 import { ArrowUpRight, Menu, X } from 'lucide-react';
 import ThemeToggle from '../ThemeToggle/ThemeToggle';
@@ -10,14 +10,12 @@ import styles from './Navbar.module.css';
 
 export default function Navbar() {
   const t = useTranslations('nav');
-  const locale = useLocale();
   const pathname = usePathname();
-  const router = useRouter();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileOpen, setIsMobileOpen] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => setIsScrolled(window.scrollY > 25);
+    const onScroll = () => setIsScrolled(window.scrollY > 20);
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
@@ -29,7 +27,6 @@ export default function Navbar() {
   const navLinks = [
     { href: '/' as const, label: t('home') },
     { href: '/services' as const, label: t('services') },
-    { href: '/territoires' as const, label: t('territoires') },
     { href: '/formations' as const, label: t('formations') },
     { href: '/solutions' as const, label: t('solutions', { fallback: 'Solutions' }) },
     { href: '/portfolio' as const, label: t('portfolio') },
@@ -40,26 +37,27 @@ export default function Navbar() {
 
   return (
     <header className={`${styles.navbar} ${isScrolled ? styles.scrolled : ''}`.trim()}>
-      <div className={`container ${styles.inner}`}>
-        {/* Brand Logo & Identity */}
+      <div className={styles.inner}>
+        {/* Brand Logo & Refined Identity */}
         <Link href="/" className={styles.logo}>
           <div className={styles.logoWrap}>
             <Image 
               src="/logo-or.svg" 
               alt="BAROUBA GROUP" 
-              width={42} 
-              height={42} 
+              width={34} 
+              height={34} 
               priority 
-              style={{ width: 'auto', height: '40px' }} className={styles.logoImg} 
+              style={{ width: 'auto', height: '32px' }} 
+              className={styles.logoImg} 
             />
             <div className={styles.brandMeta}>
               <span className={styles.brandTitle}>BAROUBA GROUP</span>
-              <span className={styles.brandBadge}>AFRO-TECH & EXPANSION DIGITALE</span>
+              <span className={styles.brandBadge}>EXPANSION DIGITALE</span>
             </div>
           </div>
         </Link>
 
-        {/* Desktop Navigation Floating Island */}
+        {/* Desktop Navigation Floating Island Links */}
         <nav className={styles.desktopNav} aria-label="Main navigation">
           {navLinks.map((link) => {
             const isActive = pathname === link.href;
@@ -76,16 +74,16 @@ export default function Navbar() {
           })}
         </nav>
 
-        {/* Quick Actions (Theme + Lang + CTA) */}
+        {/* Quick Actions (Theme Switcher + Devis CTA) */}
         <div className={styles.actions}>
-          {/* Working Theme Switcher (Dark / Light) */}
+          {/* Theme Switcher (Dark / Light) */}
           <ThemeToggle />
 
           {/* Primary Action: Devis en Ligne */}
           <Link href="/devis" className={styles.studioCta}>
             <span>Demander un devis</span>
             <div className={styles.ctaArrowBox}>
-              <ArrowUpRight size={15} />
+              <ArrowUpRight size={14} />
             </div>
           </Link>
 
@@ -96,7 +94,7 @@ export default function Navbar() {
             aria-label="Toggle menu"
             aria-expanded={isMobileOpen}
           >
-            {isMobileOpen ? <X size={22} /> : <Menu size={22} />}
+            {isMobileOpen ? <X size={20} /> : <Menu size={20} />}
           </button>
         </div>
       </div>

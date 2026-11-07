@@ -33,6 +33,11 @@
   margin-bottom: 1.2rem;
 }
 
+.badgeDiamond {
+  color: var(--color-gold);
+  font-size: 0.72rem;
+}
+
 .badgeIcon {
   color: var(--color-gold);
 }
