@@ -52,7 +52,7 @@ export async function generateMetadata({ params }: HomeProps): Promise<Metadata>
 
 export default async function HomePage({ params }: HomeProps) {
   return (
-    <main>
+    <>
       {/* 01 // Hero Showcase with 3D WebGL Background & Interactive Globe */}
       <HeroShowcase />
 
@@ -88,6 +88,6 @@ export default async function HomePage({ params }: HomeProps) {
 
       {/* 08 // Executive VIP WhatsApp & Detailed Quote Dispatch */}
       <ExecutiveContact />
-    </main>
+    </>
   );
 }

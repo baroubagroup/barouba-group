@@ -170,8 +170,9 @@ export default function InteractiveCards() {
                 key={pillar.id}
                 className={`${styles.stackCard} ${isLast ? styles.lastCard : ''}`}
                 style={{
-                  '--card-index': index,
+                  top: `calc(var(--nav-height, 78px) + ${14 + index * 12}px)`,
                   zIndex: index + 1,
+                  '--card-index': index,
                 } as React.CSSProperties}
               >
                 {/* Physical Card Tab Rim (visible even when cards stack) */}
