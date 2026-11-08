@@ -43,8 +43,8 @@ export async function generateMetadata({ params }: FlatPageProps): Promise<Metad
   if (metier) {
     const loc = metier.locationName;
     const country = metier.country.name;
-    const cleanTitle = `${metier.template.shortTitle} à ${loc} (${country}) | BAROUBA GROUP`.slice(0, 65);
-    const cleanDesc = metier.template.hook.replace('{location}', `${loc} (${country})`).slice(0, 155);
+    const cleanTitle = (metier.customTitle || `${metier.template.shortTitle} à ${loc} (${country}) | BAROUBA GROUP`).slice(0, 65);
+    const cleanDesc = (metier.customDescription || metier.template.hook.replace('{location}', `${loc} (${country})`)).slice(0, 158);
 
     return {
       title: cleanTitle,
@@ -117,7 +117,7 @@ export default async function FlatPseoPage({ params }: FlatPageProps) {
   // ==========================================
   if (metierCombo) {
     const { template, city, country, locationName } = metierCombo;
-    const h1Text = template.h1.replace('{location}', locationName);
+    const h1Text = metierCombo.customH1 || template.h1.replace('{location}', locationName);
     const hookText = template.hook.replace('{location}', locationName);
     const descText = template.description.replace('{location}', locationName);
     const canonicalUrl = `https://www.baroubagroup.com/${slug}`;

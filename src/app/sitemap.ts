@@ -14,6 +14,7 @@ const BASE_URL = 'https://www.baroubagroup.com';
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages = [
     '',
+    '/marketing-digital',
     '/services',
     '/services/communication-digitale-community-management',
     '/services/developpement-web-plateformes-nextjs',
@@ -42,7 +43,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${BASE_URL}${page}`,
       lastModified: new Date(),
       changeFrequency: page === '' || page === '/blog' || page === '/devis' ? 'daily' : 'weekly',
-      priority: page === '' ? 1.0 : page.startsWith('/services/') || page === '/devis' ? 0.95 : 0.85,
+      priority: page === '' || page === '/marketing-digital' ? 1.0 : page.startsWith('/services/') || page === '/devis' ? 0.95 : 0.85,
     });
   }
 

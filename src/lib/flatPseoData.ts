@@ -786,6 +786,321 @@ export const FLAT_METIERS: FlatMetierTemplate[] = [
       },
     ],
   },
+  // 14. PUBLICITÉ FACEBOOK ADS
+  {
+    prefix: 'publicite-facebook-ads',
+    name: 'Publicité Facebook & Instagram Ads (Meta)',
+    shortTitle: 'Publicité Facebook Ads',
+    badge: 'Media Buying Rentable',
+    iconType: 'trending-up',
+    h1: 'Publicité Facebook Ads à {location} : Ventes & ROAS Élevé',
+    hook: 'Multipliez vos ventes avec la publicité Facebook et Instagram Ads à {location}. Ciblage précis des acheteurs solvables et génération continue de prospects qualifiés.',
+    description: "La publicité Facebook et Meta Ads à {location} exige un paramétrage scientifique : création de visuels et vidéos percutants, installation du pixel et de l'API de conversions (CAPI), et ciblage géographique chirurgical. BAROUBA GROUP optimise chaque franc investi pour garantir un ROAS supérieur à 3.5x.",
+    deliverables: [
+      {
+        title: 'Ciblage d’Audience Solvable & Buyer Persona à {location}',
+        desc: 'Identification des segments démographiques et centres d’intérêt ayant le pouvoir d’achat le plus élevé.',
+      },
+      {
+        title: 'Conception de Visuels & Scripts Vidéos Captivants',
+        desc: 'Création graphique de haute qualité et formats publicitaires éprouvés pour maximiser le taux de clic.',
+      },
+      {
+        title: 'Tracking Serveur CAPI & Pilotage par les Données',
+        desc: 'Installation propre évitant les pertes de données iOS/Android et mesurant le coût réel par vente.',
+      },
+      {
+        title: 'Optimisation Continue & Scaling des Campagnes Rentables',
+        desc: 'Ajustement quotidien des enchères pour baisser le coût d’acquisition et augmenter le bénéfice net.',
+      },
+    ],
+    benefits: [
+      'Génération continue d’acheteurs prêts à commander sur votre marché',
+      'Coût par prospect (CPL) maîtrisé et auditable chaque semaine',
+      'Connexion directe vers votre WhatsApp commercial pour un closing rapide',
+      'Reporting transparent hebdomadaire et suivi direct avec le media buyer',
+    ],
+    faq: [
+      {
+        question: 'Quel budget publicitaire Facebook Ads prévoir à {location} ?',
+        answer: 'Nous conseillons un budget de test dès 5 000 à 10 000 FCFA par jour pour valider la rentabilité avant de monter en puissance.',
+      },
+      {
+        question: 'En combien de temps les résultats apparaissent-ils ?',
+        answer: 'Les premiers prospects qualifiés arrivent dans les 24 à 48 heures suivant la validation de la campagne.',
+      },
+    ],
+  },
+  // 15. PUBLICITÉ TIKTOK ADS
+  {
+    prefix: 'publicite-tiktok-ads',
+    name: 'Publicité TikTok Ads & Acquisition Vidéo',
+    shortTitle: 'Publicité TikTok Ads',
+    badge: 'Acquisition Virale & Vidéo',
+    iconType: 'trending-up',
+    h1: 'Publicité TikTok Ads à {location} : Ventes & Notoriété Immédiate',
+    hook: 'Exploitez la puissance de TikTok Ads à {location}. Création de vidéos percutantes, acquisition virale et vente directe vers WhatsApp Business.',
+    description: "TikTok est devenu le canal le plus dynamique en Afrique de l'Ouest pour capter l'attention et déclencher des achats impulsifs. BAROUBA GROUP conçoit des vidéos publicitaires natives au format vertical et déploie des campagnes de conversion reliant directement TikTok à votre WhatsApp.",
+    deliverables: [
+      {
+        title: 'Tournage & Montage de Vidéos Natives TikTok',
+        desc: 'Formats vidéos verticaux respectant les codes de la plateforme avec des accroches puissantes dès les 3 premières secondes.',
+      },
+      {
+        title: 'Configuration du Pixel TikTok & Événements de Conversion',
+        desc: 'Paramétrage analytique complet pour tracker les vues, clics et initiations d’achat.',
+      },
+      {
+        title: 'Tests A/B des Hooks & Créatifs Publicitaires',
+        desc: 'Multiplication des angles marketing pour identifier rapidement les créatifs les plus rentables.',
+      },
+      {
+        title: 'Tunnels de Vente Directs vers WhatsApp Business',
+        desc: 'Redirection fluide en 1 clic pour convertir l’attention des spectateurs en commandes concrètes.',
+      },
+    ],
+    benefits: [
+      'Coût par clic et par vue nettement inférieur aux canaux publicitaires traditionnels',
+      'Forte viralité auprès de la jeunesse et des jeunes actifs de {location}',
+      'Ventes directes en livraison contre remboursement ou Mobile Money',
+      'Suivi chiffré des conversions et du coût par commande générée',
+    ],
+    faq: [
+      {
+        question: 'Quels produits fonctionnent le mieux sur TikTok Ads à {location} ?',
+        answer: 'La mode, la beauté, la restauration, la formation, l’électronique et les services innovants obtiennent des taux de conversion exceptionnels.',
+      },
+      {
+        question: 'Faut-il avoir déjà un compte TikTok populaire pour faire de la pub ?',
+        answer: 'Non, les publicités sponsorisées TikTok Ads touchent directement des milliers d’utilisateurs qualifiés sans dépendre de vos abonnés existants.',
+      },
+    ],
+  },
+  // 16. TUNNELS DE VENTE WHATSAPP
+  {
+    prefix: 'tunnel-vente-whatsapp',
+    name: 'Tunnels de Vente WhatsApp & Mobile Money',
+    shortTitle: 'Tunnel de Vente WhatsApp',
+    badge: 'Closing & Vente 1-Clic',
+    iconType: 'chat',
+    h1: 'Tunnel de Vente WhatsApp à {location} : Ventes Directes en 1 Clic',
+    hook: 'Automatisez vos ventes sur WhatsApp à {location}. Transformez vos visiteurs en clients payants avec nos tunnels et paiements Mobile Money intégrés.',
+    description: "En Afrique de l'Ouest, 90% des décisions d'achat se concluent sur WhatsApp. BAROUBA GROUP crée des tunnels de vente ultra-rapides (< 0.8s) qui guident le prospect de la publicité jusqu'à la commande ferme sur WhatsApp, avec encaissement Mobile Money sécurisé.",
+    deliverables: [
+      {
+        title: 'Landing Page Monoproduit Ultra-Véloce (< 0.8s)',
+        desc: 'Page de capture épurée présentant l’offre de manière irrésistible sans temps de chargement bloquant.',
+      },
+      {
+        title: 'Connexion à l’API WhatsApp Cloud & Panier Pré-rempli',
+        desc: 'Le client clique et retrouve immédiatement son message de commande rédigé prêt à l’envoi.',
+      },
+      {
+        title: 'Intégration Mobile Money : Orange, Moov & Wave',
+        desc: 'Passerelles de paiement locales sécurisées pour encaisser instantanément en Francs CFA.',
+      },
+      {
+        title: 'Scripts de Closing Commercial & Relances Automatisées',
+        desc: 'Protocoles de vente persuasifs pour transformer chaque demande d’information en vente encaissée.',
+      },
+    ],
+    benefits: [
+      'Élimination totale des abandons de panier constatés sur les sites e-commerce classiques',
+      'Taux de conversion élevé de 15% à 25% entre la visite de la page et le message WhatsApp',
+      'Gain de temps massif pour vos commerciaux grâce aux informations pré-remplies',
+      'Encaissement immédiat et sécurisé sans risque d’impayé',
+    ],
+    faq: [
+      {
+        question: 'Pourquoi préférer WhatsApp à un site e-commerce traditionnel à {location} ?',
+        answer: 'Parce que les acheteurs locaux préfèrent échanger avec un conseiller humain et payer par Mobile Money plutôt que de remplir de longs formulaires avec carte bancaire.',
+      },
+      {
+        question: 'Peut-on synchroniser WhatsApp avec notre stock ?',
+        answer: 'Oui, chaque commande confirmée peut être automatiquement enregistrée dans votre fichier de stock ou votre CRM.',
+      },
+    ],
+  },
+  // 17. RÉFÉRENCEMENT NATUREL SEO
+  {
+    prefix: 'referencement-naturel-seo',
+    name: 'Référencement Naturel Google (SEO Local & National)',
+    shortTitle: 'Référencement SEO',
+    badge: '1ère Page Google Garantie',
+    iconType: 'target',
+    h1: 'Référencement Naturel SEO à {location} : Dominez la 1ère Page Google',
+    hook: 'Positionnez votre site en 1ère page de Google à {location}. Stratégie SEO locale, optimisation technique et domination des mots-clés de votre secteur.',
+    description: "Être visible sur Google au moment exact où vos clients recherchent vos services à {location} est l'investissement marketing le plus rentable sur le long terme. BAROUBA GROUP déploie un SEO technique d'élite : vitesse < 0.8s, balisage Schema.org, pages territoriales et netlinking d'autorité.",
+    deliverables: [
+      {
+        title: 'Audit Technique & Optimisation Core Web Vitals',
+        desc: 'Correction des erreurs d’indexation, optimisation de la vitesse mobile et architecture sémantique.',
+      },
+      {
+        title: 'Optimisation Google Business Profile Local à {location}',
+        desc: 'Configuration complète pour apparaître en tête du pack local Google Maps avec avis clients valorisés.',
+      },
+      {
+        title: 'Production de Contenus Piliers d’Autorité',
+        desc: 'Articles stratégiques et landing pages ciblant les requêtes de recherche les plus rentables.',
+      },
+      {
+        title: 'Balisage Sémantique Schema.org & Micro-Données',
+        desc: 'Structuration du code pour déclencher les résultats enrichis (Rich Snippets) et FAQ Google.',
+      },
+    ],
+    benefits: [
+      'Flux continu de prospects qualifiés gratuits sans dépendre du budget publicitaire',
+      'Statut d’autorité de référence incontesté face à vos concurrents locaux',
+      'Visibilité permanente 24h/24 et 7j/7 sur mobile et ordinateur',
+      'Trafic hautement intentionniste avec taux de signature élevé',
+    ],
+    faq: [
+      {
+        question: 'Combien de temps pour atteindre la 1ère page Google à {location} ?',
+        answer: 'Sur des requêtes locales ciblées, nos clients atteignent le top 3 en 4 à 8 semaines grâce à notre vitesse technique et notre maillage chirurgical.',
+      },
+      {
+        question: 'Le SEO remplace-t-il la publicité payante ?',
+        answer: 'Ils sont complémentaires : la publicité apporte des ventes immédiates dès demain, tandis que le SEO sécurise votre rentabilité sur plusieurs années sans coût par clic.',
+      },
+    ],
+  },
+  // 18. MARKETING DIGITAL IMMOBILIER
+  {
+    prefix: 'marketing-digital-immobilier',
+    name: 'Marketing Digital pour Promoteurs & Agences Immobilières',
+    shortTitle: 'Marketing Digital Immobilier',
+    badge: 'Spécial Immobilier & Parcelles',
+    iconType: 'building',
+    h1: 'Marketing Digital Immobilier à {location} : Vendez Vos Terrains & Villas',
+    hook: 'Stratégie marketing digital pour agences immobilières et promoteurs à {location}. Vendez vos parcelles et villas à la clientèle locale et à la diaspora.',
+    description: "Le secteur immobilier à {location} exige une communication de grand standing et une confiance absolue. BAROUBA GROUP déploie des tunnels d'acquisition dédiés aux terrains, lotissements et promotions immobilières, ciblant les cadres locaux et la diaspora burkinabè en Europe, aux USA et en Afrique.",
+    deliverables: [
+      {
+        title: 'Visuels & Vidéos Aériennes de Promotion Immobilière',
+        desc: 'Mise en valeur cinématique des parcelles, plans de bornage et projets de construction.',
+      },
+      {
+        title: 'Campagnes Publicitaires Ciblées Diaspora Burkinabè',
+        desc: 'Ciblage des ressortissants en France, Italie, USA, Côte d’Ivoire ayant une capacité d’épargne immédiate.',
+      },
+      {
+        title: 'Tunnel de Qualification & Prise de Rendez-vous',
+        desc: 'Formulaire de vérification de la solvabilité avant transmission des dossiers aux commerciaux.',
+      },
+      {
+        title: 'Brochures Commerciales Numériques Téléchargeables',
+        desc: 'Plaquettes PDF de présentation des programmes avec plan de financement et contact direct WhatsApp.',
+      },
+    ],
+    benefits: [
+      'Accélération spectaculaire de la commercialisation de vos lotissements et villas',
+      'Filtrage rigoureux pour ne traiter qu’avec des acquéreurs solvables et décidés',
+      'Canal direct d’acquisition auprès de la diaspora burkinabè à fort pouvoir d’achat',
+      'Protection de la réputation de votre agence grâce à une communication certifiée',
+    ],
+    faq: [
+      {
+        question: 'Comment touchez-vous la diaspora intéressée par l’immobilier à {location} ?',
+        answer: 'Nous ciblons géographiquement les résidents burkinabè et ouest-africains en Europe et en Amérique avec des preuves juridiques rassurantes.',
+      },
+      {
+        question: 'Quels documents devez-vous recevoir pour lancer la campagne ?',
+        answer: 'Les plans de lotissement, photos/vidéos du site, documents de conformité et conditions de paiement.',
+      },
+    ],
+  },
+  // 19. MARKETING DIGITAL COMMERCE
+  {
+    prefix: 'marketing-digital-commerce',
+    name: 'Marketing Digital pour Boutiques & Commerces de Détail',
+    shortTitle: 'Marketing Digital Commerces',
+    badge: 'Vente en Ligne & Boutiques',
+    iconType: 'credit-card',
+    h1: 'Marketing Digital pour Commerces à {location} : Ventes & Commandes 7j/7',
+    hook: 'Boostez le chiffre d’affaires de votre boutique ou commerce à {location} grâce au marketing digital, à la livraison rapide et aux commandes WhatsApp.',
+    description: "Pour les boutiques de prêt-à-porter, cosmétiques, électronique ou alimentation à {location}, le digital permet de multiplier les ventes bien au-delà des clients de passage. BAROUBA GROUP installe une mécanique d'acquisition continue générant des commandes quotidiennes en boutique et en livraison.",
+    deliverables: [
+      {
+        title: 'Mise en Valeur Visuelle & Vidéos Produits',
+        desc: 'Shooting et formats vidéos démonstratifs mettant en avant les bénéfices et la qualité des articles.',
+      },
+      {
+        title: 'Campagnes Publicitaires Locales de Chalandise',
+        desc: 'Ciblage des quartiers et zones de chalandise immédiates à {location} pour attirer des clients en boutique.',
+      },
+      {
+        title: 'Système de Commande WhatsApp & Organisation des Livraisons',
+        desc: 'Prise de commande rapide avec localisation GPS transmise aux livreurs partenaires.',
+      },
+      {
+        title: 'Fidélisation & Offres Spéciales sur Base Clients',
+        desc: 'Campagnes de relance par WhatsApp et SMS pour générer des réachats réguliers sans frais publicitaires.',
+      },
+    ],
+    benefits: [
+      'Multiplication par 2 à 4 du volume de commandes mensuelles en boutique et livraison',
+      'Écoulement rapide des stocks sans devoir brader vos marges commerciales',
+      'Création d’un fichier client propriétaire pour des ventes récurrentes',
+      'Notoriété locale dominante dans votre quartier et votre ville',
+    ],
+    faq: [
+      {
+        question: 'Comment organiser les livraisons à {location} ?',
+        answer: 'Nous intégrons des protocoles simples avec vos livreurs habituels et confirmons l’adresse par géolocalisation WhatsApp.',
+      },
+      {
+        question: 'Ce service est-il adapté à une boutique qui débute ?',
+        answer: 'Oui, nous proposons des packs d’entrée très abordables conçus pour s’autofinancer dès les premières semaines.',
+      },
+    ],
+  },
+  // 20. FORMATION MARKETING DIGITAL
+  {
+    prefix: 'formation-marketing-digital',
+    name: 'Formation Certifiante en Marketing Digital & Acquisition',
+    shortTitle: 'Formation Marketing Digital',
+    badge: 'Académie & Compétences Métier',
+    iconType: 'school',
+    h1: 'Formation en Marketing Digital à {location} : Pratique & Certifiante',
+    hook: 'Rejoignez la meilleure formation en marketing digital à {location}. Pratique intensive sur Facebook Ads, création de contenu et closing WhatsApp.',
+    description: "La formation de BAROUBA GROUP à {location} s'adresse aux entrepreneurs, étudiants et responsables marketing souhaitant maîtriser les compétences les plus recherchées du marché : media buying rentabilisé, community management d'élite, tunnels WhatsApp et création de sites web modernes.",
+    deliverables: [
+      {
+        title: 'Pratique Intensive sur Projets Réels',
+        desc: 'Chaque participant configure et lance ses propres campagnes sous la supervision directe de nos experts.',
+      },
+      {
+        title: 'Boîte à Outils & Modèles de Tunnels Fournis',
+        desc: 'Accès à nos templates de pages de capture, scripts de vente et prompts d’intelligence artificielle.',
+      },
+      {
+        title: 'Accompagnement & Résolution des Blocages',
+        desc: 'Assistance personnalisée pour sécuriser vos comptes publicitaires et optimiser votre rentabilité.',
+      },
+      {
+        title: 'Attestation de Compétences Reconnue BAROUBA GROUP',
+        desc: 'Délivrance d’un certificat attestant de votre maîtrise opérationnelle des leviers du digital.',
+      },
+    ],
+    benefits: [
+      'Compétences hautement valorisables sur le marché de l’emploi ou pour votre propre entreprise',
+      'Autonomie totale pour piloter vos budgets sans dépendre d’agences extérieures',
+      'Intégration d’un réseau professionnel actif d’entrepreneurs et de media buyers',
+      'Accès aux mises à jour régulières sur les nouvelles fonctionnalités publicitaires',
+    ],
+    faq: [
+      {
+        question: 'Faut-il des prérequis techniques pour s’inscrire à {location} ?',
+        answer: 'Aucun prérequis informatique particulier : savoir utiliser un smartphone et un ordinateur suffit, tout est expliqué pas à pas.',
+      },
+      {
+        question: 'La formation se déroule-t-elle en ligne ou en présentiel ?',
+        answer: 'Nous proposons des sessions présentielles à Ouagadougou et Bobo-Dioulasso, ainsi qu’un format hybride en ligne avec suivi direct.',
+      },
+    ],
+  },
 ];
 
 export interface FlatMetierCombo {
@@ -795,6 +1110,9 @@ export interface FlatMetierCombo {
   country: TerritoryCountry;
   isNational: boolean;
   locationName: string;
+  customTitle?: string;
+  customDescription?: string;
+  customH1?: string;
 }
 
 // Map for ultra-fast O(1) resolution of flat métier slugs
@@ -802,7 +1120,7 @@ const FLAT_METIER_MAP = new Map<string, FlatMetierCombo>();
 
 // Initialize all combos
 for (const tmpl of FLAT_METIERS) {
-  // 1. City combos (54 cities x 13 templates)
+  // 1. City combos (54 cities x templates)
   for (const city of TERRITORY_CITIES) {
     const country = getCountryBySlug(city.countrySlug);
     if (!country) continue;
@@ -817,7 +1135,7 @@ for (const tmpl of FLAT_METIERS) {
     });
   }
 
-  // 2. National country combos (12 countries x 13 templates)
+  // 2. National country combos (12 countries x templates)
   for (const country of TERRITORY_COUNTRIES) {
     const slug = `${tmpl.prefix}-${country.slug}`;
     FLAT_METIER_MAP.set(slug, {
@@ -828,6 +1146,181 @@ for (const tmpl of FLAT_METIERS) {
       locationName: country.name,
     });
   }
+}
+
+// 3. Conversational and Exact Aliases (Natural language with prepositions & High-Intent Queries)
+const SPECIAL_MARKETING_PAGES: Array<{
+  slug: string;
+  templatePrefix: string;
+  countrySlug: string;
+  citySlug?: string;
+  customTitle: string;
+  customDescription: string;
+  customH1?: string;
+}> = [
+  {
+    slug: 'marketing-digital-au-burkina-faso',
+    templatePrefix: 'marketing-digital',
+    countrySlug: 'burkina-faso',
+    customTitle: 'Marketing Digital au Burkina Faso | BAROUBA GROUP',
+    customDescription: 'Cabinet n°1 en marketing digital au Burkina Faso. Boostez vos ventes avec nos campagnes publicitaires Meta, tunnels WhatsApp et plateformes Next.js.',
+    customH1: 'Marketing Digital au Burkina Faso : Stratégie & Ventes d’Élite',
+  },
+  {
+    slug: 'marketing-digital-a-ouagadougou',
+    templatePrefix: 'marketing-digital',
+    countrySlug: 'burkina-faso',
+    citySlug: 'ouagadougou',
+    customTitle: 'Marketing Digital à Ouagadougou : Stratégie & Ventes',
+    customDescription: 'Développez votre clientèle à Ouagadougou avec le marketing digital. Campagnes ciblées, tunnels de vente et conversion mobile money à fort impact.',
+    customH1: 'Marketing Digital à Ouagadougou : Dominez Votre Marché Local',
+  },
+  {
+    slug: 'agence-marketing-digital-a-ouagadougou',
+    templatePrefix: 'agence-marketing-digital',
+    countrySlug: 'burkina-faso',
+    citySlug: 'ouagadougou',
+    customTitle: 'Agence Marketing Digital Ouagadougou | BAROUBA GROUP',
+    customDescription: 'Agence leader de marketing digital à Ouagadougou. Acquisition publicitaire, création web moderne et community management pro. Devis gratuit en 24h.',
+    customH1: 'Agence de Marketing Digital N°1 à Ouagadougou',
+  },
+  {
+    slug: 'marketing-digital-a-bobo-dioulasso',
+    templatePrefix: 'marketing-digital',
+    countrySlug: 'burkina-faso',
+    citySlug: 'bobo-dioulasso',
+    customTitle: 'Marketing Digital à Bobo-Dioulasso | Élite Digitale',
+    customDescription: 'Propulsez vos ventes à Bobo-Dioulasso grâce au marketing digital de pointe. Stratégies sur-mesure, WhatsApp commercial et suivi chiffré du ROI.',
+    customH1: 'Marketing Digital à Bobo-Dioulasso : Croissance & Rentabilité',
+  },
+  {
+    slug: 'agence-marketing-digital-a-bobo-dioulasso',
+    templatePrefix: 'agence-marketing-digital',
+    countrySlug: 'burkina-faso',
+    citySlug: 'bobo-dioulasso',
+    customTitle: 'Agence Marketing Digital Bobo-Dioulasso | BAROUBA',
+    customDescription: 'Agence n°1 en marketing digital à Bobo-Dioulasso. Publicité ciblée, gestion réseaux sociaux et croissance commerciale pour leaders économiques.',
+    customH1: 'Agence de Marketing Digital N°1 à Bobo-Dioulasso (Siège)',
+  },
+  {
+    slug: 'marketing-digital-en-cote-divoire',
+    templatePrefix: 'marketing-digital',
+    countrySlug: 'cote-divoire',
+    customTitle: 'Marketing Digital en Côte d’Ivoire | BAROUBA GROUP',
+    customDescription: 'Cabinet de marketing digital pour entreprises en Côte d’Ivoire. Campagnes publicitaires Abidjan, acquisition de clients et expansion e-commerce.',
+    customH1: 'Marketing Digital en Côte d’Ivoire : Acquisition & Ventes',
+  },
+  {
+    slug: 'marketing-digital-au-senegal',
+    templatePrefix: 'marketing-digital',
+    countrySlug: 'senegal',
+    customTitle: 'Marketing Digital au Sénégal | BAROUBA GROUP Dakar',
+    customDescription: 'Stratégie de marketing digital d\'élite au Sénégal. Acquisition publicitaire, création de plateformes digitales modernes et croissance de marque à Dakar.',
+    customH1: 'Marketing Digital au Sénégal : Performance Commerciale',
+  },
+  {
+    slug: 'marketing-digital-au-mali',
+    templatePrefix: 'marketing-digital',
+    countrySlug: 'mali',
+    customTitle: 'Marketing Digital au Mali : Solutions & Croissance',
+    customDescription: 'Développez votre entreprise au Mali grâce au marketing digital de pointe. Campagnes ciblées, vente sur WhatsApp et paiements sécurisés à Bamako.',
+    customH1: 'Marketing Digital au Mali : Accélération Commerciale',
+  },
+  {
+    slug: 'meilleure-agence-marketing-digital-burkina',
+    templatePrefix: 'agence-marketing-digital',
+    countrySlug: 'burkina-faso',
+    customTitle: 'Meilleure Agence Marketing Digital Burkina | N°1',
+    customDescription: 'Pourquoi BAROUBA GROUP est élue meilleure agence de marketing digital au Burkina Faso : résultats chiffrés, garanties contractuelles et support 7j/7.',
+    customH1: 'Pourquoi BAROUBA GROUP est la Meilleure Agence Marketing Digital au Burkina Faso',
+  },
+  {
+    slug: 'societe-marketing-digital-burkina-faso',
+    templatePrefix: 'agence-marketing-digital',
+    countrySlug: 'burkina-faso',
+    customTitle: 'Société de Marketing Digital au Burkina Faso | SARL',
+    customDescription: 'Société agréée de marketing digital et d’ingénierie web au Burkina Faso. Accompagnement stratégique officiel pour institutions, ONG et grandes PME.',
+    customH1: 'Société Officielle de Marketing Digital & Web au Burkina Faso',
+  },
+  {
+    slug: 'prix-marketing-digital-burkina-faso',
+    templatePrefix: 'marketing-digital',
+    countrySlug: 'burkina-faso',
+    customTitle: 'Prix du Marketing Digital au Burkina Faso | Tarifs',
+    customDescription: 'Combien coûte le marketing digital au Burkina Faso ? Découvrez nos forfaits transparents, budgets publicitaires recommandés et formules adaptées.',
+    customH1: 'Prix & Tarifs du Marketing Digital au Burkina Faso en 2026',
+  },
+  {
+    slug: 'tarif-agence-marketing-digital-burkina',
+    templatePrefix: 'agence-marketing-digital',
+    countrySlug: 'burkina-faso',
+    customTitle: 'Tarifs Agence Marketing Digital Burkina | Forfaits',
+    customDescription: 'Grille tarifaire claire de notre agence de marketing digital au Burkina Faso. Packs mensuels sans engagement caché et devis personnalisé sous 24h.',
+    customH1: 'Grille Tarifaire de notre Agence de Marketing Digital au Burkina',
+  },
+  {
+    slug: 'devis-marketing-digital-ouagadougou',
+    templatePrefix: 'agence-marketing-digital',
+    countrySlug: 'burkina-faso',
+    citySlug: 'ouagadougou',
+    customTitle: 'Devis Marketing Digital Ouagadougou | Réponse en 24h',
+    customDescription: 'Demandez votre devis gratuit de marketing digital à Ouagadougou. Audit offert de vos réseaux sociaux et plan d\'acquisition adapté à vos objectifs.',
+    customH1: 'Obtenez Votre Devis de Marketing Digital à Ouagadougou Sous 24h',
+  },
+  {
+    slug: 'expert-marketing-digital-burkina-faso',
+    templatePrefix: 'marketing-digital',
+    countrySlug: 'burkina-faso',
+    customTitle: 'Expert en Marketing Digital au Burkina Faso | Audit',
+    customDescription: 'Consultez un expert senior en marketing digital au Burkina Faso. Diagnostic approfondi, pilotage de budget et accélération de croissance pour PME.',
+    customH1: 'Expert Senior en Marketing Digital au Burkina Faso',
+  },
+  {
+    slug: 'consultant-marketing-digital-ouagadougou',
+    templatePrefix: 'marketing-digital',
+    countrySlug: 'burkina-faso',
+    citySlug: 'ouagadougou',
+    customTitle: 'Consultant Marketing Digital Ouagadougou | Stratégie',
+    customDescription: 'Bénéficiez des conseils d\'un consultant en marketing digital à Ouagadougou. Optimisation de tunnel de vente, acquisition de leads et suivi du ROI.',
+    customH1: 'Consultant Senior en Marketing Digital à Ouagadougou',
+  },
+  {
+    slug: 'gestion-page-facebook-ouagadougou',
+    templatePrefix: 'community-manager',
+    countrySlug: 'burkina-faso',
+    citySlug: 'ouagadougou',
+    customTitle: 'Gestion de Page Facebook à Ouagadougou | 7j/7',
+    customDescription: 'Confiez la gestion de vos pages Facebook et Instagram à Ouagadougou à des professionnels. Visuels soignés, modération 7j/7 et croissance organique.',
+    customH1: 'Gestion Professionnelle de Page Facebook & Réseaux Sociaux à Ouagadougou',
+  },
+  {
+    slug: 'marketing-digital-immobilier-burkina',
+    templatePrefix: 'marketing-digital-immobilier',
+    countrySlug: 'burkina-faso',
+    customTitle: 'Marketing Digital Immobilier au Burkina Faso | Ventes',
+    customDescription: 'Stratégie marketing digital pour agences immobilières et promoteurs au Burkina Faso. Vendez vos parcelles et villas à la clientèle locale et diaspora.',
+    customH1: 'Marketing Digital Immobilier au Burkina Faso : Vendez Vos Terrains & Villas',
+  },
+];
+
+for (const special of SPECIAL_MARKETING_PAGES) {
+  const tmpl = FLAT_METIERS.find((t) => t.prefix === special.templatePrefix) || FLAT_METIERS[0];
+  const country = getCountryBySlug(special.countrySlug);
+  if (!country) continue;
+  const city = special.citySlug ? TERRITORY_CITIES.find((c) => c.slug === special.citySlug) : undefined;
+  const locationName = city ? city.name : country.name;
+
+  FLAT_METIER_MAP.set(special.slug, {
+    slug: special.slug,
+    template: tmpl,
+    city,
+    country,
+    isNational: !city,
+    locationName,
+    customTitle: special.customTitle,
+    customDescription: special.customDescription,
+    customH1: special.customH1,
+  });
 }
 
 export function getFlatMetierComboBySlug(slug: string): FlatMetierCombo | undefined {
