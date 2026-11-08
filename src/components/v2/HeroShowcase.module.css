@@ -669,11 +669,16 @@
     margin-bottom: 1rem;
     max-width: 100%;
     align-self: flex-start;
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
   }
   .badgeText {
     font-size: 0.68rem;
     letter-spacing: 0.04em;
     line-height: 1.35;
+    white-space: normal;
+    word-break: break-word;
   }
   .mainHeading {
     font-size: clamp(1.4rem, 5.5vw, 2.2rem);
