@@ -52,6 +52,18 @@ export const metadata: Metadata = {
     siteName: 'BAROUBA GROUP',
     images: [{ url: '/og-image.jpg', width: 1200, height: 630 }],
   },
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/icon.png', type: 'image/png', sizes: '500x500' },
+      { url: '/logo-barouba.png', type: 'image/png', sizes: '500x500' },
+      { url: '/logo-or.svg', type: 'image/svg+xml' },
+    ],
+    shortcut: '/favicon.ico',
+    apple: [
+      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
+  },
   twitter: {
     card: 'summary_large_image',
   },
@@ -106,7 +118,7 @@ export default async function RootLayout({ children, params }: RootLayoutProps) 
           'BAROUBA Marketing Digital Ouagadougou',
         ],
         url: 'https://www.baroubagroup.com',
-        logo: 'https://www.baroubagroup.com/logo-or.svg',
+        logo: 'https://www.baroubagroup.com/logo-barouba.png',
         image: 'https://www.baroubagroup.com/og-image.jpg',
         description:
           "Cabinet n°1 en Marketing Digital au Burkina Faso, ingénierie logicielle Next.js 16, acquisition publicitaire Meta/TikTok Ads, communication 360°, intégration d'agents IA et formation professionnelle certifiante.",
@@ -232,6 +244,12 @@ export default async function RootLayout({ children, params }: RootLayoutProps) 
   return (
     <html lang={locale} data-scroll-behavior="smooth" suppressHydrationWarning>
       <head>
+        {/* Favicons & Brand Icons (Google Search / Mobile / Desktop) */}
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/icon.png" type="image/png" sizes="500x500" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
+
         {/* Google Tag Manager (GTM-P9LLRT8P) */}
         <Script
           async
