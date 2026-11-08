@@ -1191,6 +1191,323 @@ export const FLAT_METIERS: FlatMetierTemplate[] = [
       },
     ],
   },
+
+  // 24. PUBLICITÉ FACEBOOK MAÎTRESSE
+  {
+    prefix: 'publicite-facebook',
+    name: 'Publicité Facebook & Meta Ads Haute Performance',
+    shortTitle: 'Publicité Facebook',
+    badge: 'Cabinet N°1 Publicité Facebook',
+    iconType: 'trending-up',
+    h1: 'Publicité Facebook Ads à {location} : Ventes & Rentabilité Garantie',
+    hook: 'Décuplez votre chiffre d’affaires à {location} avec la publicité Facebook Ads. Campagnes d’acquisition chirurgicales, tracking CAPI serveur 100% fiable et rentabilité garantie sous la direction de Monsieur SAKO BAROU BEN OUMAR.',
+    description: "À {location}, les entreprises leaders ne se contentent plus de simples « boosts » de publications. BAROUBA GROUP déploie un système d’ingénierie publicitaire Meta Ads complet : paramétrage d’objectifs de conversion, tracking serveur sans perte de données, sécurisation des comptes et chiffrage 100% sur-mesure.",
+    deliverables: [
+      {
+        title: 'Ciblage d’Audience Solvable & Buyer Persona à {location}',
+        desc: 'Identification des segments démographiques et centres d’intérêt ayant le pouvoir d’achat le plus élevé.',
+      },
+      {
+        title: 'Conception de Visuels & Copywriting Haute Conversion',
+        desc: 'Création graphique percutante et rédaction adaptée à la psychologie d’achat des clients locaux.',
+      },
+      {
+        title: 'Tracking Serveur CAPI & Pilotage par les Ventes Réelles',
+        desc: 'Installation sans perte de données reliant vos campagnes à vos encaissements réels en caisse ou livraison.',
+      },
+      {
+        title: 'Optimisation Continue & Scaling Maîtrisé des Budgets',
+        desc: 'Ajustement quotidien des enchères pour baisser le coût par prospect et maximiser votre bénéfice net.',
+      },
+    ],
+    benefits: [
+      'Flux ininterrompu d’acheteurs prêts à commander sur votre marché',
+      'Coût par prospect (CPL) et coût par vente strictement maîtrisés',
+      'Connexion directe vers votre WhatsApp commercial pour un closing rapide',
+      'Contrat officiel d’accompagnement avec engagement de performance',
+    ],
+    faq: [
+      {
+        question: 'Quel budget publicitaire Facebook prévoir à {location} ?',
+        answer: 'Nous ne vendons aucun forfait fixe. Votre budget est calculé sur-mesure selon votre marge unitaire, votre panier moyen et vos objectifs de vente réels.',
+      },
+      {
+        question: 'Comment garantissez-vous la rentabilité de mes campagnes ?',
+        answer: 'Grâce au tracking serveur CAPI et à des tests créatifs méthodiques, nous coupons immédiatement les annonces non rentables pour concentrer vos dépenses sur les leviers gagnants.',
+      },
+    ],
+  },
+  // 25. CAMPAGNE DE PROSPECTS FACEBOOK
+  {
+    prefix: 'campagne-prospects-facebook',
+    name: 'Campagne de Génération de Prospects Facebook',
+    shortTitle: 'Campagne Prospects Facebook',
+    badge: 'Génération de Leads Qualifiés',
+    iconType: 'target',
+    h1: 'Campagne de Génération de Prospects Facebook à {location}',
+    hook: 'Alimentez vos commerciaux à {location} avec un flux continu de prospects qualifiés prêts à acheter, générés via des formulaires instantanés Facebook Ads ultra-optimisés.',
+    description: "Les campagnes de génération de prospects Facebook Ads permettent aux entreprises à {location} de collecter nom, téléphone, ville et besoins de clients solvables. BAROUBA GROUP intègre des filtres anti-curieux pour ne transmettre à votre force de vente que des opportunités d'affaires à haute valeur.",
+    deliverables: [
+      {
+        title: 'Formulaires Instantanés Haute Conversion Meta Lead Ads',
+        desc: 'Conception de formulaires rapides sur smartphone réduisant la friction au minimum.',
+      },
+      {
+        title: 'Questions de Qualification & Filtrage Anti-Curieux',
+        desc: 'Élimination des contacts sans budget pour concentrer vos commerciaux sur les vrais acheteurs.',
+      },
+      {
+        title: 'Synchronisation Immédiate WhatsApp & CRM Commercial',
+        desc: 'Notification instantanée dès qu’un prospect s’enregistre pour un rappel en moins de 15 minutes.',
+      },
+      {
+        title: 'Suivi Hebdomadaire du Coût par Prospect Qualifié (CPL)',
+        desc: 'Optimisation continue pour faire baisser le coût du contact tout en augmentant le taux de signature.',
+      },
+    ],
+    benefits: [
+      'Carnet de commandes rempli pour vos équipes commerciales',
+      'Données de contact certifiées avec numéro de téléphone valide',
+      'Gain de temps massif pour vos vendeurs qui ne prospectent plus à froid',
+      'Visibilité totale sur votre coût d’acquisition client par secteur',
+    ],
+    faq: [
+      {
+        question: 'Combien de prospects puis-je espérer par jour à {location} ?',
+        answer: 'Le volume dépend directement de votre budget quotidien et de l’attractivité de votre offre. En moyenne, nos campagnes génèrent entre 10 et 50 prospects qualifiés par jour.',
+      },
+      {
+        question: 'Comment mes commerciaux reçoivent-ils les contacts ?',
+        answer: 'Les prospects sont synchronisés en temps réel sur WhatsApp ou dans une feuille de calcul sécurisée avec alertes instantanées.',
+      },
+    ],
+  },
+  // 26. CAMPAGNE DE VENTES FACEBOOK
+  {
+    prefix: 'campagne-ventes-facebook',
+    name: 'Campagne de Ventes & Conversions Facebook Ads',
+    shortTitle: 'Campagne Ventes Facebook',
+    badge: 'Conversions & Ventes Directes',
+    iconType: 'trending-up',
+    h1: 'Campagne de Ventes Facebook Ads à {location}',
+    hook: 'Transformez vos annonces Facebook en commandes fermes et encaissements réels à {location} grâce aux campagnes de conversion Meta Ads optimisées pour le commerce local.',
+    description: "Vendre directement avec la publicité Facebook à {location} exige un écosystème rodé : catalogue produit attrayant, offre irrésistible, et tunnel d'achat optimisé pour le paiement par Mobile Money ou à la livraison. BAROUBA GROUP maximise votre retour sur dépenses publicitaires.",
+    deliverables: [
+      {
+        title: 'Catalogue Produits Dynamique & Annonces Carrousel',
+        desc: 'Mise en avant percutante de vos articles avec prix clairs et photos attractives.',
+      },
+      {
+        title: 'Optimisation pour Paiement Mobile Money & Livraison',
+        desc: 'Parcours de commande pensé pour les réalités du commerce au Burkina et en Afrique de l’Ouest.',
+      },
+      {
+        title: 'Retargeting Agressif des Paniers Abandonnés',
+        desc: 'Relance automatique des personnes ayant manifesté un intérêt sans finaliser leur achat.',
+      },
+      {
+        title: 'Mesure du ROAS Net (Chiffre d’Affaires vs Dépenses Pub)',
+        desc: 'Rapport financier transparent sur la rentabilité nette de chaque produit promu.',
+      },
+    ],
+    benefits: [
+      'Accélération immédiate de la rotation de vos stocks',
+      'Acquisition de nouveaux clients acheteurs chaque jour',
+      'Rentabilité prévisible et calculable au franc CFA près',
+      'Diminution drastique des invendus en boutique ou entrepôt',
+    ],
+    faq: [
+      {
+        question: 'Faut-il obligatoirement un site e-commerce pour vendre sur Facebook ?',
+        answer: 'Non. Nous concevons également des tunnels de vente allégés ou des parcours de commande directs vers WhatsApp pour convertir sans site complexe.',
+      },
+      {
+        question: 'Comment gérez-vous les retours ou refus de livraison ?',
+        answer: 'Nos campagnes intègrent un filtrage des acheteurs et une confirmation téléphonique systématique pour maintenir un taux de livraison supérieur à 85%.',
+      },
+    ],
+  },
+  // 27. CAMPAGNE WHATSAPP FACEBOOK
+  {
+    prefix: 'campagne-whatsapp-facebook',
+    name: 'Campagne Facebook Ads vers WhatsApp Business',
+    shortTitle: 'Campagne Facebook WhatsApp',
+    badge: 'Click-to-WhatsApp Rentable',
+    iconType: 'message-square',
+    h1: 'Campagne Facebook vers WhatsApp à {location}',
+    hook: 'Générez des dizaines de conversations d’achat qualifiées chaque jour directement sur votre WhatsApp Business à {location} grâce aux campagnes Click-to-WhatsApp de BAROUBA GROUP.',
+    description: "Au Burkina Faso, WhatsApp est le centre névralgique de toute vente. Nos campagnes Click-to-WhatsApp ciblent les utilisateurs les plus enclins à engager la conversation, avec un message pré-écrit stratégique qui lance la vente immédiatement sans effort.",
+    deliverables: [
+      {
+        title: 'Campagnes Click-to-WhatsApp à Fort Taux de Clic',
+        desc: 'Créatifs publicitaires engageants incitant les prospects à cliquer vers votre messagerie.',
+      },
+      {
+        title: 'Messages d’Amorce Personnalisés & Structurés',
+        desc: 'Chaque clic ouvre la discussion avec une demande précise sur le produit ou service désiré.',
+      },
+      {
+        title: 'Scripts de Réponse & Formation Commerciale de vos Équipes',
+        desc: 'Techniques de closing sur WhatsApp pour transformer les simples demandes de prix en commandes.',
+      },
+      {
+        title: 'Tracking des Ventes Réalisées sur WhatsApp',
+        desc: 'Protocole de suivi pour identifier quelles annonces génèrent les clients les plus dépensiers.',
+      },
+    ],
+    benefits: [
+      'Contact humain direct favorisant la confiance et la rapidité d’achat',
+      'Fichier client WhatsApp constitué pour vos relances gratuites futures',
+      'Coût par conversation ultra-compétitif sur le marché burkinabè',
+      'Adapté à tous les secteurs : commerce, services, immobilier, santé',
+    ],
+    faq: [
+      {
+        question: 'Puis-je utiliser un numéro WhatsApp personnel ?',
+        answer: 'Nous recommandons fortement un compte WhatsApp Business configuré avec catalogue et réponses rapides pour un rendu professionnel.',
+      },
+      {
+        question: 'Comment éviter d’être submergé par des messages inutiles ?',
+        answer: 'Nous affichons les conditions clés et fourchettes de prix dans l’annonce pour filtrer les profils non solvables avant même qu’ils ne cliquent.',
+      },
+    ],
+  },
+  // 28. DÉBLOCAGE COMPTE RESTREINT FACEBOOK
+  {
+    prefix: 'compte-publicitaire-facebook-restreint',
+    name: 'Assistance & Déblocage Compte Publicitaire Meta Ads',
+    shortTitle: 'Déblocage Compte Meta Ads',
+    badge: 'Assistance d’Urgence Meta',
+    iconType: 'layers',
+    h1: 'Déblocage de Compte Publicitaire Facebook Restreint à {location}',
+    hook: 'Compte publicitaire ou Business Manager restreint à {location} ? Débloquez vos actifs en urgence avec notre protocole officiel, vérification RCCM/IFU et création d’architectures de secours.',
+    description: "Une suspension publicitaire imprévue par Meta bloque immédiatement les ventes de votre entreprise. BAROUBA GROUP diagnostique la cause exacte du blocage, constitue votre dossier juridique officiel et sécurise vos opérations pour pérenniser votre diffusion.",
+    deliverables: [
+      {
+        title: 'Audit Express de Conformité & Diagnostic du Motif de Ban',
+        desc: 'Identification précise des règles publicitaires enfreintes ou des faux positifs algorithmiques.',
+      },
+      {
+        title: 'Rédaction & Soumission de Dossier de Recours Officiel',
+        desc: 'Procédure formelle auprès du support Meta Pro avec pièces d’identité et documents d’entreprise.',
+      },
+      {
+        title: 'Vérification Entreprise Meta Business Suite (RCCM & IFU)',
+        desc: 'Validation officielle de votre statut juridique pour déverrouiller durablement les plafonds.',
+      },
+      {
+        title: 'Mise en Place d’un Compte Publicitaire de Secours (Backup)',
+        desc: 'Infrastructure redondante permettant de relancer immédiatement les ventes en cas d’aléa.',
+      },
+    ],
+    benefits: [
+      'Reprise d’activité accélérée pour minimiser vos pertes de chiffre d’affaires',
+      'Protection définitive de vos pages et pixels historiques de valeur',
+      'Conformité stricte avec les politiques commerciales de Meta',
+      'Accompagnement d’experts ayant résolu des dizaines de cas critiques',
+    ],
+    faq: [
+      {
+        question: 'Un compte publicitaire définitivement désactivé peut-il être sauvé ?',
+        answer: 'Si le rejet final est prononcé sur un compte précis, nous transférons vos actifs (Pixel, Page, Catalogue) vers une nouvelle structure saine et vérifiée pour reprendre la diffusion sans perte d’historique.',
+      },
+      {
+        question: 'Combien de temps prend le déblocage avec vos experts ?',
+        answer: 'Le diagnostic et l’envoi du dossier officiel se font en 24h. Les réponses de Meta interviennent généralement sous 24 à 72 heures.',
+      },
+    ],
+  },
+  // 29. API DE CONVERSION META (CAPI)
+  {
+    prefix: 'api-conversion-facebook',
+    name: 'Installation API de Conversion Meta & Tracking CAPI',
+    shortTitle: 'API Conversion Meta (CAPI)',
+    badge: 'Tracking Serveur 100% Fiable',
+    iconType: 'cpu',
+    h1: 'API de Conversion Facebook (CAPI) & Tracking Serveur à {location}',
+    hook: 'Éliminez les pertes de données causées par iOS 14+ et les bloqueurs de pub à {location}. Implémentez l’API de Conversions Meta Server-Side pour tracker 100% de vos ventes réelles.',
+    description: "Le simple pixel navigateur perd aujourd'hui plus de 30% des transactions réelles. En déployant l'API de Conversion (CAPI) côté serveur, BAROUBA GROUP garantit une transmission directe et cryptée de chaque événement d'achat à Meta, permettant à l'algorithme d'optimiser vos coûts d'acquisition.",
+    deliverables: [
+      {
+        title: 'Configuration CAPI Server-Side via Passerelle Cloud',
+        desc: 'Envoi sécurisé des événements d’achat et de prospects directement depuis le serveur vers Meta.',
+      },
+      {
+        title: 'Déduplication Parfaite Pixel Navigateur & CAPI Serveur',
+        desc: 'Paramétrage des identifiants d’événements uniques pour éviter tout double comptage statistique.',
+      },
+      {
+        title: 'Optimisation du Score de Qualité des Événements (EMQ)',
+        desc: 'Transmission des paramètres avancés (téléphone haché, email, ville) pour un matching optimal.',
+      },
+      {
+        title: 'Tracking des Ventes Hors-Ligne & Paiements Mobile Money',
+        desc: 'Réconciliation des encaissements en espèces et livraisons avec vos annonces diffusées.',
+      },
+    ],
+    benefits: [
+      'Récupération de 100% de vos données de rentabilité publicitaire',
+      'Baisse mécanique du coût par acquisition grâce à un meilleur ciblage algorithmique',
+      'Protection totale contre les futures restrictions sur les cookies tiers',
+      'Visibilité exacte sur le retour sur investissement de chaque campagne',
+    ],
+    faq: [
+      {
+        question: 'Pourquoi le simple Pixel ne suffit-il plus aujourd’hui ?',
+        answer: 'Les bloqueurs de pub, le mode privé des navigateurs et les mises à jour Apple bloquent l’exécution du script JavaScript dans le navigateur. Seule la CAPI serveur garantit la transmission de la donnée.',
+      },
+      {
+        question: 'L’installation de la CAPI ralentit-elle mon site web ?',
+        answer: 'Au contraire, le traitement se fait sur le serveur en arrière-plan, ce qui allège le navigateur du visiteur et accélère le temps de chargement de vos pages.',
+      },
+    ],
+  },
+  // 30. BUDGET PUBLICITÉ FACEBOOK SUR-MESURE
+  {
+    prefix: 'budget-publicite-facebook',
+    name: 'Chiffrage & Budget Publicitaire Facebook Sur-Mesure',
+    shortTitle: 'Budget Publicité Facebook',
+    badge: 'Ingénierie Budgétaire Sur-Mesure',
+    iconType: 'target',
+    h1: 'Budget Publicité Facebook Sur-Mesure à {location}',
+    hook: 'Fini les forfaits rigides inefficaces. À {location}, BAROUBA GROUP calcule votre budget publicitaire Facebook au centime près en fonction de votre marge brute, de votre panier moyen et de votre capacité commerciale.',
+    description: "Appliquer un forfait standard de 50 000 ou 100 000 FCFA sans analyse préalable mène droit à l'échec. Notre cabinet applique une méthode d'ingénierie financière rigoureuse pour déterminer votre seuil de rentabilité (Break-even ROAS) et calibrer une dépense quotidienne hautement profitable.",
+    deliverables: [
+      {
+        title: 'Étude Mathématique de Rentabilité Unitaire & Marge Nette',
+        desc: 'Analyse précise de votre modèle économique pour définir le coût d’acquisition maximum acceptable.',
+      },
+      {
+        title: 'Calcul du Seuil de Rentabilité Publicitaire (Break-Even ROAS)',
+        desc: 'Détermination du multiplicateur minimal de chiffre d’affaires pour couvrir toutes les charges.',
+      },
+      {
+        title: 'Calibrage de l’Allocation Budgétaire Journalière Évolutive',
+        desc: 'Montée en charge progressive : phase de test, phase de stabilisation, phase de scaling massif.',
+      },
+      {
+        title: 'Dimensionnement selon la Capacité Commerciale de Traitement',
+        desc: 'Ajustement du volume de leads pour ne jamais saturer ni sous-alimenter vos vendeurs.',
+      },
+    ],
+    benefits: [
+      'Zéro gaspillage de trésorerie sur des montants arbitraires non justifiés',
+      'Chaque franc CFA investi est adossé à un objectif de marge nette',
+      'Transparence totale et prévisibilité financière de votre croissance',
+      'Stratégie contractuellement validée sous l’autorité de M. SAKO BAROU BEN OUMAR',
+    ],
+    faq: [
+      {
+        question: 'Pourquoi refusez-vous de proposer un pack mensuel à prix fixe ?',
+        answer: 'Parce que ce serait malhonnête. Un promoteur immobilier et un e-commerçant ont des réalités financières opposées. Un budget efficace est obligatoirement modélisé sur-mesure.',
+      },
+      {
+        question: 'Quel est le budget minimum recommandé pour démarrer un test sérieux ?',
+        answer: 'Nous recommandons généralement une enveloppe de test permettant de générer au moins 50 événements de conversion pour que l’algorithme de Meta sorte de sa phase d’apprentissage.',
+      },
+    ],
+  },
+
 ];
 
 export interface FlatMetierCombo {
@@ -1520,6 +1837,300 @@ const SPECIAL_MARKETING_PAGES: Array<{
     customDescription: 'Élaboration de plan de communication digitale complet pour entreprises à Ouagadougou : audit, objectifs, calendrier et budget maîtrisé.',
     customH1: 'Élaboration de Plan de Communication Digitale à Ouagadougou',
   },
+
+  // ==========================================
+  // FACEBOOK ADS & ACQUISITION CLUSTER (35 SLUGS PRIORITAIRES)
+  // ==========================================
+  {
+    slug: 'campagne-prospects-facebook-burkina',
+    templatePrefix: 'campagne-prospects-facebook',
+    countrySlug: 'burkina-faso',
+    customTitle: 'Campagne de Prospects Facebook au Burkina',
+    customDescription: 'Générez des prospects B2B et B2C qualifiés avec les formulaires instantanés Facebook Ads. Expertise BAROUBA GROUP à Ouaga.',
+    customH1: 'Campagne de Génération de Prospects Facebook au Burkina Faso',
+  },
+  {
+    slug: 'campagne-ventes-facebook-burkina',
+    templatePrefix: 'campagne-ventes-facebook',
+    countrySlug: 'burkina-faso',
+    customTitle: 'Campagne de Ventes Facebook au Burkina',
+    customDescription: 'Transformez vos annonces Facebook en commandes réelles : campagnes de vente directe et e-commerce optimisées pour l\'UEMOA.',
+    customH1: 'Campagne de Ventes & Conversions Facebook au Burkina Faso',
+  },
+  {
+    slug: 'campagne-whatsapp-facebook-burkina',
+    templatePrefix: 'campagne-whatsapp-facebook',
+    countrySlug: 'burkina-faso',
+    customTitle: 'Campagne Facebook vers WhatsApp Burkina',
+    customDescription: 'Envoyez un flux continu de clients chauds vers votre WhatsApp Business grâce aux campagnes Click-to-WhatsApp rentables.',
+    customH1: 'Campagne Facebook Ads vers WhatsApp au Burkina Faso',
+  },
+  {
+    slug: 'campagne-engagement-facebook-burkina',
+    templatePrefix: 'publicite-facebook',
+    countrySlug: 'burkina-faso',
+    customTitle: 'Campagne Interaction & Engagement Facebook',
+    customDescription: 'Décuplez la visibilité de vos offres : campagnes d\'engagement, partages et commentaires qualifiés sur votre page Facebook.',
+    customH1: 'Campagne d\'Interactions & d\'Engagement Facebook au Burkina',
+  },
+  {
+    slug: 'campagne-notoriete-facebook-burkina',
+    templatePrefix: 'publicite-facebook',
+    countrySlug: 'burkina-faso',
+    customTitle: 'Campagne Notoriété Facebook au Burkina',
+    customDescription: 'Faites connaître votre marque à Ouagadougou et Bobo-Dioulasso auprès de centaines de milliers de Burkinabè ciblés.',
+    customH1: 'Campagne de Notoriété & Couverture Facebook au Burkina Faso',
+  },
+  {
+    slug: 'campagne-retargeting-facebook-burkina',
+    templatePrefix: 'publicite-facebook',
+    countrySlug: 'burkina-faso',
+    customTitle: 'Campagne Reciblage Facebook au Burkina',
+    customDescription: 'Reciblez les visiteurs de votre site et les personnes ayant interagi avec votre page pour conclure les ventes en attente.',
+    customH1: 'Campagne de Reciblage (Retargeting) Facebook au Burkina Faso',
+  },
+  {
+    slug: 'comment-lancer-publicite-facebook-burkina',
+    templatePrefix: 'publicite-facebook',
+    countrySlug: 'burkina-faso',
+    customTitle: 'Comment Lancer une Pub Facebook au Burkina',
+    customDescription: 'Guide complet pas à pas pour créer, paramétrer et diffuser votre première campagne publicitaire Facebook à fort impact.',
+    customH1: 'Comment Lancer une Publicité Facebook Rentable au Burkina Faso',
+  },
+  {
+    slug: 'comment-creer-campagne-facebook-burkina',
+    templatePrefix: 'publicite-facebook',
+    countrySlug: 'burkina-faso',
+    customTitle: 'Comment Créer Campagne Facebook au Burkina',
+    customDescription: 'Méthode professionnelle pour structurer vos campagnes Facebook : objectif, budget, ciblage et annonces percutantes.',
+    customH1: 'Comment Créer une Campagne Publicitaire Facebook au Burkina',
+  },
+  {
+    slug: 'comment-cibler-publicite-facebook-burkina',
+    templatePrefix: 'publicite-facebook',
+    countrySlug: 'burkina-faso',
+    customTitle: 'Bien Cibler sa Publicité Facebook au Burkina',
+    customDescription: 'Maîtrisez le ciblage publicitaire géographique et par centres d\'intérêt à Ouagadougou, Bobo et dans toute la sous-région.',
+    customH1: 'Comment Bien Cibler son Audience sur Facebook Ads au Burkina',
+  },
+  {
+    slug: 'comment-rediger-texte-publicite-facebook',
+    templatePrefix: 'publicite-facebook',
+    countrySlug: 'burkina-faso',
+    customTitle: 'Rédiger une Pub Facebook qui Vend',
+    customDescription: 'Techniques de copywriting adaptées au public burkinabè pour transformer les lecteurs en acheteurs décidés.',
+    customH1: 'Comment Rédiger un Texte Publicitaire Facebook qui Fait Vendre',
+  },
+  {
+    slug: 'publicite-facebook-au-burkina-faso',
+    templatePrefix: 'publicite-facebook',
+    countrySlug: 'burkina-faso',
+    customTitle: 'Publicité Facebook au Burkina Faso | Leader',
+    customDescription: 'Leader de la publicité Facebook Ads au Burkina. Campagnes rentables, gestion experte et résultats contractuellement garantis.',
+    customH1: 'Publicité Facebook Ads au Burkina Faso : Acquisition & ROAS Élevé',
+  },
+  {
+    slug: 'campagne-publicitaire-au-burkina-faso',
+    templatePrefix: 'publicite-facebook',
+    countrySlug: 'burkina-faso',
+    customTitle: 'Campagne Publicitaire au Burkina Faso',
+    customDescription: 'Confiez vos campagnes publicitaires à BAROUBA GROUP : acquisition payante ciblée, génération de leads et croissance de CA.',
+    customH1: 'Campagne Publicitaire au Burkina Faso : Stratégie & Ventes',
+  },
+  {
+    slug: 'agence-publicite-facebook-ouagadougou',
+    templatePrefix: 'publicite-facebook',
+    countrySlug: 'burkina-faso',
+    citySlug: 'ouagadougou',
+    customTitle: 'Agence Publicité Facebook à Ouagadougou',
+    customDescription: 'Cabinet d\'ingénierie publicitaire Meta Ads à Ouagadougou. Maximisez vos ventes sous la direction de M. SAKO BAROU BEN OUMAR.',
+    customH1: 'Agence de Publicité Facebook N°1 à Ouagadougou',
+  },
+  {
+    slug: 'expert-publicite-facebook-burkina',
+    templatePrefix: 'publicite-facebook',
+    countrySlug: 'burkina-faso',
+    customTitle: 'Expert Publicité Facebook au Burkina Faso',
+    customDescription: 'Développez votre chiffre d’affaires avec un expert certifié Meta Ads : audit, paramétrage avancé et pilotage quotidien.',
+    customH1: 'Expert Senior en Publicité Facebook Ads au Burkina Faso',
+  },
+  {
+    slug: 'publicite-facebook-bobo-dioulasso',
+    templatePrefix: 'publicite-facebook',
+    countrySlug: 'burkina-faso',
+    citySlug: 'bobo-dioulasso',
+    customTitle: 'Publicité Facebook à Bobo-Dioulasso',
+    customDescription: 'Lancez des campagnes publicitaires Facebook ciblées sur Bobo-Dioulasso pour capter la clientèle de la capitale économique.',
+    customH1: 'Publicité Facebook Ads à Bobo-Dioulasso : Ventes Locales',
+  },
+  {
+    slug: 'publicite-facebook-koudougou',
+    templatePrefix: 'publicite-facebook',
+    countrySlug: 'burkina-faso',
+    citySlug: 'koudougou',
+    customTitle: 'Publicité Facebook à Koudougou | Ventes',
+    customDescription: 'Développez votre commerce à Koudougou grâce à des annonces Facebook géolocalisées et ultra-rentables.',
+    customH1: 'Publicité Facebook Ads à Koudougou : Dominez Votre Ville',
+  },
+  {
+    slug: 'compte-publicitaire-facebook-restreint-burkina',
+    templatePrefix: 'compte-publicitaire-facebook-restreint',
+    countrySlug: 'burkina-faso',
+    customTitle: 'Débloquer Compte Pub Facebook Restreint',
+    customDescription: 'Votre compte pub est restreint ? Diagnostic d\'urgence, recours officiel et remise en route de vos campagnes avec nos experts.',
+    customH1: 'Débloquer un Compte Publicitaire Facebook Restreint au Burkina',
+  },
+  {
+    slug: 'debloquer-business-manager-facebook-burkina',
+    templatePrefix: 'compte-publicitaire-facebook-restreint',
+    countrySlug: 'burkina-faso',
+    customTitle: 'Débloquer Business Manager Facebook',
+    customDescription: 'Retrouvez l\'accès complet à vos pages, pixels et comptes publicitaires bloqués dans Meta Business Manager.',
+    customH1: 'Déblocage de Business Manager Meta au Burkina Faso',
+  },
+  {
+    slug: 'recuperer-compte-facebook-desactive-ouaga',
+    templatePrefix: 'compte-publicitaire-facebook-restreint',
+    countrySlug: 'burkina-faso',
+    citySlug: 'ouagadougou',
+    customTitle: 'Récupérer Compte Facebook Désactivé Ouaga',
+    customDescription: 'Procédure d\'assistance pour contester la désactivation définitive de vos actifs publicitaires auprès du support Meta Pro.',
+    customH1: 'Comment Récupérer un Compte Publicitaire Facebook Désactivé à Ouaga',
+  },
+  {
+    slug: 'verification-business-manager-rccm-burkina',
+    templatePrefix: 'compte-publicitaire-facebook-restreint',
+    countrySlug: 'burkina-faso',
+    customTitle: 'Vérification Meta Business RCCM Burkina',
+    customDescription: 'Validez votre statut juridique sur Meta avec vos documents RCCM et IFU pour déverrouiller les plafonds de dépense.',
+    customH1: 'Vérification d\'Entreprise Meta Business Suite avec RCCM au Burkina',
+  },
+  {
+    slug: 'compte-publicitaire-secours-facebook-ouaga',
+    templatePrefix: 'compte-publicitaire-facebook-restreint',
+    countrySlug: 'burkina-faso',
+    citySlug: 'ouagadougou',
+    customTitle: 'Compte Pub Secours Facebook à Ouagadougou',
+    customDescription: 'Protégez votre business contre les suspensions inopinées grâce à une structure publicitaire de secours prête à l\'emploi.',
+    customH1: 'Mise en Place de Compte Publicitaire Facebook de Secours à Ouaga',
+  },
+  {
+    slug: 'bloque-paiement-suspect-facebook-burkina',
+    templatePrefix: 'compte-publicitaire-facebook-restreint',
+    countrySlug: 'burkina-faso',
+    customTitle: 'Débloquer Compte Facebook Paiement Suspect',
+    customDescription: 'Résolution des rejets de paiement et levée des blocages pour activité suspecte sur votre compte publicitaire Facebook.',
+    customH1: 'Résoudre le Blocage pour Activité de Paiement Suspecte sur Meta',
+  },
+  {
+    slug: 'securiser-business-manager-facebook-burkina',
+    templatePrefix: 'compte-publicitaire-facebook-restreint',
+    countrySlug: 'burkina-faso',
+    customTitle: 'Sécuriser Business Manager Facebook Burkina',
+    customDescription: 'Protégez vos pages et budgets contre le piratage : double authentification (2FA), contrôle des accès et rôles administrateurs.',
+    customH1: 'Sécuriser son Business Manager Meta contre le Piratage au Burkina',
+  },
+  {
+    slug: 'installer-pixel-facebook-burkina',
+    templatePrefix: 'api-conversion-facebook',
+    countrySlug: 'burkina-faso',
+    customTitle: 'Installer Pixel Facebook au Burkina Faso',
+    customDescription: 'Installation technique du Pixel Meta : suivi des visites, paniers ajoutés et formulaires remplis sur votre site web.',
+    customH1: 'Comment Installer le Pixel Facebook sur son Site au Burkina Faso',
+  },
+  {
+    slug: 'api-conversion-facebook-burkina-faso',
+    templatePrefix: 'api-conversion-facebook',
+    countrySlug: 'burkina-faso',
+    customTitle: 'API de Conversion Facebook (CAPI) Burkina',
+    customDescription: 'Déployez l\'API de Conversion Meta pour contourner les bloqueurs de pub et mesurer 100% de vos ventes réelles sans perte.',
+    customH1: 'Installation de l\'API de Conversion Meta (CAPI) au Burkina Faso',
+  },
+  {
+    slug: 'tracking-ventes-whatsapp-facebook-burkina',
+    templatePrefix: 'api-conversion-facebook',
+    countrySlug: 'burkina-faso',
+    customTitle: 'Tracking Ventes WhatsApp Facebook Burkina',
+    customDescription: 'Suivez précisément quels messages publicitaires se transforment en clients payants sur votre WhatsApp d\'entreprise.',
+    customH1: 'Tracking des Ventes WhatsApp depuis vos Publicités Facebook',
+  },
+  {
+    slug: 'resoudre-perte-donnees-pixel-facebook',
+    templatePrefix: 'api-conversion-facebook',
+    countrySlug: 'burkina-faso',
+    customTitle: 'Résoudre Perte Données Pixel Facebook',
+    customDescription: 'Rétablissez la justesse de vos données de campagne face aux restrictions de cookies et optimisez le travail de l\'algorithme.',
+    customH1: 'Comment Résoudre la Perte de Données du Pixel Facebook (iOS 14+)',
+  },
+  {
+    slug: 'offline-conversions-facebook-ouaga',
+    templatePrefix: 'api-conversion-facebook',
+    countrySlug: 'burkina-faso',
+    citySlug: 'ouagadougou',
+    customTitle: 'Offline Conversions Facebook à Ouagadougou',
+    customDescription: 'Reliez vos encaissements physiques en boutique ou livraisons à vos campagnes publicitaires Facebook avec le suivi hors-ligne.',
+    customH1: 'Mesurer les Ventes en Magasin grâce aux Offline Conversions Meta',
+  },
+  {
+    slug: 'budget-publicite-facebook-sur-mesure-burkina',
+    templatePrefix: 'budget-publicite-facebook',
+    countrySlug: 'burkina-faso',
+    customTitle: 'Budget Pub Facebook Sur-Mesure Burkina',
+    customDescription: 'Chiffrage mathématique de votre budget publicitaire selon vos marges, votre panier moyen et vos objectifs de vente réels.',
+    customH1: 'Calcul de Budget Publicitaire Facebook Sur-Mesure au Burkina Faso',
+  },
+  {
+    slug: 'combien-coute-publicite-facebook-ouaga',
+    templatePrefix: 'budget-publicite-facebook',
+    countrySlug: 'burkina-faso',
+    citySlug: 'ouagadougou',
+    customTitle: 'Combien Coûte la Pub Facebook à Ouaga ?',
+    customDescription: 'Comprenez la structure des coûts (CPM, CPC) et découvrez comment maximiser chaque franc CFA investi sur la plateforme.',
+    customH1: 'Combien Coûte Réellement la Publicité Facebook à Ouagadougou ?',
+  },
+  {
+    slug: 'calculer-roas-rentabilite-facebook-burkina',
+    templatePrefix: 'budget-publicite-facebook',
+    countrySlug: 'burkina-faso',
+    customTitle: 'Calculer ROAS Publicité Facebook Burkina',
+    customDescription: 'Méthode pour déterminer votre point mort publicitaire : combien de ventes devez-vous faire pour être largement rentable ?',
+    customH1: 'Comment Calculer son Seuil de Rentabilité (ROAS) sur Facebook Ads',
+  },
+  {
+    slug: 'reduire-cout-par-prospect-facebook-ouaga',
+    templatePrefix: 'budget-publicite-facebook',
+    countrySlug: 'burkina-faso',
+    citySlug: 'ouagadougou',
+    customTitle: 'Réduire Coût par Prospect Facebook Ouaga',
+    customDescription: 'Stratégies d\'optimisation pour diviser par deux le coût d\'acquisition de vos prospects sans baisser la qualité du lead.',
+    customH1: 'Comment Diviser par Deux son Coût par Prospect sur Facebook Ads',
+  },
+  {
+    slug: 'pourquoi-publicite-facebook-ne-vend-pas',
+    templatePrefix: 'publicite-facebook',
+    countrySlug: 'burkina-faso',
+    customTitle: 'Pourquoi Publicité Facebook ne Vend Pas ?',
+    customDescription: 'Analyse des erreurs fréquentes : mauvaise audience, offre faible, créatif inadapté, et solutions concrètes pour redresser la barre.',
+    customH1: 'Pourquoi Vos Publicités Facebook ne Vendent Pas (et Comment Corriger)',
+  },
+  {
+    slug: 'audit-campagne-publicitaire-facebook-ouaga',
+    templatePrefix: 'publicite-facebook',
+    countrySlug: 'burkina-faso',
+    citySlug: 'ouagadougou',
+    customTitle: 'Audit Campagne Publicitaire Facebook Ouaga',
+    customDescription: 'Faites auditer vos campagnes et votre compte publicitaire par nos experts pour identifier les fuites de budget.',
+    customH1: 'Audit Technique & Stratégique de Campagne Facebook à Ouagadougou',
+  },
+  {
+    slug: 'scaling-campagnes-facebook-burkina',
+    templatePrefix: 'publicite-facebook',
+    countrySlug: 'burkina-faso',
+    customTitle: 'Scaler Campagnes Facebook au Burkina',
+    customDescription: 'Comment augmenter son budget publicitaire de 50 000 à 1 000 000 FCFA par jour sans détruire la rentabilité de ses annonces.',
+    customH1: 'Scaling de Campagnes Facebook Ads : Passer à la Vitesse Supérieure',
+  },
+
 ];
 
 for (const special of SPECIAL_MARKETING_PAGES) {
