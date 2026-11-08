@@ -35,6 +35,29 @@ interface FlatPageProps {
   }>;
 }
 
+
+function formatHeroTitle(title: string) {
+  if (title.includes(' : ')) {
+    const [main, ...sub] = title.split(' : ');
+    return (
+      <>
+        <span>{main}</span>
+        <span className={styles.heroTitleAccent}> : {sub.join(' : ')}</span>
+      </>
+    );
+  }
+  if (title.includes(':')) {
+    const [main, ...sub] = title.split(':');
+    return (
+      <>
+        <span>{main}</span>
+        <span className={styles.heroTitleAccent}> : {sub.join(':')}</span>
+      </>
+    );
+  }
+  return title;
+}
+
 export async function generateMetadata({ params }: FlatPageProps): Promise<Metadata> {
   const { slug } = await params;
 
@@ -117,9 +140,9 @@ export default async function FlatPseoPage({ params }: FlatPageProps) {
   // ==========================================
   if (metierCombo) {
     const { template, city, country, locationName } = metierCombo;
-    const h1Text = metierCombo.customH1 || template.h1.replace('{location}', locationName);
-    const hookText = template.hook.replace('{location}', locationName);
-    const descText = template.description.replace('{location}', locationName);
+    const h1Text = (metierCombo.customH1 || template.h1).replace(/\{location\}/g, locationName);
+    const hookText = template.hook.replace(/\{location\}/g, locationName);
+    const descText = template.description.replace(/\{location\}/g, locationName);
     const canonicalUrl = `https://www.baroubagroup.com/${slug}`;
 
     const whatsappMsg = `Bonjour Monsieur Sako, je vous contacte depuis ${locationName} (${country.name}) concernant votre expertise en ${template.shortTitle}. Pouvons-nous échanger sur mon projet ?`;
@@ -223,10 +246,10 @@ export default async function FlatPseoPage({ params }: FlatPageProps) {
 
             <div className={styles.heroBadge}>
               <TerritoryServiceIcon iconType={template.iconType} size={16} />
-              <span>{template.badge} • {locationName}, {country.name}</span>
+              <span>{template.badge} • {city ? `${city.name}, ${country.name}` : country.name}</span>
             </div>
 
-            <h1 className={styles.heroTitle}>{h1Text}</h1>
+            <h1 className={styles.heroTitle}>{formatHeroTitle(h1Text)}</h1>
             <p className={styles.heroSubtitle}>{hookText}</p>
 
             <div className={styles.heroActions}>
@@ -314,7 +337,7 @@ export default async function FlatPseoPage({ params }: FlatPageProps) {
               {template.deliverables.map((deliv, idx) => (
                 <div key={idx} className={styles.deliverableCard}>
                   <div className={styles.deliverableNum}>0{idx + 1}</div>
-                  <h3 className={styles.deliverableTitle}>{deliv.title}</h3>
+                  <h3 className={styles.deliverableTitle}>{deliv.title.replace(/\{location\}/g, locationName)}</h3>
                   <p className={styles.deliverableDesc}>{deliv.desc.replace(/\{location\}/g, locationName)}</p>
                 </div>
               ))}
@@ -589,10 +612,10 @@ export default async function FlatPseoPage({ params }: FlatPageProps) {
 
           <div className={styles.heroBadge}>
             <MapPin size={16} />
-            <span>{sector.badge} • {locationName}, {countryName}</span>
+            <span>{sector.badge} • {city ? `${city.name}, ${countryName}` : countryName}</span>
           </div>
 
-          <h1 className={styles.heroTitle}>{heroTitle}</h1>
+          <h1 className={styles.heroTitle}>{formatHeroTitle(heroTitle)}</h1>
           <p className={styles.heroSubtitle}>{heroSubtitle}</p>
 
           <div className={styles.heroActions}>
@@ -677,7 +700,7 @@ export default async function FlatPseoPage({ params }: FlatPageProps) {
                 {sector.solutionDeliverables.map((deliv, idx) => (
                   <div key={idx} className={styles.deliverableCard}>
                     <div className={styles.deliverableNum}>0{idx + 1}</div>
-                    <h3 className={styles.deliverableTitle}>{deliv.title}</h3>
+                    <h3 className={styles.deliverableTitle}>{deliv.title.replace(/\{city\}/g, locationName)}</h3>
                     <p className={styles.deliverableDesc}>{deliv.desc.replace(/\{city\}/g, locationName)}</p>
                   </div>
                 ))}
