@@ -38,6 +38,105 @@ export interface FlatMetierTemplate {
 }
 
 export const FLAT_METIERS: FlatMetierTemplate[] = [
+  // 0. AGENCE DE MARKETING DIGITAL (CŒUR DE RECHERCHE NATIONALE)
+  {
+    prefix: 'agence-marketing-digital',
+    name: 'Agence de Marketing Digital & Acquisition Performance',
+    shortTitle: 'Agence Marketing Digital',
+    badge: 'Cabinet N°1 Marketing Digital',
+    iconType: 'trending-up',
+    h1: 'Agence de Marketing Digital N°1 à {location}',
+    hook: 'Propulsez votre chiffre d’affaires à {location} avec le leader du marketing digital au Burkina Faso : campagnes publicitaires Meta & TikTok à fort ROAS, tunnels WhatsApp automatisés, création web ultra-rapide et résultats contractuellement garantis.',
+    description: "À {location}, les entreprises qui dominent leur marché ne se contentent plus de bricolage ou de publications aléatoires sur les réseaux sociaux. BAROUBA GROUP déploie un système d'ingénierie marketing complet conçu pour générer des flux ininterrompus de clients qualifiés : ciblage publicitaire chirurgical, community management d'autorité 7j/7, tunnels de vente WhatsApp et plateformes Next.js 16 se chargeant en moins de 0.8s. Sous la direction de Monsieur SAKO BAROU BEN OUMAR, chaque intervention est encadrée par un contrat officiel avec engagement de performance.",
+    deliverables: [
+      {
+        title: 'Stratégie Multicanale 360° & Audit de Positionnement',
+        desc: 'Diagnostic approfondi de votre marché à {location}, identification de vos avantages concurrentiels et feuille de route opérationnelle chiffrée.',
+      },
+      {
+        title: 'Media Buying Haute Précision Meta & TikTok Ads',
+        desc: 'Campagnes publicitaires rentabilisées, scripts vidéo percutants, tracking CAPI et scaling progressif orienté pur bénéfice net.',
+      },
+      {
+        title: 'Tunnels WhatsApp Cloud API & Séquences de Closing',
+        desc: 'Parcours d’achat direct en 1 clic connectant vos publicités à WhatsApp pour transformer les prospects en acheteurs sans friction.',
+      },
+      {
+        title: 'Community Management & Visuels de Prestige 7j/7',
+        desc: 'Animation quotidienne de vos pages Facebook, Instagram et LinkedIn avec une ligne éditoriale haut de gamme renforçant votre autorité.',
+      },
+    ],
+    benefits: [
+      'Statut de marque dominante et incontestée sur votre secteur à {location}',
+      'Multiplication par 3 à 5 de votre retour sur investissement publicitaire (ROAS)',
+      'Flux constant de prospects chauds orientés directement sur votre WhatsApp commercial',
+      'Contrat de prestation officiel avec garanties juridiques et techniques fermes',
+    ],
+    faq: [
+      {
+        question: 'Pourquoi BAROUBA GROUP est-elle considérée comme la meilleure agence de marketing digital à {location} ?',
+        answer: "Parce que nous combinons ingénierie logicielle Next.js de pointe, maîtrise chirurgicale du media buying africain, tunnels de vente WhatsApp exclusifs et une gouvernance éthique contractuellement engagée sous la direction de M. SAKO BAROU BEN OUMAR.",
+      },
+      {
+        question: 'Quel retour sur investissement peut-on attendre de vos campagnes à {location} ?',
+        answer: 'Nos stratégies visent un ROAS (retour sur dépenses publicitaires) moyen supérieur à 3.5x, en éliminant les dépenses superflues et en ciblant les acheteurs solvables de votre zone.',
+      },
+      {
+        question: 'Combien de temps faut-il pour observer les premiers résultats concrets ?',
+        answer: 'Nos premiers flux de prospects qualifiés arrivent généralement dans les 48 à 72 heures suivant le lancement des premières campagnes publicitaires et tunnels de vente.',
+      },
+    ],
+  },
+
+  // 00. SERVICES DE MARKETING DIGITAL GÉNÉRAL
+  {
+    prefix: 'marketing-digital',
+    name: 'Marketing Digital Stratégique & Croissance Commerciale',
+    shortTitle: 'Marketing Digital',
+    badge: 'Ingénierie Marketing & Rentabilité',
+    iconType: 'target',
+    h1: 'Marketing Digital à {location} : Stratégies & Résultats Chiffrés',
+    hook: 'Dominez les recherches Google, attirez des acheteurs qualifiés et automatisez vos ventes à {location} grâce à notre méthodologie d’ingénierie marketing éprouvée au Burkina Faso et en Afrique de l’Ouest.',
+    description: "Le marketing digital à {location} exige une parfaite maîtrise des réalités locales : connexion internet mobile 3G/4G, prédominance absolue de WhatsApp et encaissements par Mobile Money (Orange Money, Moov Money, Wave). BAROUBA GROUP conçoit des écosystèmes marketing complets alliant acquisition payante, référencement naturel local, modération active et tunnels d’achat instantanés pour maximiser la rentabilité de chaque franc CFA investi.",
+    deliverables: [
+      {
+        title: 'Génération Continue de Prospects Qualifiés (Leads B2B & B2C)',
+        desc: 'Mise en place d’aimants à prospects et formulaires rapides captant les coordonnées d’acheteurs prêts à commander à {location}.',
+      },
+      {
+        title: 'Campagnes Publicitaires Rentables Meta & TikTok Ads',
+        desc: 'Création de visuels et vidéos captivants ciblant précisément votre clientèle locale et la diaspora burkinabè.',
+      },
+      {
+        title: 'Parcours d’Achat Mobile Money & WhatsApp en 1 Clic',
+        desc: 'Élimination des paniers abandonnés en guidant instantanément l’acheteur vers la confirmation et le règlement sécurisé.',
+      },
+      {
+        title: 'Tableau de Bord de Pilotage & Tracking Analytique Précis',
+        desc: 'Suivi transparent du coût par prospect (CPL), du coût d’acquisition client (CAC) et de vos marges nettes.',
+      },
+    ],
+    benefits: [
+      'Croissance prévisible et mesurable de votre chiffre d’affaires à {location}',
+      'Zéro dépendance aux méthodes de vente artisanales ou au bouche-à-oreille passif',
+      'Gain de temps massif pour votre équipe grâce aux automatisations commerciales',
+      'Reporting transparent hebdomadaire et interlocuteur senior dédié',
+    ],
+    faq: [
+      {
+        question: 'Comment adapter le marketing digital aux spécificités de {location} ?',
+        answer: 'En supprimant les formulaires complexes des sites occidentaux au profit de tunnels ultra-rapides (< 0.8s) reliés à WhatsApp et aux paiements Mobile Money locaux.',
+      },
+      {
+        question: 'Quels sont les leviers de marketing digital les plus rentables au Burkina Faso ?',
+        answer: 'Le trio gagnant au Sahel repose sur la publicité ciblée Meta Ads (Facebook/Instagram), le closing personnalisé sur WhatsApp et un référencement Google Maps / SEO local solide.',
+      },
+      {
+        question: 'Quel budget consacrer au marketing digital pour une PME à {location} ?',
+        answer: 'Nous construisons des plans évolutifs adaptés à votre trésorerie, avec des formules d’entrée permettant de générer des bénéfices réinvestissables dès le premier mois.',
+      },
+    ],
+  },
   // 1. CRÉATION DE SITE WEB
   {
     prefix: 'creation-site-web',

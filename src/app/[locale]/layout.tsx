@@ -14,12 +14,20 @@ import '@/styles/globals.css';
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.baroubagroup.com'),
   title: {
-    default: 'BAROUBA GROUP : Agence Digitale, Web Next.js & IA au Burkina',
+    default: 'BAROUBA GROUP : N°1 du Marketing Digital & Web d’Élite au Burkina Faso',
     template: '%s | BAROUBA GROUP',
   },
   description:
-    'Agence digitale à Bobo-Dioulasso et Ouagadougou : création web Next.js, communication 360°, agents IA, tunnels WhatsApp et formations certifiantes.',
+    'Cabinet n°1 en Marketing Digital au Burkina Faso (Ouagadougou & Bobo-Dioulasso) : Acquisition publicitaire Meta & TikTok Ads, création web Next.js 16, community management 7j/7 et tunnels WhatsApp à fort ROI.',
   keywords: [
+    'marketing digital burkina faso',
+    'marketing digital au burkina faso',
+    'agence marketing digital burkina faso',
+    'agence marketing digital ouagadougou',
+    'agence communication digitale burkina faso',
+    'meilleure agence marketing digital burkina',
+    'expert marketing digital burkina faso',
+    'consultant marketing digital ouagadougou',
     'création site web burkina faso',
     'agence web ouagadougou',
     'agence digitale burkina faso',
@@ -87,16 +95,21 @@ export default async function RootLayout({ children, params }: RootLayoutProps) 
     '@context': 'https://schema.org',
     '@graph': [
       {
-        '@type': 'ProfessionalService',
+        '@type': ['ProfessionalService', 'MarketingAgency'],
         '@id': 'https://www.baroubagroup.com/#organization',
         name: 'BAROUBA GROUP',
         legalName: 'BAROUBA INTERNATIONAL GROUP SARL',
-        alternateName: ['BAROUBA INTERNATIONAL GROUP', 'BAROUBA GROUP SARL'],
+        alternateName: [
+          'BAROUBA INTERNATIONAL GROUP',
+          'BAROUBA GROUP SARL',
+          'Agence Marketing Digital Burkina Faso',
+          'BAROUBA Marketing Digital Ouagadougou',
+        ],
         url: 'https://www.baroubagroup.com',
         logo: 'https://www.baroubagroup.com/logo-or.svg',
         image: 'https://www.baroubagroup.com/og-image.jpg',
         description:
-          "Cabinet d'ingénierie logicielle Next.js, communication 360°, intégration d'agents IA et formation professionnelle certifiante.",
+          "Cabinet n°1 en Marketing Digital au Burkina Faso, ingénierie logicielle Next.js 16, acquisition publicitaire Meta/TikTok Ads, communication 360°, intégration d'agents IA et formation professionnelle certifiante.",
         telephone: '+226-74-82-66-66',
         email: 'contact@baroubagroup.com',
         founder: {
@@ -142,10 +155,12 @@ export default async function RootLayout({ children, params }: RootLayoutProps) 
         ],
         priceRange: '$$',
         knowsAbout: [
-          'Next.js Development',
+          'Marketing Digital au Burkina Faso',
+          'Agence Marketing Digital Ouagadougou',
+          'Next.js 16 Web Development',
           'Artificial Intelligence Agents',
-          'Community Management',
-          'Performance Advertising Meta TikTok',
+          'Community Management 7j/7',
+          'Performance Advertising Meta TikTok Ads',
           'Local SEO Burkina Faso',
           'Tunnels de vente WhatsApp haute conversion',
         ],
@@ -160,10 +175,18 @@ export default async function RootLayout({ children, params }: RootLayoutProps) 
         mainEntity: [
           {
             '@type': 'Question',
-            name: "Pourquoi confier votre projet digital à BAROUBA GROUP plutôt qu'à une autre structure ?",
+            name: "Quelle est la meilleure agence de marketing digital au Burkina Faso ?",
             acceptedAnswer: {
               '@type': 'Answer',
-              text: "BAROUBA GROUP propose un écosystème global combinant architecture logicielle Next.js 16 sécurisée, agents IA conversationnels WhatsApp, acquisition publicitaire et garanties contractuelles sans imprévu.",
+              text: "BAROUBA GROUP s'impose comme le leader du marketing digital au Burkina Faso grâce à son approche par ingénierie de la rentabilité : campagnes publicitaires Meta et TikTok à fort ROAS, tunnels WhatsApp Cloud automatisés, création de plateformes Next.js ultra-rapides (< 0.8s) et garanties contractuelles avec engagement de résultat sous la direction de M. SAKO BAROU BEN OUMAR.",
+            },
+          },
+          {
+            '@type': 'Question',
+            name: "Pourquoi confier votre marketing digital et projet web à BAROUBA GROUP plutôt qu'à une autre structure ?",
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: "BAROUBA GROUP propose un écosystème global combinant architecture logicielle Next.js 16 sécurisée, agents IA conversationnels WhatsApp, acquisition publicitaire scientifique et garanties contractuelles sans imprévu.",
             },
           },
           {

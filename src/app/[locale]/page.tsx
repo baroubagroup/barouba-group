@@ -18,13 +18,34 @@ export async function generateMetadata({ params }: HomeProps): Promise<Metadata>
 
   return {
     title: locale === 'fr'
-      ? 'BAROUBA GROUP : Agence Digitale, Web Next.js & IA au Burkina'
-      : 'BAROUBA GROUP: Digital Agency, Web Next.js & AI in Burkina',
+      ? 'BAROUBA GROUP : N°1 du Marketing Digital & Web d’Élite au Burkina Faso'
+      : 'BAROUBA GROUP: #1 Digital Marketing & Elite Web Agency in Burkina Faso',
     description: locale === 'fr'
-      ? 'Agence digitale à Bobo-Dioulasso et Ouagadougou : création web Next.js, communication 360°, agents IA, tunnels WhatsApp et formations certifiantes.'
-      : 'Digital agency in Bobo-Dioulasso & Ouagadougou: Next.js web creation, 360° communication, AI agents, WhatsApp funnels and certified training.',
+      ? 'Agence n°1 en Marketing Digital au Burkina Faso (Ouagadougou & Bobo-Dioulasso) : Acquisition publicitaire Meta & TikTok Ads, création web Next.js 16, community management 7j/7 et tunnels WhatsApp à fort ROI.'
+      : '#1 Digital Marketing agency in Burkina Faso (Ouagadougou & Bobo-Dioulasso): Meta & TikTok Ads acquisition, Next.js 16 web development, 7/7 community management and high-ROI WhatsApp funnels.',
+    keywords: [
+      'marketing digital burkina faso',
+      'marketing digital au burkina faso',
+      'agence marketing digital burkina faso',
+      'agence marketing digital ouagadougou',
+      'agence communication digitale burkina faso',
+      'meilleure agence marketing digital burkina',
+      'expert marketing digital ouagadougou',
+      'publicite facebook ads burkina',
+      'gestion reseaux sociaux burkina faso',
+      'creation site web ouagadougou',
+      'BAROUBA GROUP',
+    ],
     alternates: {
       canonical: 'https://www.baroubagroup.com',
+    },
+    openGraph: {
+      title: 'BAROUBA GROUP : N°1 du Marketing Digital & Web d’Élite au Burkina Faso',
+      description: 'Cabinet n°1 en Marketing Digital au Burkina Faso (Ouagadougou & Bobo-Dioulasso) : Publicité Ads, création web Next.js 16, community management 7j/7 et tunnels WhatsApp.',
+      url: 'https://www.baroubagroup.com',
+      siteName: 'BAROUBA GROUP',
+      locale: 'fr_FR',
+      type: 'website',
     },
   };
 }
