@@ -34,6 +34,15 @@ export default function middleware(request: NextRequest) {
     }
   }
 
+  // Support RFC/GEO .well-known/llms.txt
+  if (pathname === '/.well-known/llms.txt') {
+    const llmsUrl = new URL('/llms.txt', request.url);
+    const res = NextResponse.rewrite(llmsUrl);
+    res.headers.set('Content-Type', 'text/markdown; charset=utf-8');
+    res.headers.set('Vary', 'Accept');
+    return res;
+  }
+
   // 3. Permanent 308 redirect from legacy `/fr` and `/fr/*` to clean root URLs
   if (pathname === '/fr' || pathname === '/fr/') {
     const url = new URL('/', request.url);
@@ -72,6 +81,6 @@ export default function middleware(request: NextRequest) {
 
 export const config = {
   matcher: [
-    '/((?!api(?:/|$)|_next/static|_next/image|studio|admin|favicon.ico|sitemap.xml|robots.txt|llms.txt|llms-full.txt|google[a-zA-Z0-9]+\\.html|.*\\.(?:svg|png|jpg|jpeg|gif|webp|ico|mp4|webm|html|txt|xml)).*)',
+    '/((?!api(?:/|$)|_next/static|_next/image|\\.well-known|studio|admin|favicon.ico|sitemap.xml|robots.txt|llms.txt|llms-full.txt|google[a-zA-Z0-9]+\\.html|.*\\.(?:svg|png|jpg|jpeg|gif|webp|ico|mp4|webm|html|txt|xml)).*)',
   ],
 };
