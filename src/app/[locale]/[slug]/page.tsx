@@ -13,8 +13,10 @@ import {
   PhoneCall,
   DollarSign,
   ChevronRight,
-  Building2
+  Building2,
+  BookOpen
 } from 'lucide-react';
+import { getStrategicGuideForSlug } from '@/lib/strategicGuidesData';
 import AfricanPatternRibbon from '@/components/v2/AfricanPatternRibbon';
 import TerritoryServiceIcon from '@/components/v2/TerritoryServiceIcon';
 import { getB2bComboBySlug, B2B_SECTORS } from '@/lib/solutionsData';
@@ -140,6 +142,7 @@ export default async function FlatPseoPage({ params }: FlatPageProps) {
   // ==========================================
   if (metierCombo) {
     const { template, city, country, locationName } = metierCombo;
+    const strategicGuide = getStrategicGuideForSlug(slug);
     const h1Text = (metierCombo.customH1 || template.h1).replace(/\{location\}/g, locationName);
     const hookText = template.hook.replace(/\{location\}/g, locationName);
     const descText = template.description.replace(/\{location\}/g, locationName);
@@ -284,41 +287,143 @@ export default async function FlatPseoPage({ params }: FlatPageProps) {
             </div>
 
             {city && (
-              <div className={styles.challengesGrid} style={{ marginTop: '2.5rem' }}>
-                <div className={styles.challengeCard}>
-                  <div className={styles.challengeIconWrap}>
-                    <Building2 size={24} color="var(--color-gold)" />
+              <div style={{ marginTop: '2.5rem' }}>
+                <div className={styles.territoryDossierCard}>
+                  <span className={styles.territoryStatusBadge}>{city.status} • {city.population}</span>
+                  <h3 className={styles.territoryDossierTitle}>Cœur Battant & Écosystème Économique à {city.name}</h3>
+                  <p className={styles.territoryDossierText}>{city.economicDossier}</p>
+                  <p className={styles.territoryDossierText}>{city.historyAndGeo}</p>
+
+                  <div className={styles.challengesGrid} style={{ marginTop: '1.5rem', marginBottom: '1.5rem' }}>
+                    <div className={styles.challengeCard}>
+                      <div className={styles.challengeIconWrap}>
+                        <Building2 size={24} color="var(--color-gold)" />
+                      </div>
+                      <h4 className={styles.challengeTitle}>Enjeux Numériques & Marché Local</h4>
+                      <p className={styles.challengeDesc}>{city.digitalChallenges}</p>
+                    </div>
+                    <div className={styles.challengeCard}>
+                      <div className={styles.challengeIconWrap}>
+                        <MapPin size={24} color="var(--color-gold)" />
+                      </div>
+                      <h4 className={styles.challengeTitle}>Pôles Stratégiques & Quartiers Cibles</h4>
+                      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.4rem', marginTop: '0.8rem' }}>
+                        {city.localAnchors.map((anchor, i) => (
+                          <span
+                            key={i}
+                            style={{
+                              fontSize: '0.8rem',
+                              padding: '0.25rem 0.6rem',
+                              borderRadius: '6px',
+                              background: 'rgba(245, 166, 35, 0.1)',
+                              border: '1px solid rgba(245, 166, 35, 0.25)',
+                              color: 'var(--color-gold)',
+                            }}
+                          >
+                            {anchor}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
                   </div>
-                  <h3 className={styles.challengeTitle}>Réalités & Enjeux à {city.name}</h3>
-                  <p className={styles.challengeDesc}>{city.digitalChallenges}</p>
-                </div>
-                <div className={styles.challengeCard}>
-                  <div className={styles.challengeIconWrap}>
-                    <MapPin size={24} color="var(--color-gold)" />
-                  </div>
-                  <h3 className={styles.challengeTitle}>Zones d&apos;Intervention & Quartiers</h3>
-                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.4rem', marginTop: '0.8rem' }}>
-                    {city.localAnchors.map((anchor, i) => (
-                      <span
-                        key={i}
-                        style={{
-                          fontSize: '0.8rem',
-                          padding: '0.25rem 0.6rem',
-                          borderRadius: '6px',
-                          background: 'rgba(245, 166, 35, 0.1)',
-                          border: '1px solid rgba(245, 166, 35, 0.25)',
-                          color: 'var(--color-gold)',
-                        }}
-                      >
-                        {anchor}
-                      </span>
-                    ))}
+
+                  <div className={styles.territoryPillarsGrid}>
+                    <div className={styles.territoryPillarCard}>
+                      <div className={styles.territoryPillarNum}>Axe Stratégique 01</div>
+                      <h4 className={styles.territoryPillarTitle}>Ciblage d’Audience Territorial</h4>
+                      <p className={styles.territoryPillarDesc}>
+                        Paramétrage géographique précis sur {city.name} et ses axes de transit pour toucher les décideurs et acheteurs locaux sans dispersion budgétaire.
+                      </p>
+                    </div>
+                    <div className={styles.territoryPillarCard}>
+                      <div className={styles.territoryPillarNum}>Axe Stratégique 02</div>
+                      <h4 className={styles.territoryPillarTitle}>Parcours Mobile & WhatsApp</h4>
+                      <p className={styles.territoryPillarDesc}>
+                        Tunnels directs vers WhatsApp avec intégration des paiements Mobile Money locaux (Orange Money, Moov Money) pour convertir immédiatement.
+                      </p>
+                    </div>
+                    <div className={styles.territoryPillarCard}>
+                      <div className={styles.territoryPillarNum}>Axe Stratégique 03</div>
+                      <h4 className={styles.territoryPillarTitle}>Gouvernance & Cadrage Contractuel</h4>
+                      <p className={styles.territoryPillarDesc}>
+                        Chaque campagne pour les entreprises de {city.name} est encadrée par un contrat SARL officiel avec engagement de suivi hebdomadaire et garantie de résultat.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             )}
           </div>
         </section>
+
+        {/* 02.B // GUIDE STRATÉGIQUE & DÉCRYPTAGE TERRAIN */}
+        {strategicGuide && (
+          <section className={styles.strategicGuideSection}>
+            <div className="container">
+              <div className={styles.sectionHeader}>
+                <span className={styles.sectionTag}>{strategicGuide.badge}</span>
+                <h2 className={styles.sectionTitle}>
+                  Guide Stratégique : <span className={styles.highlight}>{strategicGuide.title}</span>
+                </h2>
+                <p className={styles.sectionSubtitle}>
+                  {strategicGuide.subtitle}
+                </p>
+              </div>
+
+              {/* Synthèse Exécutive */}
+              <div className={styles.guideExecutiveCard}>
+                <div className={styles.guideExecutiveHeader}>
+                  <BookOpen size={18} />
+                  <span>Synthèse Stratégique & Cadrage Opérationnel</span>
+                </div>
+                <p className={styles.guideExecutiveText}>
+                  {strategicGuide.executiveSummary}
+                </p>
+              </div>
+
+              {/* Indicateurs Clés de Performance */}
+              <div className={styles.guideMetricsGrid}>
+                {strategicGuide.keyMetrics.map((metric, idx) => (
+                  <div key={idx} className={styles.guideMetricCard}>
+                    <div className={styles.guideMetricValue}>{metric.value}</div>
+                    <div className={styles.guideMetricLabel}>{metric.label}</div>
+                    <div className={styles.guideMetricDesc}>{metric.desc}</div>
+                  </div>
+                ))}
+              </div>
+
+              {/* Chapitres Détaillés */}
+              <div className={styles.guideChaptersList}>
+                {strategicGuide.chapters.map((chap, idx) => (
+                  <div key={idx} className={styles.guideChapterItem}>
+                    <h3 className={styles.guideChapterTitle}>
+                      <span className={styles.highlight}>{chap.title}</span>
+                    </h3>
+                    {chap.content.map((para, pIdx) => (
+                      <p key={pIdx} className={styles.guideParagraph}>{para}</p>
+                    ))}
+                  </div>
+                ))}
+              </div>
+
+              {/* Checklist Opérationnelle */}
+              <div className={styles.guideChecklistCard}>
+                <div className={styles.guideChecklistTitle}>
+                  <CheckCircle2 size={20} color="#10B981" />
+                  <span>Protocole d’Exécution & Checklist Terrain</span>
+                </div>
+                <div className={styles.guideChecklistGrid}>
+                  {strategicGuide.checklist.map((item, idx) => (
+                    <div key={idx} className={styles.guideChecklistItem}>
+                      <span style={{ color: '#10B981', fontWeight: 'bold', marginRight: '6px' }}>✓</span>
+                      <span>{item}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </section>
+        )}
 
         {/* 03 // LIVRABLES CONCRETS */}
         <section className={`${styles.section} ${styles.sectionDark}`}>

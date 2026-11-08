@@ -213,6 +213,19 @@ export default async function RootLayout({ children, params }: RootLayoutProps) 
   return (
     <html lang={locale} data-scroll-behavior="smooth" suppressHydrationWarning>
       <head>
+        {/* Google Tag Manager (GTM-P9LLRT8P) */}
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtm.js?id=GTM-P9LLRT8P"
+          strategy="afterInteractive"
+        />
+        <Script id="google-gtm-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+          `}
+        </Script>
         <Script id="theme-init" strategy="beforeInteractive">
           {`
             (function() {
