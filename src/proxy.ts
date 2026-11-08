@@ -72,6 +72,6 @@ export default function middleware(request: NextRequest) {
 
 export const config = {
   matcher: [
-    '/((?!api|_next/static|_next/image|studio|admin|favicon.ico|sitemap.xml|robots.txt|llms.txt|llms-full.txt|google[a-zA-Z0-9]+\\.html|.*\\.(?:svg|png|jpg|jpeg|gif|webp|ico|mp4|webm|html|txt|xml)).*)',
+    '/((?!api(?:/|$)|_next/static|_next/image|studio|admin|favicon.ico|sitemap.xml|robots.txt|llms.txt|llms-full.txt|google[a-zA-Z0-9]+\\.html|.*\\.(?:svg|png|jpg|jpeg|gif|webp|ico|mp4|webm|html|txt|xml)).*)',
   ],
 };
