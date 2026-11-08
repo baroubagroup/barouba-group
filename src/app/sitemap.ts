@@ -16,6 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '',
     '/marketing-digital',
     '/communication-digitale',
+    '/publicite-facebook',
     '/services',
     '/services/communication-digitale-community-management',
     '/services/developpement-web-plateformes-nextjs',
@@ -30,6 +31,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/portfolio',
     '/blog',
     '/a-propos',
+    '/sako-barou',
     '/contact',
     '/cgv',
     '/politique-de-confidentialite',
@@ -44,7 +46,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${BASE_URL}${page}`,
       lastModified: new Date(),
       changeFrequency: page === '' || page === '/blog' || page === '/devis' ? 'daily' : 'weekly',
-      priority: page === '' || page === '/marketing-digital' || page === '/communication-digitale' ? 1.0 : page.startsWith('/services/') || page === '/devis' ? 0.95 : 0.85,
+      priority: page === '' || page === '/marketing-digital' || page === '/communication-digitale' || page === '/publicite-facebook' ? 1.0 : page.startsWith('/services/') || page === '/devis' ? 0.95 : 0.85,
     });
   }
 

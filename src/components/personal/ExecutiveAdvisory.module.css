@@ -1,0 +1,225 @@
+.section {
+  padding: clamp(4.5rem, 7vw, 7.5rem) 0;
+  background: radial-gradient(circle at 80% 80%, rgba(245, 166, 35, 0.08) 0%, transparent 60%),
+              var(--bg-base, #09080F);
+  border-top: 1px solid rgba(245, 166, 35, 0.15);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-max, 1320px);
+  margin: 0 auto;
+  padding: 0 clamp(1rem, 3.5vw, 2.5rem);
+  box-sizing: border-box;
+}
+
+.boxWrap {
+  border-radius: 32px;
+  background: linear-gradient(165deg, rgba(22, 18, 36, 0.95) 0%, rgba(12, 10, 20, 0.98) 100%);
+  border: 1px solid rgba(245, 166, 35, 0.3);
+  padding: clamp(2.5rem, 5vw, 4.5rem);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.65), 0 0 35px rgba(245, 166, 35, 0.12);
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+  gap: clamp(2rem, 5vw, 4.5rem);
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* === LEFT COLUMN === */
+.leftCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.38rem 1rem;
+  border-radius: 9999px;
+  background: rgba(22, 18, 36, 0.8);
+  border: 1px solid rgba(245, 166, 35, 0.28);
+  font-family: var(--font-mono, monospace);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--color-gold, #F5A623);
+  margin-bottom: 1.2rem;
+  text-transform: uppercase;
+}
+
+.heading {
+  font-family: var(--font-display, sans-serif);
+  font-size: clamp(2rem, 3.8vw, 2.8rem);
+  font-weight: 900;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+  margin: 0 0 1rem;
+  color: #FFFFFF;
+}
+
+.goldText {
+  background: linear-gradient(135deg, #FFE494 0%, #F5A623 50%, #D97706 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.desc {
+  font-size: clamp(0.95rem, 1.4vw, 1.08rem);
+  color: var(--text-secondary, rgba(255, 255, 255, 0.74));
+  line-height: 1.75;
+  margin: 0 0 2rem;
+}
+
+.guaranteesGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.guaranteeRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 0.88rem;
+  color: var(--text-primary, #FFFFFF);
+  line-height: 1.45;
+}
+
+.guaranteeIcon {
+  color: var(--color-gold, #F5A623);
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+/* === RIGHT COLUMN: VIP FORM / DISPATCH === */
+.rightCol {
+  background: rgba(14, 11, 24, 0.85);
+  border: 1px solid rgba(245, 166, 35, 0.22);
+  border-radius: 24px;
+  padding: clamp(1.8rem, 3vw, 2.4rem);
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+.formTitle {
+  font-family: var(--font-display, sans-serif);
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.formSubtitle {
+  font-size: 0.82rem;
+  color: var(--text-muted, rgba(255, 255, 255, 0.6));
+  margin: 0;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.inputLabel {
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: var(--color-gold, #F5A623);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.textInput, .selectInput, .textArea {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border-radius: 12px;
+  background: rgba(22, 18, 36, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #FFFFFF;
+  font-family: var(--font-body, sans-serif);
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.2s ease;
+  box-sizing: border-box;
+}
+
+.textInput:focus, .selectInput:focus, .textArea:focus {
+  border-color: var(--color-gold, #F5A623);
+  box-shadow: 0 0 10px rgba(245, 166, 35, 0.2);
+}
+
+.selectInput option {
+  background: #141122;
+  color: #FFFFFF;
+}
+
+.textArea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.submitBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  width: 100%;
+  padding: 1rem 1.6rem;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #F5A623 0%, #D97706 100%);
+  color: #0A0910 !important;
+  font-weight: 800;
+  font-size: 0.96rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(245, 166, 35, 0.3);
+  transition: all 0.25s ease;
+}
+
+.submitBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(245, 166, 35, 0.45);
+  filter: brightness(1.08);
+}
+
+.directWhatsappLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 0.82rem;
+  color: var(--text-muted, rgba(255, 255, 255, 0.65));
+  text-decoration: none;
+  text-align: center;
+  margin-top: 0.2rem;
+  transition: color 0.2s ease;
+}
+
+.directWhatsappLink:hover {
+  color: var(--color-gold, #F5A623);
+}
+
+/* === RESPONSIVE BREAKPOINTS (MOBILE-FIRST) === */
+@media (max-width: 960px) {
+  .boxWrap {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding: 1.8rem 1.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 3rem 0;
+  }
+  .heading {
+    font-size: 1.6rem;
+  }
+}

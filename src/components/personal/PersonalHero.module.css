@@ -1,0 +1,465 @@
+.heroSection {
+  position: relative;
+  min-height: calc(100vh - var(--nav-height, 75px));
+  display: flex;
+  align-items: center;
+  padding: clamp(2.5rem, 5vw, 4.5rem) 0 clamp(3rem, 6vw, 5rem);
+  background: radial-gradient(circle at 80% 20%, rgba(245, 166, 35, 0.08) 0%, transparent 60%),
+              radial-gradient(circle at 10% 80%, rgba(217, 119, 6, 0.06) 0%, transparent 50%),
+              var(--bg-base);
+  overflow: hidden;
+  width: 100%;
+  max-width: 100vw;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-max, 1320px);
+  margin: 0 auto;
+  padding: 0 clamp(1rem, 3.5vw, 2.5rem);
+  position: relative;
+  z-index: 2;
+  box-sizing: border-box;
+}
+
+.mainGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+  gap: clamp(2rem, 5vw, 4.5rem);
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* === LEFT COLUMN: EXECUTIVE PROPOSITION === */
+.contentCol {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.statusBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.42rem 1.15rem;
+  border-radius: 9999px;
+  background: rgba(18, 15, 28, 0.85);
+  border: 1px solid rgba(245, 166, 35, 0.3);
+  margin-bottom: 1.4rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.liveDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #10B981;
+  box-shadow: 0 0 10px #10B981;
+  animation: pulseGreen 2.2s infinite ease-in-out;
+  flex-shrink: 0;
+}
+
+@keyframes pulseGreen {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.3); opacity: 0.6; }
+}
+
+.statusText {
+  font-family: var(--font-mono, monospace);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--color-gold, #F5A623);
+  text-transform: uppercase;
+}
+
+.nameHeading {
+  font-family: var(--font-display, sans-serif);
+  font-size: clamp(2rem, 5.2vw, 3.8rem);
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  margin: 0 0 0.8rem;
+  color: var(--text-primary, #FFFFFF);
+  text-transform: uppercase;
+}
+
+.nameHighlight {
+  background: linear-gradient(135deg, #FFE494 0%, #F5A623 50%, #D97706 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.triadSubtitle {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.75rem;
+  font-size: clamp(0.95rem, 1.8vw, 1.25rem);
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  color: var(--color-gold, #F5A623);
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+.triadDot {
+  color: var(--text-muted, rgba(255, 255, 255, 0.4));
+  font-size: 0.8rem;
+}
+
+.bioLead {
+  font-size: clamp(0.96rem, 1.5vw, 1.12rem);
+  line-height: 1.75;
+  color: var(--text-secondary, rgba(255, 255, 255, 0.76));
+  margin: 0 0 2rem;
+  max-width: 620px;
+}
+
+.bioLead strong {
+  color: var(--text-primary, #FFFFFF);
+  font-weight: 700;
+}
+
+/* Pillar Pills */
+.pillarChips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-bottom: 2.2rem;
+  width: 100%;
+}
+
+.chipItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.42rem 0.95rem;
+  border-radius: 10px;
+  background: rgba(22, 18, 36, 0.75);
+  border: 1px solid rgba(245, 166, 35, 0.2);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-primary, #FFFFFF);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+}
+
+.chipIcon {
+  color: var(--color-gold, #F5A623);
+  flex-shrink: 0;
+}
+
+/* CTAs */
+.ctaGroup {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+  width: 100%;
+}
+
+.primaryCta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1.05rem 2rem;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #F5A623 0%, #D97706 100%);
+  color: #0A0910 !important;
+  font-weight: 800;
+  font-size: 0.98rem;
+  text-decoration: none;
+  box-shadow: 0 10px 25px rgba(245, 166, 35, 0.28);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.primaryCta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 35px rgba(245, 166, 35, 0.45);
+  filter: brightness(1.08);
+}
+
+.secondaryCta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 1.05rem 1.75rem;
+  border-radius: 14px;
+  background: rgba(18, 15, 28, 0.85);
+  color: var(--text-primary, #FFFFFF) !important;
+  font-weight: 700;
+  font-size: 0.95rem;
+  border: 1px solid rgba(245, 166, 35, 0.25);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.secondaryCta:hover {
+  background: rgba(28, 23, 42, 0.95);
+  border-color: var(--color-gold, #F5A623);
+  transform: translateY(-2px);
+}
+
+/* Trust Bar */
+.trustBar {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+  padding-top: 1.6rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.trustStat {
+  display: flex;
+  flex-direction: column;
+}
+
+.trustNumber {
+  font-family: var(--font-display, sans-serif);
+  font-size: 1.35rem;
+  font-weight: 900;
+  color: var(--color-gold, #F5A623);
+  line-height: 1.1;
+  margin-bottom: 0.2rem;
+}
+
+.trustLabel {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--text-muted, rgba(255, 255, 255, 0.5));
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.trustDivider {
+  width: 1px;
+  height: 28px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* === RIGHT COLUMN: PORTRAIT FRAME === */
+.portraitCol {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.portraitCard {
+  position: relative;
+  width: 100%;
+  max-width: 440px;
+  border-radius: 28px;
+  padding: 10px;
+  background: linear-gradient(160deg, rgba(245, 166, 35, 0.35) 0%, rgba(20, 16, 32, 0.9) 40%, rgba(217, 119, 6, 0.25) 100%);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.65), 0 0 35px rgba(245, 166, 35, 0.15);
+  box-sizing: border-box;
+}
+
+.portraitInner {
+  position: relative;
+  width: 100%;
+  height: 520px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #0D0B16;
+}
+
+.portraitImg {
+  object-fit: cover;
+  object-position: top center;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.portraitCard:hover .portraitImg {
+  transform: scale(1.03);
+}
+
+/* Floating Glass Overlay at bottom of portrait */
+.portraitOverlay {
+  position: absolute;
+  bottom: 14px;
+  left: 14px;
+  right: 14px;
+  padding: 1rem 1.2rem;
+  background: rgba(12, 10, 20, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(245, 166, 35, 0.3);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.overlayRole {
+  font-family: var(--font-mono, monospace);
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: var(--color-gold, #F5A623);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.overlayTitle {
+  font-family: var(--font-display, sans-serif);
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #FFFFFF;
+}
+
+.overlayLocation {
+  font-size: 0.74rem;
+  color: var(--text-muted, rgba(255, 255, 255, 0.6));
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+/* Floating Corner Monogram Seal */
+.monogramSeal {
+  position: absolute;
+  top: -16px;
+  right: -16px;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #F5A623 0%, #D97706 100%);
+  border: 3px solid #09080F;
+  box-shadow: 0 8px 25px rgba(245, 166, 35, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display, sans-serif);
+  font-weight: 900;
+  font-size: 0.92rem;
+  color: #0A0910;
+  z-index: 10;
+  letter-spacing: 0.05em;
+}
+
+/* === RESPONSIVE BREAKPOINTS (MOBILE-FIRST) === */
+@media (max-width: 1024px) {
+  .mainGrid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 3rem;
+  }
+  .portraitCol {
+    order: -1; /* Place portrait top-center on tablets/mobiles */
+    margin-bottom: 0.5rem;
+  }
+  .portraitCard {
+    max-width: 360px;
+  }
+  .portraitInner {
+    height: 420px;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroSection {
+    padding: 1.8rem 0 2.5rem;
+    min-height: auto;
+  }
+  .nameHeading {
+    font-size: clamp(1.7rem, 6.8vw, 2.4rem);
+    line-height: 1.15;
+  }
+  .triadSubtitle {
+    font-size: 0.88rem;
+    gap: 0.35rem 0.5rem;
+    margin-bottom: 1.2rem;
+  }
+  .bioLead {
+    font-size: 0.92rem;
+    line-height: 1.65;
+    margin-bottom: 1.5rem;
+  }
+  .pillarChips {
+    gap: 0.45rem;
+    margin-bottom: 1.6rem;
+  }
+  .chipItem {
+    font-size: 0.75rem;
+    padding: 0.38rem 0.75rem;
+  }
+  .ctaGroup {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.75rem;
+    margin-bottom: 1.8rem;
+  }
+  .primaryCta, .secondaryCta {
+    width: 100%;
+    justify-content: center;
+    padding: 0.95rem 1.4rem;
+    box-sizing: border-box;
+    font-size: 0.92rem;
+  }
+  .trustBar {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.5rem;
+    text-align: center;
+    padding-top: 1.2rem;
+  }
+  .trustDivider {
+    display: none;
+  }
+  .trustNumber {
+    font-size: 1.1rem;
+  }
+  .trustLabel {
+    font-size: 0.6rem;
+  }
+  .portraitCard {
+    max-width: 320px;
+  }
+  .portraitInner {
+    height: 380px;
+  }
+  .monogramSeal {
+    width: 52px;
+    height: 52px;
+    font-size: 0.8rem;
+    top: -10px;
+    right: -10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroSection {
+    padding: 1.2rem 0 2rem;
+  }
+  .statusBadge {
+    padding: 0.3rem 0.85rem;
+    margin-bottom: 1rem;
+  }
+  .statusText {
+    font-size: 0.64rem;
+  }
+  .nameHeading {
+    font-size: 1.65rem;
+  }
+  .portraitCard {
+    max-width: 100%;
+  }
+  .portraitInner {
+    height: 340px;
+  }
+}
