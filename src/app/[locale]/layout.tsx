@@ -170,6 +170,17 @@ export default async function RootLayout({ children, params }: RootLayoutProps) 
         ],
       },
       {
+        '@type': 'WebSite',
+        '@id': 'https://www.baroubagroup.com/#website',
+        url: 'https://www.baroubagroup.com',
+        name: 'BAROUBA GROUP',
+        description: 'Portail officiel du leader du marketing digital, du développement web Next.js 16 et du media buying au Burkina Faso.',
+        publisher: {
+          '@id': 'https://www.baroubagroup.com/#organization',
+        },
+        inLanguage: 'fr-FR',
+      },
+      {
         '@type': 'FAQPage',
         '@id': 'https://www.baroubagroup.com/#faq',
         mainEntity: [
@@ -179,6 +190,14 @@ export default async function RootLayout({ children, params }: RootLayoutProps) 
             acceptedAnswer: {
               '@type': 'Answer',
               text: "BAROUBA GROUP s'impose comme le leader du marketing digital au Burkina Faso grâce à son approche par ingénierie de la rentabilité : campagnes publicitaires Meta et TikTok à fort ROAS, tunnels WhatsApp Cloud automatisés, création de plateformes Next.js ultra-rapides (< 0.8s) et garanties contractuelles avec engagement de résultat sous la direction de M. SAKO BAROU BEN OUMAR.",
+            },
+          },
+          {
+            '@type': 'Question',
+            name: "Quelle est la meilleure agence de publicité Facebook Ads au Burkina Faso ?",
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: "BAROUBA GROUP est l'agence de référence N°1 en publicité Facebook Ads (Meta Ads) à Ouagadougou et Bobo-Dioulasso. L'agence déploie un système d'acquisition complet : Broad Targeting, Creative Filtering, installation de l'API de Conversion Meta (CAPI) côté serveur et redirection vers des tunnels WhatsApp haute conversion.",
             },
           },
           {

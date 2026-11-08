@@ -58,7 +58,7 @@ export async function generateMetadata({ params }: CityOrServicePageProps): Prom
   const service = getTerritoryServiceBySlug(slug);
   if (service) {
     const cleanTitle = `${service.shortTitle} au ${country.name} | BAROUBA GROUP`.slice(0, 65);
-    const cleanDesc = service.hook.replace('{city}', country.name).slice(0, 155);
+    const cleanDesc = service.hook.replace(/\{city\}/g, country.name).slice(0, 155);
     return {
       title: cleanTitle,
       description: cleanDesc,
@@ -525,7 +525,7 @@ export default async function CityOrServicePage({ params }: CityOrServicePagePro
                 </div>
 
                 <h3 className={styles.cardTitle}>{s.shortTitle}</h3>
-                <p className={styles.cardDesc}>{s.hook.replace('{city}', cityObj.name)}</p>
+                <p className={styles.cardDesc}>{s.hook.replace(/\{city\}/g, cityObj.name)}</p>
 
                 <div className={styles.cardMeta}>
                   <div className={styles.cardMetaRow}>

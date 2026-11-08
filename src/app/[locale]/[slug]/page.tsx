@@ -69,7 +69,7 @@ export async function generateMetadata({ params }: FlatPageProps): Promise<Metad
     const loc = metier.locationName;
     const country = metier.country.name;
     const cleanTitle = (metier.customTitle || `${metier.template.shortTitle} à ${loc} (${country}) | BAROUBA GROUP`).slice(0, 65);
-    const cleanDesc = (metier.customDescription || metier.template.hook.replace('{location}', `${loc} (${country})`)).slice(0, 158);
+    const cleanDesc = (metier.customDescription || metier.template.hook.replace(/\{location\}/g, `${loc} (${country})`)).slice(0, 158);
 
     return {
       title: cleanTitle,
@@ -96,12 +96,12 @@ export async function generateMetadata({ params }: FlatPageProps): Promise<Metad
     const countryName = country.name;
 
     const rawTitle = type === 'solution' 
-      ? sector.solutionMetaTitle.replace('{city}', loc).replace('{country}', countryName)
-      : sector.priceMetaTitle.replace('{city}', loc).replace('{country}', countryName);
+      ? sector.solutionMetaTitle.replace(/\{city\}/g, loc).replace(/\{country\}/g, countryName)
+      : sector.priceMetaTitle.replace(/\{city\}/g, loc).replace(/\{country\}/g, countryName);
 
     const rawDesc = type === 'solution'
-      ? sector.solutionHeroSubtitle.replace('{city}', loc)
-      : sector.priceHeroSubtitle.replace('{city}', loc);
+      ? sector.solutionHeroSubtitle.replace(/\{city\}/g, loc)
+      : sector.priceHeroSubtitle.replace(/\{city\}/g, loc);
 
     const cleanTitle = `${rawTitle.slice(0, 52)} | BAROUBA`.slice(0, 65);
     const cleanDesc = rawDesc.slice(0, 155);
@@ -180,10 +180,10 @@ export default async function FlatPseoPage({ params }: FlatPageProps) {
           '@id': `${canonicalUrl}#faq`,
           mainEntity: template.faq.map((f) => ({
             '@type': 'Question',
-            name: f.question.replace('{location}', locationName),
+            name: f.question.replace(/\{location\}/g, locationName),
             acceptedAnswer: {
               '@type': 'Answer',
-              text: f.answer.replace('{location}', locationName),
+              text: f.answer.replace(/\{location\}/g, locationName),
             },
           })),
         },
@@ -619,11 +619,11 @@ export default async function FlatPseoPage({ params }: FlatPageProps) {
 
   const isSolution = type === 'solution';
   const heroTitle = isSolution
-    ? sector.solutionHeroTitle.replace('{city}', locationName)
-    : sector.priceHeroTitle.replace('{city}', locationName);
+    ? sector.solutionHeroTitle.replace(/\{city\}/g, locationName)
+    : sector.priceHeroTitle.replace(/\{city\}/g, locationName);
   const heroSubtitle = isSolution
-    ? sector.solutionHeroSubtitle.replace('{city}', locationName)
-    : sector.priceHeroSubtitle.replace('{city}', locationName);
+    ? sector.solutionHeroSubtitle.replace(/\{city\}/g, locationName)
+    : sector.priceHeroSubtitle.replace(/\{city\}/g, locationName);
 
   const locationSlug = city ? city.slug : country.slug;
   const counterpartSlug = isSolution
@@ -660,10 +660,10 @@ export default async function FlatPseoPage({ params }: FlatPageProps) {
         '@id': `${canonicalUrl}#faq`,
         mainEntity: faqItems.map((f) => ({
           '@type': 'Question',
-          name: f.question.replace('{city}', locationName),
+          name: f.question.replace(/\{city\}/g, locationName),
           acceptedAnswer: {
             '@type': 'Answer',
-            text: f.answer.replace('{city}', locationName),
+            text: f.answer.replace(/\{city\}/g, locationName),
           },
         })),
       },

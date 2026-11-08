@@ -211,7 +211,7 @@ export default async function CountryPage({ params }: CountryPageProps) {
                   <span className={styles.cardTag}>Solution 0{idx + 1}</span>
                 </div>
                 <h3 className={styles.cardTitle}>{s.shortTitle}</h3>
-                <p className={styles.cardDesc}>{s.hook.replace('{city}', country.name)}</p>
+                <p className={styles.cardDesc}>{s.hook.replace(/\{city\}/g, country.name)}</p>
 
                 <div className={styles.cardMeta}>
                   <div className={styles.cardMetaRow}>

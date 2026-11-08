@@ -198,7 +198,7 @@ export default async function TerritoiresPage({ params }: TerritoiresPageProps) 
                   <span className={styles.cardTag}>Pilier 0{idx + 1}</span>
                 </div>
                 <h3 className={styles.cardTitle}>{service.shortTitle}</h3>
-                <p className={styles.cardDesc}>{service.hook.replace('{city}', 'votre ville')}</p>
+                <p className={styles.cardDesc}>{service.hook.replace(/\{city\}/g, 'votre ville')}</p>
                 <div className={styles.benefitsGrid} style={{ marginTop: '0', gridTemplateColumns: '1fr' }}>
                   {service.benefits.slice(0, 2).map((b, i) => (
                     <div key={i} className={styles.benefitItem} style={{ padding: '0.65rem 0.85rem', fontSize: '0.85rem' }}>
