@@ -1,4 +1,4 @@
-import { redirect, notFound } from 'next/navigation';
+import { notFound, permanentRedirect } from 'next/navigation';
 import { getB2bComboBySlug } from '@/lib/solutionsData';
 
 export const dynamic = 'force-dynamic';
@@ -16,5 +16,5 @@ export default async function LegacySolutionRedirect({
   }
 
   // Permanent HTTP 308 redirect to the clean flat root URL
-  redirect(`/${slug}`);
+  permanentRedirect(`/${slug}`);
 }

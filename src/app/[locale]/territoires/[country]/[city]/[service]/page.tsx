@@ -1,4 +1,4 @@
-import { redirect, notFound } from 'next/navigation';
+import { notFound, permanentRedirect } from 'next/navigation';
 import { getCountryBySlug, getCityBySlug, getTerritoryServiceBySlug } from '@/lib/territoriesData';
 
 const SERVICE_TO_FLAT_PREFIX: Record<string, string> = {
@@ -35,5 +35,5 @@ export default async function LegacyTerritoryServiceRedirect({
   const targetSlug = `${prefix}-${city.slug}`;
 
   // Permanent HTTP 308 redirect to the flat root URL
-  redirect(`/${targetSlug}`);
+  permanentRedirect(`/${targetSlug}`);
 }

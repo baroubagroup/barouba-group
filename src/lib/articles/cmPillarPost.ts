@@ -412,6 +412,6 @@ Chaque semaine où votre entreprise publie du contenu amateur sans stratégie es
 Chez **BAROUBA GROUP**, nous ne faisons pas de la figuration sur le web. Nous concevons et animons des dispositifs digitaux de haute précision pensés pour générer un impact économique tangible, mesurable et durable pour votre organisation.
 
 > **Vous souhaitez transformer votre présence sociale en une véritable machine de vente et d'autorité ?** 
-> [Découvrez l'ensemble de notre offre d'accompagnement sur-mesure](/fr/services/communication-digitale-community-management) ou contactez directement notre direction stratégique pour bénéficier d'un **audit complet préalable de vos comptes existants**.
+> [Découvrez l'ensemble de notre offre d'accompagnement sur-mesure](/services/communication-digitale-community-management) ou contactez directement notre direction stratégique pour bénéficier d'un **audit complet préalable de vos comptes existants**.
   `
 };

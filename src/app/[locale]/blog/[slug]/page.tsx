@@ -1,4 +1,4 @@
-import { notFound, redirect } from 'next/navigation';
+import { notFound, permanentRedirect } from 'next/navigation';
 import { Link } from '@/i18n/navigation';
 import { ArrowLeft, Clock, MessageSquare, ChevronDown, CheckCircle2, Bookmark, ArrowRight, Globe2 } from 'lucide-react';
 import Image from 'next/image';
@@ -67,7 +67,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
 
   // 301 Canonical redirect if an old numbered slug or alternate casing was requested
   if (slug.toLowerCase() !== post.slug.current.toLowerCase()) {
-    redirect(`/${locale}/blog/${post.slug.current}`);
+    permanentRedirect(`/blog/${post.slug.current}`);
   }
 
   const formattedDate = new Date(post.publishedAt).toLocaleDateString('fr-FR', {
