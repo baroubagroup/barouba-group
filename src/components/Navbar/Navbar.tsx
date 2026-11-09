@@ -32,6 +32,7 @@ export default function Navbar() {
     { href: '/portfolio' as const, label: t('portfolio') },
     { href: '/blog' as const, label: t('blog') },
     { href: '/boutique' as const, label: t('shop') },
+    { href: '/barouba' as const, label: 'BAROUBA' },
     { href: '/a-propos' as const, label: t('about') },
   ];
 

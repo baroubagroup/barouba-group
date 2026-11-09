@@ -27,6 +27,7 @@ export default function Footer() {
   ];
 
   const navigationLinks = [
+    { href: '/barouba' as const, label: 'Tout Savoir sur BAROUBA' },
     { href: '/a-propos' as const, label: 'À Propos de l’Agence' },
     { href: '/territoires' as const, label: 'Territoires & Villes d’Intervention' },
     { href: '/portfolio' as const, label: 'Nos Réalisations & Études de Cas' },
