@@ -2,11 +2,13 @@
 
 import { BlogPost, BlogPostFAQ } from './articles/types';
 import { cmPillarPost } from './articles/cmPillarPost';
+import { baroubaHistoirePost } from './articles/baroubaHistoirePost';
 
 export type { BlogPost, BlogPostFAQ };
 export const WHATSAPP_NUMBER = '22674826666'; // Format officiel Burkina Faso (+226 74 82 66 66)
 
 export const mockPosts: BlogPost[] = [
+  baroubaHistoirePost,
   {
     _id: 'post-bf-1',
     title: "Création de Site Web au Burkina Faso en 2026 : Le Guide Ultime (Prix en FCFA, Délais, Pièges et Erreurs à Éviter)",
