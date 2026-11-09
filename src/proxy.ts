@@ -43,6 +43,32 @@ export default function middleware(request: NextRequest) {
     return res;
   }
 
+  // 2b. Permanent 308 redirect for legacy accented slugs (e.g. reçus -> recus, instantanée -> instantanee)
+  if (pathname.startsWith('/blog/')) {
+    try {
+      const decoded = decodeURIComponent(pathname);
+      if (/[^\x00-\x7F]/.test(decoded)) {
+        const asciiPath = decoded
+          .normalize('NFD')
+          .replace(/[\u0300-\u036f]/g, '')
+          .replace(/[éèêë]/g, 'e')
+          .replace(/[àâä]/g, 'a')
+          .replace(/[îï]/g, 'i')
+          .replace(/[ôö]/g, 'o')
+          .replace(/[ùûü]/g, 'u')
+          .replace(/[ç]/g, 'c')
+          .replace(/[^\x00-\x7F]/g, '');
+
+        if (asciiPath !== decoded) {
+          const url = new URL(asciiPath + request.nextUrl.search, request.url);
+          const res = NextResponse.redirect(url, 308);
+          res.headers.set('Vary', 'Accept');
+          return res;
+        }
+      }
+    } catch {}
+  }
+
   // 3. Permanent 308 redirect from legacy `/fr` and `/fr/*` to clean root URLs
   if (pathname === '/fr' || pathname === '/fr/') {
     const url = new URL('/', request.url);

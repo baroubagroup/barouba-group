@@ -222,12 +222,28 @@ export function getSeoArticleBySlug(slug: string): BlogPost | null {
   initializeArticlesCache();
   if (!articlesCache) return null;
 
-  const normalized = slug.toLowerCase();
-  let meta = articlesCache.get(normalized) || articlesCache.get(slug);
+  let decoded = slug;
+  try {
+    decoded = decodeURIComponent(slug);
+  } catch {}
+
+  const normalized = decoded.toLowerCase();
+  const asciiSlug = normalized
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[éèêë]/g, 'e')
+    .replace(/[àâä]/g, 'a')
+    .replace(/[îï]/g, 'i')
+    .replace(/[ôö]/g, 'o')
+    .replace(/[ùûü]/g, 'u')
+    .replace(/[ç]/g, 'c')
+    .replace(/[^\x00-\x7F]/g, '');
+
+  let meta = articlesCache.get(normalized) || articlesCache.get(slug) || articlesCache.get(asciiSlug);
 
   // Fallback for legacy numbered slugs (e.g. 001-..., pilier-01-..., 000-pilier-01-...)
   if (!meta) {
-    const clean = normalized
+    const clean = asciiSlug
       .replace(/^000-pilier-\d+-/i, '')
       .replace(/^pilier-\d+-/i, '')
       .replace(/^\d+-/, '');
