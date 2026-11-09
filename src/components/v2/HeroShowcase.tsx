@@ -47,14 +47,14 @@ export default function HeroShowcase() {
               <div className={styles.brandIconMini}>
                 <Image 
                   src="/logo-or.svg" 
-                  alt="Barouba Emblem" 
+                  alt="Emblème Officiel BAROUBA" 
                   width={20} 
                   height={20} 
                   style={{ width: 'auto', height: '20px' }}
                   className={styles.emblemMini} 
                 />
               </div>
-              <span className={styles.badgeText}>AGENCE DIGITALE, PÔLE IA & ACADÉMIE D'ÉLITE</span>
+              <span className={styles.badgeText}>BAROUBA • GROUPE TECHNOLOGIQUE & CABINET D'ÉLITE</span>
             </div>
 
             <h1 className={styles.mainHeading}>
@@ -62,7 +62,7 @@ export default function HeroShowcase() {
             </h1>
 
             <p className={styles.description}>
-              De la gestion quotidienne de vos réseaux sociaux au développement d’applications Next.js 16 de pointe, en passant par le Media Buying rentable et la formation certifiante de vos équipes : nous combinons expertise opérationnelle et rigueur technique pour propulser votre entreprise.
+              <strong>BAROUBA</strong> (officiellement BAROUBA GROUP) est le partenaire technologique n°1 au Burkina Faso : de la gestion quotidienne de vos réseaux sociaux au développement d’applications Next.js 16 de pointe, en passant par le Media Buying rentable et la formation certifiante de vos équipes.
             </p>
 
             {/* Value Highlights with Authentic Geometry */}

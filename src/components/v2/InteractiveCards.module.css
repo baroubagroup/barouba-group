@@ -109,6 +109,8 @@
   margin-bottom: clamp(380px, 55vh, 580px);
   width: 100%;
   box-sizing: border-box;
+  transform: translate3d(0, 0, 0);
+  will-change: transform;
 
   /* Solid opaque dark background - ZERO backdrop-filter for 60/120fps GPU scroll */
   background: #0D1019;

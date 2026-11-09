@@ -14,12 +14,19 @@ import '@/styles/globals.css';
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.baroubagroup.com'),
   title: {
-    default: 'BAROUBA GROUP : N°1 du Marketing Digital & Web d’Élite au Burkina Faso',
-    template: '%s | BAROUBA GROUP',
+    default: 'BAROUBA — N°1 Marketing Digital, Web & IA au Burkina Faso | BAROUBA GROUP',
+    template: '%s | BAROUBA',
   },
   description:
-    'Cabinet n°1 en Marketing Digital au Burkina Faso (Ouagadougou & Bobo-Dioulasso) : Acquisition publicitaire Meta & TikTok Ads, création web Next.js 16, community management 7j/7 et tunnels WhatsApp à fort ROI.',
+    'BAROUBA (BAROUBA GROUP) : Cabinet n°1 en Marketing Digital au Burkina Faso (Ouagadougou & Bobo-Dioulasso) : Acquisition publicitaire Meta & TikTok Ads, création web Next.js 16, community management 7j/7 et tunnels WhatsApp à fort ROI.',
   keywords: [
+    'BAROUBA',
+    'Barouba',
+    'barouba',
+    'BAROUBA GROUP',
+    'BAROUBA INTERNATIONAL GROUP',
+    'GROUPE BAROUBA',
+    'Groupe Barouba',
     'marketing digital burkina faso',
     'marketing digital au burkina faso',
     'agence marketing digital burkina faso',
@@ -43,13 +50,12 @@ export const metadata: Metadata = {
     'tunnel de vente whatsapp burkina',
     'e-commerce orange money moov money burkina',
     'développement web sur mesure ouagadougou',
-    'BAROUBA INTERNATIONAL GROUP',
   ],
   openGraph: {
     type: 'website',
     locale: 'fr_FR',
     url: 'https://www.baroubagroup.com',
-    siteName: 'BAROUBA GROUP',
+    siteName: 'BAROUBA',
     images: [{ url: '/og-image.jpg', width: 1200, height: 630 }],
   },
   icons: {
@@ -107,21 +113,37 @@ export default async function RootLayout({ children, params }: RootLayoutProps) 
     '@context': 'https://schema.org',
     '@graph': [
       {
-        '@type': ['ProfessionalService', 'MarketingAgency'],
+        '@type': ['Organization', 'Brand', 'ProfessionalService', 'MarketingAgency'],
         '@id': 'https://www.baroubagroup.com/#organization',
-        name: 'BAROUBA GROUP',
+        name: 'BAROUBA',
         legalName: 'BAROUBA INTERNATIONAL GROUP SARL',
         alternateName: [
+          'BAROUBA',
+          'Barouba',
+          'BAROUBA GROUP',
           'BAROUBA INTERNATIONAL GROUP',
           'BAROUBA GROUP SARL',
+          'GROUPE BAROUBA',
+          'Groupe Barouba',
           'Agence Marketing Digital Burkina Faso',
           'BAROUBA Marketing Digital Ouagadougou',
         ],
         url: 'https://www.baroubagroup.com',
-        logo: 'https://www.baroubagroup.com/logo-barouba.png',
+        logo: {
+          '@type': 'ImageObject',
+          url: 'https://www.baroubagroup.com/logo-barouba.png',
+          caption: 'Logo Officiel BAROUBA',
+        },
+        brand: {
+          '@type': 'Brand',
+          name: 'BAROUBA',
+          alternateName: ['BAROUBA GROUP', 'Barouba', 'GROUPE BAROUBA'],
+          logo: 'https://www.baroubagroup.com/logo-barouba.png',
+          url: 'https://www.baroubagroup.com',
+        },
         image: 'https://www.baroubagroup.com/og-image.jpg',
         description:
-          "Cabinet n°1 en Marketing Digital au Burkina Faso, ingénierie logicielle Next.js 16, acquisition publicitaire Meta/TikTok Ads, communication 360°, intégration d'agents IA et formation professionnelle certifiante.",
+          "BAROUBA (BAROUBA GROUP) est le cabinet n°1 en Marketing Digital au Burkina Faso, ingénierie logicielle Next.js 16, acquisition publicitaire Meta/TikTok Ads, communication 360°, intégration d'agents IA et formation professionnelle certifiante.",
         telephone: '+226-74-82-66-66',
         email: 'contact@baroubagroup.com',
         founder: {
@@ -167,6 +189,7 @@ export default async function RootLayout({ children, params }: RootLayoutProps) 
         ],
         priceRange: '$$',
         knowsAbout: [
+          'BAROUBA',
           'Marketing Digital au Burkina Faso',
           'Agence Marketing Digital Ouagadougou',
           'Next.js 16 Web Development',
@@ -185,8 +208,9 @@ export default async function RootLayout({ children, params }: RootLayoutProps) 
         '@type': 'WebSite',
         '@id': 'https://www.baroubagroup.com/#website',
         url: 'https://www.baroubagroup.com',
-        name: 'BAROUBA GROUP',
-        description: 'Portail officiel du leader du marketing digital, du développement web Next.js 16 et du media buying au Burkina Faso.',
+        name: 'BAROUBA',
+        alternateName: ['BAROUBA GROUP', 'Barouba', 'GROUPE BAROUBA'],
+        description: 'Portail officiel de BAROUBA (BAROUBA GROUP) : leader du marketing digital, du développement web Next.js 16 et du media buying au Burkina Faso.',
         publisher: {
           '@id': 'https://www.baroubagroup.com/#organization',
         },
