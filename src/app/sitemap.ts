@@ -34,6 +34,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/portfolio',
     '/blog',
     '/a-propos',
+    '/barouba',
     '/contact',
     '/cgv',
     '/politique-de-confidentialite',

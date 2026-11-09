@@ -43,6 +43,14 @@ export default function middleware(request: NextRequest) {
     return res;
   }
 
+  // Fast redirect from /blog/barouba to master pillar /barouba
+  if (pathname === '/blog/barouba' || pathname === '/blog/barouba/') {
+    const url = new URL('/barouba', request.url);
+    const res = NextResponse.redirect(url, 308);
+    res.headers.set('Vary', 'Accept');
+    return res;
+  }
+
   // 2b. Permanent 308 redirect for legacy accented slugs (e.g. reçus -> recus, instantanée -> instantanee)
   if (pathname.startsWith('/blog/')) {
     try {

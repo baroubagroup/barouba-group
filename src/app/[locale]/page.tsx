@@ -18,18 +18,20 @@ export async function generateMetadata({ params }: HomeProps): Promise<Metadata>
 
   return {
     title: locale === 'fr'
-      ? 'BAROUBA — N°1 Marketing Digital, Web & IA au Burkina Faso | BAROUBA GROUP'
-      : 'BAROUBA — #1 Digital Marketing, Web & AI Agency in Burkina Faso | BAROUBA GROUP',
+      ? 'BAROUBA GROUP : N°1 du Marketing Digital, Web & IA au Burkina Faso'
+      : 'BAROUBA GROUP: #1 Digital Marketing, Web & AI Agency in Burkina Faso',
     description: locale === 'fr'
-      ? 'BAROUBA (BAROUBA GROUP) : Cabinet n°1 en Marketing Digital au Burkina Faso (Ouagadougou & Bobo-Dioulasso) : Acquisition publicitaire Meta & TikTok Ads, création web Next.js 16, community management 7j/7 et tunnels WhatsApp à fort ROI.'
-      : 'BAROUBA (BAROUBA GROUP): #1 Digital Marketing agency in Burkina Faso (Ouagadougou & Bobo-Dioulasso): Meta & TikTok Ads acquisition, Next.js 16 web development, 7/7 community management and high-ROI WhatsApp funnels.',
+      ? 'BAROUBA GROUP (BAROUBA) : Cabinet n°1 en Marketing Digital au Burkina Faso (Ouagadougou & Bobo-Dioulasso) : Acquisition publicitaire Meta & TikTok Ads, création web Next.js 16, community management 7j/7 et tunnels WhatsApp à fort ROI.'
+      : 'BAROUBA GROUP (BAROUBA): #1 Digital Marketing agency in Burkina Faso (Ouagadougou & Bobo-Dioulasso): Meta & TikTok Ads acquisition, Next.js 16 web development, 7/7 community management and high-ROI WhatsApp funnels.',
     keywords: [
       'BAROUBA',
       'Barouba',
       'barouba',
       'BAROUBA GROUP',
+      'barouba group',
       'BAROUBA INTERNATIONAL GROUP',
       'GROUPE BAROUBA',
+      'Groupe Barouba',
       'marketing digital burkina faso',
       'marketing digital au burkina faso',
       'agence marketing digital burkina faso',
@@ -45,10 +47,10 @@ export async function generateMetadata({ params }: HomeProps): Promise<Metadata>
       canonical: 'https://www.baroubagroup.com',
     },
     openGraph: {
-      title: 'BAROUBA — N°1 Marketing Digital, Web & IA au Burkina Faso | BAROUBA GROUP',
-      description: 'BAROUBA (BAROUBA GROUP) : Cabinet n°1 en Marketing Digital au Burkina Faso (Ouagadougou & Bobo-Dioulasso) : Publicité Ads, création web Next.js 16, community management 7j/7 et tunnels WhatsApp.',
+      title: 'BAROUBA GROUP : N°1 du Marketing Digital, Web & IA au Burkina Faso',
+      description: 'BAROUBA GROUP (BAROUBA) : Cabinet n°1 en Marketing Digital au Burkina Faso (Ouagadougou & Bobo-Dioulasso) : Publicité Ads, création web Next.js 16, community management 7j/7 et tunnels WhatsApp.',
       url: 'https://www.baroubagroup.com',
-      siteName: 'BAROUBA',
+      siteName: 'BAROUBA GROUP',
       locale: 'fr_FR',
       type: 'website',
     },
