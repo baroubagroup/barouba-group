@@ -5,6 +5,7 @@ import Image from 'next/image';
 import AfricanPatternRibbon from '@/components/v2/AfricanPatternRibbon';
 import { getPostBySlug } from '@/lib/sanity';
 import { mockPosts, WHATSAPP_NUMBER, BlogPost, BlogPostFAQ } from '@/lib/data';
+import { getThematicPoster } from '@/lib/thematicPosters';
 import type { Metadata } from 'next';
 import MarkdownRenderer from './MarkdownRenderer';
 import styles from './article.module.css';
@@ -19,6 +20,7 @@ export async function generateMetadata({ params }: ArticlePageProps): Promise<Me
   if (!post) return {};
 
   const canonicalUrl = `https://www.baroubagroup.com/blog/${post.slug.current}`;
+  const poster = getThematicPoster(post);
 
   return {
     title: `${post.title} | BAROUBA GROUP Insights`,
@@ -43,10 +45,10 @@ export async function generateMetadata({ params }: ArticlePageProps): Promise<Me
       locale: locale === 'fr' ? 'fr_FR' : 'en_US',
       images: [
         {
-          url: 'https://www.baroubagroup.com/og-image.jpg',
+          url: poster.ogSrc,
           width: 1200,
-          height: 630,
-          alt: post.title,
+          height: 670,
+          alt: `${post.title} | ${poster.headline}`,
         },
       ],
     },
@@ -54,7 +56,7 @@ export async function generateMetadata({ params }: ArticlePageProps): Promise<Me
       card: 'summary_large_image',
       title: post.title,
       description: post.excerpt,
-      images: ['https://www.baroubagroup.com/og-image.jpg'],
+      images: [poster.ogSrc],
     },
   };
 }
@@ -64,6 +66,8 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
   const post = await getPostBySlug(slug, locale);
 
   if (!post) notFound();
+
+  const poster = getThematicPoster(post);
 
   // 301 Canonical redirect if an old numbered slug or alternate casing was requested
   if (slug.toLowerCase() !== post.slug.current.toLowerCase()) {
@@ -111,6 +115,10 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
     headline: post.title,
+    image: [
+      `https://www.baroubagroup.com${poster.src}`,
+      poster.ogSrc,
+    ],
     description: post.excerpt,
     datePublished: post.publishedAt,
     dateModified: post.updatedAt || post.publishedAt,
@@ -255,6 +263,18 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
       <main className={styles.bodySection}>
         <div className="container">
           <div className={styles.bodyContainer}>
+            {/* Thematic Visual Poster (Hero Banner & Google Images Anchor) */}
+            <div className={styles.posterHeroWrapper}>
+              <Image
+                src={poster.src}
+                alt={poster.alt}
+                width={poster.width}
+                height={poster.height}
+                priority
+                className={styles.posterHeroImage}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 860px"
+              />
+            </div>
             {/* Key Takeaways Box (À retenir) */}
             {post.keyTakeaways && post.keyTakeaways.length > 0 && (
               <div className={styles.takeawaysBox}>

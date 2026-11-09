@@ -53,6 +53,20 @@ export async function generateMetadata({ params }: BaroubaPageProps): Promise<Me
       siteName: 'BAROUBA GROUP',
       locale: 'fr_FR',
       type: 'article',
+      images: [
+        {
+          url: 'https://www.baroubagroup.com/images/affiches/affiche-10-barouba-group-cabinet-technologique-burkina-og.jpg',
+          width: 1200,
+          height: 670,
+          alt: 'BAROUBA GROUP : Cabinet N°1 du Marketing Digital et des Technologies au Burkina Faso',
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: 'BAROUBA : Tout Savoir sur BAROUBA GROUP | Histoire, Direction & Pôles',
+      description: 'Découvrez BAROUBA (officiellement BAROUBA GROUP SARL) : cabinet technologique n°1 au Burkina Faso fondé par Monsieur SAKO BAROU BEN OUMAR.',
+      images: ['https://www.baroubagroup.com/images/affiches/affiche-10-barouba-group-cabinet-technologique-burkina-og.jpg'],
     },
   };
 }
@@ -218,6 +232,19 @@ export default async function BaroubaEntityPage({ params }: BaroubaPageProps) {
               <span className={styles.metaDot}>◆</span>
               <span>Siège : <strong>Bobo-Dioulasso, Burkina Faso</strong></span>
             </div>
+          </div>
+
+          {/* Official Flagship Brand Poster */}
+          <div className={styles.flagshipPosterWrapper}>
+            <Image
+              src="/images/affiches/affiche-10-barouba-group-cabinet-technologique-burkina.webp"
+              alt="BAROUBA GROUP : Cabinet N°1 du Marketing Digital et des Technologies au Burkina Faso"
+              width={1920}
+              height={1072}
+              priority
+              className={styles.flagshipPosterImage}
+              sizes="(max-width: 768px) 100vw, 1040px"
+            />
           </div>
         </div>
       </section>
